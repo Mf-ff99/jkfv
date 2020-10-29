@@ -1,0 +1,38 @@
+
+.page-view {
+    display: flex;
+    justify-content: center;
+}
+
+.background-color {
+    background-color: gray;
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8em;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 8px;
+    /* border: 5px solid black inset; */
+    /* background-color: gray; */
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.xcam-img{
+    width: 150px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.social-links {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-between;
+}
