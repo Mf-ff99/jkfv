@@ -36,7 +36,7 @@ nav ul li {
     vertical-align: middle;
     margin-right: .5em;
     font-size: 23px;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     border-radius: 20px;
     height: auto;
     padding: 0; 
@@ -69,7 +69,8 @@ nav ul li.logo a img {
 .logo-text-left {
     vertical-align: top;
     margin-left: 5px;
-    
+    min-width: 187px;
+    max-width: 187px;
 }
 
 .logo-text-right {

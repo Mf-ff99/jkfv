@@ -13,12 +13,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 8em;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 8px;
-    /* border: 5px solid black inset; */
-    /* background-color: gray; */
+    margin-top: 3em;
+    /*do not adjust margins here */
     border-radius: 20px;
     width: fit-content;
 }
@@ -36,3 +32,97 @@
     justify-content: space-around;
     align-items: space-between;
 }
+
+.landing-page-content { 
+     border: 5px solid black;
+    border-radius: 10px;
+    margin-top: 9em;
+    width: 80%;
+    /* transform: skewY(-11deg); */
+}
+
+.hr-container{
+    position: relative;
+}
+
+.hr-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    
+    bottom: 0;
+    margin-top: 4em;
+    background-image: linear-gradient(45deg, black, #20494d);
+    /* background-image: linear-gradient(45deg, #654ea3, #eaafc8); 	 */
+    transform: skewY(-4deg);
+    opacity: .9;
+    height: 10em;
+    /* border: 10px solid red; */
+}
+
+.content {
+    color: whitesmoke;
+    font-size: 24px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5em;
+    position: relative;
+}
+
+/* Second skewed container */
+
+.hr-container-2{
+    position: relative;
+}
+
+.hr-container-2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: 5em;
+    background-image: linear-gradient(45deg, black, #20494d);
+    /* background-image: linear-gradient(45deg, #654ea3, #eaafc8); 	 */
+    transform: skewY(-4deg);
+    opacity: .9;
+    height: 10em;
+    /* border: 10px solid red; */
+}
+
+.content-2 {
+    color: whitesmoke;
+    font-size: 24px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5em;
+    position: relative;
+}
+
+#hr {
+    /* border-top:1px solid #ff00ff;  */
+    /* transform: skewY(-11deg); */
+    /* height:100px;  */
+    /* margin-left:-140px;
+    -moz-transform: rotate(45deg);  
+    -o-transform: rotate(45deg);  
+    -webkit-transform: rotate(45deg);  
+    -ms-transform: rotate(45deg);  
+    transform: rotate(20deg);  */
+}
+
+/* #hr-container-top {
+    position: relative;
+    /* transform: rotate(20deg);
+    opacity: .5;
+    transform: skewY(-4deg);
+    margin-bottom: 5em;
+    /* border-top: 1px solid #000;  */
+    /* background-color: gray;
+    width: 100vw; 
+    height: 250px;
+    z-index: -1000;  */
+
