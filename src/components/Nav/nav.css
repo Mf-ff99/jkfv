@@ -16,7 +16,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
-    color: black;
+    color: black !important;
     border-radius: 10px;
     height: 100%;
     width: 100%;
@@ -47,13 +47,13 @@ li.logo span {
 }
 
 nav ul li.right-side-nav {
-    color: black;
+    color: black !important;
     font-size: 25px;
-    /* margin-left: 17em;
-    padding-top: 20px; */
+    /* margin-left: 1em; */
+    /* padding-top: 20px; */
     justify-content: flex-end;
-    padding: 10px;
-    margin-right: 20px;
+    /* padding: 10px; */
+    margin-right: 30px;
     margin-top: 2em;
 }
 
@@ -64,13 +64,14 @@ nav ul li.logo a img {
 .right-side-nav {
    float: right;
    margin-right: 0;
+   /* justify-content: flex-end; */
 }
 
 .logo-text-left {
     vertical-align: top;
     margin-left: 5px;
-    min-width: 187px;
-    max-width: 187px;
+    min-width: 170px;
+    max-width: 170px;
 }
 
 .logo-text-right {
@@ -79,6 +80,6 @@ nav ul li.logo a img {
     padding-top: 10px;
 }
 
-a{
-    color: black;
+a {
+    color: black !important;
 }

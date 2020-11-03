@@ -12,8 +12,8 @@ export default class Nav extends React.Component {
                 <ul>
                     <li className="logo">
 
-                <Link href='/home'> <img src={Logo}/></Link>
-                <span className="logo-text-left">Jordan Klein Film & Video</span>
+                <a href='/'><img src={Logo}/></a>
+                <span className="logo-text-left"><a href='/'>Jordan Klein Film & Video</a></span>
                 {/* <span className="logo-text-right"> Film & Video</span> */}
                     </li>
                     <li className="right-side-nav">
