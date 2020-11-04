@@ -21,6 +21,9 @@ export default class Nav extends React.Component {
 
                     </li>
                     <li className="right-side-nav">
+                        <a href='/tools'>Tools</a>
+                    </li>
+                    <li className="right-side-nav">
                 <a href="/contact">Contact</a>
 
                     </li>
@@ -28,6 +31,7 @@ export default class Nav extends React.Component {
                 <a href="/about">About</a>           
 
                     </li>
+
                 </ul>
             </nav>
         )

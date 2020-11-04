@@ -20,6 +20,7 @@ nav ul {
     border-radius: 10px;
     height: 100%;
     width: 100%;
+    /* min-width: 920px; */
 }
 
 nav ul li {
@@ -53,7 +54,7 @@ nav ul li.right-side-nav {
     /* padding-top: 20px; */
     justify-content: flex-end;
     /* padding: 10px; */
-    margin-right: 30px;
+    margin-right: 4em;
     margin-top: 2em;
 }
 

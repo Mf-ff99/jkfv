@@ -8,6 +8,7 @@ export default function Home() {
 
 
     return (
+        <section className="landing">
         <div className="landing-page">
             
 
@@ -23,8 +24,7 @@ export default function Home() {
                 <i class="fab fa-linkedin fa-3x"></i>
                 <img src={Logo} alt="Xcam Aerials Logo" className="xcam-img" />
             </div>
-            {/* <section className="landing-page-content"> */}
-            {/* </div> */}
+        </div>
             <div className="hr-container">
                 <div className="content">
                     <p>Jordan Klein Jr. is a legendary award-winning Director of Photography, ace pilot, and an underwater diving expert</p>
@@ -35,10 +35,8 @@ export default function Home() {
                 <div className="content-2">
                     <p>JKF & V has all the tools your shoot needs to get the job done</p>
                 </div>
-                </div>
-
-            {/* </section> */}
-        </div>
+            </div>
+        </section>
     )
 
 }
