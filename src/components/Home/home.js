@@ -9,29 +9,29 @@ export default function Home() {
 
     return (
         <section className="landing">
-        <div className="landing-page">
-            
+            <div className="landing-page">
 
-            <div className="background-color">
 
+                <div className="background-color">
+
+                </div>
+                <div className="logo-container">
+                    <img src={Logo2} alt="company logo" />
+                </div>
+                <div className="social-links">
+                    <i class="fab fa-instagram fa-3x"></i>
+                    <i class="fab fa-facebook-square fa-3x"></i>
+                    <i class="fab fa-linkedin fa-3x"></i>
+                    <img src={Logo} alt="Xcam Aerials Logo" className="xcam-img" />
+                </div>
             </div>
-            <div className="logo-container">
-                <img src={Logo2} alt="company logo" />
-            </div>
-            <div className="social-links">
-                <i class="fab fa-instagram fa-3x"></i>
-                <i class="fab fa-facebook-square fa-3x"></i>
-                <i class="fab fa-linkedin fa-3x"></i>
-                <img src={Logo} alt="Xcam Aerials Logo" className="xcam-img" />
-            </div>
-        </div>
             <div className="hr-container">
                 <div className="content">
                     <p>Jordan Klein Jr. is a legendary award-winning Director of Photography, ace pilot, and an underwater diving expert</p>
                 </div>
-                </div>
+            </div>
 
-                <div className="hr-container-2">
+            <div className="hr-container-2">
                 <div className="content-2">
                     <p>JKF & V has all the tools your shoot needs to get the job done</p>
                 </div>
