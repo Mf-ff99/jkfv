@@ -8,6 +8,7 @@ nav {
     justify-content: flex-start;
     flex-direction: row;
     list-style: none;
+    /* background-color: linear-gradient(45deg, black, #20494d); */
 }
 
 nav ul {
