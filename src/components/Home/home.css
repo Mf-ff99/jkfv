@@ -20,7 +20,8 @@
 }
 
 .xcam-img{
-    width: 150px;
+    width: 135px;
+    height: 47px;
     background-color: black;
     border-radius: 10px;
 }
@@ -138,5 +139,26 @@
     justify-content: center;
     align-items: center;
 
+}
+
+.about-work-header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary);
+}
+
+.about-work-header span {
+    justify-content: flex-end;
+}
+
+.video {
+    margin: 1em;
+}
+
+.about-work-examples {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    padding: 1em;
 }
 
