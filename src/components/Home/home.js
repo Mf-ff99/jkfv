@@ -5,6 +5,7 @@ import ArrowLogo from '../../images/down-arrow.png'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Logo2 from '../../images/logo_attempt_2_jordy.png'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import ReactPlayer from 'react-player/lazy'
 import PhotoBoat from '../../images/photoboat.jpg'
 import MFD5000 from '../../images/RED-MFD-5000.jpg'
@@ -12,12 +13,23 @@ import MFD5000 from '../../images/RED-MFD-5000.jpg'
 
 export default function Home() {
     return (
+        <>
+                <div className="background-video-container">
+                    <ReactPlayer
+                    url="https://vimeo.com/203179504"
+                    playing={true}
+                    controls={false}
+                    volume={0}
+                    width='100%'
+                    height='100%'
+                    loop={true}
+                    />
+                </div>
         <section className="landing">
             <div className="landing-page">
 
-                <div className="background-color">
-
-                </div>
+                <div className="background-video">
+                
                 <div className="logo-container">
                     <img className='jordy-logo' src={Logo2} alt="company logo" />
                 </div>
@@ -32,11 +44,15 @@ export default function Home() {
             <div className='arrow'>
 
                 <span className='fancy-text-pointer'></span>
-                <img className='arrow-pointer' src={ArrowLogo} alt='arrow for scrolling' />
+                <HashLink smooth to="#about-work-view">
+                    <img className='arrow-pointer' src={ArrowLogo} alt='arrow for scrolling' />
+                </HashLink>
+            </div>
             </div>
             <br />
             <br />
-            <div className='about-work'>
+            <div className='about-work' id="about-work-view">
+                
                 {/* <span className='about-header-words'> Jordy's team has the tools and industry knowledge to get any shot a director could possibly want </span> */}
                 <div className='about-work-header'>
                 </div>
@@ -93,7 +109,7 @@ export default function Home() {
             </section>
             <br />
             <section className='jordys-aerials'>
-                 {/* <ReactPlayer
+                {/* <ReactPlayer
                             className='video-2-player'
                             url='https://vimeo.com/445579276'
                             playing={false}
@@ -108,27 +124,28 @@ export default function Home() {
                         />  */}
                 <div className='margin-divider'>
 
-                <div className='mfd-5000-drone'>
-                    <img src={MFD5000} className='img mfd-5000' alt='MFD 5000 heavy lift drone'/>
+                    <div className='mfd-5000-drone'>
+                        <img src={MFD5000} className='img mfd-5000' alt='MFD 5000 heavy lift drone' />
                     </div>
-                <div className='span-holder'>
-                    <span>
-                        Photoboats, heavy-lift drones, robotic cranes? The real question is: what can't we do?
+                    <div className='span-holder'>
+                        <span>
+                            From photoboats to heavy-lift drones and robotic cranes, Jordy's team has it all
                         </span>
-                </div>
+                    </div>
                 </div>
             </section>
-            <div className="hr-container" id="hr-container-about">
+            {/* <div className="hr-container" id="hr-container-about">
                 <div className="content">
                     <p>Jordan Klein Jr. is a legendary award-winning Director of Photography, ace pilot, and an underwater diving expert</p>
                 </div>
-            </div>
+            </div> */}
             {/* <div className="hr-container-2">
                 <div className="content-2">
                     <p>JKF & V has all the tools your shoot needs to get the job done</p>
                 </div>
             </div> */}
         </section>
+        </>
     )
 
 }
