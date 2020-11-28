@@ -10,12 +10,18 @@ import ReactPlayer from 'react-player/lazy'
 import PhotoBoat from '../../images/photoboat.jpg'
 import MFD5000 from '../../images/RED-MFD-5000.jpg'
 
-
+const PhotoboatDemo = "https://vimeo.com/460494916"
+const YardSale = "https://secureservercdn.net/198.71.233.44/23d.ff1.myftpupload.com/wp-content/uploads/2019/10/Yard-Sale_2.mp4"
+const MFD = "https://secureservercdn.net/198.71.233.44/23d.ff1.myftpupload.com/wp-content/uploads/2019/11/MFD_1.mp4"
 export default function Home() {
     return (
         <>
-                <div className="background-video-container">
-                    <ReactPlayer
+            <div className="background-video-container">
+                <video loop="loop" autoPlay playsInline muted >
+                    <source type="video/mp4" src={YardSale} />
+
+                </video>
+                {/* <ReactPlayer
                     url="https://vimeo.com/203179504"
                     playing={true}
                     controls={false}
@@ -23,93 +29,99 @@ export default function Home() {
                     width='100%'
                     height='100%'
                     loop={true}
-                    />
-                </div>
-        <section className="landing">
-            <div className="landing-page">
+                    /> */}
+            </div>
+            <section className="landing">
+                <div className="landing-page">
 
-                <div className="background-video">
-                
-                <div className="logo-container">
-                    <img className='jordy-logo' src={Logo2} alt="company logo" />
-                </div>
-                <div className="social-links">
-                    <i class="fab fa-instagram-square fa-3x"></i>
-                    <i class="fab fa-facebook-square fa-3x"></i>
-                    <i class="fab fa-linkedin fa-3x"></i>
-                    <img src={Logo} alt="Xcam Aerials Logo" className="xcam-img" />
-                    <i class="fab fa-vimeo-v fa-3x"></i>
-                </div>
-            </div>
-            <div className='arrow'>
+                    {/* <div className="background-video"> */}
 
-                <span className='fancy-text-pointer'></span>
-                <HashLink smooth to="#about-work-view">
-                    <img className='arrow-pointer' src={ArrowLogo} alt='arrow for scrolling' />
-                </HashLink>
-            </div>
-            </div>
-            <br />
-            <br />
-            <div className='about-work' id="about-work-view">
-                
-                {/* <span className='about-header-words'> Jordy's team has the tools and industry knowledge to get any shot a director could possibly want </span> */}
-                <div className='about-work-header'>
-                </div>
-                <div className='about-work-examples'>
-                    <div className='video video-1'>
-                        <ReactPlayer
-                            className='video-1-player'
-                            url='https://vimeo.com/458941481'
-                            playing={false}
-                            controls={true}
-                            width='100%'
-                            height='100%'
-                        />
+                    <div className="logo-container">
+                        <img className='jordy-logo' src={Logo2} alt="company logo" />
                     </div>
-                    <div className='video video-2'>
-                        <ReactPlayer
-                            className='video-2-player'
-                            url='https://vimeo.com/474146943'
-                            playing={false}
-                            controls={true}
-                            width='100%'
-                            height='100%'
-                        />
-
-                    </div>
-                    <div className='video video-3'>
-                        <ReactPlayer
-                            className='video-2-player'
-                            url='https://vimeo.com/331116301'
-                            playing={false}
-                            width='100%'
-                            height='100%'
-                            // volume={.1}
-                            // playing={true}
-                            // muted={true}
-                            controls={true}
-
-                        />
+                    <div className="social-links">
+                        <i class="fab fa-instagram-square fa-3x"></i>
+                        <i class="fab fa-facebook-square fa-3x"></i>
+                        <i class="fab fa-linkedin fa-3x"></i>
+                        {/* <img src={Logo} alt="Xcam Aerials Logo" className="xcam-img" /> */}
+                        <i class="fab fa-vimeo-square fa-3x"></i>
                     </div>
                 </div>
-            </div>
-            <br />
-            <br />
-            <section className='jordys-specialties'>
-                <div className='span-holder'>
+                <div className='arrow'>
 
-                    <span>Our custom equipment is one of a kind and second to none</span>
+                    <span className='fancy-text-pointer'></span>
+                    <HashLink smooth to="#about-work-view">
+                        <img className='arrow-pointer' src={ArrowLogo} alt='arrow for scrolling' />
+                    </HashLink>
                 </div>
+                {/* </div> */}
+                <br />
+                <br />
+                <div className='about-work' id="about-work-view">
 
-                <div className='video photoboat'>
+                    {/* <span className='about-header-words'> Jordy's team has the tools and industry knowledge to get any shot a director could possibly want </span> */}
+                    <div className='about-work-header'>
+                    </div>
+                    <div className='about-work-examples'>
+                        <div className='video video-1'>
+                            <ReactPlayer
+                                className='video-1-player'
+                                url='https://vimeo.com/458941481'
+                                playing={false}
+                                controls={true}
+                                width='100%'
+                                height='100%'
+                            />
+                        </div>
+                        <div className='video video-2'>
+                            <ReactPlayer
+                                className='video-2-player'
+                                url='https://vimeo.com/474146943'
+                                playing={false}
+                                controls={true}
+                                width='100%'
+                                height='100%'
+                            />
 
-                    <img src={PhotoBoat} className='img photoboat-img' />
+                        </div>
+                        <div className='video video-3'>
+                            <ReactPlayer
+                                className='video-2-player'
+                                url='https://vimeo.com/331116301'
+                                playing={false}
+                                width='100%'
+                                height='100%'
+                                // volume={.1}
+                                // playing={true}
+                                // muted={true}
+                                controls={true}
+
+                            />
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <br />
-            <section className='jordys-aerials'>
-                {/* <ReactPlayer
+                <br />
+                <br />
+                <section className='jordys-specialties'>
+                    {/* <div className="background-video-container-2">
+                        <video loop="loop" autoPlay playsInline muted >
+                            <source type="video/mp4" src={MFD} />
+
+                        </video>
+                    </div> */}
+                    <div className='span-holder'>
+
+                        <span>Our custom equipment is one of a kind and second to none</span>
+                    </div>
+
+                    <div className='video photoboat'>
+
+                        <img src={PhotoBoat} className='img photoboat-img' />
+                    </div>
+                </section>
+                <br />
+                <section className='jordys-aerials'>
+                    {/* <ReactPlayer
                             className='video-2-player'
                             url='https://vimeo.com/445579276'
                             playing={false}
@@ -122,29 +134,29 @@ export default function Home() {
                             loop={true}
                             
                         />  */}
-                <div className='margin-divider'>
+                    <div className='margin-divider'>
 
-                    <div className='mfd-5000-drone'>
-                        <img src={MFD5000} className='img mfd-5000' alt='MFD 5000 heavy lift drone' />
-                    </div>
-                    <div className='span-holder'>
-                        <span>
-                            From photoboats to heavy-lift drones and robotic cranes, Jordy's team has it all
+                        <div className='mfd-5000-drone'>
+                            <img src={MFD5000} className='img mfd-5000' alt='MFD 5000 heavy lift drone' />
+                        </div>
+                        <div className='span-holder'>
+                            <span>
+                                From photoboats to heavy-lift drones and robotic cranes, Jordy's team has it all
                         </span>
+                        </div>
                     </div>
-                </div>
-            </section>
-            {/* <div className="hr-container" id="hr-container-about">
+                </section>
+                {/* <div className="hr-container" id="hr-container-about">
                 <div className="content">
                     <p>Jordan Klein Jr. is a legendary award-winning Director of Photography, ace pilot, and an underwater diving expert</p>
                 </div>
             </div> */}
-            {/* <div className="hr-container-2">
+                {/* <div className="hr-container-2">
                 <div className="content-2">
                     <p>JKF & V has all the tools your shoot needs to get the job done</p>
                 </div>
             </div> */}
-        </section>
+            </section>
         </>
     )
 
