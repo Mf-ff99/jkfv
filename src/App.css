@@ -8,10 +8,24 @@
 body {
   /* background: rgb(2,0,36);
 background: linear-gradient(30deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 39%, rgba(0,212,255,1) 98%); */
-background: whitesmoke;
-width: 100vw;
-height: 100vh;
+/* background: red; */
+/* width: 100vw;
+height: 100vh; */
 font-family: 'Montserrat', sans-serif;
+min-width: 100%;
+height: auto;
+margin: 0px;
+padding: 0px;
+overflow-x: hidden; 
+}
+
+body::-webkit-scrollbar {
+	/* display: none; */
+}
+
+main {
+	padding: 0;
+	margin: 0;
 }
 
 @-webkit-keyframes gradientBG {

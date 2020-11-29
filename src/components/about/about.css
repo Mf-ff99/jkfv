@@ -61,7 +61,7 @@ h1 {
     color: whitesmoke;
     font-size: 24px;
     margin-left: 10%;
-    margin-right: 10%;
+    /* margin-right: 10%; */
     margin-top: 5em;
     position: relative;
 }

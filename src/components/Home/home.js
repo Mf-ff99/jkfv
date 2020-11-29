@@ -35,28 +35,27 @@ export default function Home() {
                 <div className="landing-page">
 
                     {/* <div className="background-video"> */}
-
-                    <div className="logo-container">
-                        <img className='jordy-logo' src={Logo2} alt="company logo" />
+                    <div className="landing-container">
+                        <div className="logo-container">
+                            <img className='jordy-logo' src={Logo2} alt="company logo" />
+                        </div>
+                        <div className="social-links">
+                            <i class="fab fa-instagram-square fa-3x"></i>
+                            <i class="fab fa-facebook-square fa-3x"></i>
+                            <i class="fab fa-linkedin fa-3x"></i>
+                            {/* <img src={Logo} alt="Xcam Aerials Logo" className="xcam-img" /> */}
+                            <i class="fab fa-vimeo-square fa-3x"></i>
+                        </div>
                     </div>
-                    <div className="social-links">
-                        <i class="fab fa-instagram-square fa-3x"></i>
-                        <i class="fab fa-facebook-square fa-3x"></i>
-                        <i class="fab fa-linkedin fa-3x"></i>
-                        {/* <img src={Logo} alt="Xcam Aerials Logo" className="xcam-img" /> */}
-                        <i class="fab fa-vimeo-square fa-3x"></i>
+                    <div className='arrow'>
+
+                        <span className='fancy-text-pointer'></span>
+                        <HashLink smooth to="#about-work-view">
+                            <img className='arrow-pointer' src={ArrowLogo} alt='arrow for scrolling' />
+                        </HashLink>
                     </div>
                 </div>
-                <div className='arrow'>
-
-                    <span className='fancy-text-pointer'></span>
-                    <HashLink smooth to="#about-work-view">
-                        <img className='arrow-pointer' src={ArrowLogo} alt='arrow for scrolling' />
-                    </HashLink>
-                </div>
-                {/* </div> */}
-                <br />
-                <br />
+               
                 <div className='about-work' id="about-work-view">
 
                     {/* <span className='about-header-words'> Jordy's team has the tools and industry knowledge to get any shot a director could possibly want </span> */}
@@ -100,8 +99,8 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <br />
-                <br />
+                {/* <br />
+                <br /> */}
                 <section className='jordys-specialties'>
                     {/* <div className="background-video-container-2">
                         <video loop="loop" autoPlay playsInline muted >
@@ -111,7 +110,7 @@ export default function Home() {
                     </div> */}
                     <div className='span-holder'>
 
-                        <span>Our custom equipment is one of a kind and second to none</span>
+                        <span>Our custom equipment is custom built to get all the shots you need</span>
                     </div>
 
                     <div className='video photoboat'>
@@ -119,7 +118,7 @@ export default function Home() {
                         <img src={PhotoBoat} className='img photoboat-img' />
                     </div>
                 </section>
-                <br />
+                {/* <br /> */}
                 <section className='jordys-aerials'>
                     {/* <ReactPlayer
                             className='video-2-player'
@@ -141,10 +140,12 @@ export default function Home() {
                         </div>
                         <div className='span-holder'>
                             <span>
-                                From photoboats to heavy-lift drones and robotic cranes, Jordy's team has it all
+                                From photoboats to heavy-lift drones and robotic cranes...
                         </span>
                         </div>
                     </div>
+                </section>
+                <section className=''>
                 </section>
                 {/* <div className="hr-container" id="hr-container-about">
                 <div className="content">

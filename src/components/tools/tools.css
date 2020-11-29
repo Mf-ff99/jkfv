@@ -1,0 +1,45 @@
+section.tools {
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-width: 50em; */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (min-width: 600px) {
+    .MuiGrid-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 55em;
+    }
+}
+
+.MuiGrid-grid-xs-6 {
+        border: 5px solid red;
+        border-radius: 20px;
+        height: 30em;
+        padding: 5px;
+        margin: 10px;
+}
+
+.MuiGrid-grid-xs-6.spacing {
+    margin: 5px;
+}
+
+.card {
+    height: 30em;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 1em;
+    z-index: -1;
+}
