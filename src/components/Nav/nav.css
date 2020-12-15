@@ -80,7 +80,17 @@ nav ul li.logo a img {
 .right-side-nav {
    float: right;
    margin-right: 0;
+   transition: .2s ease-out;
    /* justify-content: flex-end; */
+}
+
+li.right-side-nav:hover {
+    transition: .4s ease-in;
+    border-bottom: 1px solid gray;
+}
+
+.right-side-nav:active {
+    border-bottom: 1px solid gray;
 }
 
 .end {

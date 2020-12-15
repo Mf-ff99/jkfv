@@ -1,17 +1,196 @@
+:root {
+    --primary: #333138;
+}
+
 section.tools {
     margin-top: 5em;
     padding-top: 1.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     /* min-width: 50em; */
     /* background-color: black; */
     z-index: -1;
 }
 
-section.tools .tools-header {
+div.tools-image-container {
+    max-width: 400px;
+}
+
+.tools-sidebar {
+    padding: 10px;
+    font-size: 10px;
+    position: fixed;
+    margin-top: 340px;
+    max-width: 300px;
+    z-index: 5;
+}
+
+.tools-sidebar li a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tool-sections {
+    text-align: center;
+    margin: 0 1vw 0 12vw;
+    color: white;
+    padding: 8px;
+}
+
+/* Tools Section Styles */
+
+.photoboats {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photoboats h3 {
+    color: black;
+}
+
+.photoboat {
+    background-color: #FFFFFA;
+    color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    min-width: 400px;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+    transition: .2s ease-out;
+}
+
+.photoboat:hover {
+    background-color: #b6c1ca;
+    transition: .4s ease;
+    border-radius: 5px;
+}
+
+.photoboat .shotcalla {
+    width: 100%;
+    margin: 10px;
+    /* min-width:90%; */
+    /* height: 90%; */
+    /* margin: 10px; */
+}
+
+.crane-header {
+    color: black;
+}
+
+.jib-video {
+    margin: 0 0 10px 30px;
+    padding: 0;
+}
+
+.header-info p{
+    max-width: 500px;
     
+}
+
+.pbj-image {
+    width: 100%;
+    margin: 10px;
+}
+
+.bigballer-image {
+    width: 100%;
+    margin: 10px;
+    /* height: 80%; */
+}
+
+.tool-sections hr {
+    border-bottom: 1px solid gray;
+    width: 90%;
+}
+.photoboat .header-info ul {
+    display: flex;
+    list-style: square;
+    flex-direction: column;
+}
+
+/* Cranes styles */
+
+.big-hr {
+    border: 5px solid gray;
+    width: 100%;
+}
+
+.cranes {
+    background-color: #FFFFFA;
+    color: black;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.crane {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 450px;
+    padding: 10px;
+    min-width: 440px;
+    /* border-right: 1px solid black; */
+    background-color: #FFFFFA;
+    border: 2px solid gray inset;
+    transition: .2s ease-out;
+}
+
+.crane:hover 
+{
+    background-color: #b6c1ca;
+    transition: .4s ease;
+    border-radius: 5px;
+}
+.triton-arm-image {
+    width: 100%;
+    margin: 10px;
+}
+
+/* Drone styles */
+
+.drones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.drone:hover {
+    background-color: #b6c1ca;
+    transition: .4s ease;
+    border-radius: 5px;
+}
+
+div.drones h3 {
+    color: black;
+    margin: 8px;
+}
+
+.drone {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 450px;
+    padding: 10px;
+    min-width: 440px;
+    /* border-right: 1px solid black; */
+    background-color: #FFFFFA;
+    color: black;
+    border: 2px solid gray inset;
+    transition: .2s ease-out;
 }
 
 main {
@@ -21,45 +200,9 @@ main {
     align-content: center;
 }
 
-@media (min-width: 600px) {
-    .MuiGrid-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 55em;
-    }
-}
-
-.MuiGrid-grid-xs-6 {
-        border: 5px solid red;
-        border-radius: 20px;
-        height: 30em;
-        padding: 5px;
-        margin: 10px;
-}
-
-.MuiGrid-grid-xs-6.spacing {
-    margin: 5px;
-}
-
-.card {
-    height: 30em;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    padding: 1em;
-    z-index: -1;
-    border: 5px solid red;
-    background-color: red;
-}
 
 .down-arrow {
     transition-duration: 1s ease-in;
-}
-
-.arrow-expanded {
-    transform: rotateX(180deg);
-    transition-duration: 1s ease-in-out;
 }
 
 section.tools ul {
@@ -72,11 +215,11 @@ section.tools ul {
 
 section.tools ul li {
     z-index: 1;
-    transition: 1s ease-in-out .5s;
+    transition: .2 ease-in-out .5s;
 }
 
 img.shotcalla {
-    width: 70%;
+    width: 60%;
 }
 
 .photoboat-container {
@@ -86,13 +229,13 @@ img.shotcalla {
     background-color: whitesmoke;
 }
 
-ul li:hover {
-    border-top: 1px solid black;
+a:hover {
+    color: gray;
 }
 
-section.tools ul li:hover {
+a:hover {
     color: gray;
-    transition: 1s ease-in-out 25ms;
+    transition: 100ms ease-in 25ms;
 }
 
 .photoboats-expanded-info {
