@@ -269,7 +269,7 @@ export default class Tools extends React.Component {
                                 <div className="header-info">
 
                                     <h4>Watt's Innovations MFD 5000</h4>
-                                    <p>In house we have two Inspire 2s available, each equipped with the X7 gimbal and a complete set of prime lenses. The I2 is a sturdy workhorse, and our drone crew is second to none. The pair of Inspires we currenly use have been used on the sets of The Right Stuff, the music video Twerk by City Girls, and many more.</p>
+                                    <p>The MFD 5000 is our heavylift drone. Capable of lifting almost any payload and boasting a 12-15 minute flight-time, the MFD is a powerful tool for filmmakers. Flying a full-size camera package with FIZ control, gimbal control, and a wireless video feed has never been easier.</p>
                                     <p>You can find out more about our Aerials by visiting <a href="http://xcamaerials.com/" noopener target="_blank">XcamAerials.com</a></p>
                                     <ul>
                                         <li>Heavy Lift UAS</li>

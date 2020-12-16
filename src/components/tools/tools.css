@@ -158,6 +158,15 @@ div.tools-image-container {
     width: 100%;
 }
 
+.header-info a {
+    text-decoration: underline;
+}
+
+.header-info a:hover {
+    text-decoration: underline;
+    color: gray !important;
+}
+
 .cranes {
     background-color: #FFFFFA;
     color: black;
