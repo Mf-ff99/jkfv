@@ -2,6 +2,10 @@
     --primary: #333138;
 }
 
+html {
+    scroll-padding-top: 100px;
+}
+
 section.tools {
     margin-top: 5em;
     padding-top: 1.5em;
@@ -33,6 +37,7 @@ div.tools-image-container {
 
 .tools-sidebar li a:hover {
     cursor: pointer;
+    border-bottom: 1px solid black;
     text-decoration: none;
 }
 
@@ -41,6 +46,10 @@ div.tools-image-container {
     margin: 0 1vw 0 12vw;
     color: black;
     padding: 8px;
+}
+
+.tool-sections ul {
+    list-style: square;
 }
 
 /* Tools Section Styles */

@@ -46,10 +46,11 @@ export default class Tools extends React.Component {
                     </div>
 
                 </section>
+                <span id="photoboats"></span>
                 <div className="tool-sections">
 
                         <h3>Photoboats</h3>
-                    <div className="photoboats" id="photoboats">
+                    <div className="photoboats">
                         <br />
                         <hr />
 
@@ -116,10 +117,12 @@ export default class Tools extends React.Component {
                         </div>
 
                     </div>
+                    <span id="cranes"></span>
                     <hr className="big-hr">
 
                     </hr>
-                        <h3 id="cranes" className="crane-header">Cranes</h3>
+                        <h3 className="crane-header">Cranes</h3>
+                    <hr style={{width: "90px"}}/>
                     <div className="cranes">
 
                         <div className="crane">
@@ -232,9 +235,10 @@ export default class Tools extends React.Component {
 
                         {/* crane ends here */}
                     </div>
+                    <span id="aerials"></span>
                             <hr />
                            {/* aerials begin here */}
-                            <h3 id="aerials">Aerials</h3>
+                            <h3>Aerials</h3>
                 <div className="drones" >
                            <div className="drone">
                             <div className="tools-image-container">
@@ -282,11 +286,11 @@ export default class Tools extends React.Component {
 
                 {/* drones section div */}
                 </div>
-                <hr className="big-hr"/>
+                <hr className="big-hr" id="cameracar"/>
             <h3>Camera Cars/Trailers</h3>
             <div className="lenses">
                
-            <div className="drone" id="cameracar">
+            <div className="drone">
                             <div className="tools-image-container">
                            
                             <ReactPlayer
@@ -302,24 +306,24 @@ export default class Tools extends React.Component {
                                     <h4>Camera Car</h4>
                                     <p>Our camera car is actually a camera truck! It is based on a Dodge 2500 chassis and has a full air ride suspension. The camera car can also accommodate up to 7 people in the back and 6 people in the front. The camera car can hold our 22' Robotic Arm as well as our 30' telescopic crane.</p>
                                     <ul>
-                                        <li>Heavy Lift UAS</li>
-                                        <li>Carries Ronin 2</li>
+                                        <li>Capable of running with our 22' Robotic Arm</li>
+                                        <li>Capable of running with our 30' telescopic crane</li>
+                                        <li>Carries Ronin 2, Movi XL</li>
                                         <li>Payload of an ARRI Alexa Mini or RED</li>
-                                        <li>Capable of lifting almost any lens</li>
-                                        <li>Speeds of up to 45mph</li>
-                                        <li>12-15 Minute flight time depending on payload</li>
-                                        <li>Onset charging for all-day shoots</li>
+                                        <li>Capable of lifting any lens</li>
+                                        <li>Speeds of up to 65mph with robotic arm</li>
+                                        <li>Onset charging for all-day operations</li>
                                     </ul>
                             </div>
                         </div>
                         {/* end of camera car */}
             </div>
-
+            <span id="lenses"></span>
             <hr className="big-hr"/>
             <h3>Lenses and Cameras</h3>
             <div className="lenses">
                
-            <div className="drone" id="lenses">
+            <div className="drone">
                             {/* <div className="tools-image-container">
                            
                             <ReactPlayer
