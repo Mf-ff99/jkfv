@@ -376,7 +376,7 @@ export default class Tools extends React.Component {
                                         <li>Arri Alexa Classic</li>
                                         <li>Arri Alexa Mini</li>
                                         <li>Sony F65</li>
-                                        <li>Panasonic GH4</li>
+                                        <li>Panasonic GH5</li>
                                         <li>Black Magic Pocket Cinema Camera</li>
                                     </ul>
                             </div>

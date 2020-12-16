@@ -10,7 +10,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #93A8AC;
+    /* background-color: #93A8AC; */
+    background-color: white;
     min-height: 100vh;
 }
 
@@ -34,7 +35,8 @@ h1 {
     padding: 20px 10% 20px 10%;
     border: 4px solid #53687e;
     border-radius: 1px;
-    background-color:#b5d5db; 
+    /* background-color:#b5d5db;  */
+    background-color: white;
     color: black;
     display: flex;
     flex-direction: column;

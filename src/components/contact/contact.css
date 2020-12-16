@@ -8,8 +8,9 @@
 
 .about-container {
     padding-top: 15px;
-    background-color: #93A8AC;
-    color: white;
+    /* background-color: #93A8AC; */
+    background-color: white;
+    color: black;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -20,18 +21,20 @@
 
 .contact-upper span {
     font-size: 24px;
-    border: 1px solid #FCFCFC;
+    /* border: 1px solid #FCFCFC; */
+    border: 1px solid black;
     margin-bottom: 10px;
     padding: 5px 10px 5px 10px;
 }
 
 .contact-upper span a {
-    color: #FCFCFC !important;
+    color: black !important;
     text-decoration: none;
 }
 
 .email:hover {
-    color: #FFFAE3 !important;
+    color: #6a8491 !important;
+    text-decoration: underline;
 }
 
 div.contact-upper {
@@ -41,12 +44,13 @@ div.contact-upper {
 }
 
 div.contact-upper hr {
-    border: 1px solid #FFFAE3;
+    border: 1px solid #1f2029;
     width: 250px;
 }
 
 .about-container-lower {
-    background-color: #FFFFFA;
+    background-color: white;
+    color: black;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -64,8 +68,9 @@ form {
 .form-style-4{
 	width: 350px;
 	font-size: 16px;
-    background: #b5d5db;
+    /* background: #b5d5db; */
     color: black;
+    background-color: white;
 	padding: 30px 30px 15px 30px;
 	border: 5px solid #53687E;
 }
