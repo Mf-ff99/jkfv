@@ -179,7 +179,7 @@ div.tools-image-container {
     min-width: 440px;
     /* border-right: 1px solid black; */
     background-color: #FFFFFA;
-    border: 2px solid gray inset;
+    /* border: 2px solid gray inset; */
     transition: .2s ease-out;
 }
 
@@ -229,7 +229,7 @@ div.drones h3 {
     /* border-right: 1px solid black; */
     background-color: #FFFFFA;
     color: black;
-    border: 2px solid gray inset;
+    /* border: 2px solid gray inset; */
     transition: .2s ease-out;
 }
 

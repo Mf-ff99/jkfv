@@ -239,6 +239,7 @@ export default class Tools extends React.Component {
                             <hr />
                            {/* aerials begin here */}
                             <h3>Aerials</h3>
+                            <hr style={{width: "90px"}}/>
                 <div className="drones" >
                            <div className="drone">
                             <div className="tools-image-container">
@@ -288,6 +289,7 @@ export default class Tools extends React.Component {
                 </div>
                 <hr className="big-hr" id="cameracar"/>
             <h3>Camera Cars/Trailers</h3>
+            <hr style={{width: "90px"}}/>
             <div className="lenses">
                
             <div className="drone">
@@ -321,6 +323,7 @@ export default class Tools extends React.Component {
             <span id="lenses"></span>
             <hr className="big-hr"/>
             <h3>Lenses and Cameras</h3>
+            <hr style={{width: "90px"}}/>
             <div className="lenses">
                
             <div className="drone">
