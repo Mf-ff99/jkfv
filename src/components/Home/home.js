@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import ReactPlayer from 'react-player/lazy'
 import PhotoBoat from '../../images/photoboat.jpg'
+import YS2 from '../../images/Yard-Sale_2.mp4'
 import MFD5000 from '../../images/RED-MFD-5000.jpg'
 
 const PhotoboatDemo = "https://vimeo.com/460494916"
@@ -18,7 +19,7 @@ export default function Home() {
         <>
             <div className="background-video-container">
                 <video loop="loop" autoPlay playsInline muted >
-                    <source type="video/mp4" src={YardSale} />
+                    <source type="video/mp4" src={YS2} />
 
                 </video>
                 {/* <ReactPlayer

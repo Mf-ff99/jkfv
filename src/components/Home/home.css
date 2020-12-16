@@ -309,7 +309,7 @@ section.jordys-aerials {
     height: 100%; 
     overflow: hidden;
 /* object-fit: fill !important; */
-    opacity: 60%;
+    opacity: .8;
     z-index: -1;
 }
 
