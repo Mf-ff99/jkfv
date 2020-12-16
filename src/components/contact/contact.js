@@ -4,43 +4,66 @@ import './contact.css'
 export default function Contact() {
     return (
         <>
-        <section className="contact-page">
-            <div className="about-page-container">
-            <div className="content">
+            <section className="contact-page">
+                <div className="about-container">
+                    <div className="contact-upper">
 
-            <h2>Jordan Klein Film & Video</h2>
-            <h4>Contact us directly:</h4>
-            <h4>Shoot us an email!</h4>
-            <h4>Find Jordy on instagram</h4>
-            <h4>Find Jordy on LinkedIn!</h4>
-            <h4>Find us on Facebook</h4>
-            </div>
-            </div>
-        </section>
-
-        <br />
-        <section className="contact-page">
-            <div className="about-page-container">
-                <div className='content'>
-                    <p>Contact Us</p>
-
-                    <form>
-                    <label htmlFor="name">Your name:</label>
-
-                        <input type="text" placeholder="yourname here!"></input>    
-                        {/* <br /> */}
-                        <label htmlFor="company-name">Associated Company</label>
-                        <input type="text" name="company-name" id="company-name"></input>
-                        <label htmlFor="phone">Enter your phone number</label>
+                        <h2>Contact Us</h2>
+                        <hr />
+                        <span>352-427-2560</span>
+                        <span><a className="email" href="mailto:jordy@jordy.com" >jordy@jordy.com</a></span>
+                    </div>
+                    <hr />
+                    <div className='contact-lower'>
                         
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+                            <form className="form-style-4" action="" method="post">
+                                <label htmlFor="field1">
+                                    <span>Enter Your Name</span><input type="text" name="field1" required/>
+                                </label>
+                                <label htmlFor="field2">
+                                    <span>Email Address</span><input type="email" name="field2" required />
+                                </label>
+                                <label htmlFor="field3">
+                                    <span>Subject</span><input type="text" name="field3" required />
+                                </label>
+                                <label htmlFor="field5">
+                                    <span>Company Name</span><input type="text" name="field5" required />
+                                </label>
+                                <label htmlFor="field6">
+                                    <span>Message</span><textarea name="field6"  required></textarea>
+                                </label>
+                                <label>
+                                    <span> </span><input type="submit" value="Submit" />
+                                </label>
+                            </form>
                     
-                        <button type="submit">Submit</button>    
-                    </form>   
-                </div>
-            </div>
+                    </div>
 
-        </section>
+                </div>
+            </section>
+
+            {/* <section className="contact-page">
+                <div className="about-container-lower">
+                    <div className='contact-lower'>
+                        <p>Contact Us</p>
+
+                        <form>
+                            <label htmlFor="name">Your name:</label>
+
+                            <input type="text" placeholder="yourname here!"></input>
+                            {/* <br /> */}
+            {/* <label htmlFor="company-name">Associated Company</label>
+                            <input type="text" name="company-name" id="company-name"></input>
+                            <label htmlFor="phone">Enter your phone number</label>
+
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div> */}
+
+
         </>
     )
 }

@@ -22,9 +22,13 @@ div.tools-image-container {
     padding: 10px;
     font-size: 10px;
     position: fixed;
-    margin-top: 340px;
+    margin-top: 380px;
     max-width: 300px;
     z-index: 5;
+    background-color: #93A8AC;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* height: 350px; */
 }
 
 .tools-sidebar li a:hover {
@@ -35,7 +39,7 @@ div.tools-image-container {
 .tool-sections {
     text-align: center;
     margin: 0 1vw 0 12vw;
-    color: white;
+    color: black;
     padding: 8px;
 }
 
@@ -88,6 +92,11 @@ div.tools-image-container {
 .jib-video {
     margin: 0 0 10px 30px;
     padding: 0;
+    width: auto;
+}
+
+.lenses {
+
 }
 
 .header-info p{
@@ -107,7 +116,7 @@ div.tools-image-container {
 }
 
 .tool-sections hr {
-    border-bottom: 1px solid gray;
+    border-bottom: 2px solid #495c70;
     width: 90%;
 }
 .photoboat .header-info ul {
@@ -119,7 +128,7 @@ div.tools-image-container {
 /* Cranes styles */
 
 .big-hr {
-    border: 5px solid gray;
+    border: 1px solid #495c70;
     width: 100%;
 }
 
@@ -162,9 +171,14 @@ div.tools-image-container {
 /* Drone styles */
 
 .drones {
+    background-color: #FFFFFA;
+    color: black;
+    margin: 0;
+    padding: 0;
+    left: 0;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .drone:hover {
@@ -191,6 +205,19 @@ div.drones h3 {
     color: black;
     border: 2px solid gray inset;
     transition: .2s ease-out;
+}
+
+/* lenses styles */
+
+.lenses {
+    background-color: #FFFFFA;
+    color: black;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 main {

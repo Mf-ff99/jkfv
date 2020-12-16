@@ -1,7 +1,140 @@
-form {
+.contact-page {
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container {
+    padding-top: 15px;
+    background-color: #93A8AC;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.contact-upper span {
+    font-size: 24px;
+    border: 1px solid #FCFCFC;
+    margin-bottom: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.contact-upper span a {
+    color: #FCFCFC !important;
+    text-decoration: none;
+}
+
+.email:hover {
+    color: #FFFAE3 !important;
+}
+
+div.contact-upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.contact-upper hr {
+    border: 1px solid #FFFAE3;
+    width: 250px;
+}
+
+.about-container-lower {
+    background-color: #FFFFFA;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-style-4{
+	width: 350px;
+	font-size: 16px;
+	background: #495C70;
+	padding: 30px 30px 15px 30px;
+	border: 5px solid #53687E;
+}
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button],
+.form-style-4 input[type=text],
+.form-style-4 input[type=email],
+.form-style-4 textarea,
+.form-style-4 label
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #fff;
+
+}
+.form-style-4 label {
+	/* display:block; */
+	margin-bottom: 10px;
+}
+.form-style-4 label > span{
+	/* display: inline-block; */
+	float: middle;
+	width: 150px;
+}
+.form-style-4 input[type=text],
+.form-style-4 input[type=email] 
+{
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #83A4C5;
+	width: 275px;
+	outline: none;
+	padding: 0px 0px 0px 0px;
+	font-style: italic;
+}
+.form-style-4 textarea{
+	font-style: italic;
+	padding: 0px 0px 0px 0px;
+	background: transparent;
+	outline: none;
+	border: 1px solid #83A4C5;
+	border-bottom: 1px solid #83A4C5;
+	width: 275px;
+	/* overflow: hidden; */
+	/* resize:none; */
+	/* height:30px; */
+}
+
+.form-style-4 textarea:focus {
+    border: 1px dashed #93A8AC;
+}
+
+.form-style-4 input[type=text]:focus,
+.form-style-4 input[type=email]:focus,
+.form-style-4 input[type=email] :focus
+{
+	border-bottom: 1px dashed #93A8AC;
+}
+
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button]{
+	background: #576E86;
+	border: none;
+	padding: 8px 10px 8px 10px;
+	border-radius: 5px;
+	color: #A8BACE;
+}
+.form-style-4 input[type=submit]:hover,
+.form-style-4 input[type=button]:hover{
+background: #394D61;
 }
 
 section {

@@ -1,8 +1,5 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
 import { HashLink } from 'react-router-hash-link'
-import { Grid, Card, Button, CardMedia } from '@material-ui/core'
-import DownArrow from '../../images/down-arrow.png'
 import Photoboat from '../../images/photoboat.jpg'
 import PBJ from '../../images/pbj.png'
 import Pontoon from '../../images/pontoon.png'
@@ -12,7 +9,7 @@ import TritonArm from '../../images/triton-arm.png'
 import Inspire from '../../images/Inspire-2.jpg'
 import MFD from '../../images/RED-MFD-5000.jpg'
 import './tools.css'
-import { Link } from 'react-router-dom'
+
 import ReactPlayer from 'react-player/lazy'
 
 
@@ -25,91 +22,7 @@ export default class Tools extends React.Component {
         expandedDrone: false,
     }
 
-    renderCard = (values) => {
-        console.log(values)
-        return (
-            <Card>
-                <h2>{values ? values.title : 'Photography Package'}</h2>
-                <div className='card-img'>
-                    <Button type='click' onClick={() => this.setState({ toDisplay: true })}>
-                        <img className="down-arrow" src={DownArrow} alt='down arrow' />
-                    </Button>
-                </div>
-            </Card>
-        )
-    }
-
-    renderExpandedDrones = () => {
-        return (
-            <Card>
-                <h2>Aerial Packages</h2>
-                <ul>
-                    <h4>More information on our Aerial photography can be found at our XCam Aerials website below</h4>
-                    <Button>
-                        <li className="photoboat-container">
-                            <a href="http://xcamaerials.com/" target="_blank" >XCam Aerials</a>
-                        </li>
-                    </Button>
-                </ul>
-                <div className='card-img'>
-                    <Button type='click' onClick={() => this.setState({ expandedDrone: false })}>
-                        <img className="arrow-expanded" src={DownArrow} alt='down arrow' />
-                    </Button>
-                </div>
-            </Card>
-        )
-    }
-
-    renderExpandedPhotoboat = () => {
-        return (
-            <Card>
-                <h2>The Fleet</h2>
-                <ul>
-                    <Button>
-                        <li className="photoboat-container">
-                            <h4>
-                                The Shotcalla
-                            </h4>
-                            <CardMedia>
-                                <img className="shotcalla" src={Photoboat} alt='the shotcalla' />
-                            </CardMedia>
-                        </li>
-                    </Button>
-                    <Button>
-                        <li className="photoboat-container">
-                            <h4>
-                                Photoboat Jr. (PBJ)
-                        </h4>
-                            <CardMedia>
-                                <img className="shotcalla" src={PBJ} alt='the shotcalla' />
-                            </CardMedia>
-                        </li>
-                    </Button>
-                    <Button>
-                        <li className="photoboat-container">
-                            <h4>
-                                The Big Baller
-                        </h4>
-                            <CardMedia>
-                                <img className="shotcalla" src={Pontoon} alt='the shotcalla' />
-                            </CardMedia>
-                        </li>
-                    </Button>
-
-                </ul>
-                <div className='card-img'>
-                    <Button type='click' onClick={() => this.setState({ toDisplayPhotoboat: false })}>
-                        <img className="arrow-expanded" src={DownArrow} alt='down arrow' />
-                    </Button>
-                </div>
-            </Card>
-        )
-    }
-
-    PhotoboatCardInfo = {
-        title: 'The Photoboats'
-    }
-
+  
     renderCrane = () => {
 
     }
@@ -128,16 +41,16 @@ export default class Tools extends React.Component {
                             <li><HashLink smooth to="#aerials">Aerials</HashLink></li>
                             <li><HashLink smooth to="#cameracar">Camera Car</HashLink></li>
                             <li><HashLink smooth to="#lenses">Lenses</HashLink></li>
-                            <li><HashLink smooth to="#cameras">Cameras</HashLink></li>
+                            <li><HashLink smooth to="#lenses">Cameras</HashLink></li>
                         </ul>
                     </div>
 
                 </section>
                 <div className="tool-sections">
 
+                        <h3>Photoboats</h3>
                     <div className="photoboats" id="photoboats">
                         <br />
-                        <h3>Photoboats</h3>
                         <hr />
 
                         {/* <div id="photoboats" className="photoboat-container"> */}
@@ -321,12 +234,12 @@ export default class Tools extends React.Component {
                     </div>
                             <hr />
                            {/* aerials begin here */}
-                <div className="drones" id="aerials">
-                            <h3>Aerial Production</h3>
+                            <h3 id="aerials">Aerials</h3>
+                <div className="drones" >
                            <div className="drone">
                             <div className="tools-image-container">
                            
-                                <img className="shotcalla" src={Inspire} alt='Inspire 2 image' />
+                                <img className="pbj-image" src={Inspire} alt='Inspire 2 image' />
                                 </div>
                                 <div className="header-info">
 
@@ -346,12 +259,13 @@ export default class Tools extends React.Component {
                         <div className="drone">
                             <div className="tools-image-container">
                            
-                                <img className="shotcalla" src={MFD} alt='Inspire 2 image' />
+                                <img className="pbj-image" src={MFD} alt='Inspire 2 image' />
                                 </div>
                                 <div className="header-info">
 
                                     <h4>Watt's Innovations MFD 5000</h4>
                                     <p>In house we have two Inspire 2s available, each equipped with the X7 gimbal and a complete set of prime lenses. The I2 is a sturdy workhorse, and our drone crew is second to none. The pair of Inspires we currenly use have been used on the sets of The Right Stuff, the music video Twerk by City Girls, and many more.</p>
+                                    <p>You can find out more about our Aerials by visiting <a href="http://xcamaerials.com/" noopener target="_blank">XcamAerials.com</a></p>
                                     <ul>
                                         <li>Heavy Lift UAS</li>
                                         <li>Carries Ronin 2</li>
@@ -368,6 +282,102 @@ export default class Tools extends React.Component {
 
                 {/* drones section div */}
                 </div>
+                <hr className="big-hr"/>
+            <h3>Camera Cars/Trailers</h3>
+            <div className="lenses">
+               
+            <div className="drone" id="cameracar">
+                            <div className="tools-image-container">
+                           
+                            <ReactPlayer
+                                className='video-2-player'
+                                url='https://vimeo.com/338239605'
+                                playing={false}
+                                controls={true}
+                                width='100%'
+                                height='100%'
+                            />                                </div>
+                                <div className="header-info">
+                                
+                                    <h4>Camera Car</h4>
+                                    <p>Our camera car is actually a camera truck! It is based on a Dodge 2500 chassis and has a full air ride suspension. The camera car can also accommodate up to 7 people in the back and 6 people in the front. The camera car can hold our 22' Robotic Arm as well as our 30' telescopic crane.</p>
+                                    <ul>
+                                        <li>Heavy Lift UAS</li>
+                                        <li>Carries Ronin 2</li>
+                                        <li>Payload of an ARRI Alexa Mini or RED</li>
+                                        <li>Capable of lifting almost any lens</li>
+                                        <li>Speeds of up to 45mph</li>
+                                        <li>12-15 Minute flight time depending on payload</li>
+                                        <li>Onset charging for all-day shoots</li>
+                                    </ul>
+                            </div>
+                        </div>
+                        {/* end of camera car */}
+            </div>
+
+            <hr className="big-hr"/>
+            <h3>Lenses and Cameras</h3>
+            <div className="lenses">
+               
+            <div className="drone" id="lenses">
+                            {/* <div className="tools-image-container">
+                           
+                            <ReactPlayer
+                                className='video-2-player'
+                                url='https://vimeo.com/338239605'
+                                playing={false}
+                                controls={true}
+                                width='100%'
+                                height='100%'
+                            />                                </div> */}
+                                <div className="header-info">
+                                
+                                    <h4>Lenses</h4>
+                                    <p>We maintain a large inventory of the latest lenses. We do not rent lenses on their own, but we do send them out with one of our camera packages with a minimum of one camera tech or a 2nd A/C. We're not a rental house, but we do have a lot of gear!</p>
+                                    <ul>
+                                        <li>2x sets or Ziess Superspeed MKIII</li>
+                                        <li>Nikon prime lens set</li>
+                                        <li>Ziess 25-250 f3.2 zoom</li>
+                                        <li>9.8 Tegea</li>
+                                        <li>14mm Optar</li>
+                                        <li>Ziess 21-100mm f2.8</li>
+                                        <li> Sigma 18-35mm f2.8 </li>
+                                        <li>Sigma 28-70mm f2.8 </li>
+                                    </ul>
+                            </div>
+                        </div>
+
+                        <div className="drone" id="lenses">
+                            {/* <div className="tools-image-container">
+                           
+                            <ReactPlayer
+                                className='video-2-player'
+                                url='https://vimeo.com/338239605'
+                                playing={false}
+                                controls={true}
+                                width='100%'
+                                height='100%'
+                            />                                </div> */}
+                                <div className="header-info">
+                                
+                                    <h4>Cameras</h4>
+                                    <p>We have a large inventory of the latest cameras! We do rent out our camera packages with a minimum of one camera tech or a 2nd A/C. We're not a rental house, but we do have a lot of gear!</p>
+                                    <ul>
+                                        <li>Red Epic Dragon</li>
+                                        <li>Red Scarlet</li>
+                                        <li>Arri Amira</li>
+                                        <li>Arri Alexa Classic</li>
+                                        <li>Arri Alexa Mini</li>
+                                        <li>Sony F65</li>
+                                        <li>Panasonic GH4</li>
+                                        <li>Black Magic Pocket Cinema Camera</li>
+                                    </ul>
+                            </div>
+                        </div>
+
+                        {/* end of lenses */}
+            </div>
+                
 
                 </div>
             </>
