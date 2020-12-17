@@ -162,7 +162,7 @@ export default function Home() {
                         </div>
                         <div className='span-holder'>
                             <span>
-                            Our equipment is custom built to get all the shots you need. Our heavylift drones are built with all-day operations in mind. Feel free to <Link to='/contact'>contact us</Link> for pricing and more information.                        </span>
+                           Our heavylift drones are built with all-day operations in mind. Feel free to <Link to='/contact'>contact us</Link> for pricing and more information.                        </span>
                         </div>
                     </div>
                 </section>
