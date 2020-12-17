@@ -111,12 +111,6 @@ export default function Home() {
                     <img src={Clients} alt="client logos"></img>
                 </section>
                 <section className='jordys-specialties'>
-                    {/* <div className="background-video-container-2">
-                        <video loop="loop" autoPlay playsInline muted >
-                            <source type="video/mp4" src={MFD} />
-
-                        </video>
-                    </div> */}
                      <h3>Tools of the Trade</h3>
                      <hr style={{width: "90px", backgroundColor: "black"}} />
                     <div className="lower-section">
@@ -150,7 +144,10 @@ export default function Home() {
                     <div className='margin-divider'>
 
                         <div className='mfd-5000-drone'>
-                            <img src={MFD5000} className='img mfd-5000' alt='MFD 5000 heavy lift drone' />
+                        <video loop="loop" autoPlay playsInline muted>
+                    <source type="video/mp4" src={MFD} />
+
+                </video>
                         </div>
                         <div className='span-holder'>
                             <span>

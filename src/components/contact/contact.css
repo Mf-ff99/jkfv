@@ -7,7 +7,7 @@
 }
 
 .about-container {
-    padding-top: 15px;
+    padding-top: 35px;
     /* background-color: #93A8AC; */
     background-color: white;
     color: black;
@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 95vh;
+    height: 700px;
 }
 
 .contact-upper span {
