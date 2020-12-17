@@ -268,6 +268,14 @@ section.jordys-specialties {
     justify-content: center;
 }
 
+.lower-section .span-holder {
+    padding-right: 10px;
+}
+
+.lower-section .span-holder a {
+    color: black !important;
+}
+
 @media screen and (max-width: 650px) {
 
     section.jordys-aerials {

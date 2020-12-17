@@ -117,12 +117,23 @@ export default function Home() {
 
                     <div className='span-holder'>
 
-                        <span>Our custom equipment is custom built to get all the shots you need. Our robotic cranes and equipment are custom-built and tailored to get the shot. Check out our tools <Link to="/tools">here</Link></span>
+                        <span>From photoboats to camera cars of various sizes, our vehicles are capable of carrying any one of our robotic cranes. For more details, check out our tools <Link to="/tools">here</Link></span>
                     </div>
 
                     <div className=''>
-
-                        <img src={PhotoBoat} className='img photoboat-img' />
+                    <ReactPlayer
+                            className='video-2-player'
+                            url='https://vimeo.com/445579276'
+                            playing={false}
+                            width='440px'
+                            height='300px'
+                            // volume={.1}
+                            playing={true}
+                            muted={true}
+                            // controls={true}
+                            loop={true}
+                            
+                        />
                     </div>
                     </div>
                 </section>
@@ -151,7 +162,7 @@ export default function Home() {
                         </div>
                         <div className='span-holder'>
                             <span>
-                                From photoboats to heavy-lift drones and robotic cranes, our team has it all. Feel free to <Link to='/contact'>contact us</Link> for pricing and more information.                        </span>
+                            Our equipment is custom built to get all the shots you need. Our heavylift drones are built with all-day operations in mind. Feel free to <Link to='/contact'>contact us</Link> for pricing and more information.                        </span>
                         </div>
                     </div>
                 </section>
