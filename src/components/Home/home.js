@@ -151,8 +151,7 @@ export default function Home() {
                         </div>
                         <div className='span-holder'>
                             <span>
-                                From photoboats to heavy-lift drones and robotic cranes...
-                        </span>
+                                From photoboats to heavy-lift drones and robotic cranes, our team has it all. Feel free to <Link to='/contact'>contact us</Link> for pricing and more information.                        </span>
                         </div>
                     </div>
                 </section>

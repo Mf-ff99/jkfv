@@ -399,6 +399,11 @@ object-fit: fill !important;
     min-width: 10em;
 }
 
+.span-holder span a {
+    color: white !important;
+    text-decoration: underline;
+}
+
 .mfd-5000 {
     /* width: 60%; */
     /* margin-left: 8em; */
@@ -428,7 +433,8 @@ header a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    justify-content: center;
+    padding-top: 30px;
 }
 
 .clients img {
