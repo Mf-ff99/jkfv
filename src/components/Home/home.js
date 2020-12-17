@@ -10,7 +10,7 @@ import ReactPlayer from 'react-player/lazy'
 import PhotoBoat from '../../images/photoboat.jpg'
 import YS2 from '../../images/Yard-Sale_2.mp4'
 import MFD5000 from '../../images/RED-MFD-5000.jpg'
-
+import Clients from '../../images/clients.png'
 const PhotoboatDemo = "https://vimeo.com/460494916"
 const YardSale = "https://secureservercdn.net/198.71.233.44/23d.ff1.myftpupload.com/wp-content/uploads/2019/10/Yard-Sale_2.mp4"
 const MFD = "https://secureservercdn.net/198.71.233.44/23d.ff1.myftpupload.com/wp-content/uploads/2019/11/MFD_1.mp4"
@@ -41,11 +41,11 @@ export default function Home() {
                             <img className='jordy-logo' src={Logo2} alt="company logo" />
                         </div>
                         <div className="social-links">
-                            <i class="fab fa-instagram-square fa-3x"></i>
-                            <i class="fab fa-facebook-square fa-3x"></i>
-                            <i class="fab fa-linkedin fa-3x"></i>
+                            <i className="fab fa-linkedin fa-3x"></i>
+                            <i className="fab fa-facebook-square fa-3x"></i>
+                            <i className="fab fa-instagram-square fa-3x"></i>
                             {/* <img src={Logo} alt="Xcam Aerials Logo" className="xcam-img" /> */}
-                            <i class="fab fa-vimeo-square fa-3x"></i>
+                            <i className="fab fa-vimeo-square fa-3x"></i>
                         </div>
                     </div>
                     <div className='arrow'>
@@ -61,6 +61,8 @@ export default function Home() {
 
                     {/* <span className='about-header-words'> Jordy's team has the tools and industry knowledge to get any shot a director could possibly want </span> */}
                     <div className='about-work-header'>
+                       <h3>Our Work</h3>
+                       <hr style={{width: "90px", backgroundColor: "white"}} /> 
                     </div>
                     <div className='about-work-examples'>
                         <div className='video video-1'>
@@ -102,6 +104,12 @@ export default function Home() {
                 </div>
                 {/* <br />
                 <br /> */}
+
+                <section className="clients">
+                    <h3>Our Clients</h3>
+                    <hr style={{width: "90px", backgroundColor: "black"}} />
+                    <img src={Clients} alt="client logos"></img>
+                </section>
                 <section className='jordys-specialties'>
                     {/* <div className="background-video-container-2">
                         <video loop="loop" autoPlay playsInline muted >
@@ -109,14 +117,19 @@ export default function Home() {
 
                         </video>
                     </div> */}
+                     <h3>Tools of the Trade</h3>
+                     <hr style={{width: "90px", backgroundColor: "black"}} />
+                    <div className="lower-section">
+
                     <div className='span-holder'>
 
-                        <span>Our custom equipment is custom built to get all the shots you need</span>
+                        <span>Our custom equipment is custom built to get all the shots you need. Our robotic cranes and equipment are custom-built and tailored to get the shot. Check out our tools <Link to="/tools">here</Link></span>
                     </div>
 
-                    <div className='video photoboat'>
+                    <div className=''>
 
                         <img src={PhotoBoat} className='img photoboat-img' />
+                    </div>
                     </div>
                 </section>
                 {/* <br /> */}

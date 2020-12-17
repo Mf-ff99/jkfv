@@ -22,7 +22,8 @@
     margin-top: 8em;
     /*do not adjust margins here */
     /* border-radius: 20px; */
-    width: 80vw;
+    width: 100%;
+    margin-right: 0 !important;
     /* margin: 0; */
     padding: 0;
 }
@@ -165,7 +166,7 @@
     align-items: center;
     margin: 0 !important;
     padding: 0;
-    /* width: 100vw; */
+    width: 100vw;
 }
 
 .arrow-pointer {
@@ -186,13 +187,13 @@
 }
 
 .about-work {
-    margin-top: 0;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: black;
     color: white;
-    width: 100vw;
+    width: 100%;
 }
 
 @media screen and (max-width: 650px) {
@@ -204,6 +205,13 @@
 
 .about-work-header span {
     justify-content: flex-end;
+}
+
+.about-work-header {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .video {
@@ -229,8 +237,8 @@
 .about-work-examples {
     display: flex;
     flex-direction: row;
-    margin: 1em;
-    padding: 1em;
+    margin: 20px;
+    padding: 10px;
 }
 
 .about-header-words {
@@ -243,15 +251,21 @@
 
 section.jordys-specialties {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 11em;
+    height: 450px;
     /* padding-top: 4em; */
     background-color: white;
     z-index: 100;
     width: 100%;
-    height: 500px;
+    padding: 0 30px 0 30px;
+}
+
+.lower-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 650px) {
@@ -263,6 +277,10 @@ section.jordys-specialties {
     section.jordys-specialties {
         height: 400px !important;
         flex-direction: column !important;    
+    }
+
+    .lower-section {
+        flex-direction: column !important;
     }
     
     .margin-divider {
@@ -286,6 +304,10 @@ section.jordys-specialties {
     height: 11em;
 }
 
+.fab {
+    color: black;
+}
+
 section.jordys-aerials {
     background: black;
     width: 100%;
@@ -294,7 +316,8 @@ section.jordys-aerials {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 600px;
+    height: 450px;
+    padding: 0 20px 0 20px;
 }
 
 .background-video-container {
@@ -303,7 +326,7 @@ section.jordys-aerials {
     background-size: 100% 100%;
     top: 0px;
     left: 0px; /* fixed to left. Replace it by right if you want.*/
-    min-width: 100%;
+    min-width: 100vw;
     min-height: 100%;
      width: 100%;
     height: 100%; 
@@ -392,4 +415,18 @@ object-fit: fill !important;
 header a:hover {
     color: gray !important;
     transition-duration: .2s ease-in;
+}
+
+.clients {
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.clients img {
+    width: 100vw;
+    height: auto;
 }
