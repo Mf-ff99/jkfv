@@ -166,8 +166,8 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section className=''>
-                </section>
+                {/* <section className=''>
+                </section> */}
                 {/* <div className="hr-container" id="hr-container-about">
                 <div className="content">
                     <p>Jordan Klein Jr. is a legendary award-winning Director of Photography, ace pilot, and an underwater diving expert</p>

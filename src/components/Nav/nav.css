@@ -1,9 +1,9 @@
 nav {    
-position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
-    height: 6em;
+    height: 100px;
     display: flex;
     justify-content: flex-start;
     /* align-items: center; */

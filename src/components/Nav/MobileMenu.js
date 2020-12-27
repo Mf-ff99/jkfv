@@ -1,0 +1,98 @@
+import styled from 'styled-components'
+import React from 'react'
+import Logo from './jordy_logo.png'
+
+const UL = styled.ul`
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    margin-left: 0;
+    padding-left: 0;
+
+    li {
+        color: black !important;
+        padding: 18px 10px;
+    }
+
+    img {
+        padding: 0;
+        height: 90px;
+         
+    }
+    
+    a {
+        color: black !important;
+    }
+
+    .logo-text-left a {
+        width: 100px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .right-side-nav {
+        right: 0;
+        
+    }
+
+    @media (max-width: 768px) {
+        display: none !important;
+        display: flex;
+        flex-direction: column nowrap;
+        background-color: #0D2538;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 300px;
+        padding: 15px 0 0 0;
+
+    a {
+        color: white !important;
+    }
+        li {
+            color: white;
+        }
+
+    }
+`
+
+const MobileNav = () => {
+    return (
+        <UL>
+            <li className="logo">
+                <a href='/'><img src={Logo} /></a>
+
+                <span className="logo-text-left"><a href='/'>Jordan Klein Film & Video</a></span>
+            </li>
+            <li className="right-side-nav">
+                <a href="/work">Work</a>
+
+            </li>
+            <li className="right-side-nav">
+                <a href='/tools'>Tools</a>
+            </li>
+            <li className="right-side-nav">
+                <a href="/contact">Contact</a>
+
+            </li>
+            <li className="right-side-nav end">
+                <a href="/about">About</a>
+
+            </li>
+        </UL>
+    )
+
+}
+
+export default MobileNav
