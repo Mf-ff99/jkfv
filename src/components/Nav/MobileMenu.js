@@ -48,7 +48,7 @@ const UL = styled.ul`
     @media (max-width: 768px) {
         /* display: none !important; */
         display: flex;
-        flex-direction: column nowrap;
+        flex-direction: column !important;
         background-color: #0D2538;
         position: fixed;
         transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};

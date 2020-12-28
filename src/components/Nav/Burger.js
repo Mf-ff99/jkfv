@@ -4,13 +4,14 @@ import styled from 'styled-components'
 import MobileNav from './MobileMenu';
 
 const StyledBurger = styled.div`
+margin-top: 20px;
     width: 40px;
     height: 28px;
     top: 15px;
     right: 20px;
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
+    flex-flow: column nowrap;
     cursor: pointer;
     z-index: 100;
     /* float: right; */
