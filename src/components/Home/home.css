@@ -42,13 +42,15 @@ body {
     justify-content: center;
 }
 
-.logo-container {
+.logo-container { 
     display: flex;
+    flex-direction: column;
         justify-self: center;
 }
 
 .jordy-logo {
     width: 100%;
+    height: auto;
 }
 
 .xcam-img{

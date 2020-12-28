@@ -5,9 +5,11 @@ import Logo from './jordy_logo.png'
 const UL = styled.ul`
     list-style: none;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 100vw;
+    // min-height: 800px;
     margin-left: 0;
     padding-left: 0;
 
@@ -50,8 +52,8 @@ const UL = styled.ul`
         /* min-height: 400px; */
         display: flex;
         flex-direction: column !important;
-        /* justify-content: center !important; */
-        align-content: center !important;
+        justify-content: center !important;
+        align-items: center !important;
         background-color: #0D2538;
         position: fixed;
         transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
@@ -69,6 +71,11 @@ const UL = styled.ul`
             color: black;
         }
 
+        .logo {
+            flex-direction: column;
+            justify-content: center !important;
+        }
+
     }
 `
 
@@ -78,7 +85,7 @@ const MobileNav = ({ open }) => {
             <li className="logo">
                 <a href='/'><img src={Logo} /></a>
 
-                <span className="logo-text-left"><a href='/'>Jordan Klein Film & Video</a></span>
+                {open ? '' : <span className="logo-text-left"><a href='/'>Jordan Klein Film & Video</a></span>}
             </li>
             <li className="right-side-nav">
                 <a href="/work">Work</a>
