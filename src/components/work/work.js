@@ -1,5 +1,6 @@
 import React from 'react'
 import './work.css'
+import WorkCarousel from './Carousel'
 
 
 export default function Work() {
@@ -16,34 +17,7 @@ export default function Work() {
             </div>
 
             <div className="projects-grid">
-                <div classname="projects-row">
-                    <div className="projects-column">
-                        <div className="project">
-
-                            <h3>company logo goes here</h3>
-                            <h4>click to reveal video</h4>
-                        </div>
-                        <div className="project">
-
-                            <h3>company logo goes here</h3>
-                            <h4>click to reveal video</h4>
-                        </div>
-                    </div>
-                </div>
-                <div classname="projects-row">
-                    <div className="projects-column">
-                        <div className="project">
-
-                            <h3>company logo goes here</h3>
-                            <h4>click to reveal video</h4>
-                        </div>
-                        <div className="project">
-
-                            <h3>company logo goes here</h3>
-                            <h4>click to reveal video</h4>
-                        </div>
-                    </div>
-                </div>
+             <WorkCarousel />
             </div>
         </section>
     )
