@@ -37,6 +37,10 @@ margin-top: 20px;
             transform: ${({open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
         }
     }
+
+    @media (min-width: 768px) {
+        display: none !important;
+    }
 `;
 const Burger = () => {
     const [open, setOpen] = useState(false)
