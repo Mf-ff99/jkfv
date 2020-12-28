@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import './home.css'
 import Logo from '../../images/Logo.png'
+import logos from '../../images/logos/logos'
 import ArrowLogo from '../../images/down-arrow.png'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Logo2 from '../../images/logo_attempt_2_jordy.png'
@@ -108,35 +109,21 @@ export default function Home() {
                 <section className="clients">
                     <h3>Our Clients</h3>
                     <hr style={{width: "90px", backgroundColor: "black"}} />
-                    <img src={Clients} alt="client logos"></img>
+                    {/* <img src={Clients} alt="client logos"></img> */}
+                    <ul className='client-logos'>
+                        <li className='client-logo'><img src={logos.NFL} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.Redbull} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.SpaceX} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.Discovery} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.Nike} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.Nissan} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.NatGeo} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.Publix} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.Nasa} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.Malibu} alt="NFL logo" /></li>
+                    </ul>
                 </section>
-                <section className='jordys-specialties'>
-                     <h3>Tools of the Trade</h3>
-                     <hr style={{width: "90px", backgroundColor: "black"}} />
-                    <div className="lower-section">
-
-                    <div className='span-holder'>
-
-                        <span>From photoboats to camera cars of various sizes, our vehicles are capable of carrying any one of our robotic cranes. For more details, check out our tools <Link to="/tools">here</Link></span>
-                    </div>
-
-                    <div className='photoboat-running-shot'>
-                    <ReactPlayer
-                            className='video-2-player'
-                            url='https://vimeo.com/445579276'
-                            playing={false}
-                            width='300px'
-                            height='250px'
-                            // volume={.1}
-                            playing={true}
-                            muted={true}
-                            // controls={true}
-                            loop={true}
-                            
-                        />
-                    </div>
-                    </div>
-                </section>
+               
                 {/* <br /> */}
                 <section className='jordys-aerials'>
                     {/* <ReactPlayer
@@ -164,6 +151,33 @@ export default function Home() {
                             <span>
                            Our heavylift drones are built with all-day operations in mind. Feel free to <Link to='/contact'>contact us</Link> for pricing and more information.                        </span>
                         </div>
+                    </div>
+                </section>
+                <section className='jordys-specialties'>
+                     <h3>Tools of the Trade</h3>
+                     <hr style={{width: "90px", backgroundColor: "black"}} />
+                    <div className="lower-section">
+
+                    <div className='span-holder'>
+
+                        <span>From photoboats to camera cars of various sizes, our vehicles are capable of carrying any one of our robotic cranes. For more details, check out our tools <Link to="/tools">here</Link></span>
+                    </div>
+
+                    <div className='photoboat-running-shot'>
+                    <ReactPlayer
+                            className='video-2-player'
+                            url='https://vimeo.com/445579276'
+                            playing={false}
+                            width='300px'
+                            height='250px'
+                            // volume={.1}
+                            playing={true}
+                            muted={true}
+                            // controls={true}
+                            loop={true}
+                            
+                        />
+                    </div>
                     </div>
                 </section>
                 {/* <section className=''>
