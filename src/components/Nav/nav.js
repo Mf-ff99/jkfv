@@ -46,6 +46,10 @@ const NavStyled = styled.nav`
         justify-content: flex-end;
     }
 
+    @media (min-width: 768px) {
+        display: none !important;
+    }
+
   
 `;
 
