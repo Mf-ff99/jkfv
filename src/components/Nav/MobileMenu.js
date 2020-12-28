@@ -47,6 +47,7 @@ const UL = styled.ul`
 
     @media (max-width: 768px) {
         /* display: none !important; */
+    min-height: 400px;
         display: flex;
         flex-direction: column !important;
         background-color: #0D2538;
@@ -55,7 +56,7 @@ const UL = styled.ul`
         top: 0;
         right: 0;
         height: 100vh;
-        width: 300px;
+        width: 200px;
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;
 

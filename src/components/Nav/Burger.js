@@ -2,13 +2,18 @@ import { faHamburger } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import MobileNav from './MobileMenu';
+import Logo from './jordy_logo.png'
+
+
+
 
 const StyledBurger = styled.div`
-margin-top: 20px;
-    width: 40px;
-    height: 28px;
+margin-top: 10px;
+    width: 2rem;
+    height: 2rem;
     top: 15px;
-    right: 20px;
+    right: 30px;
+    margin-right: 10px;
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
@@ -16,9 +21,11 @@ margin-top: 20px;
     z-index: 100;
     /* float: right; */
     div {
-        border-bottom: 5px solid black;
+        width: 2rem;
+        height: .25rem;
+        border: 1px solid black;
         border-radius: 10px;
-        background-color: ${({open}) => open ? '#f1f1f1' : '#333'};
+        background-color: ${({open}) => open ? 'black' : '#333'};
         transform-origin: 1px;
         transition: all .3s;
 
@@ -47,6 +54,7 @@ const Burger = () => {
 
     return (
         <>
+            
         <StyledBurger open={open} onClick={() => setOpen(!open)}>
             <div></div>
             <div></div>

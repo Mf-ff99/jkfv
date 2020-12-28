@@ -4,7 +4,34 @@ import styled from 'styled-components'
 import Burger from './Burger'
 
 import Logo from './jordy_logo.png'
-import MobileMenu from './MobileMenu'
+
+
+const StyledLogo = styled.div`
+
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+        img {
+        padding: 0;
+        height: 90px; 
+    }
+    
+    a {
+        color: black !important;
+    }
+
+    .logo-text-left a {
+        width: 100px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    @media (min-width: 768px) {
+        display: none !important;
+        /* color: red !important; */
+    }
+`;
 
 const NavStyled = styled.nav`
     top: 0;
@@ -19,7 +46,7 @@ const NavStyled = styled.nav`
     list-style: none;
     /* width: 90%; */
     background-color: whitesmoke;
-    z-index: 100;
+    z-index: 0;
     /* margin: 0; */
     border-bottom: 2px solid #f1f1f1;
 
@@ -42,8 +69,25 @@ const NavStyled = styled.nav`
 
     }
 
+    .logo {
+        height: 90px;
+        width: 90px;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .logo span {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 20px;
+    }
+
     @media (max-width: 768px) {
-        justify-content: flex-end;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100vw;
     }
 
     /* @media (min-width: 768px) {
@@ -60,8 +104,8 @@ export default class Nav extends React.Component {
         return (
             <NavStyled>
                 {/* <MobileMenu> */}
-                    
-                    {/* <li className="logo">
+
+                {/* <li className="logo">
 
                 <a href='/'><img src={Logo}/></a>
                 <span className="logo-text-left"><a href='/'>Jordan Klein Film & Video</a></span>
@@ -83,6 +127,15 @@ export default class Nav extends React.Component {
                     </li> */}
 
                 {/* </MobileMenu> */}
+                <StyledLogo>
+
+                <a href='/'><img src={Logo} /></a>
+
+                <span className="logo-text-left"><a href='/'>Jordan Klein Film & Video</a></span>
+          
+                </StyledLogo>
+                
+
                 <Burger />
             </NavStyled>
         )
