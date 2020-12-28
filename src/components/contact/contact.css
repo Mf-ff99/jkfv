@@ -1,5 +1,5 @@
 .contact-page {
-    margin-top: 90px;
+    /* margin-top: 90px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +44,7 @@ div.contact-upper {
 }
 
 div.contact-upper hr {
-    border: 1px solid #1f2029;
+    border-bottom: 1px solid #1f2029;
     width: 250px;
 }
 
@@ -66,7 +66,8 @@ form {
 }
 
 .form-style-4{
-	width: 350px;
+    max-width: 320px;
+    min-width: 300px;
 	font-size: 16px;
     /* background: #b5d5db; */
     color: black;

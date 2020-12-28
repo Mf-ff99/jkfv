@@ -279,6 +279,10 @@ section.jordys-specialties {
 
 .lower-section .span-holder {
     padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .lower-section .span-holder a {
@@ -313,6 +317,7 @@ section.jordys-specialties {
     width: 60%;
     display: flex;
     justify-content: flex-start;
+    text-align: center;
     font-size: 1.5em;
     margin-left: 1.3em;
     /* background-color: white; */

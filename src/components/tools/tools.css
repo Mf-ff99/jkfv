@@ -3,7 +3,7 @@
 }
 
 html {
-    scroll-padding-top: 100px;
+    scroll-padding-top: 50px;
 }
 
 .header-info p {
@@ -15,6 +15,8 @@ html {
     background-color: whitesmoke !important;
     transition: .2s ease-out;
     border-radius: 5px;
+    max-width: 400px !important;
+    min-width: 320px !important;
 }
 
 .drone:hover, .crane:hover, .photoboat:hover {
@@ -24,15 +26,15 @@ html {
 }
 
 section.tools {
-    margin-top: 5em;
-    padding-top: 1.5em;
+    margin-top: 10px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     /* min-width: 50em; */
     /* background-color: black; */
-    z-index: -1;
+    z-index: 1;
 }
 
 div.tools-image-container {
@@ -44,8 +46,8 @@ div.tools-image-container {
     font-size: 10px;
     margin-top: 380px;
     max-width: 300px;
-    /* position: fixed; */
-    z-index: 5;
+    position: fixed;
+    z-index: 1;
     background-color: #93A8AC;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -55,6 +57,7 @@ div.tools-image-container {
 @media (max-width: 768px) {
     .tools-sidebar {
         position: relative !important;
+        z-index: 1;
     }
 }
 
@@ -95,10 +98,10 @@ div.tools-image-container {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    max-width: 440px;
-    min-width: 80%;
-    align-content: center;
-    justify-content: center;
+    max-width: 400px;
+    min-width: 320px;
+    align-items: center;
+    /* justify-content: center; */
     margin: 10px;
     transition: .2s ease-out;
 }
@@ -111,8 +114,9 @@ div.tools-image-container {
 
 .photoboat .shotcalla {
     width: 100%;
-    margin: 10px;
+    /* margin: 10px; */
     /* min-width:90%; */
+    /* max-width: 400px; */
     /* height: 90%; */
     /* margin: 10px; */
 }
@@ -131,19 +135,19 @@ div.tools-image-container {
 
 }
 
-.header-info p{
-    max-width: 500px;
+.header-info p {
+    max-width: 400px;
     
 }
 
 .pbj-image {
     width: 100%;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .bigballer-image {
     width: 100%;
-    margin: 10px;
+    /* margin: 10px; */
     /* height: 80%; */
 }
 
@@ -206,7 +210,7 @@ div.tools-image-container {
 }
 .triton-arm-image {
     width: 100%;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 /* Drone styles */
@@ -278,7 +282,7 @@ section.tools ul {
     list-style: none;
     font-size: 2em;
     color: black;
-    /* z-index: -100; */
+    z-index: -100;
 }
 
 section.tools ul li {

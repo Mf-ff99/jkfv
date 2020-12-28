@@ -63,6 +63,7 @@ const UL = styled.ul`
         width: 200px;
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;
+        z-index: 10;
 
     a {
         color: black !important;
