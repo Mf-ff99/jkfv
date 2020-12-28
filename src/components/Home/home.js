@@ -120,13 +120,13 @@ export default function Home() {
                         <span>From photoboats to camera cars of various sizes, our vehicles are capable of carrying any one of our robotic cranes. For more details, check out our tools <Link to="/tools">here</Link></span>
                     </div>
 
-                    <div className=''>
+                    <div className='photoboat-running-shot'>
                     <ReactPlayer
                             className='video-2-player'
                             url='https://vimeo.com/445579276'
                             playing={false}
-                            width='440px'
-                            height='300px'
+                            width='300px'
+                            height='250px'
                             // volume={.1}
                             playing={true}
                             muted={true}

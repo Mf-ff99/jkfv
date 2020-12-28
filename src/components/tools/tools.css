@@ -42,14 +42,20 @@ div.tools-image-container {
 .tools-sidebar {
     padding: 10px;
     font-size: 10px;
-    position: fixed;
     margin-top: 380px;
     max-width: 300px;
+    /* position: fixed; */
     z-index: 5;
     background-color: #93A8AC;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     /* height: 350px; */
+}
+
+@media (max-width: 768px) {
+    .tools-sidebar {
+        position: relative !important;
+    }
 }
 
 .tools-sidebar li a:hover {
@@ -89,8 +95,8 @@ div.tools-image-container {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 440px;
-    min-width: 400px;
+    max-width: 440px;
+    min-width: 80%;
     align-content: center;
     justify-content: center;
     margin: 10px;
@@ -183,9 +189,9 @@ div.tools-image-container {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    width: 450px;
+    max-width: 450px;
     padding: 10px;
-    min-width: 440px;
+    min-width: 80%;
     /* border-right: 1px solid black; */
     background-color: #FFFFFA;
     /* border: 2px solid gray inset; */
@@ -232,9 +238,9 @@ div.drones h3 {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    width: 450px;
+    max-width: 450px;
     padding: 10px;
-    min-width: 440px;
+    min-width: 80%;
     /* border-right: 1px solid black; */
     background-color: #FFFFFA;
     color: black;
@@ -322,17 +328,22 @@ a:hover {
 
 @media screen and (max-width: 650px) {
 
-    section.tools {
-        /* width: 100%; */
-        margin-top: 130px;
-        width: 100vw !important;
-        max-width: 650px !important;
+    .crane, .drone, .photoboat {
+        max-width: 320px !important;
     }
 
-    .tools-sidebar {
-        position: fixed !important;
+    section.tools {
+        /* width: 100%; */
         margin-top: 0;
-        flex-direction: row;
+        width: 100vw !important;
+        max-width: 650px !important;
+        flex-wrap: wrap;
+    }
+    
+    .tools-sidebar {
+        position: relative !important;
+        margin-top: 0;
+        flex-wrap: wrap;
         width: 100% !important;
         max-width: 100% !important;
     }
@@ -340,7 +351,7 @@ a:hover {
     .tools-sidebar ul {
         flex-wrap: wrap;
         display: flex;
-        flex-direction: row !important;
+        flex-direction: column;
         justify-content: space-between;
         width: 500px !important;
     }

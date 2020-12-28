@@ -47,9 +47,11 @@ const UL = styled.ul`
 
     @media (max-width: 768px) {
         /* display: none !important; */
-    min-height: 400px;
+        /* min-height: 400px; */
         display: flex;
         flex-direction: column !important;
+        /* justify-content: center !important; */
+        align-content: center !important;
         background-color: #0D2538;
         position: fixed;
         transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
