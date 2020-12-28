@@ -3,10 +3,12 @@
     padding: 0;
 }
 .page-view {
-    /* display: flex;
-    justify-content: center; */
     margin: 0;
     top: 0;
+}
+
+.home {
+    width: 100%;
 }
 
 .background-color {

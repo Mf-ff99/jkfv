@@ -46,30 +46,32 @@ const UL = styled.ul`
     }
 
     @media (max-width: 768px) {
-        display: none !important;
+        /* display: none !important; */
         display: flex;
         flex-direction: column nowrap;
         background-color: #0D2538;
         position: fixed;
+        transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
         top: 0;
         right: 0;
         height: 100vh;
         width: 300px;
         padding: 15px 0 0 0;
+        transition: .3s ease-in-out;
 
     a {
-        color: white !important;
+        color: black !important;
     }
         li {
-            color: white;
+            color: black;
         }
 
     }
 `
 
-const MobileNav = () => {
+const MobileNav = ({ open }) => {
     return (
-        <UL>
+        <UL open={open}>
             <li className="logo">
                 <a href='/'><img src={Logo} /></a>
 

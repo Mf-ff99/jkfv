@@ -16,7 +16,7 @@ const YardSale = "https://secureservercdn.net/198.71.233.44/23d.ff1.myftpupload.
 const MFD = "https://secureservercdn.net/198.71.233.44/23d.ff1.myftpupload.com/wp-content/uploads/2019/11/MFD_1.mp4"
 export default function Home() {
     return (
-        <>
+        <div className="home">
             <div className="background-video-container">
                 <video loop="loop" autoPlay playsInline muted >
                     <source type="video/mp4" src={YS2} />
@@ -179,7 +179,7 @@ export default function Home() {
                 </div>
             </div> */}
             </section>
-        </>
+        </div>
     )
 
 }

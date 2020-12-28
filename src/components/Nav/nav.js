@@ -25,7 +25,6 @@ const NavStyled = styled.nav`
 
     .logo {
         padding: 15px 0;
-
     }
 
     ul {
@@ -34,6 +33,8 @@ const NavStyled = styled.nav`
         flex-flow: nowrap;
         flex-direction: row;
         justify-content: space-around;
+        width: 100%;
+        background-color: whitesmoke;
     }
 
     li {
@@ -44,6 +45,8 @@ const NavStyled = styled.nav`
     @media (max-width: 768px) {
         justify-content: flex-end;
     }
+
+  
 `;
 
 export default class Nav extends React.Component {
@@ -52,7 +55,7 @@ export default class Nav extends React.Component {
     render() {
         return (
             <NavStyled>
-                <MobileMenu>
+                {/* <MobileMenu> */}
                     
                     {/* <li className="logo">
 
@@ -75,7 +78,7 @@ export default class Nav extends React.Component {
 
                     </li> */}
 
-                </MobileMenu>
+                {/* </MobileMenu> */}
                 <Burger />
             </NavStyled>
         )
