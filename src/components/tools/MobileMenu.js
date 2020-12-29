@@ -99,8 +99,8 @@ const MobileNav = ({ open }) => {
         <UL open={open}>
             <li><HashLink smooth to="#photoboats" >
                                 Photoboats</HashLink></li>
-                            <li><HashLink smooth to="#aerials">Aerials</HashLink></li>
                             <li><HashLink smooth to="#cranes">Cranes</HashLink></li>
+                            <li><HashLink smooth to="#aerials">Aerials</HashLink></li>
                             <li><HashLink smooth to="#cameracar">Camera Truck</HashLink></li>
                             <li><HashLink smooth to="#lenses">Lenses</HashLink></li>
                             <li><HashLink smooth to="#lenses">Cameras</HashLink></li>
