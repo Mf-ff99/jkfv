@@ -256,7 +256,7 @@ export default function Work() {
                     <h2>Drone + Helicopter Aerials</h2>
                     <br />
                     {/* <hr style={{borderBottom: '1px solid black', width: '90px'}} /> */}
-                    <p style={{width: '70%'}}>Aerial photography is an art, and no one does it better than our team here at Jordan Klein Film & Video. From flying full-size camera packages to the Mavic Pro 2, we have, and do, it all. You can find out more about our drones <Link to="/tools#aerials">here</Link>, and also on our dedicated <a href="http://xcamaerials.com" target="_blank" rel="noopener noreferrer" >XCam Aerials</a> website.</p>
+                    <p style={{width: '70%'}}>Aerial photography is an art, and no one does it better than our team here at Jordan Klein Film & Video. From flying full-size camera packages to the Mavic Pro 2, we have, and do, it all. You can find out more about our drones <Link to="/tools">here</Link>, and also on our dedicated <a href="http://xcamaerials.com" target="_blank" rel="noopener noreferrer" >XCam Aerials</a> website.</p>
                     
                     <hr />
                 </div>

@@ -156,7 +156,7 @@ export default function Home() {
 
                     <div className='span-holder'>
 
-                        <span className="tools-of-the-trade">From photoboats to camera cars of various sizes, our vehicles are capable of carrying any one of our robotic cranes. For more details, check out our tools <Link to="/tools">here</Link></span>
+                        <span className="tools-of-the-trade">From photoboats to camera cars of various sizes, our vehicles and teams are capable to take on any and every shot. For more details, you can check out our tools <Link to="/tools">here</Link></span>
                     </div>
 
                     <div className='photoboat-running-shot'>
@@ -197,7 +197,7 @@ export default function Home() {
                     </div>
                     <div className='span-holder'>
 
-                        <span className="photoboat-tool-text">From photoboats to camera cars of various sizes, our vehicles are capable of carrying any one of our robotic cranes. For more details on our equipment specifications, you can check out our tools of the trade <Link to="/tools" className='to-tools-link'>here</Link>.</span>
+                        <span className="photoboat-tool-text">Drones, camera cars, photoboats, and cranes of various sizes, our equipment is custom-built for smooth shooting and intense gigs. For more details on our equipment specifications, you can check out our tools of the trade <Link to="/tools" className='to-tools-link'>here</Link>.</span>
                         <span className="photoboat-tool-text"> Contact Jordy for more information on our <Link to="/contact">contact page</Link></span>
                     </div>
 
