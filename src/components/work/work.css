@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .projects-row {
@@ -139,6 +140,7 @@ section.work-page h6 {
 @media (min-width: 768px) {
     .projects-grid {
         margin: 0 100px 0 100px;
+        
     }
 
     .vimeo-video iframe {

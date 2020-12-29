@@ -22,7 +22,8 @@ export default function Work() {
             <div className="projects-grid">
                 <div className='project-header'>
                     <h2>Marine + Underwater</h2>
-                    <hr style={{borderBottom: '1px solid black', width: '90px'}} />
+                    <br />
+                    {/* <hr style={{borderBottom: '1px solid black', width: '90px'}} /> */}
                     <p style={{width: '70%'}}>Our work in the marine industry is second to none. Our 30' robotic crane is ideal for getting up close and personal. Jordy's team has the experience and knowledge to get any shot needed, no matter how big or small a task.</p>
                     
                     <hr />
@@ -150,7 +151,8 @@ export default function Work() {
 
             <div className='project-header'>
                     <h2>TechnoCranes and Camera Cars</h2>
-                    <hr style={{borderBottom: '1px solid black', width: '90px'}} />
+                    <br />
+                    {/* <hr style={{borderBottom: '1px solid black', width: '90px'}} /> */}
                     <p style={{width: '70%'}}>Our work in the automotive industry is vast, utilizing our 30' robotic crane with our camera truck. Our camera truck offers a 30' reach and full FIZ control from the passenger seats.</p>
                     
                     <hr />
@@ -252,7 +254,8 @@ export default function Work() {
 
                 <div className='project-header'>
                     <h2>Drone + Helicopter Aerials</h2>
-                    <hr style={{borderBottom: '1px solid black', width: '90px'}} />
+                    <br />
+                    {/* <hr style={{borderBottom: '1px solid black', width: '90px'}} /> */}
                     <p style={{width: '70%'}}>Aerial photography is an art, and no one does it better than our team here at Jordan Klein Film & Video. From flying full-size camera packages to the Mavic Pro 2, we have, and do, it all. You can find out more about our drones <Link to="/tools#aerials">here</Link>, and also on our dedicated <a href="http://xcamaerials.com" target="_blank" rel="noopener noreferrer" >XCam Aerials</a> website.</p>
                     
                     <hr />

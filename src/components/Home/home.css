@@ -305,7 +305,8 @@ section.jordys-specialties {
 @media screen and (max-width: 650px) {
 
     section.jordys-aerials {
-        height: 600px !important;
+        height: 650px !important;
+        padding-top: 25px;
     }
 
     section.jordys-specialties {
@@ -563,6 +564,7 @@ ul.client-logos li.client-logo img {
 
 .photoboat-tool-text {
     /* width: 60%; */
+    font-size: 18px;
     padding: 30px 0 0;
     text-align: center;
 }
@@ -573,7 +575,7 @@ ul.client-logos li.client-logo img {
     }
 
     section.jordys-aerials h2 {
-        padding-bottom: 30px;
+       
     }
 
     section.jordys-aerials {
