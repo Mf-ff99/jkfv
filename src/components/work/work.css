@@ -34,6 +34,30 @@
     height: 300px;
 }
 
+div.carousel ul li {
+    /* margin: 0; */
+}
+
+.projects-grid #player {
+    /* margin-right: 10px; */
+}
+
+.vimeo-video {
+    padding-bottom: 20px;
+}
+
+.project-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-header h3 {
+    margin: 20px 0 20px 0;
+    font-weight: 600;
+}
+
 @media screen and (max-width: 800px) {
     
 .projects-row {
@@ -58,4 +82,10 @@
     min-width: 320px;
     height: 300px;
 }
+}
+
+@media (min-width: 768px) {
+    .projects-grid {
+        margin: 0 100px 0 100px;
+    }
 }

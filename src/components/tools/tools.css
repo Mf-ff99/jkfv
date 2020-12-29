@@ -3,7 +3,7 @@
 }
 
 html {
-    scroll-padding-top: 50px;
+    /* scroll-padding-top: 50px; */
 }
 
 .header-info p {
@@ -45,13 +45,23 @@ div.tools-image-container {
     padding: 10px;
     font-size: 10px;
     margin-top: 380px;
-    max-width: 300px;
+    max-width: 200px;
     position: fixed;
     z-index: 1;
     background-color: #93A8AC;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     /* height: 350px; */
+}
+
+.tools-sidebar li {
+    width: 100vw;
+    margin: 0;
+}
+
+.tools-sidebar ul {
+    width: 100%;
+    margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -357,11 +367,15 @@ a:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 500px !important;
+        width: 100% !important;
     }
 
     .tool-sections {
         margin-top: 100px;
         margin-left: 0;
+    }
+
+    .tools-sidebar ul li {
+        width: 100%;
     }
 }

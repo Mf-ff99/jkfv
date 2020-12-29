@@ -10,8 +10,19 @@ export default class WorkCarousel extends Component {
         return (
             <Carousel>
                 <div>
-                    <img src={logos.NFL} />
-                    <p className="legend">Legend 1</p>
+                <ReactPlayer
+                            className='video-2-player'
+                            url='https://vimeo.com/445579276'
+                            playing={false}
+                            width='300px'
+                            height='250px'
+                            // volume={.1}
+                            playing={true}
+                            muted={true}
+                            // controls={true}
+                            loop={true}
+                            
+                        />
                 </div>
                 <div>
                     <img src={logos.NFL} />
