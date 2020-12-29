@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Burger from './Burger'
 
@@ -49,6 +48,7 @@ const NavStyled = styled.nav`
     z-index: 0;
     /* margin: 0; */
     border-bottom: 2px solid #f1f1f1;
+    font-size: 18px;
 
     .logo {
         padding: 15px 0;
@@ -84,6 +84,10 @@ const NavStyled = styled.nav`
         width: 20px;
     }
 
+    .logo-text-left a{
+        width: 120px !important;
+    }
+
     @media (max-width: 768px) {
         justify-content: space-between;
         padding: 10px;
@@ -103,39 +107,13 @@ export default class Nav extends React.Component {
     render() {
         return (
             <NavStyled>
-                {/* <MobileMenu> */}
-
-                {/* <li className="logo">
-
-                <a href='/'><img src={Logo}/></a>
-                <span className="logo-text-left"><a href='/'>Jordan Klein Film & Video</a></span>
-                    </li>
-                    <li className="right-side-nav">
-                <a href="/work">Work</a>
-
-                    </li>
-                    <li className="right-side-nav">
-                        <a href='/tools'>Tools</a>
-                    </li>
-                    <li className="right-side-nav">
-                <a href="/contact">Contact</a>
-
-                    </li>
-                    <li className="right-side-nav end">
-                <a href="/about">About</a>           
-
-                    </li> */}
-
-                {/* </MobileMenu> */}
                 <StyledLogo>
 
-                <a href='/'><img src={Logo} /></a>
+                <a href='/'><img src={Logo} alt="Jordan Klein Film and Video Logo" /></a>
 
                 <span className="logo-text-left"><a href='/'>Jordan Klein Film & Video</a></span>
           
                 </StyledLogo>
-                
-
                 <Burger />
             </NavStyled>
         )

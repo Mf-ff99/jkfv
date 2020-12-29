@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -9,9 +9,6 @@ import ReactPlayer from 'react-player/lazy';
 
 
 export default function Work() {
-    const renderProject = () => {
-
-    }
 
     return (
         <section className="work-page">
@@ -256,7 +253,7 @@ export default function Work() {
                 <div className='project-header'>
                     <h2>Drone + Helicopter Aerials</h2>
                     <hr style={{borderBottom: '1px solid black', width: '90px'}} />
-                    <p style={{width: '70%'}}>Aerial photography is an art, and no one does it better than our team here at Jordan Klein Film & Video. From flying full-size camera packages to the Mavic Pro 2, we have, and do, it all. You can find out more about our drones <Link to="/tools#aerials">here</Link>, and also on our dedicated <a href="http://xcamaerials.com" target="_blank" noopener noreferrer>XCam Aerials</a> website.</p>
+                    <p style={{width: '70%'}}>Aerial photography is an art, and no one does it better than our team here at Jordan Klein Film & Video. From flying full-size camera packages to the Mavic Pro 2, we have, and do, it all. You can find out more about our drones <Link to="/tools#aerials">here</Link>, and also on our dedicated <a href="http://xcamaerials.com" target="_blank" rel="noopener noreferrer" >XCam Aerials</a> website.</p>
                     
                     <hr />
                 </div>

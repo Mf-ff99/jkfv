@@ -1,8 +1,6 @@
-import { faHamburger } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import MobileNav from './MobileMenu';
-import Logo from './jordy_logo.png'
 
 
 

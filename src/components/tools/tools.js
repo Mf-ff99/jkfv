@@ -1,5 +1,4 @@
 import React from 'react'
-import { HashLink } from 'react-router-hash-link'
 import Photoboat from '../../images/photoboat.jpg'
 import PBJ from '../../images/pbj.png'
 import Pontoon from '../../images/pontoon.png'
@@ -283,7 +282,7 @@ export default class Tools extends React.Component {
                         <div className="drone">
                             <div className="tools-image-container">
 
-                                <img className="pbj-image" src={Inspire} alt='Inspire 2 image' />
+                                <img className="pbj-image" src={Inspire} alt='Inspire 2' />
                             </div>
                             <div className="header-info">
 
@@ -303,13 +302,13 @@ export default class Tools extends React.Component {
                         <div className="drone">
                             <div className="tools-image-container">
 
-                                <img className="pbj-image" src={MFD} alt='Inspire 2 image' />
+                                <img className="pbj-image" src={MFD} alt='MFD 5000' />
                             </div>
                             <div className="header-info">
 
                                 <h4>Watt's Innovations MFD 5000</h4>
                                 <p>The MFD 5000 is our heavylift drone. Capable of lifting almost any payload and boasting a 12-15 minute flight-time, the MFD is a powerful tool for filmmakers. Flying a full-size camera package with FIZ control, gimbal control, and a wireless video feed has never been easier.</p>
-                                <p>You can find out more about our Aerials by visiting <a href="http://xcamaerials.com/" noopener target="_blank">XcamAerials.com</a></p>
+                                <p>You can find out more about our Aerials by visiting <a href="http://xcamaerials.com/" rel="noopener noreferrer">XcamAerials.com</a></p>
                                 <ul>
                                     <li>Heavy Lift UAS</li>
                                     <li>Carries Ronin 2</li>

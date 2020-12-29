@@ -84,7 +84,7 @@ const MobileNav = ({ open }) => {
     return (
         <UL open={open}>
             <li className="logo">
-                <a href='/'><img src={Logo} /></a>
+                <a href='/'><img src={Logo} alt="Jordan Klein Film and Video Logo" /></a>
 
                 {open ? '' : <span className="logo-text-left"><a href='/'>Jordan Klein Film & Video</a></span>}
             </li>

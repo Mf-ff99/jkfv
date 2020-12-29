@@ -76,6 +76,11 @@ div.work-page-header {
     align-content: center !important;
     justify-items: center !important;
     text-align: center; 
+    align-self: center;
+}
+
+section.work-page h6 {
+    text-align: center;
 }
 
 @media screen and (max-width: 800px) {

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import React from 'react'
 import { HashLink } from 'react-router-hash-link'
-// import Logo from './jordy_logo.png'
+
 
 const UL = styled.ul`
     list-style: none;
