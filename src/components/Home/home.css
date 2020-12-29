@@ -470,6 +470,8 @@ ul.client-logos {
     position: relative;
     display: flex;
     justify-content: center;
+    /* margin-left: 6%; */
+    align-items: center;
     flex-direction: row;
     flex-flow: wrap;
     max-width: 830px;
@@ -477,7 +479,14 @@ ul.client-logos {
     padding-inline-start: 0;
 }
 
+li.client-logo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
 ul.client-logos li.client-logo img {
-    width: 100%;
+    width: 60%;
     padding: 5px;
+    align-self: center;
 }

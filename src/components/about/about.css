@@ -3,7 +3,7 @@ body {
 }
 
 .about-page {
-    /* margin: 0 30px 0 30px; */
+    margin: 0 8% 0 8%;
     padding: 0 30px 0 30px;
     /* margin-top: 50px; */
     display: flex;
@@ -22,9 +22,9 @@ body {
     height: 50%;
 }
 
-h1 {
+/* h1 {
     align-self: flex-start;
-}
+} */
 
 .about-page-upper {
     height: 100%;
@@ -95,7 +95,7 @@ div.p-1 {
     /* margin-top: 5em; */
     position: relative;
 }
-
+  
 @media screen and (max-width: 680px) {
     .about-page {
         /* margin-top: 100px !important; */
