@@ -197,7 +197,8 @@ export default function Home() {
                     </div>
                     <div className='span-holder'>
 
-                        <span className="photoboat-tool-text">From photoboats to camera cars of various sizes, our vehicles are capable of carrying any one of our robotic cranes. For more details on our equipment and specifications, you can check out our tools of the trade <Link to="/tools" className='to-tools-link'>here</Link>. Contact Jordy for more information on our <Link to="/contact">contact page</Link></span>
+                        <span className="photoboat-tool-text">From photoboats to camera cars of various sizes, our vehicles are capable of carrying any one of our robotic cranes. For more details on our equipment specifications, you can check out our tools of the trade <Link to="/tools" className='to-tools-link'>here</Link>.</span>
+                        <span className="photoboat-tool-text"> Contact Jordy for more information on our <Link to="/contact">contact page</Link></span>
                     </div>
 
                     </div>

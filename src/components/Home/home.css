@@ -463,8 +463,14 @@ object-fit: fill !important;
 .margin-divider {
     display: flex;
     align-items: center;
-    margin: 0 9% 0 0;
+    /* margin: 10px; */
     /* margin-bottom: 10%; */
+}
+
+@media (min-width: 658px) {
+    .margin-divider {
+        margin: 10px 9% 0 0;
+    }
 }
 
 header a:hover {
