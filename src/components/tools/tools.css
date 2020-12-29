@@ -42,7 +42,7 @@ div.tools-image-container {
 }
 
 .tools-sidebar {
-    padding: 10px;
+    padding: 0 0 5px 8px;
     font-size: 10px;
     margin-top: 70px;
     max-width: 200px;
@@ -409,7 +409,7 @@ a:hover {
         margin-top: 0 !important;
         top: 0;
         flex-wrap: wrap;
-        width: 30% !important;
+        width: 15% !important;
         max-width: 100% !important;
     }
     

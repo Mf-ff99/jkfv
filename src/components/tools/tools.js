@@ -71,7 +71,7 @@ export default class Tools extends React.Component {
             <>
                 <section className='tools'>
                     <div className={`${this.state.isSticky ? "tools-sidebar" : "sticky-sidebar"}`}>
-                        <h3>The Gear</h3>
+                        {this.state.isSticky ? "" : <h3>The Gear</h3>}
                         <GearBurger />
                         {/* <ul>
                             <li><HashLink smooth to="#photoboats" >
