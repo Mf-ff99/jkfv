@@ -8,11 +8,9 @@ import Logo2 from '../../images/logo_attempt_2_jordy.png'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import ReactPlayer from 'react-player/lazy'
-import PhotoBoat from '../../images/photoboat.jpg'
 import YS2 from '../../images/Yard-Sale_2.mp4'
-import MFD5000 from '../../images/RED-MFD-5000.jpg'
 import Clients from '../../images/clients.png'
-const PhotoboatDemo = "https://vimeo.com/460494916"
+import ShotcallRunning from '../../images/shotcalla-running.jpg'
 const YardSale = "https://secureservercdn.net/198.71.233.44/23d.ff1.myftpupload.com/wp-content/uploads/2019/10/Yard-Sale_2.mp4"
 const MFD = "https://secureservercdn.net/198.71.233.44/23d.ff1.myftpupload.com/wp-content/uploads/2019/11/MFD_1.mp4"
 export default function Home() {
@@ -42,11 +40,11 @@ export default function Home() {
                             <img className='jordy-logo' src={Logo2} alt="company logo" />
                         </div>
                         <div className="social-links">
-                            <i className="fab fa-linkedin fa-3x"></i>
-                            <i className="fab fa-facebook-square fa-3x"></i>
-                            <i className="fab fa-instagram-square fa-3x"></i>
-                            {/* <img src={Logo} alt="Xcam Aerials Logo" className="xcam-img" /> */}
-                            <i className="fab fa-vimeo-square fa-3x"></i>
+                            <a href="https://www.linkedin.com/in/jordy-klein-9697775/" target='_blank' noopener noreferrer> <i className="fab fa-linkedin fa-3x"></i></a>
+                            <a href="https://www.facebook.com/JKFandV" target="_blank" noopener noreferrer><i className="fab fa-facebook-square fa-3x"></i></a>
+                            <a href="https://www.instagram.com/jordankleinfilmandvideo/" target="_blank" noopener noreferrer><i className="fab fa-instagram-square fa-3x"></i></a>
+                            {/*  <img src={Logo} alt="Xcam Aerials Logo" className="xcam-img" /> */}
+                            <a href="https://vimeo.com/user1974921" target="_blank" noopener noreferrer><i className="fab fa-vimeo-square fa-3x"></i></a>
                         </div>
                     </div>
                     <div className='arrow'>
@@ -192,7 +190,23 @@ export default function Home() {
                     <p>JKF & V has all the tools your shoot needs to get the job done</p>
                 </div>
             </div> */}
+                            <section className='tools-block'>
+                     <h3>Tools</h3>
+                     <hr style={{width: "90px", backgroundColor: "white"}} />
+                    <div className="lower-section info-section">
+
+                    <div className='photoboat-running-picture'>
+                    <img src={ShotcallRunning} alt="Photoboat running chasing jetski" />
+                    </div>
+                    <div className='span-holder'>
+
+                        <span className="photoboat-tool-text">From photoboats to camera cars of various sizes, our vehicles are capable of carrying any one of our robotic cranes. For more details, check out our tools <Link to="/tools">here</Link></span>
+                    </div>
+
+                    </div>
+                </section>
             </section>
+            
         </div>
     )
 
