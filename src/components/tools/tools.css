@@ -123,10 +123,6 @@ html {
     width: 100vw;
 }
 
-.photoboat {
-
-}
-
 @media (min-width: 500px) {
     .carousel-inner {
         /* text-align: middle; */
@@ -138,18 +134,11 @@ html {
 }
 
 @media (max-width: 600px) {
-    .carousel-inner {
-        /* height: auto; */
-    }
+   
 }
 
 @media (min-width: 700px) {
-    .carousel-container {
-        /* height: 550px; */
-    }
-    .carousel-inner {
-        /* height: 400px; */
-    }
+ 
 }
 
 .header-info p {
@@ -191,6 +180,22 @@ section.tools {
 
 div.tools-image-container {
     max-width: 90%;
+}
+
+div.cameras__ul {
+display: flex;
+flex-direction: column;
+}
+
+@media screen and (min-width: 658px) {
+    .cameras__ul {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .cameras__ul div {
+        margin-left: 80px;
+    }
 }
 
 .tools-sidebar {
