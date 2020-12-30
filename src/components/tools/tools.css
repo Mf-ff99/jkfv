@@ -33,15 +33,20 @@ html {
     /* overflow: hidden; */
     max-height: 700px;;
     width: 100%;
+    padding: 0;
 }
 
 .container-fluid {
     /* display: block !important; */
     /* position: absolute; */
-    padding: 20px 0 10px 0;
+    padding: 20px 0 0 0;
     /* max-height: 500px; */
     /* min-height: 400px; */
     /* overflow-y: hidden !important; */
+}
+
+.tools-carousel div.process-trailer {
+    width: 0 !important;
 }
 
 .tools-carousel div {
@@ -52,13 +57,13 @@ html {
     /* text-align: center; */
     /* width: 100%; */
     margin: 0 auto;
-    width: 100%;
-    
+    /* padding-bottom: 10px; */
 }
+
 
 .tools-carousel div iframe {
     /* width: 100%; */
-    margin: 0;
+    padding: 10px 0 18px 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -66,15 +71,28 @@ html {
     transform: translate(-50%, -50%);
 }
 
-
+#cameracar-carousel div img {
+    /* width: 300px; */
+    margin: 0 auto;
+    position: relative !important;
+    
+}
 .tools-carousel div img {
     /* position: relative; */
-    margin: 0;
+    margin: 0 auto;
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.page-view {
+    width: 100vw;
+}
+
+.photoboat {
+
 }
 
 @media (min-width: 500px) {
@@ -112,7 +130,7 @@ html {
     transition: .2s ease-out;
     border-radius: 5px;
     max-width: 1000px !important;
-    min-width: 320px !important;
+    min-width: 300px !important;
     max-width: 800px;
 }
 
@@ -212,6 +230,7 @@ div.tools-image-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .header-info img {
@@ -238,11 +257,16 @@ div.tools-image-container {
     align-items: center;
     justify-content: center;
     max-width: 800px;
-    min-width: 320px;
+    min-width: 300px;
     /* margin: 10px; */
-    padding-top: 30px;
+    /* padding-left: 30px;  */
     /* max-height: auto; */
     transition: .2s ease-out;
+}
+
+.photoboat h4 {
+    font-size: 28px;
+    font-weight: 600;
 }
 
 .photoboat:hover {
