@@ -6,22 +6,119 @@ html {
     /* scroll-padding-top: 50px; */
 }
 
+.carousel-container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.tools-carousel .slide iframe {
+    /* align-items: center;
+    justify-content: center; */
+    margin: 0 auto;
+}
+
+.thumb {
+    display: none !important;
+}
+
+.tools-carousel {
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    position: relative;
+    /* overflow: hidden; */
+    max-height: 700px;;
+    width: 100%;
+}
+
+.container-fluid {
+    /* display: block !important; */
+    /* position: absolute; */
+    padding: 20px 0 10px 0;
+    /* max-height: 500px; */
+    /* min-height: 400px; */
+    /* overflow-y: hidden !important; */
+}
+
+.tools-carousel div {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    /* text-align: center; */
+    /* width: 100%; */
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+.tools-carousel div iframe {
+    /* width: 100%; */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.tools-carousel div img {
+    /* position: relative; */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 500px) {
+    .carousel-inner {
+        /* text-align: middle; */
+        background-color: black;
+        max-height: 450px;
+        /* overflow: hidden; */
+    }
+
+}
+
+@media (max-width: 600px) {
+    .carousel-inner {
+        /* height: auto; */
+    }
+}
+
+@media (min-width: 700px) {
+    .carousel-container {
+        /* height: 550px; */
+    }
+    .carousel-inner {
+        /* height: 400px; */
+    }
+}
+
 .header-info p {
     text-align: left;
 }
 
 .drone, .crane, .photoboat {
-    margin: 10px;
-    background-color: whitesmoke !important;
+    /* margin: 10px; */
+    /* background-color: whitesmoke !important; */
     transition: .2s ease-out;
     border-radius: 5px;
-    max-width: 400px !important;
+    max-width: 1000px !important;
     min-width: 320px !important;
+    max-width: 800px;
 }
 
 .drone:hover, .crane:hover, .photoboat:hover {
-    background-color: #b6c1ca !important;
-    transition: .4s ease;
+    /* background-color: #b6c1ca !important; */
+    transition: .7s ease;
     border-radius: 5px;
 }
 
@@ -37,8 +134,13 @@ section.tools {
     z-index: 1;
 }
 
+.tool-sections h3 {
+    font-size: 29px;
+    font-weight: bold;
+}
+
 div.tools-image-container {
-    max-width: 400px;
+    max-width: 90%;
 }
 
 .tools-sidebar {
@@ -67,7 +169,7 @@ div.tools-image-container {
 
 .tools-sidebar a:hover {
     color: rgb(79, 78, 85) !important;
-
+    cursor: pointer;
 }
 
 .tools-sidebar ul {
@@ -90,9 +192,13 @@ div.tools-image-container {
 
 .tool-sections {
     text-align: center;
-    margin: 0 1vw 0 12vw;
+    margin: 40px 0 0 0;
     color: black;
     padding: 8px;
+}
+
+.tool-description {
+    margin: 1px 10% 1px 10%;
 }
 
 .tool-sections ul {
@@ -101,12 +207,23 @@ div.tools-image-container {
 
 /* Tools Section Styles */
 
+.header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-info img {
+    max-width: 500px;
+}
+
 .photoboats {
     display: flex;
-    flex-direction: row;
-    /* align-items: center; */
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .photoboats h3 {
@@ -114,27 +231,28 @@ div.tools-image-container {
 }
 
 .photoboat {
-    background-color: #FFFFFA;
     color: black;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    min-width: 320px;
     align-items: center;
-    /* justify-content: center; */
-    margin: 10px;
+    justify-content: center;
+    max-width: 800px;
+    min-width: 320px;
+    /* margin: 10px; */
+    padding-top: 30px;
+    /* max-height: auto; */
     transition: .2s ease-out;
 }
 
 .photoboat:hover {
-    background-color: #b6c1ca;
+    /* background-color: #b6c1ca; */
     transition: .4s ease;
     border-radius: 5px;
 }
 
 .photoboat .shotcalla {
-    width: 100%;
+    /* width: 100%; */
     /* margin: 10px; */
     /* min-width:90%; */
     /* max-width: 400px; */
@@ -157,7 +275,7 @@ div.tools-image-container {
 }
 
 .header-info p {
-    max-width: 400px;
+    max-width: 1000px;
     
 }
 
@@ -167,9 +285,9 @@ div.tools-image-container {
 }
 
 .bigballer-image {
-    width: 100%;
+  
     /* margin: 10px; */
-    /* height: 80%; */
+    height: 80%;
 }
 
 .tool-sections hr {
@@ -198,14 +316,20 @@ div.tools-image-container {
     color: gray !important;
 }
 
+.crane-pic-1 {
+    max-width: 600px;
+}
+
 .cranes {
-    background-color: #FFFFFA;
+    /* background-color: #FFFFFA; */
     color: black;
     margin: 0;
     padding: 0;
     left: 0;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
 
@@ -218,7 +342,7 @@ div.tools-image-container {
     padding: 10px;
     min-width: 80%;
     /* border-right: 1px solid black; */
-    background-color: #FFFFFA;
+    /* background-color: #FFFFFA; */
     /* border: 2px solid gray inset; */
     transition: .2s ease-out;
 }
@@ -237,7 +361,7 @@ div.tools-image-container {
 /* Drone styles */
 
 .drones {
-    background-color: #FFFFFA;
+    /* background-color: #FFFFFA; */
     color: black;
     margin: 0;
     padding: 0;
@@ -267,7 +391,7 @@ div.drones h3 {
     padding: 10px;
     min-width: 80%;
     /* border-right: 1px solid black; */
-    background-color: #FFFFFA;
+    /* background-color: #FFFFFA; */
     color: black;
     /* border: 2px solid gray inset; */
     transition: .2s ease-out;
@@ -276,7 +400,7 @@ div.drones h3 {
 /* lenses styles */
 
 .lenses {
-    background-color: #FFFFFA;
+    /* background-color: #FFFFFA; */
     color: black;
     margin: 0;
     padding: 0;
@@ -312,14 +436,14 @@ section.tools ul li {
 }
 
 img.shotcalla {
-    width: 60%;
+    width: 70%;
 }
 
 .photoboat-container {
     border-bottom: 1px solid black;
     /* border-radius: 20px; */
     padding: .5em;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
 }
 
 a:hover {

@@ -88,6 +88,7 @@ nav ul li.logo a img {
 li.right-side-nav:hover {
     transition: .4s ease-in;
     border-bottom: 1px solid gray;
+    cursor: pointer;
 }
 
 .right-side-nav:active {
