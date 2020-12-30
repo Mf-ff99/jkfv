@@ -5,8 +5,7 @@ import Pontoon from '../../images/pontoon.png'
 import TelescopicCrane from '../../images/telescopic-crane.png'
 import RoboticArm from '../../images/camera-car-arm.png'
 import TritonArm from '../../images/triton-arm.png'
-import Inspire from '../../images/Inspire-2.jpg'
-import MFD from '../../images/RED-MFD-5000.jpg'
+
 import './tools.css'
 import GearBurger from './GearBurger'
 
@@ -70,7 +69,7 @@ export default class Tools extends React.Component {
             <>
                 <section className='tools'>
                     <div className={`${this.state.isSticky ? "tools-sidebar" : "sticky-sidebar"}`}>
-                        {this.state.isSticky ? "" : <h3>The Gear</h3>}
+                        {this.state.isSticky ? "" : <h3>Menu</h3>}
                         <GearBurger />
                         {/* <ul>
                             <li><HashLink smooth to="#photoboats" >
@@ -102,7 +101,7 @@ export default class Tools extends React.Component {
                                 <h4>
                                     The Shotcalla
                             </h4>
-                                <p>A rugged 31 foot offshore catamaran, the Shotcall is prepared to get every shot you need. Equipped with twin 300hp Outboard Motors, the Shotcalla can get the camera anywhere you'd like.</p>
+                                <p>Jordan Klein Film and Video’s 31’ offshore catamaran is unlike any other photoboat in the world. It is truly a modern marvel. Besides being a 65mph super stable offshore catamaran, it can also be equipped with our 22’ fully robotic, stabilized camera crane and stabilized remote head. We can show up to location with this as a complete turn-key package!</p>
                                 <ul>
                                     <li>31' Long</li>
                                     <li>65 MPH </li>
@@ -122,7 +121,8 @@ export default class Tools extends React.Component {
                                 <h4>
                                     The PBJ
                             </h4>
-                                <p>The PBJ is an 18’ Catamaran that is just like it’s big sister, the “Shotcalla”, but 12’ shorter. The PBJ is great for shooting stills on its 8' tower, and it's an excellent craft for transporting crew and cast members. It is also ideal for smaller venues a larger photoboat can't reach.</p>
+                                <p>The PBJ is an 18’ Catamaran that is just like it’s big sister (“Shotcalla””). Except it is 12’ shorter. The PBJ is great for shooting stills (It has a 8’ tower) and and is great for transporting crew back and forth to shore. It is also great for smaller venues where a larger photoboat is not required. The PBJ has a top speed of 33mph.
+</p>
                                 <ul>
                                     <li>18' Long</li>
                                     <li>33 MPH </li>
@@ -142,7 +142,7 @@ export default class Tools extends React.Component {
                                 <h4>
                                     The Big Baller
                             </h4>
-                                <p>The Big Baller is a 30' pontoon capable of carrying up to 17 passengers. A 20' bimini offers shade so clients can stay cool throughout the day. This boat can be equipped with long-range wireless video for client-viewing from a distance. Additionally, the upholstery can be removed to offer even more room for support equipment, lighting and grip gear, or even large-production generators.</p>
+                                <p>Our 30’ Pontoon boat is equipped to carry up to 17 people comfortably. It has 20’ of shaded area so clients stay cool all day, It can also be equipped with long range wireless video so clients can watch in comfort. Additionally, the upholstery can be removed and the boat can be used to carry support equipment such as lighting and grip gear or even a large production generator!</p>
                                 <ul>
                                     <li>30' Long</li>
                                     <li>17 Person Capacity</li>
@@ -172,7 +172,7 @@ export default class Tools extends React.Component {
                                 <h4>
                                     30' Telescopic Crane
                             </h4>
-                                <p>Our telescopic crane can accommodate any number of remote heads utilizing a Mitchel mount. Our in-house stablized gimbals are currently the MoviXL and the DJI Ronin 2. With a max reach of 30' and a minimum of 15', this crane is perfect for getting anywhere you need the camera. The electric powered base has a max-speed of 4 MPH. The fully assembled crane and camera/gimbal weighs in at about 1750 pounds. Our crane is transported in a 24' enclosed trailer, along with all its accesories and tools.</p>
+                                <p>Our Telescopic crane arm can accommodate any number of stabilized and Unstabilized remote heads (any head that uses a Mitchel type mount). The heads that we can offer “in house” for the telescopic crane are The Movi XL, The DJI Ronin 2, and the non-stabilized head that comes standard with the crane. The arm has a max reach of 30’ and a minimum reach of 15’ the weight when fully assembled with the camera is about 1750lbs respectively. The base is electric powered and has a max speed of 4 miles per hour. The max camera/gimbal weight that can be accommodated is 70lbs. The crane and all of its accessories are transported in a customized 24’ enclosed trailer. We can provide a complete crew for the operation of this crane including delivery to set. Additionally, we can provide this crane with a turn-key camera and lens package with FIZ, and wireless video transmitter. Just let us know what you need!</p>
                                 <ul>
                                     <li>Reach: 30'</li>
                                     <li>Min-Reach: 15'</li>
@@ -198,7 +198,7 @@ export default class Tools extends React.Component {
                                 <h4>
                                     Triton Arm
                             </h4>
-                                <p>The Triton Arm is a lightweight robotic crane that can mount to almost anything. The Triton is fully controlled with a wireless transmitter and can accommodate both our Movi Pro and Ronin 2 stablized heads. The arm has two lengths, 6' and 11' with a max camera package of 25lbs. The arm can be mounted to a standard Reese trailer hitch or a Mitchel mount configuration.</p>
+                                <p>The Triton arm is a lightweight crane that can be mounted to almost anything. The Triton is fully robotically controlled via a wireless transmitter. It can accommodate our Movi Pro or DJI Ronin 2 stabilized heads. The Triton can be built in 2 lengths, 6’ and 11’. The max camera package that the Triton can accommodate is 25lbs. The total weight of the Triton with a camera and the remote head is approximately 170lbs respectively. The Triton can be mounted to a standard Reese trailer hitch on any vehicle or anything Mitchell mount configuration. Also see our custom electric ATV that holds the Triton arm.</p>
                                 <ul>
                                     <li>Reach: 11'</li>
                                     <li>Min-Reach: 6'</li>
@@ -224,7 +224,7 @@ export default class Tools extends React.Component {
                                 <h4>
                                     22' Robotic Arm
                             </h4>
-                                <p>Our 22' robotic arm is a custom build by Jordan Klein in our machine stop and fabrication facility. The crane comes with a fully wireless control system for both pan and tilt with a lens-reach of 22'. Our Robotic arm can be provided with either our in-house Movi XL/ Ronin 2 gimbals, or any other gimbal that utilizes a Mitchell mounting system. Our crane can be mounted to any vehicle or structure that can handle the weight, such as our photoboat and camera car</p>
+                                <p>This arm was a custom build by JKF&V in our Machine shop and fabrication facility. This crane is fully wirelessly controlled in its pan and tilt axis has a max lens reach of 22’ from the fulcrum and has a total length of 27’ the crane has a max weight of 1850lbs with a camera and head attached. This Robotic arm can be provided with either of our 2 in house stabilized heads (The Movi XL  or the Ronin 2 stabilized head). It can also accept any stabilized head that uses a Mitchell mounting system. The crane can be mounted to any vehicle or structure that can accommodate the weight. (see camera car and Photoboat).</p>
                                 <ul>
                                     <li>Lens-reach: 22'</li>
                                     <li>Length: 27'</li>
@@ -259,7 +259,7 @@ export default class Tools extends React.Component {
                                 <h4>
                                     CamMate Jib
                             </h4>
-                                <p>This world-famous CamMate Travel Series consists of four-foot sections packed in pelican cases for frequent travel. In addition to its strong aerospace design, the Travel series features fifteen-minute setup times, configuration changes in ten minutes, and electronic head inversions in less than 30 seconds. All of these design features make the CamMate an obvious choice for faster, and easier shooting. The CamMate can also be mounted to our wheeled-trolley for relocation once setup is complete.</p>
+                                <p>The world-famous CamMate Travel Series is a more economical version that consists of four-foot sections packed in durable hard cases for frequent location traveling. In addition to our strong aerospace design, the Travel series features 15 minutes set up times; configuration changes in 10 minutes, and electronic head inversions in less than 30 seconds. All of these design features make your job on location faster and easier.</p>
                                 <ul>
                                     <li>Lens-height: 25'</li>
                                     <li>Reach: 21'</li>
@@ -280,7 +280,8 @@ export default class Tools extends React.Component {
                     <hr style={{ width: "90px" }} />
                     <div className="drones" >
                         <div className="drone">
-                            <div className="tools-image-container">
+                            <h6>Our Aerials are solely operated through XCam Aerials</h6>
+                            {/* <div className="tools-image-container">
 
                                 <img className="pbj-image" src={Inspire} alt='Inspire 2' />
                             </div>
@@ -297,9 +298,9 @@ export default class Tools extends React.Component {
                                     <li>Cendence Controller for SDI output</li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> */}
 
-                        <div className="drone">
+                        {/* <div className="drone">
                             <div className="tools-image-container">
 
                                 <img className="pbj-image" src={MFD} alt='MFD 5000' />
@@ -319,7 +320,8 @@ export default class Tools extends React.Component {
                                     <li>Onset charging for all-day shoots</li>
                                 </ul>
                             </div>
-                        </div>
+                        */}
+                        </div> 
                         {/* drone ends here */}
 
 
@@ -343,8 +345,9 @@ export default class Tools extends React.Component {
                                 />                                </div>
                             <div className="header-info">
 
-                                <h4>Camera Car</h4>
-                                <p>Our camera car is actually a camera truck! It is based on a Dodge 2500 chassis and has a full air ride suspension. The camera car can also accommodate up to 7 people in the back and 6 people in the front. The camera car can hold our 22' Robotic Arm as well as our 30' telescopic crane.</p>
+                                <h4>Camera Car and Process Trailer</h4>
+                                <p>Jordan Klein Film and Video is one of a few companies in the Southeast United States that own and operate an insert car and process trailer. The camera car is actually a camera truck. It is based on a Dodge 2500 chassis and has a full air ride suspension. The camera car can also accommodate up to 7 people in the back and 6 people in the front.</p><p>The camera car can also hold our 22’ Robotic-arm as well as our 30’ telescopic crane with a choice of stabilized heads (see the telescopic crane and 22’ robotic crane arm).</p><p>
+Our process trailer can support vehicles as large as a Ford Excursion and has two fold-out platforms that can support lighting or even dolly track.</p><p>Additionally we have a tow dolly that can accommodate most cars and trucks. This is a great option when you are attempting to get high shots shooting straight down on the tow vehicle and do not want to see the process trailer.</p>
                                 <ul>
                                     <li>Capable of running with our 22' Robotic Arm</li>
                                     <li>Capable of running with our 30' telescopic crane</li>
@@ -406,7 +409,7 @@ export default class Tools extends React.Component {
                             <div className="header-info">
 
                                 <h4>Cameras</h4>
-                                <p>We have a large inventory of the latest cameras! We do rent out our camera packages with a minimum of one camera tech or a 2nd A/C. We're not a rental house, but we do have a lot of gear!</p>
+                                <p>Jordan Klein Film and Video has always maintained a large inventory of the latest cameras and lenses. That being said, We do not want to give people the wrong impression when it comes to our gear. We are not a rental house. If you require some gear we will send out one of our camera packages with a minimum of a tech or 2nd A/C. we primarily use all of our gear on our own productions. In other words…." We are not a rental house, just a production company that has a lot of gear"</p>
                                 <ul>
                                     <li>Red Epic Dragon</li>
                                     <li>Red Scarlet</li>
