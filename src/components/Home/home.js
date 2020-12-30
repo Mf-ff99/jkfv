@@ -14,36 +14,31 @@ export default function Home() {
     return (
         <div className="home">
             <div className="background-video-container">
-                <video loop="loop" autoPlay playsInline muted >
+                {/* <video loop="loop" autoPlay playsInline muted >
                     <source type="video/mp4" src={YS2} />
 
-                </video>
-                {/* <ReactPlayer
-                    url="https://vimeo.com/203179504"
+                </video> */}
+                <ReactPlayer
+                    url="https://video.wixstatic.com/video/b52317_a47aed43aa94462db9e7e268c0c41e41/1080p/mp4/file.mp4"
                     playing={true}
                     controls={false}
                     volume={0}
                     width='100%'
                     height='100%'
                     loop={true}
-                    /> */}
+                    />
             </div>
-            <section className="landing">
-                <div className="landing-page">
-
-                    {/* <div className="background-video"> */}
                     <div className="landing-container">
                         <div className="logo-container">
                             <img className='jordy-logo' src={Logo2} alt="company logo" />
                         </div>
                         <div className="social-links">
-                            <a href="https://www.linkedin.com/in/jordy-klein-9697775/" target='_blank' rel="noopener noreferrer" > <i className="fab fa-linkedin fa-3x"></i></a>
-                            <a href="https://www.facebook.com/JKFandV" target="_blank" rel="noopener noreferrer" ><i className="fab fa-facebook-square fa-3x"></i></a>
-                            <a href="https://www.instagram.com/jordankleinfilmandvideo/" target="_blank" rel="noopener noreferrer" ><i className="fab fa-instagram-square fa-3x"></i></a>
+                            {/* <a href="https://www.linkedin.com/in/jordy-klein-9697775/" target='_blank' rel="noopener noreferrer" > <i className="fab fa-linkedin fa-3x"></i></a> */}
+                            <a href="https://www.facebook.com/JKFandV" target="_blank" rel="noopener noreferrer" ><i className="fab fa-facebook-square fa-2x"></i></a>
+                            <a href="https://www.instagram.com/jordankleinfilmandvideo/" target="_blank" rel="noopener noreferrer" ><i className="fab fa-instagram-square fa-2x"></i></a>
                             {/*  <img src={Logo} alt="Xcam Aerials Logo" className="xcam-img" /> */}
-                            <a href="https://vimeo.com/user1974921" target="_blank" rel="noopener noreferrer" ><i className="fab fa-vimeo-square fa-3x"></i></a>
+                            <a href="https://vimeo.com/user1974921" target="_blank" rel="noopener noreferrer" ><i className="fab fa-vimeo-square fa-2x"></i></a>
                         </div>
-                    </div>
                     <div className='arrow'>
 
                         <span className='fancy-text-pointer'></span>
@@ -51,7 +46,12 @@ export default function Home() {
                             <img className='arrow-pointer' src={ArrowLogo} alt='arrow for scrolling' />
                         </HashLink>
                     </div>
+                    </div>
+            <section className="landing">
+                <div className="landing-page">
                 </div>
+
+                    {/* <div className="background-video"> */}
                
                 <div className='about-work' id="about-work-view">
 
@@ -134,7 +134,7 @@ export default function Home() {
                             loop={true}
                             
                         />  */}
-                        <h2>Our Fleet</h2>
+                        <h2>XCam Aerials</h2>
                         <hr style={{width: "90px", backgroundColor: "white"}} />
                     <div className='margin-divider'>
                         <div className='mfd-5000-drone'>
@@ -145,8 +145,7 @@ export default function Home() {
                         </div>
                         <div className='span-holder'>
                             <span>
-                           Our heavylift drones are built with all-day operations in mind. Feel free to <Link to='/contact'>contact us</Link> for pricing and more information.                        </span>
-                        </div>
+                           Our drone division, XCam Aerials, is only a click away. Feel free to visit <a href='http://xcamaerials.com/' target="_blank" rel="noopener noreferrer">XCam</a> for more information.                        </span>                        </div>
                     </div>
                 </section>
                 <section className='jordys-specialties'>
