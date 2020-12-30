@@ -6,6 +6,7 @@ import TelescopicCrane from '../../images/telescopic-crane.png'
 import TritonArm from '../../images/triton-arm.png'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel'
+import { Animated } from 'react-animated-css'
 import './tools.css'
 import GearBurger from './GearBurger'
 import ReactPlayer from 'react-player/lazy'
@@ -64,14 +65,16 @@ export default class Tools extends React.Component {
     render() {
         return (
             <>
+                    
                 <section className='tools'>
+
                     <div className={`${this.state.isSticky ? "tools-sidebar" : "sticky-sidebar"}`}>
                         {this.state.isSticky ? "" : <h3>Menu</h3>}
                         <GearBurger />
                         {/* <ul>
                             <li><HashLink smooth to="#photoboats" >
                                 Photoboats</HashLink></li>
-                            <li><HashLink smooth to="#cranes">Cranes</HashLink></li>
+                                <li><HashLink smooth to="#cranes">Cranes</HashLink></li>
                             <li><HashLink smooth to="#aerials">Aerials</HashLink></li>
                             <li><HashLink smooth to="#cameracar">Camera Car</HashLink></li>
                             <li><HashLink smooth to="#lenses">Lenses</HashLink></li>
@@ -80,15 +83,21 @@ export default class Tools extends React.Component {
                     </div>
 
                 </section>
+                    
                 <span id="photoboats"></span>
                 <div className="tool-sections">
-                    <h2>Our Tools</h2>
+                <Animated animationIn="fadeIn" animationOut="fadeOut">
+                    <h2 >Our Tools</h2>
+                    </Animated>
                     <hr style={{ width: '200px', border: '1px solid black' }} />
-                    <p className="tool-description">
+                    <Animated animationIn="fadeIn" animationOut="fadeOut">
+
+                    <p className="tool-description animate__animated animate__backInLeft">
                         In house we carry a vast array of tools for filmmakers. We take pride in knowing there are few others with the capabilities that our gear provides. You can easily access any one of our equipment categories through the menu on the left-hand side.
                     </p>
                     <hr style={{ width: '200px', border: '1px solid black' }} />
                     <h3>Photoboats</h3>
+                    </Animated>
                     <div className="photoboats">
                         <br />
 
@@ -97,9 +106,9 @@ export default class Tools extends React.Component {
 
                         <div className="photoboat">
                             <h3>
-                                The Shotcalla
+                                Shotcalla
 </h3>
-                            <div className='container-fluid'>
+                          
 
                                 <Carousel infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
                                     {/* <Carousel.Item> */}
@@ -114,11 +123,11 @@ export default class Tools extends React.Component {
 
                                         />
                                     </div>
-                                   
+
 
                                     <div>
                                         <img src={Photoboat} alt='the shotcalla' />
-                                      
+
 
                                     </div>
                                     <div>
@@ -131,17 +140,17 @@ export default class Tools extends React.Component {
 
                                         />
                                     </div>
-                                   
-                                   
+
+
 
                                     <div>
                                         <img src={images.BeachedShotcalla} alt='the shotcalla beached at sunset' />
-                                   
+
 
                                     </div>
-                                
+
                                 </Carousel>
-                            </div>
+                          
                             <div className="header-info">
 
 
@@ -162,14 +171,18 @@ export default class Tools extends React.Component {
                         </div>
 
                         <div className="photoboat">
-                                <h4>
-                                    The PBJ
+                            <h4>
+                                The PBJ
                             </h4>
+                            <Carousel showThumbs={false} className='big-baller-carousel'>
+                                    <div>
+                                        <img src={PBJ} alt='Pontoon Boat: The Big Baller' />
+                                    </div>
+                                   
+                                </Carousel>
                             <div className="header-info">
 
-                                <div className="tools-image-container">
-                                    <img className="shotcalla" style={{ width: '100%' }} src={PBJ} alt='the PBJ photoboat' />
-                                </div>
+                              
                                 <p>The PBJ is an 18’ Catamaran that is just like its big sister (“Shotcalla”). Except it is 12’ shorter. The PBJ is great for shooting stills (It has a 8’ tower) and and is great for transporting crew back and forth to shore. It is also great for smaller venues where a larger photoboat is not required. The PBJ has a top speed of 33mph.
 </p>
                                 <ul>
@@ -183,12 +196,15 @@ export default class Tools extends React.Component {
                         </div>
 
                         <div className="photoboat">
-                                <h4>
-                                    The Big Baller
+                            <h4>
+                                The Big Baller
                             </h4>
-                            <div className="tools-image-container">
-                                <img className="bigballer-image" style={{ width: '100%', height: '100%', minWidth: '300px' }} src={Pontoon} alt='the shotcalla' />
-                            </div>
+                            <Carousel showThumbs={false} className='big-baller-carousel'>
+                                    <div>
+                                        <img src={Pontoon} alt='Pontoon Boat: The Big Baller' />
+                                    </div>
+                                   
+                                </Carousel>
                             <div className="header-info">
 
                                 <p>Our 30’ Pontoon boat is equipped to carry up to 17 people comfortably. It has 20’ of shaded area so clients stay cool all day, It can also be equipped with long range wireless video so clients can watch in comfort. Additionally, the upholstery can be removed and the boat can be used to carry support equipment such as lighting and grip gear or even a large production generator!</p>
@@ -213,20 +229,20 @@ export default class Tools extends React.Component {
                     <div className="cranes">
 
                         <div className="photoboat">
-                        <h4>
-                            30' Telescopic Crane
+                            <h4>
+                                30' Telescopic Crane
                             </h4>
-                            <div className='container-fluid'>
+                         
 
-                                <Carousel className='tools-carousel' showThumbs={false}  infiniteLoop style={{ minHeight: '250px' }}>
-                                   
+                                <Carousel className='tools-carousel' showThumbs={false} infiniteLoop style={{ minHeight: '250px' }}>
+
 
                                     <div className=''>
                                         <img className="d-block w-100 crane-pic-1" src={TelescopicCrane} alt='Telescopic Crane' />
-                                      
+
 
                                     </div>
-                                   
+
 
                                     <div className='d-block w-100'>
                                         <ReactPlayer
@@ -238,9 +254,9 @@ export default class Tools extends React.Component {
 
                                         />
                                     </div>
-                                    {/* </Carousel.Item> */}
+                               
                                 </Carousel>
-                            </div>
+                         
                             <div className="header-info">
 
                                 <p>Our Telescopic crane arm can accommodate any number of stabilized and Unstabilized remote heads (any head that uses a Mitchel type mount). The heads that we can offer “in house” for the telescopic crane are The Movi XL, The DJI Ronin 2, and the non-stabilized head that comes standard with the crane. The arm has a max reach of 30’ and a minimum reach of 15’ the weight when fully assembled with the camera is about 1750lbs respectively. The base is electric powered and has a max speed of 4 miles per hour. The max camera/gimbal weight that can be accommodated is 70lbs. The crane and all of its accessories are transported in a customized 24’ enclosed trailer. We can provide a complete crew for the operation of this crane including delivery to set. Additionally, we can provide this crane with a turn-key camera and lens package with FIZ, and wireless video transmitter. Just let us know what you need!</p>
@@ -261,20 +277,20 @@ export default class Tools extends React.Component {
                         </div>
                         {/* crane starts here */}
                         <div className="photoboat">
-                                <h4>
-                                    Triton Arm
+                            <h4>
+                                Triton Arm
                             </h4>
-                            <div className='container-fluid'>
+                          
 
                                 <Carousel className='tools-carousel' showThumbs={false} infiniteLoop style={{ minHeight: '250px' }}>
-                                    
+
 
                                     <div className=''>
                                         <img className="d-block w-100 crane-pic-1" src={TritonArm} alt='Triton Arm' />
-                                      
+
 
                                     </div>
-                                   
+
                                     <div className='d-block w-100'>
                                         <ReactPlayer
                                             className='video-3-player'
@@ -286,7 +302,7 @@ export default class Tools extends React.Component {
                                         />
                                     </div>
                                 </Carousel>
-                            </div>
+                     
                             <div className="header-info">
 
                                 <p>The Triton arm is a lightweight crane that can be mounted to almost anything. The Triton is fully robotically controlled via a wireless transmitter. It can accommodate our Movi Pro or DJI Ronin 2 stabilized heads. The Triton can be built in 2 lengths, 6’ and 11’. The max camera package that the Triton can accommodate is 25lbs. The total weight of the Triton with a camera and the remote head is approximately 170lbs respectively. The Triton can be mounted to a standard Reese trailer hitch on any vehicle or anything Mitchell mount configuration. Also see our custom electric ATV that holds the Triton arm.</p>
@@ -307,61 +323,61 @@ export default class Tools extends React.Component {
                         </div>
 
                         <div className="photoboat">
-                                <h4>
-                                    22' Robotic Arm
+                            <h4>
+                                22' Robotic Arm
                             </h4>
-                            <div className='container-fluid'>
+                       
 
-<Carousel showThumbs={false} className='tools-carousel' infiniteLoop style={{ minHeight: '250px' }}>
+                                <Carousel showThumbs={false} className='tools-carousel' infiniteLoop style={{ minHeight: '250px' }}>
 
-<div className='d-block w-100'>
-        <ReactPlayer
-            className='video-3-player'
-            url='https://vimeo.com/260935783'
-            playing={false}
-            controls={true}
-            width='100%'
+                                    <div className='d-block w-100'>
+                                        <ReactPlayer
+                                            className='video-3-player'
+                                            url='https://vimeo.com/260935783'
+                                            playing={false}
+                                            controls={true}
+                                            width='100%'
 
-        />
-    </div>
-<div className='d-block w-100'>
-        <ReactPlayer
-            className='video-3-player'
-            url='https://vimeo.com/357656228'
-            playing={false}
-            controls={true}
-            width='100%'
+                                        />
+                                    </div>
+                                    <div className='d-block w-100'>
+                                        <ReactPlayer
+                                            className='video-3-player'
+                                            url='https://vimeo.com/357656228'
+                                            playing={false}
+                                            controls={true}
+                                            width='100%'
 
-        />
-    </div>
+                                        />
+                                    </div>
 
 
-    <div className='d-block w-100'>
-        <ReactPlayer
-            className='video-3-player'
-            url='https://vimeo.com/361503204'
-            playing={false}
-            controls={true}
-            width='100%'
+                                    <div className='d-block w-100'>
+                                        <ReactPlayer
+                                            className='video-3-player'
+                                            url='https://vimeo.com/361503204'
+                                            playing={false}
+                                            controls={true}
+                                            width='100%'
 
-        />
-    </div>
-<div className='d-block w-100'>
-        <ReactPlayer
-            className='video-3-player'
-            url='https://vimeo.com/261043519'
-            playing={false}
-            controls={true}
-            width='100%'
+                                        />
+                                    </div>
+                                    <div className='d-block w-100'>
+                                        <ReactPlayer
+                                            className='video-3-player'
+                                            url='https://vimeo.com/261043519'
+                                            playing={false}
+                                            controls={true}
+                                            width='100%'
 
-        />
-    </div>
-    
-    
+                                        />
+                                    </div>
 
-    
-</Carousel>
-</div>
+
+
+
+                                </Carousel>
+                        
                             <div className="header-info">
 
                                 <p>This arm was a custom build by JKF&V in our Machine shop and fabrication facility. This crane is fully wirelessly controlled in its pan and tilt axis has a max lens reach of 22’ from the fulcrum and has a total length of 27’ the crane has a max weight of 1850lbs with a camera and head attached. This Robotic arm can be provided with either of our 2 in house stabilized heads (The Movi XL  or the Ronin 2 stabilized head). It can also accept any stabilized head that uses a Mitchell mounting system. The crane can be mounted to any vehicle or structure that can accommodate the weight. (see camera car and Photoboat).</p>
@@ -381,25 +397,25 @@ export default class Tools extends React.Component {
                         </div>
 
                         <div className="photoboat">
-                                    <h4>
-                                        CamMate Jib
+                            <h4>
+                                CamMate Jib
                                 </h4>
-                                <Carousel
+                            <Carousel
                                 showThumbs={false} className='tools-carousel' infiniteLoop style={{ minHeight: '250px' }}>
 
-<div className='d-block w-100'>
-        <ReactPlayer
-            className='video-3-player'
-            url='https://vimeo.com/450546354'
-            playing={false}
-            controls={true}
-            width='100%'
+                                <div className='d-block w-100'>
+                                    <ReactPlayer
+                                        className='video-3-player'
+                                        url='https://vimeo.com/450546354'
+                                        playing={false}
+                                        controls={true}
+                                        width='100%'
 
-        />
-    </div>
+                                    />
+                                </div>
 
-    
-</Carousel>
+
+                            </Carousel>
                             <div className="header-info">
 
                                 <p>The world-famous CamMate Travel Series is a more economical version that consists of four-foot sections packed in durable hard cases for frequent location traveling. In addition to our strong aerospace design, the Travel series features 15 minutes set up times; configuration changes in 10 minutes, and electronic head inversions in less than 30 seconds. All of these design features make your job on location faster and easier.</p>
@@ -422,9 +438,9 @@ export default class Tools extends React.Component {
                     <h3>Aerials</h3>
                     <hr style={{ width: "90px" }} />
                     <div className="aerials">
-                        
-                            <h6>Our Aerials are solely operated through the <a href="http://xcamaerials.com/" target="_blank" rel="noopener noreferrer">XCam Aerials</a> website.</h6>
-                            {/* <div className="tools-image-container">
+
+                        <h6>Our Aerials are solely operated through the <a href="http://xcamaerials.com/" target="_blank" rel="noopener noreferrer">XCam Aerials</a> website.</h6>
+                        {/* <div className="tools-image-container">
 
                                 <img className="pbj-image" src={Inspire} alt='Inspire 2' />
                             </div>
@@ -443,7 +459,7 @@ export default class Tools extends React.Component {
                             </div>
                         </div> */}
 
-                            {/* <div className="drone">
+                        {/* <div className="drone">
                             <div className="tools-image-container">
 
                                 <img className="pbj-image" src={MFD} alt='MFD 5000' />
@@ -464,7 +480,7 @@ export default class Tools extends React.Component {
                                 </ul>
                             </div>
                         */}
-                       
+
                         {/* drone ends here */}
 
 
@@ -477,46 +493,46 @@ export default class Tools extends React.Component {
 
                         <div className="photoboat">
                             <h4>Camera Car and Process Trailer</h4>
-                        <Carousel id="cameracar-carousel"
+                            <Carousel id="cameracar-carousel"
                                 showThumbs={false} className='tools-carousel' infiniteLoop style={{ minHeight: '250px' }}>
 
-<div className='d-block w-100'>
-        <ReactPlayer
-            className='video-3-player'
-            url='https://vimeo.com/361505272'
-            playing={false}
-            controls={true}
-            width='100%'
+                                <div className='d-block w-100'>
+                                    <ReactPlayer
+                                        className='video-3-player'
+                                        url='https://vimeo.com/361505272'
+                                        playing={false}
+                                        controls={true}
+                                        width='100%'
 
-        />
-    </div>
+                                    />
+                                </div>
 
-    <div className='d-block w-100'>
-        <ReactPlayer
-            className='video-3-player'
-            url='https://vimeo.com/338239605'
-            playing={false}
-            controls={true}
-            width='100%'
+                                <div className='d-block w-100'>
+                                    <ReactPlayer
+                                        className='video-3-player'
+                                        url='https://vimeo.com/338239605'
+                                        playing={false}
+                                        controls={true}
+                                        width='100%'
 
-        />
-    </div>
-    <div className='d-block w-100'>
-        <ReactPlayer
-            className='video-3-player'
-            url='https://vimeo.com/395798138'
-            playing={false}
-            controls={true}
-            width='100%'
+                                    />
+                                </div>
+                                <div className='d-block w-100'>
+                                    <ReactPlayer
+                                        className='video-3-player'
+                                        url='https://vimeo.com/395798138'
+                                        playing={false}
+                                        controls={true}
+                                        width='100%'
 
-        />
-    </div>
-    <div className='process-trailer'>
-        <img src={images.ProcessTrailer} alt='process trailer' />
-    </div>
-    
-</Carousel>
-                           
+                                    />
+                                </div>
+                                <div className='process-trailer'>
+                                    <img src={images.ProcessTrailer} alt='process trailer' />
+                                </div>
+
+                            </Carousel>
+
                             <div className="header-info">
 
                                 <p>Jordan Klein Film and Video is one of a few companies in the Southeast United States that own and operate an insert car and process trailer. The camera car is actually a camera truck. It is based on a Dodge 2500 chassis and has a full air ride suspension. The camera car can also accommodate up to 7 people in the back and 6 people in the front.</p><p>The camera car can also hold our 22’ Robotic-arm as well as our 30’ telescopic crane with a choice of stabilized heads (see the telescopic crane and 22’ robotic crane arm).</p><p>
@@ -556,28 +572,28 @@ export default class Tools extends React.Component {
                                 <h4>Lenses and Cameras</h4>
                                 <p>Jordan Klein Film and Video has always maintained a large inventory of the latest cameras and lenses. That being said, We do not want to give people the wrong impression when it comes to our gear. We are not a rental house. If you require some gear we will send out one of our camera packages with a minimum of a tech or 2nd A/C. we primarily use all of our gear on our own productions. In other words…." We are not a rental house, just a production company that has a lot of gear"</p>
                                 <div className="cameras-lenses-ul">
-                                <h4>Lenses</h4>
-                                <ul>
-                                    <li>2x sets of Ziess Superspeed MKIII</li>
-                                    <li>Nikon prime lens set</li>
-                                    <li>Ziess 25-250 f3.2 zoom</li>
-                                    <li>9.8 Tegea</li>
-                                    <li>14mm Optar</li>
-                                    <li>Ziess 21-100mm f2.8</li>
-                                    <li> Sigma 18-35mm f2.8 </li>
-                                    <li>Sigma 28-70mm f2.8 </li>
-                                </ul>
-                                <h4>Cameras</h4>
-                                <ul>
-                                    <li>Red Epic Dragon</li>
-                                    <li>Red Scarlet</li>
-                                    <li>Arri Amira</li>
-                                    <li>Arri Alexa Classic</li>
-                                    <li>Arri Alexa Mini</li>
-                                    <li>Sony F65</li>
-                                    <li>Panasonic GH5</li>
-                                    <li>Black Magic Pocket Cinema Camera</li>
-                                </ul>
+                                    <h4>Lenses</h4>
+                                    <ul>
+                                        <li>2x sets of Ziess Superspeed MKIII</li>
+                                        <li>Nikon prime lens set</li>
+                                        <li>Ziess 25-250 f3.2 zoom</li>
+                                        <li>9.8 Tegea</li>
+                                        <li>14mm Optar</li>
+                                        <li>Ziess 21-100mm f2.8</li>
+                                        <li> Sigma 18-35mm f2.8 </li>
+                                        <li>Sigma 28-70mm f2.8 </li>
+                                    </ul>
+                                    <h4>Cameras</h4>
+                                    <ul>
+                                        <li>Red Epic Dragon</li>
+                                        <li>Red Scarlet</li>
+                                        <li>Arri Amira</li>
+                                        <li>Arri Alexa Classic</li>
+                                        <li>Arri Alexa Mini</li>
+                                        <li>Sony F65</li>
+                                        <li>Panasonic GH5</li>
+                                        <li>Black Magic Pocket Cinema Camera</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

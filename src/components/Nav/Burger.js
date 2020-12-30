@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import { Animated } from 'react-animated-css';
 import styled from 'styled-components'
 import MobileNav from './MobileMenu';
+
 
 
 
@@ -16,7 +18,7 @@ margin-top: 10px;
     justify-content: space-around;
     flex-flow: column nowrap;
     cursor: pointer;
-    z-index: 100;
+    z-index: 40000;
     /* float: right; */
     div {
         width: 2rem;
@@ -54,11 +56,14 @@ const Burger = () => {
         <>
             
         <StyledBurger open={open} onClick={() => setOpen(!open)}>
+            <>
             <div></div>
             <div></div>
             <div></div>
+            </>
         </StyledBurger>
         <MobileNav open={open}/>
+    
         </>
     )
 }

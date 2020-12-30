@@ -14,6 +14,7 @@ const UL = styled.ul`
     // min-height: 800px;
     margin-left: 0;
     padding-left: 0;
+    z-index: 10000;
 
     li a {
         color: white !important;
@@ -71,7 +72,7 @@ const UL = styled.ul`
         /* width: 1500px; */
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;
-        z-index: 10;
+       
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
 
@@ -96,7 +97,7 @@ const UL = styled.ul`
 
 const MobileNav = ({ open }) => {
     return (
-        <UL open={open}>
+        <UL className='animate__animated animate__rubberBand' open={open}>
             <li><HashLink smooth to="#photoboats" >
                                 Photoboats</HashLink></li>
                             <li><HashLink smooth to="#cranes">Cranes</HashLink></li>

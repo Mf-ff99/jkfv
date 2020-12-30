@@ -114,7 +114,9 @@ export default class Nav extends React.Component {
                 <span className="logo-text-left"><a href='/'>Jordan Klein Film & Video</a></span>
           
                 </StyledLogo>
+                
                 <Burger />
+                
             </NavStyled>
         )
     }

@@ -1,10 +1,15 @@
 import React from 'react'
+import { Animated } from 'react-animated-css'
 import JordyLogo from '../../images/logo_attempt_2_jordy.png'
 import './about.css'
 
 export default function About() {
     return (
+        <>
+
+          <Animated animationIn="fadeIn" animationOut="fadeOut">
         <section className="about-page">
+
             <img src={JordyLogo} alt="Jordan Klein Logo"></img>
             <div className="about-page-container">
                 <div className='about-page-upper'>
@@ -27,7 +32,8 @@ When I give a rate for myself, My crew and my gear, That is “the rate”. I wi
                     </div>
                 </div>
             </div>
-
         </section>
+        </Animated>
+    </>
     )
 }

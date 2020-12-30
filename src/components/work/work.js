@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-
+import { Animated } from 'react-animated-css'
 import './work.css'
 import ReactPlayer from 'react-player/lazy';
 
@@ -11,7 +11,10 @@ import ReactPlayer from 'react-player/lazy';
 export default function Work() {
 
     return (
+        <Animated animationIn="fadeIn" animationOut="fadeOut">
+
         <section className="work-page">
+
             <div className="work-page-header">
 
                 <h1>Our Work</h1>
@@ -40,8 +43,8 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
-                        />
+                            
+                            />
                         {/* <p className="legend">Legend 2</p> */}
 
                     </div>
@@ -57,8 +60,8 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
-                        />
+                            
+                            />
                     </div>
                     <div className='vimeo-video'>
                         <ReactPlayer
@@ -71,8 +74,8 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
-                        />
+                            
+                            />
                         {/* <p className="legend">Legend 1</p> */}
                     </div>
                     <div className='vimeo-video' style={{marginTop: '0'}}>
@@ -86,8 +89,8 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
-                        />
+                            
+                            />
                         {/* <p className="legend">Legend 1</p> */}
                     </div>
                     <div className='vimeo-video'>
@@ -101,8 +104,8 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
-                        />
+                            
+                            />
                         {/* <p className="legend">Legend 1</p> */}
                     </div>
                     <div className='vimeo-video' style={{marginTop: '0'}}>
@@ -116,7 +119,7 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
+                            
                         />
                     </div>
                 <div className='vimeo-video' style={{marginTop: '0'}}>
@@ -130,8 +133,8 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
-                        />
+                            
+                            />
                     </div>
                     <div className='vimeo-video' style={{marginTop: '0'}}>
                     <ReactPlayer
@@ -144,8 +147,8 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
-                        />
+                            
+                            />
                     </div>
                 </Carousel>
 
@@ -169,8 +172,8 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
-                        />
+                            
+                            />
                         {/* <p className="legend">Legend 2</p> */}
 
                     </div>
@@ -186,8 +189,8 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
-                        />
+                            
+                            />
                     </div>
                     <div className='vimeo-video'>
                         <ReactPlayer
@@ -200,8 +203,8 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
-                        />
+                            
+                            />
                         {/* <p className="legend">Legend 1</p> */}
                     </div>
                     <div className='vimeo-video' style={{marginTop: '0'}}>
@@ -215,8 +218,8 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
-                        />
+                            
+                            />
                         {/* <p className="legend">Legend 1</p> */}
                     </div>
                     <div className='vimeo-video' style={{marginTop: '0'}}>
@@ -230,8 +233,8 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
-                        />
+                            
+                            />
                         {/* <p className="legend">Legend 1</p> */}
                     </div>
                     <div className='vimeo-video' style={{marginTop: '0'}}>
@@ -245,8 +248,8 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
-                        />
+                            
+                            />
                         {/* <p className="legend">Legend 1</p> */}
                     </div>
                    
@@ -272,8 +275,8 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
-                        />
+                            
+                            />
                         {/* <p className="legend">Legend 2</p> */}
 
                     </div>
@@ -289,8 +292,8 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
-                        />
+                            
+                            />
                     </div>
                     <div className='vimeo-video'>
                         <ReactPlayer
@@ -303,8 +306,8 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
-                        />
+                            
+                            />
                         {/* <p className="legend">Legend 1</p> */}
                     </div>
                     <div className='vimeo-video'>
@@ -318,13 +321,14 @@ export default function Work() {
                             muted={true}
                             controls={true}
                             loop={true}
-
-                        />
+                            
+                            />
                         {/* <p className="legend">Legend 1</p> */}
                     </div>
                     
                 </Carousel>
             </div>
         </section>
+                            </Animated>
     )
 }

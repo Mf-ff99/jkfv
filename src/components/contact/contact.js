@@ -1,9 +1,12 @@
 import React from 'react'
+import { Animated } from 'react-animated-css'
 import './contact.css'
 
 export default function Contact() {
     return (
         <>
+        <Animated animationIn="fadeIn" animationOut="fadeOut">
+
             <section className="contact-page">
                 <div className="about-container">
                     <div className="contact-upper">
@@ -45,25 +48,26 @@ export default function Contact() {
             {/* <section className="contact-page">
                 <div className="about-container-lower">
                     <div className='contact-lower'>
-                        <p>Contact Us</p>
-
-                        <form>
-                            <label htmlFor="name">Your name:</label>
-
-                            <input type="text" placeholder="yourname here!"></input>
-                            {/* <br /> */}
+                    <p>Contact Us</p>
+                    
+                    <form>
+                    <label htmlFor="name">Your name:</label>
+                    
+                    <input type="text" placeholder="yourname here!"></input>
+                    {/* <br /> */}
             {/* <label htmlFor="company-name">Associated Company</label>
                             <input type="text" name="company-name" id="company-name"></input>
                             <label htmlFor="phone">Enter your phone number</label>
-
+                            
                             <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
-
+                            
                             <button type="submit">Submit</button>
-                        </form>
-                    </div>
-                </div> */}
+                            </form>
+                            </div>
+                        </div> */}
 
 
+                        </Animated>
         </>
     )
 }
