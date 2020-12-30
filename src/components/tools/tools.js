@@ -85,7 +85,7 @@ export default class Tools extends React.Component {
                 </section>
 
                 <span id="photoboats"></span>
-                <div className="tool-sections">
+                <div className="tool-sections" >
                     <Animated animationIn="fadeIn" animationOut="fadeOut">
                         <h2 >Our Tools</h2>
                     </Animated>
@@ -95,8 +95,10 @@ export default class Tools extends React.Component {
                         <p className="tool-description animate__animated animate__backInLeft">
                             In house we carry a vast array of tools for filmmakers. We take pride in knowing there are few others with the capabilities that our gear provides. You can easily access any one of our equipment categories through the menu on the left-hand side.
                     </p>
-                        <hr style={{ width: '200px', border: '1px solid black' }} />
-                        <h3>Photoboats</h3>
+                        {/* <hr style={{ width: '200px', border: '1px solid black' }} /> */}
+                        <hr className="big-hr"></hr>
+                        <h3 style={{paddingTop: '40px'}}>Photoboats</h3>
+                        <hr style={{ width: "90px" }} />
                     </Animated>
                     <div className="photoboats">
                         <br />
@@ -485,12 +487,12 @@ export default class Tools extends React.Component {
                         {/* drones section div */}
                     </div>
                     <hr className="big-hr" id="cameracar" />
-                    <h3>Camera Cars/Trailers</h3>
+                    <h3>Camera Car and Process Trailer</h3>
                     <hr style={{ width: "90px" }} />
                     <div className="photoboats">
 
                         <div className="photoboat">
-                            <h4>Camera Car and Process Trailer</h4>
+                           
                             <Carousel id="cameracar-carousel"
                                 showThumbs={false} className='tools-carousel' infiniteLoop style={{ minHeight: '250px' }}>
 
@@ -567,7 +569,7 @@ export default class Tools extends React.Component {
                             />                                </div> */}
                             <div className="header-info">
 
-                                <h4>Lenses and Cameras</h4>
+                               
                                 <p>Jordan Klein Film and Video has always maintained a large inventory of the latest cameras and lenses. That being said, We do not want to give people the wrong impression when it comes to our gear. We are not a rental house. If you require some gear we will send out one of our camera packages with a minimum of a tech or 2nd A/C. we primarily use all of our gear on our own productions. In other words…." We are not a rental house, just a production company that has a lot of gear"</p>
                                 <div className="cameras-lenses">
                                     <div className="cameras__ul">
