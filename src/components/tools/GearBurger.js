@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import MobileNav from './MobileMenu';
 
-const StyledBurger = styled.div`
+const StyledGearBurger = styled.div`
 margin-top: 10px;
     width: 2rem;
     height: 2rem;
@@ -50,11 +50,11 @@ const GearBurger = () => {
     return (
         <>
             
-        <StyledBurger open={open} onClick={() => setOpen(!open)}>
+        <StyledGearBurger open={open} onClick={() => setOpen(!open)}>
             <div></div>
             <div></div>
             <div></div>
-        </StyledBurger>
+        </StyledGearBurger>
         <MobileNav open={open}/>
         </>
     )

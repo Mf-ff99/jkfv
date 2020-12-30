@@ -25,7 +25,7 @@ margin-top: 10px;
         height: .25rem;
         border: 1px solid black;
         border-radius: 10px;
-        background-color: ${({open}) => open ? 'black' : '#333'};
+        background-color: ${({open}) => open ? 'black' : 'black'};
         transform-origin: 1px;
         transition: all .3s;
 
