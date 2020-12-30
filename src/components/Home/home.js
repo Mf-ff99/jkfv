@@ -8,6 +8,7 @@ import { HashLink } from 'react-router-hash-link'
 import ReactPlayer from 'react-player/lazy'
 import YS2 from '../../images/Yard-Sale_2.mp4'
 import ShotcallRunning from '../../images/shotcalla-running.jpg'
+import XCamLogo from '../../images/Logo.png'
 const MFD = "https://secureservercdn.net/198.71.233.44/23d.ff1.myftpupload.com/wp-content/uploads/2019/11/MFD_1.mp4"
 
 export default function Home() {
@@ -136,12 +137,9 @@ export default function Home() {
                         />  */}
                         <h2>XCam Aerials</h2>
                         <hr style={{width: "90px", backgroundColor: "white"}} />
-                    <div className='margin-divider'>
-                        <div className='mfd-5000-drone'>
-                        <video loop="loop" autoPlay playsInline muted>
-                    <source type="video/mp4" src={MFD} />
-
-                </video>
+                    <div className='margin-divider xcam-section'>
+                        <div className='xcam-logo-container'>
+                        <img className='xcam-logo' src={XCamLogo} alt='XCam Aerials Logo' />
                         </div>
                         <div className='span-holder'>
                             <span>

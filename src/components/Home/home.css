@@ -12,6 +12,33 @@ body {
     top: 0;
 }
 
+.xcam-logo {
+    width: 310px;
+    padding: 5px;
+    text-align: center;
+}
+
+.xcam-logo-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.xcam-section {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+}
+
+@media (min-width: 658px) {
+    .xcam-logo {
+        flex-direction: row !important;
+
+    }
+}
+
 .home {
     width: 100%;
     display: flex;
