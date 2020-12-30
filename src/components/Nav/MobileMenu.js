@@ -12,6 +12,7 @@ const UL = styled.ul`
     // min-height: 800px;
     margin-left: 0;
     padding-left: 0;
+    z-index: 2000;
 
     li {
         color: black !important;
@@ -63,7 +64,7 @@ const UL = styled.ul`
         width: 200px;
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;
-        z-index: 10;
+        z-index: 1000;
 
     a {
         color: black !important;
