@@ -174,7 +174,7 @@ export default class Tools extends React.Component {
 
                         <div className="photoboat">
                             <h4>
-                                The PBJ
+                                The PBJ (Photoboat Junior)
                             </h4>
                             <Carousel showThumbs={false} className='big-baller-carousel'>
                                 <div>
@@ -286,7 +286,16 @@ export default class Tools extends React.Component {
 
                             <Carousel className='tools-carousel' showThumbs={false} infiniteLoop style={{ minHeight: '250px' }}>
 
+                            <div className='d-block w-100'>
+                                    <ReactPlayer
+                                        className='video-3-player'
+                                        url='https://vimeo.com/146350055'
+                                        playing={false}
+                                        controls={true}
+                                        width='100%'
 
+                                    />
+                                </div>
                                 <div className=''>
                                     <img className="d-block w-100 crane-pic-1" src={TritonArm} alt='Triton Arm' />
 
@@ -439,7 +448,7 @@ export default class Tools extends React.Component {
                     <hr style={{ width: "90px" }} />
                     <div className="aerials">
 
-                        <h6>Our Aerials are solely operated by XCam Aerials. Click the link to visit the<a href="http://xcamaerials.com/" target="_blank" rel="noopener noreferrer">XCam Aerials</a> website.</h6>
+                        <h6>Our Aerials are solely operated by XCam Aerials. Click the link to visit the <a href="http://xcamaerials.com/" target="_blank" rel="noopener noreferrer">XCam Aerials</a> website.</h6>
                         {/* <div className="tools-image-container">
 
                                 <img className="pbj-image" src={Inspire} alt='Inspire 2' />
@@ -496,10 +505,10 @@ export default class Tools extends React.Component {
                             <Carousel id="cameracar-carousel"
                                 showThumbs={false} className='tools-carousel' infiniteLoop style={{ minHeight: '250px' }}>
 
-                                <div className='d-block w-100'>
+<div className='d-block w-100'>
                                     <ReactPlayer
                                         className='video-3-player'
-                                        url='https://vimeo.com/361505272'
+                                        url='https://vimeo.com/338239605'
                                         playing={false}
                                         controls={true}
                                         width='100%'
@@ -510,7 +519,7 @@ export default class Tools extends React.Component {
                                 <div className='d-block w-100'>
                                     <ReactPlayer
                                         className='video-3-player'
-                                        url='https://vimeo.com/338239605'
+                                        url='https://vimeo.com/361505272'
                                         playing={false}
                                         controls={true}
                                         width='100%'
@@ -592,9 +601,9 @@ export default class Tools extends React.Component {
                                                 <li>Red Epic Dragon</li>
                                                 <li>Red Scarlet</li>
                                                 <li>Arri Amira</li>
-                                                <li>Arri Alexa Classic</li>
+                                                <li>Freefly Wave</li>
                                                 <li>Arri Alexa Mini</li>
-                                                <li>Sony F65</li>
+                                                <li>Sony Venice</li>
                                                 <li>Panasonic GH5</li>
                                                 <li>Black Magic Pocket Cinema Camera</li>
                                             </ul>
