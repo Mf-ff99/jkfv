@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import React from 'react'
 import { HashLink } from 'react-router-hash-link'
+import Arrow from '../../images/down-arrow.png'
 
 
 const UL = styled.ul`
@@ -14,7 +15,7 @@ const UL = styled.ul`
     // min-height: 800px;
     margin-left: 0;
     padding-left: 0;
-    z-index: 10000;
+    z-index: 150;
 
     li a {
         color: white !important;
@@ -65,10 +66,10 @@ const UL = styled.ul`
         align-items: center !important;
         background-color: #0D2538;
         position: fixed;
-        transform: ${({open}) => open ? 'translateX(0)' : 'translateX(-100%)'};
+        transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
         /* top: 185px; */
         left: 0;
-        height: 50vh;
+        height: 59vh;
         /* width: 1500px; */
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;
@@ -97,14 +98,20 @@ const UL = styled.ul`
 
 const MobileNav = ({ open }) => {
     return (
-        <UL className='animate__animated animate__rubberBand' open={open}>
+        <UL open={open}>
+            
+            {/* <li><HashLink smooth to="#tools" >
+            <div class="arrow up" /></HashLink></li> */}
             <li><HashLink smooth to="#photoboats" >
-                                Photoboats</HashLink></li>
-                            <li><HashLink smooth to="#cranes">Cranes</HashLink></li>
-                            <li><HashLink smooth to="#aerials">Aerials</HashLink></li>
-                            <li><HashLink smooth to="#cameracar">Camera Truck</HashLink></li>
-                            <li><HashLink smooth to="#lenses">Lenses</HashLink></li>
-                            <li><HashLink smooth to="#lenses">Cameras</HashLink></li>
+                Photoboats</HashLink></li>
+            <li><HashLink smooth to="#cranes">Cranes</HashLink></li>
+            <li><HashLink smooth to="#aerials">Aerials</HashLink></li>
+            <li><HashLink smooth to="#cameracar">Camera Truck</HashLink></li>
+            <li><HashLink smooth to="#lenses">Lenses</HashLink></li>
+            <li><HashLink smooth to="#underwater">Underwater</HashLink></li>
+            <li><HashLink smooth to="#crew">Crew</HashLink></li>
+            <li><HashLink smooth to="#3D">3D & VR</HashLink></li>
+            <li><HashLink smooth to="#skunkworks">Skunkworks</HashLink></li>
         </UL>
     )
 

@@ -147,3 +147,28 @@ background: #394D61;
 section {
     /* margin-right: 20px; */
 }
+
+.contact-upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+    max-width: 350px;
+}
+@media (min-width: 658px) {
+    .about-container {
+        flex-direction: row;
+        width: auto;
+    }
+
+    .contact-upper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+        margin-right: 50px;
+        max-width: 350px;
+    }
+}

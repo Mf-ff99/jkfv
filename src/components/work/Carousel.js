@@ -8,7 +8,7 @@ import logos from '../../images/logos/logos'
 export default class WorkCarousel extends Component {
     render() {
         return (
-            <Carousel>
+            <Carousel infiniteLoop id='cameracar-carousel'>
                 <div>
                 <ReactPlayer
                             className='video-2-player'

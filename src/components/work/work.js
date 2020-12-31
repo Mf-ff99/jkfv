@@ -31,13 +31,13 @@ export default function Work() {
                     
                     <hr />
                 </div>
-                <Carousel>
+                <Carousel showThumbs={false} infiniteLoop id='cameracar-carousel'>
                     <div className='vimeo-video'>
                         <ReactPlayer
                             className='carousel-work-video'
                             url='https://vimeo.com/458941481'
                             playing={false}
-                            width='92%'
+                            width='100%'
                             
                             // volume={.1}
                             muted={true}
@@ -68,7 +68,7 @@ export default function Work() {
                             className='carousel-work-video'
                             url='https://vimeo.com/445579276'
                             playing={false}
-                            width='92%'
+                            width='100%'
                             
                             // volume={.1}
                             muted={true}
@@ -83,7 +83,7 @@ export default function Work() {
                             className='carousel-work-video'
                             url='https://vimeo.com/105596534'
                             playing={false}
-                            width='92%'
+                            width='100%'
                             
                             // volume={.1}
                             muted={true}
@@ -98,7 +98,7 @@ export default function Work() {
                             className='carousel-work-video'
                             url='https://vimeo.com/136759179'
                             playing={false}
-                            width='92%'
+                            width='100%'
                             
                             // volume={.1}
                             muted={true}
@@ -113,7 +113,7 @@ export default function Work() {
                             className='carousel-work-video'
                             url='https://vimeo.com/495541122'
                             playing={false}
-                            width='92%'
+                            width='100%'
                             
                             // volume={.1}
                             muted={true}
@@ -122,12 +122,12 @@ export default function Work() {
                             
                         />
                     </div>
-                <div className='vimeo-video' style={{marginTop: '0'}}>
+                <div infiniteLoop className='vimeo-video' style={{marginTop: '0'}}>
                     <ReactPlayer
                             className='carousel-work-video'
                             url='https://player.vimeo.com/video/347630793?title=0&byline=0&portrait=0&app_id=122963'
                             playing={false}
-                            width='92%'
+                            width='100%'
                             
                             // volume={.1}
                             muted={true}
@@ -141,7 +141,7 @@ export default function Work() {
                             className='carousel-work-video'
                             url='https://vimeo.com/306016327'
                             playing={false}
-                            width='92%'
+                            width='100%'
                             
                             // volume={.1}
                             muted={true}
@@ -160,13 +160,13 @@ export default function Work() {
                     
                     <hr />
                 </div>
-                <Carousel>
+                <Carousel showThumbs={false} infiniteLoop>
                     <div className='vimeo-video'>
                         <ReactPlayer
                             className='carousel-work-video'
                             url='https://vimeo.com/474146943'
                             playing={false}
-                            width='92%'
+                            width='100%'
                             
                             // volume={.1}
                             muted={true}
@@ -174,8 +174,6 @@ export default function Work() {
                             loop={true}
                             
                             />
-                        {/* <p className="legend">Legend 2</p> */}
-
                     </div>
                     <div>
                     
@@ -197,7 +195,7 @@ export default function Work() {
                             className='carousel-work-video'
                             url='https://vimeo.com/495537100'
                             playing={false}
-                            width='92%'
+                            width='100%'
                             
                             // volume={.1}
                             muted={true}
@@ -212,7 +210,7 @@ export default function Work() {
                             className='carousel-work-video'
                             url='https://vimeo.com/495539470'
                             playing={false}
-                            width='92%'
+                            width='100%'
                             
                             // volume={.1}
                             muted={true}
@@ -227,7 +225,7 @@ export default function Work() {
                             className='carousel-work-video'
                             url='https://vimeo.com/495539470'
                             playing={false}
-                            width='92%'
+                            width='100%'
                             
                             // volume={.1}
                             muted={true}
@@ -242,7 +240,7 @@ export default function Work() {
                             className='carousel-work-video'
                             url='https://vimeo.com/395834408'
                             playing={false}
-                            width='92%'
+                            width='100%'
                             
                             // volume={.1}
                             muted={true}
@@ -259,17 +257,17 @@ export default function Work() {
                     <h2>Drone + Helicopter Aerials</h2>
                     <br />
                     {/* <hr style={{borderBottom: '1px solid black', width: '90px'}} /> */}
-                    <p style={{width: '70%'}}>Aerial photography is an art, and no one does it better than our team here at Jordan Klein Film & Video. From flying full-size camera packages to the Mavic Pro 2, we have, and do, it all. You can find out more about our drones <Link to="/tools">here</Link>, and also on our dedicated <a href="http://xcamaerials.com" target="_blank" rel="noopener noreferrer" >XCam Aerials</a> website.</p>
+                    <p style={{width: '70%'}}>Aerial photography is an art, and no one does it better than our team here at Jordan Klein Film & Video. From flying full-size camera packages to the Mavic Pro 2, we have, and do, it all. You can find out more about our drones on our dedicated <a href="http://xcamaerials.com" target="_blank" rel="noopener noreferrer" >XCam Aerials</a> website.</p>
                     
                     <hr />
                 </div>
-            <Carousel>
+            <Carousel showThumbs={false}>
                     <div className='vimeo-video'>
                         <ReactPlayer
                             className='carousel-work-video'
                             url='https://vimeo.com/203179504'
                             playing={false}
-                            width='92%'
+                            width='100%'
                             
                             // volume={.1}
                             muted={true}
@@ -300,7 +298,7 @@ export default function Work() {
                             className='carousel-work-video'
                             url='https://vimeo.com/321497422'
                             playing={false}
-                            width='92%'
+                            width='100%'
                             
                             // volume={.1}
                             muted={true}
@@ -315,7 +313,7 @@ export default function Work() {
                             className='carousel-work-video'
                             url='https://vimeo.com/333546749'
                             playing={false}
-                            width='92%'
+                            width='100%'
                             
                             // volume={.1}
                             muted={true}
@@ -328,6 +326,7 @@ export default function Work() {
                     
                 </Carousel>
             </div>
+            <br />
         </section>
                             </Animated>
     )

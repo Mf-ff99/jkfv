@@ -54,6 +54,7 @@ div.carousel ul li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
 }
 
 .project-header h3 {
@@ -78,6 +79,7 @@ div.work-page-header {
     justify-items: center !important;
     text-align: center; 
     align-self: center;
+    max-width: 900px;
 }
 
 section.work-page h6 {

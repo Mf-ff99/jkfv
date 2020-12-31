@@ -40,13 +40,7 @@ export default function Home() {
                             {/*  <img src={Logo} alt="Xcam Aerials Logo" className="xcam-img" /> */}
                             <a href="https://vimeo.com/user1974921" target="_blank" rel="noopener noreferrer" ><i className="fab fa-vimeo-square fa-2x"></i></a>
                         </div>
-                    <div className='arrow'>
-
-                        <span className='fancy-text-pointer'></span>
-                        <HashLink smooth to="#about-work-view">
-                            <img className='arrow-pointer' src={ArrowLogo} alt='arrow for scrolling' />
-                        </HashLink>
-                    </div>
+                  
                     </div>
             <section className="landing">
                 <div className="landing-page">
@@ -135,15 +129,13 @@ export default function Home() {
                             loop={true}
                             
                         />  */}
-                        <h2>XCam Aerials</h2>
-                        <hr style={{width: "90px", backgroundColor: "white"}} />
                     <div className='margin-divider xcam-section'>
                         <div className='xcam-logo-container'>
                         <img className='xcam-logo' src={XCamLogo} alt='XCam Aerials Logo' />
                         </div>
                         <div className='span-holder'>
                             <span>
-                           Our drone division, XCam Aerials, is only a click away. Feel free to visit <a href='http://xcamaerials.com/' target="_blank" rel="noopener noreferrer">XCam</a> for more information.                        </span>                        </div>
+                           Our drone division, XCam Aerials, is only a click away. Feel free to visit <a href='http://xcamaerials.com/' target="_blank" rel="noopener noreferrer">XCamAerials.com</a> for more information.                        </span>                        </div>
                     </div>
                 </section>
                 <section className='jordys-specialties'>
@@ -172,18 +164,6 @@ export default function Home() {
                     </div>
                     </div>
                 </section>
-                {/* <section className=''>
-                </section> */}
-                {/* <div className="hr-container" id="hr-container-about">
-                <div className="content">
-                    <p>Jordan Klein Jr. is a legendary award-winning Director of Photography, ace pilot, and an underwater diving expert</p>
-                </div>
-            </div> */}
-                {/* <div className="hr-container-2">
-                <div className="content-2">
-                    <p>JKF & V has all the tools your shoot needs to get the job done</p>
-                </div>
-            </div> */}
                             <section className='tools-block'>
                      <h3>Our Expertise is a Phone Call Away</h3>
                      <hr style={{width: "90px", backgroundColor: "white"}} />

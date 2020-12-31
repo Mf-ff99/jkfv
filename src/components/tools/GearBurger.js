@@ -13,7 +13,7 @@ margin-top: 10px;
     justify-content: space-around;
     flex-flow: column nowrap;
     cursor: pointer;
-    z-index: 100;
+    z-index: 2000;
     /* float: right; */
     div {
         width: 2rem;

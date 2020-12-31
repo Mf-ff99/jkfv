@@ -1,8 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Photoboat from '../../images/photoboat.png'
 import PBJ from '../../images/pbj.png'
 import Pontoon from '../../images/pontoon.png'
-import TelescopicCrane from '../../images/telescopic-crane.png'
 import TritonArm from '../../images/triton-arm.png'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel'
@@ -11,8 +11,7 @@ import './tools.css'
 import GearBurger from './GearBurger'
 import ReactPlayer from 'react-player/lazy'
 import images from '../../images/BarreledImages'
-// import Carousel from 'react-bootstrap/Carousel'
-
+import MFD from '../../images/RED-MFD-5000.jpg'
 
 export default class Tools extends React.Component {
 
@@ -66,7 +65,7 @@ export default class Tools extends React.Component {
         return (
             <>
 
-                <section className='tools'>
+                <section id='tools' className='tools'>
 
                     <div className={`${this.state.isSticky ? "tools-sidebar" : "sticky-sidebar"}`}>
                         {this.state.isSticky ? "" : <h3>Menu</h3>}
@@ -135,7 +134,7 @@ export default class Tools extends React.Component {
                                 <div>
                                     <ReactPlayer
                                         className='video-3-player'
-                                        url='https://vimeo.com/445585655'
+                                        url='https://vimeo.com/357656228'
                                         playing={false}
                                         controls={true}
                                         width='100%'
@@ -176,7 +175,7 @@ export default class Tools extends React.Component {
                             <h4>
                                 The PBJ (Photoboat Junior)
                             </h4>
-                            <Carousel showThumbs={false} className='big-baller-carousel'>
+                            <Carousel infiniteLoop showThumbs={false} className='big-baller-carousel'>
                                 <div>
                                     <img src={PBJ} alt='Pontoon Boat: The Big Baller' />
                                 </div>
@@ -201,7 +200,7 @@ export default class Tools extends React.Component {
                             <h4>
                                 The Big Baller
                             </h4>
-                            <Carousel showThumbs={false} className='big-baller-carousel'>
+                            <Carousel infiniteLoop showThumbs={false} className='big-baller-carousel'>
                                 <div>
                                     <img src={Pontoon} alt='Pontoon Boat: The Big Baller' />
                                 </div>
@@ -228,7 +227,7 @@ export default class Tools extends React.Component {
                     </hr>
                     <h3 className="crane-header">Cranes</h3>
                     <hr style={{ width: "90px" }} />
-                    <div className="cranes">
+                    <div className="photoboats">
 
                         <div className="photoboat">
                             <h4>
@@ -237,15 +236,37 @@ export default class Tools extends React.Component {
 
 
                             <Carousel className='tools-carousel' showThumbs={false} infiniteLoop style={{ minHeight: '250px' }}>
+                            <div className='d-block w-100'>
+                                    <ReactPlayer
+                                        className='video-3-player'
+                                        url='https://vimeo.com/495537100'
+                                        playing={false}
+                                        controls={true}
+                                        width='100%'
 
-
-                                <div className=''>
-                                    <img className="d-block w-100 crane-pic-1" src={TelescopicCrane} alt='Telescopic Crane' />
-
-
+                                    />
                                 </div>
+                                <div className='d-block w-100'>
+                                    <ReactPlayer
+                                        className='video-3-player'
+                                        url='https://vimeo.com/495538039'
+                                        playing={false}
+                                        controls={true}
+                                        width='100%'
 
+                                    />
+                                </div>
+                              
+                                <div className='d-block w-100'>
+                                    <ReactPlayer
+                                        className='video-3-player'
+                                        url='https://vimeo.com/371614461'
+                                        playing={false}
+                                        controls={true}
+                                        width='100%'
 
+                                    />
+                                </div>
                                 <div className='d-block w-100'>
                                     <ReactPlayer
                                         className='video-3-player'
@@ -256,6 +277,7 @@ export default class Tools extends React.Component {
 
                                     />
                                 </div>
+                              
 
                             </Carousel>
 
@@ -314,7 +336,7 @@ export default class Tools extends React.Component {
                                 </div>
                             </Carousel>
 
-                            <div className="header-info">
+                            <div className="header-info triton-info">
 
                                 <p>The Triton arm is a lightweight crane that can be mounted to almost anything. The Triton is fully robotically controlled via a wireless transmitter. It can accommodate our Movi Pro or DJI Ronin 2 stabilized heads. The Triton can be built in 2 lengths, 6’ and 11’. The max camera package that the Triton can accommodate is 25lbs. The total weight of the Triton with a camera and the remote head is approximately 170lbs respectively. The Triton can be mounted to a standard Reese trailer hitch on any vehicle or anything Mitchell mount configuration. Also see our custom electric ATV that holds the Triton arm.</p>
                                 <ul>
@@ -344,7 +366,7 @@ export default class Tools extends React.Component {
                                 <div className='d-block w-100'>
                                     <ReactPlayer
                                         className='video-3-player'
-                                        url='https://vimeo.com/260935783'
+                                        url='https://vimeo.com/338239605'
                                         playing={false}
                                         controls={true}
                                         width='100%'
@@ -447,53 +469,18 @@ export default class Tools extends React.Component {
                     <h3>Aerials</h3>
                     <hr style={{ width: "90px" }} />
                     <div className="aerials">
+                    <Carousel showThumbs={false} className='big-baller-carousel aerials' style={{}}>
+                                {/* <Carousel.Item> */}
 
+                                
+                                   <div>
+                                       <img className="mfd-image" src={MFD} alt='MFD 5000 Drone with RED camera and Ronin 2 gimbal' />
+                                   </div>
+                                
+
+                        </Carousel>
                         <h6>Our Aerials are solely operated by XCam Aerials. Click the link to visit the <a href="http://xcamaerials.com/" target="_blank" rel="noopener noreferrer">XCam Aerials</a> website.</h6>
-                        {/* <div className="tools-image-container">
-
-                                <img className="pbj-image" src={Inspire} alt='Inspire 2' />
-                            </div>
-                            <div className="header-info">
-
-                                <h4>Inspire 2</h4>
-                                <p>In house we have two Inspire 2s available, each equipped with the X7 gimbal and a complete set of prime lenses. The I2 is a sturdy workhorse, and our drone crew is second to none. The pair of Inspires we currenly use have been used on the sets of The Right Stuff, the music video Twerk by City Girls, and many more.</p>
-                                <ul>
-                                    <li>Lenses: 16, 24, 35, 50</li>
-                                    <li>X7 Camera Gimbal</li>
-                                    <li>6K CDNG, Prores, Prores RAW</li>
-                                    <li>Easy to match with Arri, Red footage</li>
-                                    <li>Dual operator capable</li>
-                                    <li>Cendence Controller for SDI output</li>
-                                </ul>
-                            </div>
-                        </div> */}
-
-                        {/* <div className="drone">
-                            <div className="tools-image-container">
-
-                                <img className="pbj-image" src={MFD} alt='MFD 5000' />
-                            </div>
-                            <div className="header-info">
-
-                                <h4>Watt's Innovations MFD 5000</h4>
-                                <p>The MFD 5000 is our heavylift drone. Capable of lifting almost any payload and boasting a 12-15 minute flight-time, the MFD is a powerful tool for filmmakers. Flying a full-size camera package with FIZ control, gimbal control, and a wireless video feed has never been easier.</p>
-                                <p>You can find out more about our Aerials by visiting <a href="http://xcamaerials.com/" rel="noopener noreferrer">XcamAerials.com</a></p>
-                                <ul>
-                                    <li>Heavy Lift UAS</li>
-                                    <li>Carries Ronin 2</li>
-                                    <li>Payload of an ARRI Alexa Mini or RED</li>
-                                    <li>Capable of lifting almost any lens</li>
-                                    <li>Speeds of up to 45mph</li>
-                                    <li>12-15 Minute flight time depending on payload</li>
-                                    <li>Onset charging for all-day shoots</li>
-                                </ul>
-                            </div>
-                        */}
-
-                        {/* drone ends here */}
-
-
-                        {/* drones section div */}
+                       
                     </div>
                     <hr className="big-hr" id="cameracar" />
                     <h3>Camera Car and Process Trailer</h3>
@@ -505,10 +492,10 @@ export default class Tools extends React.Component {
                             <Carousel id="cameracar-carousel"
                                 showThumbs={false} className='tools-carousel' infiniteLoop style={{ minHeight: '250px' }}>
 
-<div className='d-block w-100'>
+                                <div className='d-block w-100'>
                                     <ReactPlayer
                                         className='video-3-player'
-                                        url='https://vimeo.com/338239605'
+                                        url='https://vimeo.com/361505272'
                                         playing={false}
                                         controls={true}
                                         width='100%'
@@ -519,7 +506,7 @@ export default class Tools extends React.Component {
                                 <div className='d-block w-100'>
                                     <ReactPlayer
                                         className='video-3-player'
-                                        url='https://vimeo.com/361505272'
+                                        url='https://vimeo.com/338239605'
                                         playing={false}
                                         controls={true}
                                         width='100%'
@@ -620,12 +607,248 @@ export default class Tools extends React.Component {
                     <hr style={{ width: "90px" }} />
                     <div className="photoboats">
 
-                        <div className="photoboat"></div>
+                        <div className="photoboat">
+                            <h3>Underwater Cinematography</h3>
+                        <Carousel showThumbs={false} className='big-baller-carousel' style={{}}>                    
+                        {/* <ReactPlayer
+                                className='video-2-player'
+                                url='https://vimeo.com/338239605'
+                                playing={false}
+                                controls={true}
+                                width='100%'
+                                height='100%'
+                            />      */}
+                            <div>
+                                <img src={images.UnderwaterWelding} alt='Jordy filming underwater welding' />
+                            </div>
+                                  </Carousel>
+                        <div className='header-info'>
+                            <p>Jordan Klein Film and Video and The Klein family have been at the forefront of underwater cinematography technology for over 50 years! Jordan Klein, Sr opened the first dive shop on Miami beach shortly after World War II and developed some of the first underwater cameras. </p><p>Jordan Klein, Sr's son,  Jordy Klein has continued the legacy and is still pushing the boundaries of underwater filmmaking.
+
+Vampire Diaries: Behind the Scenes
+
+Underwater behind the scenes of Vampire Diaries season 3 finale.
+
+ 
+
+Underwater D/P: Jordan(Jordy) Klein Jr.</p>
+                        </div>
+
+                        </div>
+
+                        <div className="photoboat">
+                            <h3>Underwater Drone</h3>
+                        <Carousel infiniteLoop showThumbs={false} id="cameracar-carousel" className='underwater-carousel' style={{}}>
+                           
+                        <ReactPlayer
+                                className='video-2-player'
+                                url='https://vimeo.com/385681880'
+                                playing={false}
+                                controls={true}
+                                width='100%'
+                                // height='100%'
+                                />      
+                                                
+                            
+                                  </Carousel>
+                        <div className='header-info'>
+                            <p>The Fafish is a fully remotely controlled underwater drone. It has a 350’ teather and can travel to depths of 300’. The Fafish has a 1” sensor and can shoot 4k video at 24 or 30fps it can also shoot 1080p at 60fps
+
+The FaFish is great for location scouting or in situations where a manned camera is just not practicle or safe. The Fafish has a top speed of 8mph and also has internal LED lighting. The FaFish has a battery life of 5 hrs of constant use.
+
+The FaFish also has an HD video output that can be attached to a monitor at the surface. It can also be used for live broadcast productions.</p>
+                        </div>
+
+                        </div>
 
                     </div>
 
 
+                    <span id='crew'></span>
+                    <hr />
+                    {/* crew begins here */}
+                    <h3>The Crew</h3>
+                    <hr style={{ width: '90px' }} />
+                    <div className='photoboats'>
+                        <div className='photoboat'>
+
+                    <Carousel infiniteLoop showThumbs={false} id='cameracar-carousel' style={{}}>                    
+                                  
+                        </Carousel>
+                        <h6>JKF&V, in addition to being a provider of all types of specialty production gear and cameras can also provide the crew needed to operate the specialty equipment. 
+
+We have staff sound mixers, lighting, grip, and camera department crew available on staff. Let us know what you need!</h6>
+                        </div>
                 </div>
+                <hr className='big-hr' />
+                
+                <h3 id="3D">3D & Virtual Reality Cinematography</h3>
+                    <hr style={{ width: "90px" }} />
+                    <div className="photoboats">
+
+                        <div className="photoboat">
+                            
+                        <Carousel showThumbs={false} infiniteLoop className="tools-carousel" style={{}}>                    
+                        <div>
+                            <ReactPlayer
+                                className='video-2-player'
+                                url='https://vimeo.com/26424346'
+                                playing={false}
+                                controls={true}
+                                width='100%'
+                                // height='100%'
+                                />      
+                                </div>
+                                <div>
+                            <ReactPlayer
+                                className='video-2-player'
+                                url='https://vimeo.com/189631277'
+                                playing={false}
+                                controls={true}
+                                width='100%'
+                                // height='100%'
+                                />      
+                                </div>
+                           
+                                  </Carousel>
+                        <div className='header-info'>
+                            <p>Jordan Klein Film and Video has alway been one of the few companies at the forefront of 3D and immersive technology. We are the only company in the Southeast USA with latest 3ality Technica, ATOM, 3D Beamspiltter rig.
+
+ 
+
+The Atom can be rigged with any of the latest Arri, Red, or Sony cameras.
+ 
+
+Additionally, we have worked with several of the newest immersive technology companies such as Oculus Rift and Google cardboard. On one occasion we rigged 5 Black magic Pocket Cinema cameras to our Octocopter with a fully stabilized gimbal.
+
+ 
+
+We also build our own 3D underwater housing systems</p>
+                        </div>
+
+                        </div>
+                    </div>
+
+                    <span id='skunkworks'></span>
+                    <hr />
+                    {/* skunkworks begins here */}
+                    <h3>Skunkworks</h3>
+                    <hr style={{ width: '90px' }} />
+                    <div className='photoboats'>
+                        <div className='photoboat'>
+                        <h3>Winchcam</h3>
+
+                    <Carousel infiniteLoop showThumbs={false} id='cameracar-carousel' style={{}}>                    
+                    <div>
+                            <ReactPlayer
+                                className='video-2-player'
+                                url='https://vimeo.com/354491636'
+                                playing={false}
+                                controls={true}
+                                width='100%'
+                                // height='100%'
+                                />      
+                                </div>
+                        </Carousel>
+                        <div className='header-info'>
+
+                        <p>The Winchcam is a portable 4 point system that allows you to fly your choice of gimbals and most cameras in a 3-dimensional space. The Winchcam is designed to attach to 2, 3, or 4 hardpoints that are above the stage. The maximum space between each attach point can be 100’.</p>
+
+<p>The total payload the Winchcam is capable of flying is 25lbs (camera and gimbal) the maximum speed is 25mph. The Winchcam system is controlled wirelessly by an operator that is separate from the gimbal operator. The winch cam attachment points must be approximately twice the height that you would like the payload to fly. (IE: If you want the gimbal to reach a max height of 10’  above the ground, then you will need the attachment point to be 20’ above the ground).</p><p>The entire Winchcam system can be checked as excess baggage on a commercial airline. The Winchcam can operate on 4 normal 20 amp outlets. It can also run on 4 x Honda 2000 watt generators. Check out the video.</p>
+                        </div>
+                        </div>
+                        <div className='photoboat'>
+                        <h3>Railrunner</h3>
+
+                    <Carousel infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
+                        <div>                    
+                   <ReactPlayer
+                                className='video-2-player'
+                                url='https://vimeo.com/474164076'
+                                playing={false}
+                                controls={true}
+                                width='100%'
+                                // height='100%'
+                                />      
+                                </div>
+                        <div>                    
+                   <ReactPlayer
+                                className='video-2-player'
+                                url='https://vimeo.com/421026841'
+                                playing={false}
+                                controls={true}
+                                width='100%'
+                                // height='100%'
+                                />      
+                                </div>
+                        </Carousel>
+                        <div className='header-info'>
+
+                        <p>The RailRunner dolly system was designed to allow the user to quickly attach the device to any tubular pipe that is 1 1/2” thru 2” in outside diameter. (IE: Speedrail or PVC pipe.) We can build the Railrunner in any variation of speed and torque.
+
+We presently have systems that can carry up to 30lbs and travel at speeds of 30mph. We have recently been asked to design a RailRunner to reach speeds of 100mph in 1/4 mile. </p>
+
+<p>The RailRunner Can be configured to operate as a 2 person or single person system. (IE: One person can operate the camera gimbal and one person can operate the RailRunner or one person can operate both functions.)
+
+Let us know what your requirements are, and we will do our best to accomidate your request.</p>
+                        </div>
+                        </div>
+                        <div className='photoboat'>
+                        <h3>Railcam</h3>
+
+                    <Carousel infiniteLoop showThumbs={false} id='cameracar-carousel' style={{}}>                    
+                    <div>                    
+                   <ReactPlayer
+                                className='video-2-player'
+                                url='https://vimeo.com/372484162'
+                                playing={false}
+                                controls={true}
+                                width='100%'
+                                // height='100%'
+                                />      
+                                </div>
+                        </Carousel>
+                        <div className='header-info'>
+
+                        <p>The railcam was originally developed to shoot the AKC dog shows. We needed a device that could transport a camera and gimbal up to 20mph at “dog height” for about 120’ the Railcam is designed to run on a speed rail that is linked together with internal links that are spaced about 18” apart. we have since modified the Railcam to track Olympic class runners at various track and field events. and like the Railrunner, the Railcam can be modified to travel an almost any speed with almost any camera payload. Let us know your requirements and we will do our best to accommodate you.
+</p>
+                        </div>
+                        </div>
+                        <div className='photoboat'>
+                        <h3>Underwater Dolly</h3>
+
+                    <Carousel infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>                    
+                    <div>                    
+                   <ReactPlayer
+                                className='video-2-player'
+                                url='https://vimeo.com/385683363'
+                                playing={false}
+                                controls={true}
+                                width='100%'
+                                // height='100%'
+                                />      
+                                </div>
+                    <div>                    
+                   <ReactPlayer
+                                className='video-2-player'
+                                url='https://vimeo.com/375096250'
+                                playing={false}
+                                controls={true}
+                                width='100%'
+                                // height='100%'
+                                />      
+                                </div>
+                        </Carousel>
+                        <div className='header-info'>
+
+                        <p>Our high speed underwater Dolly was designed to track Olympic class swimmers from an underwater view. We wanted the Underwater dolly to be compleatly remote controlled from the surface. We also wanted to be able to attach a large cinema camera to the dolly so that it can be used for any application. The Underwater dolly can travel at speeds of 1-10mph.</p>
+                        </div>
+                        </div>
+                </div>
+                <hr className='big-hr' />
+                <h3>Need more information?</h3>
+                <h6>Contact <Link to='/contact'>Jordy</Link> for more information regarding his equipement and team.</h6>
+            </div>
             </>
         )
     }
