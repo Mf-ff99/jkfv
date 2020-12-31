@@ -112,10 +112,10 @@ export default class Tools extends React.Component {
 </h3>
 
 
-                            <Carousel infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
+                            <Carousel swipeable={true} showArrows={true} infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
                                 {/* <Carousel.Item> */}
 
-                                <div>
+                                
                                     <ReactPlayer
                                         className='video-3-player'
                                         url='https://vimeo.com/460494916'
@@ -124,7 +124,7 @@ export default class Tools extends React.Component {
                                         width='100%'
 
                                     />
-                                </div>
+                                
 
 
                                 <div>
