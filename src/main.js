@@ -10,7 +10,6 @@ import ScrollToTop  from './components/Utils/ScrollToTop'
 export default function Main() {
     return (
         <>
-        <ScrollToTop />
         <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/about' component={About} />

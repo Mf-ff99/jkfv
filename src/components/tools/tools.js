@@ -74,7 +74,7 @@ export default class Tools extends React.Component {
                 <span id="photoboats"></span>
                 <div className="tool-sections" >
                     <Animated animationIn="fadeIn" animationOut="fadeOut">
-                        <h2 >Our Tools</h2>
+                        <h2>Our Tools</h2>
                     </Animated>
                     <hr style={{ width: '200px', border: '1px solid black' }} />
                     <Animated animationIn="fadeIn" animationOut="fadeOut">

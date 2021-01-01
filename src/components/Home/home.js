@@ -174,7 +174,7 @@ export default function Home() {
                     </div>
                     <div className='span-holder'>
 
-                        <span className="photoboat-tool-text">Drones, camera cars, photoboats, and cranes of various sizes, our equipment is custom-built for smooth shooting and intense gigs. For more details on our equipment specifications, you can check out our tools of the trade <Link to="/tools" className='to-tools-link'>here</Link>.</span>
+                        <span className="photoboat-tool-text">Drones, camera cars, photoboats, and cranes of various sizes, our equipment is custom-built for smooth shooting and intense gigs. You can check out our work <Link to="/work" className='to-tools-link'>here</Link>.</span>
                         <span className="photoboat-tool-text"> Contact Jordy for more information on our <Link to="/contact">contact page</Link></span>
                     </div>
 
