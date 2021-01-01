@@ -10,15 +10,15 @@ const UL = styled.ul`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    max-width: 150px;
+    max-width: 170px;
     min-width: 10%;
     // min-height: 800px;
     margin-left: 0;
-    padding-left: 0;
+    padding-left: 20px !important;
     z-index: 150;
 
     li a {
-        color: white !important;
+        color: black !important;
         padding: 18px 10px;
         
     }
@@ -64,12 +64,15 @@ const UL = styled.ul`
         flex-direction: column !important;
         justify-content: center !important;
         align-items: center !important;
-        background-color: #0D2538;
+        background-color: whitesmoke;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
         position: fixed;
         transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
         /* top: 185px; */
         left: 0;
-        height: 59vh;
+        height: 400px;
         /* width: 1500px; */
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;

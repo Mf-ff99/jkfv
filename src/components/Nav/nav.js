@@ -88,7 +88,7 @@ const NavStyled = styled.nav`
         width: 120px !important;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 770px) {
         justify-content: space-between;
         padding: 10px;
         width: 100vw;

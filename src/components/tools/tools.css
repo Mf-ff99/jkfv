@@ -301,7 +301,7 @@ html {
     padding: 10%;
 }
 
-img.sixty-foot {
+.big-baller-carousel .sixty-foot {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -389,25 +389,27 @@ div.cameras__ul {
 }
 
 .tools-sidebar {
-    display: flex;
-    /* justify-content: center; */
-    padding: 0 0 5px 8px;
+    padding: 10px;
     font-size: 10px;
-    margin-top: 70px;
-    max-width: 200px;
+    /* margin-top: 70px; */
+    top: 0;
+    max-width: 230px;
     position: fixed;
-    /* z-index: 1; */
-    background-color: #93A8AC;
+    z-index: 5;
+    background-color: whitesmoke;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    /* z-index: 1000; */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
     /* height: 350px; */
+    transition: .2s ease-in;
 }
 
 .tools-sidebar li {
     width: 100vw;
     margin: 0;
-    padding: 5px 0 5px 20px !important;
+    /* padding: 5px 0 5px 20px !important; */
 }
 
 .tools-sidebar a {
@@ -426,8 +428,8 @@ div.cameras__ul {
 
 @media (max-width: 768px) {
     .tools-sidebar {
-        position: relative !important;
-        z-index: 1;
+        /* position: relative !important;
+        z-index: 1; */
     }
 }
 
@@ -446,6 +448,9 @@ div.cameras__ul {
     margin: 40px 0 0 0;
     color: black;
     padding: 8px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 }
 
 .tool-description {
@@ -464,6 +469,7 @@ div.cameras__ul {
     align-items: center;
     justify-content: center;
     padding: 10px 0px 0px 10px;
+    max-width: 700px;
 }
 
 .header-info img {
@@ -476,7 +482,7 @@ div.cameras__ul {
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .photoboats h3 {
@@ -490,12 +496,19 @@ div.cameras__ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 800px;
+    max-width: 658px;
     min-width: 300px;
     /* margin: 10px; */
     /* padding-left: 30px;  */
     /* max-height: auto; */
     transition: .2s ease-out;
+}
+
+@media (max-width: 750px) {
+
+    .cranes p {
+        max-width: 500px;       
+    }
 }
 
 .photoboat h4 {
@@ -581,11 +594,29 @@ div.cameras__ul {
     margin: 0;
     padding: 0;
     left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
+    /* width: 500px; */
+    /* flex-wrap: wrap; */
+    /* white-space: wrap; */
     align-items: center;
     justify-content: center;
+}
+
+@media (min-width: 658px) {
+    .cranes {
+        flex-direction: column;
+        
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 658px) {
+    .cranes {
+        /* max-width: 500px; */
+    }
 }
 
 .crane {
@@ -741,17 +772,23 @@ a:hover {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
   }
+
 .sticky-sidebar {
     padding: 10px;
     font-size: 10px;
     margin-top: 70px;
     max-width: 230px;
     position: fixed;
-    
     z-index: 5;
-    background-color: #93A8AC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
     /* height: 350px; */
     transition: .2s ease-in;
 }
@@ -773,7 +810,7 @@ a:hover {
 
 .sticky-sidebar ul {
     width: 100%;
-    margin: 0 0 0 0;
+    margin: 75px 0 0 0;
     display: flex;
     flex-direction: column;
     align-content: flex-end;
@@ -796,18 +833,19 @@ a:hover {
         /* top: 0px; */
         display: flex;
         flex-direction: column;
-        align-content: center;
+        align-items: center;
         flex-wrap: wrap;
-        width: 15% !important;
+        /* width: 15% !important; */
         /* max-width: 100% !important; */
     }
     .tools-sidebar ul {
         flex-wrap: wrap;
         display: flex;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
         justify-content: space-between;
-        width: 100% !important;
+        /* width: 80% !important; */
+        margin-top: 75px;
     }
     .tool-sections {
         margin-top: 100px;

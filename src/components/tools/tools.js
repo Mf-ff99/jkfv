@@ -64,23 +64,11 @@ export default class Tools extends React.Component {
     render() {
         return (
             <>
-
                 <section id='tools' className='tools'>
-
                     <div className={`${this.state.isSticky ? "tools-sidebar" : "sticky-sidebar"}`}>
-                        {this.state.isSticky ? "" : <h3>Menu</h3>}
+                        <h5>Menu</h5>
                         <GearBurger />
-                        {/* <ul>
-                            <li><HashLink smooth to="#photoboats" >
-                                Photoboats</HashLink></li>
-                                <li><HashLink smooth to="#cranes">Cranes</HashLink></li>
-                            <li><HashLink smooth to="#aerials">Aerials</HashLink></li>
-                            <li><HashLink smooth to="#cameracar">Camera Car</HashLink></li>
-                            <li><HashLink smooth to="#lenses">Lenses</HashLink></li>
-                            <li><HashLink smooth to="#lenses">Cameras</HashLink></li>
-                        </ul>   */}
                     </div>
-
                 </section>
 
                 <span id="photoboats"></span>
@@ -109,8 +97,6 @@ export default class Tools extends React.Component {
                             <h3>
                                 Shotcalla
 </h3>
-
-
                             <Carousel swipeable={true} showArrows={true} infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
                                 {/* <Carousel.Item> */}
 
@@ -128,8 +114,6 @@ export default class Tools extends React.Component {
 
                                 <div>
                                     <img src={Photoboat} alt='the shotcalla' />
-
-
                                 </div>
                                 <div>
                                     <ReactPlayer
@@ -153,14 +137,7 @@ export default class Tools extends React.Component {
                             </Carousel>
 
                             <div className="header-info">
-
-
-
-
-
-
-
-                                <p>Jordan Klein Film and Video’s 31’ offshore catamaran is unlike any other photoboat in the world. It is truly a modern marvel. Besides being a 65mph super stable offshore catamaran, it can also be equipped with our 22’ fully robotic, stabilized camera crane and stabilized remote head. We can show up to location with this as a complete turn-key package!</p>
+                                <p>Jordan Klein Film and Video’s 31’ offshore catamaran is unlike any other photoboat in the world. It is truly a modern marvel. Besides being a 65mph super-stable offshore catamaran, it can also be equipped with robotic crane and stabilized head . We can show up to location with this as a complete turn-key package! This boat can also be equipped with wings that allow the camera operator to walk out 13’ and be 12’ above the water to achieve vertical shots of watercraft</p>
                                 <ul>
                                     <li>31' Long</li>
                                     <li>65 MPH </li>
@@ -184,7 +161,7 @@ export default class Tools extends React.Component {
                             <div className="header-info">
 
 
-                                <p>The PBJ is an 18’ Catamaran that is just like its big sister (“Shotcalla”). Except it is 12’ shorter. The PBJ is great for shooting stills (It has a 8’ tower) and and is great for transporting crew back and forth to shore. It is also great for smaller venues where a larger photoboat is not required. The PBJ has a top speed of 33mph.
+                                <p>The PBJ is an 18’ Catamaran that is just like its big sister (“Shotcalla”). Except it is 12’ shorter. The PBJ is great for shooting stills with its 8' tower, and is great for transporting crew back and forth to shore. It is an excellent choice for smaller venues where a larger photoboat is not required. The PBJ has a top speed of 33mph.
 </p>
                                 <ul>
                                     <li>18' Long</li>
@@ -225,9 +202,9 @@ export default class Tools extends React.Component {
                     <hr className="big-hr">
 
                     </hr>
+                    <div className="photoboats">
                     <h3 className="crane-header">Cranes</h3>
                     <hr style={{ width: "90px" }} />
-                    <div className="photoboats">
 
                         <div className="photoboat">
                             <h4>
@@ -282,12 +259,10 @@ export default class Tools extends React.Component {
                             </Carousel>
 
                             <div className="header-info">
-
-                                <p>Our Telescopic crane arm can accommodate any number of stabilized and Unstabilized remote heads (any head that uses a Mitchel type mount). The heads that we can offer “in house” for the telescopic crane are The Movi XL, The DJI Ronin 2, and the non-stabilized head that comes standard with the crane. The arm has a max reach of 30’ and a minimum reach of 15’ the weight when fully assembled with the camera is about 1750lbs respectively. The base is electric powered and has a max speed of 4 miles per hour. The max camera/gimbal weight that can be accommodated is 70lbs. The crane and all of its accessories are transported in a customized 24’ enclosed trailer. We can provide a complete crew for the operation of this crane including delivery to set. Additionally, we can provide this crane with a turn-key camera and lens package with FIZ, and wireless video transmitter. Just let us know what you need!</p>
+                                <p>Our Telescopic crane arm can accommodate any number of stabilized and Unstabilized remote heads (any head that uses a Mitchel type mount). The heads that we can offer “in house” for the telescopic crane are The Movi XL, The DJI Ronin 2, and the non-stabilized head that comes standard with the crane.</p><p> The arm has a max reach of 30’ and a minimum reach of 15’ the weight when fully assembled with the camera is about 1750lbs respectively. The max camera/gimbal weight that can be accommodated is 70lbs. </p><p>The crane and all of its accessories are transported in a customized 24’ enclosed trailer. We can provide a complete crew for the operation of this crane including delivery to set. Additionally, we can provide this crane with a turn-key camera and lens package with FIZ, and wireless video transmitter. Just let us know what you need!</p>
                                 <ul>
                                     <li>Reach: 30'</li>
                                     <li>Min-Reach: 15'</li>
-                                    <li>4 MPH Base Top Speed</li>
                                     <li>Weight: 1750lbs</li>
                                     <li>Max Camera/Gimbal weight: 75lbs</li>
                                     <li>Mitchel Mount</li>
@@ -308,6 +283,11 @@ export default class Tools extends React.Component {
 
                             <Carousel className='tools-carousel' showThumbs={false} infiniteLoop style={{ minHeight: '250px' }}>
 
+                                <div className=''>
+                                    <img className="d-block w-100 crane-pic-1" src={TritonArm} alt='Triton Arm' />
+
+
+                                </div>
                             <div className='d-block w-100'>
                                     <ReactPlayer
                                         className='video-3-player'
@@ -317,11 +297,6 @@ export default class Tools extends React.Component {
                                         width='100%'
 
                                     />
-                                </div>
-                                <div className=''>
-                                    <img className="d-block w-100 crane-pic-1" src={TritonArm} alt='Triton Arm' />
-
-
                                 </div>
 
                                 <div className='d-block w-100'>
@@ -336,7 +311,7 @@ export default class Tools extends React.Component {
                                 </div>
                             </Carousel>
 
-                            <div className="header-info triton-info">
+                            <div className="header-info">
 
                                 <p>The Triton arm is a lightweight crane that can be mounted to almost anything. The Triton is fully robotically controlled via a wireless transmitter. It can accommodate our Movi Pro or DJI Ronin 2 stabilized heads. The Triton can be built in 2 lengths, 6’ and 11’. The max camera package that the Triton can accommodate is 25lbs. The total weight of the Triton with a camera and the remote head is approximately 170lbs respectively. The Triton can be mounted to a standard Reese trailer hitch on any vehicle or anything Mitchell mount configuration. Also see our custom electric ATV that holds the Triton arm.</p>
                                 <ul>
@@ -362,9 +337,7 @@ export default class Tools extends React.Component {
                                 <div>
                                     <img className="d-block" src={images.SixtyFooter} alt='Triton Arm' />
                                 </div>
-                                <div>
-                                    <img className="sixty-foot" src={images.SixtyFooter2} alt='Triton Arm' />
-                                </div>
+                               
                             </Carousel>
 
                             <div className="header-info triton-info">
@@ -381,8 +354,6 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                             <h4>
                                 22' Robotic Arm
                             </h4>
-
-
                             <Carousel showThumbs={false} className='tools-carousel' infiniteLoop style={{ minHeight: '250px' }}>
 
                                 <div className='d-block w-100'>
@@ -420,7 +391,7 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                                 <div className='d-block w-100'>
                                     <ReactPlayer
                                         className='video-3-player'
-                                        url='https://vimeo.com/261043519'
+                                        url='https://vimeo.com/395772274'
                                         playing={false}
                                         controls={true}
                                         width='100%'
@@ -434,8 +405,7 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                             </Carousel>
 
                             <div className="header-info">
-
-                                <p>This arm was a custom build by JKF&V in our Machine shop and fabrication facility. This crane is fully wirelessly controlled in its pan and tilt axis has a max lens reach of 22’ from the fulcrum and has a total length of 27’ the crane has a max weight of 1850lbs with a camera and head attached. This Robotic arm can be provided with either of our 2 in house stabilized heads (The Movi XL  or the Ronin 2 stabilized head). It can also accept any stabilized head that uses a Mitchell mounting system. The crane can be mounted to any vehicle or structure that can accommodate the weight. (see camera car and Photoboat).</p>
+                                <p>This arm was a custom build by JKF&V in our Machine shop and fabrication facility. This crane is fully wirelessly controlled in its pan and tilt axis has a max lens reach of 22’ from the fulcrum and has a total length of 27’ the crane has a max weight of 1850lbs with a camera and head attached.</p><p> This Robotic arm can be provided with either of our 2 in house stabilized heads (The Movi XL  or the Ronin 2 stabilized head). It can also accept any stabilized head that uses a Mitchell mounting system. The crane can be mounted to any vehicle or structure that can accommodate the weight. (see camera car and Photoboat).</p>
                                 <ul>
                                     <li>Lens-reach: 22'</li>
                                     <li>Length: 27'</li>
@@ -507,8 +477,8 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                     <hr className="big-hr" id="cameracar" />
                     <h3>Camera Car and Process Trailer</h3>
                     <hr style={{ width: "90px" }} />
-                    <div className="photoboats">
 
+                    <div className="photoboats">
                         <div className="photoboat">
                            
                             <Carousel id="cameracar-carousel"
@@ -554,7 +524,22 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                             <div className="header-info">
 
                                 <p>Jordan Klein Film and Video is one of a few companies in the Southeast United States that own and operate an insert car and process trailer. The camera car is actually a camera truck. It is based on a Dodge 2500 chassis and has a full air ride suspension. The camera car can also accommodate up to 7 people in the back and 6 people in the front.</p><p>The camera car can also hold our 22’ Robotic-arm as well as our 30’ telescopic crane with a choice of stabilized heads (see the telescopic crane and 22’ robotic crane arm).</p><p>
-                                    Our process trailer can support vehicles as large as a Ford Excursion and has two fold-out platforms that can support lighting or even dolly track.</p><p>Additionally we have a tow dolly that can accommodate most cars and trucks. This is a great option when you are attempting to get high shots shooting straight down on the tow vehicle and do not want to see the process trailer.</p>
+                                    Our process trailer can support vehicles as large as a Ford Excursion and has two fold-out platforms that can support lighting or even dolly track.</p><p>Additionally we have a tow dolly that can accommodate most cars and trucks. This is a great option when you are attempting to get high shots shooting straight down on the tow vehicle and do not want to see the process trailer.</p> <p><h5>Process trailer dimensions
+</h5>
+                                        <ul>
+                                            <li>overall length: 25’ 8”</li>
+                                            <li>overall width: 103”
+</li>
+                                            <li>Inside width: 81”</li>
+                                            <li>Inside length: 21'</li>
+                                            <li>Vehicle height above ground while in tow: 7” to 8” respectively.</li>
+                                            <li>Trailer fender height above floor of trailer is approximately 11”</li>
+                                            <li>Fold out platform dimensions:  38” and 26” x 7’ long. Safety rails are included with the trailer but must be assembled on-location.</li>
+                                            <li>Trailer is equipped with 1 1/4” speedrail fittings.</li>
+                                            <li>Max vehicle weight capacity 5700lbs</li>
+                                        </ul>
+                                        <h5>Camera Truck
+</h5>
                                 <ul>
                                     <li>Capable of running with our 22' Robotic Arm</li>
                                     <li>Capable of running with our 30' telescopic crane</li>
@@ -564,6 +549,7 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                                     <li>Speeds of up to 65mph with robotic arm</li>
                                     <li>Onset charging for all-day operations</li>
                                 </ul>
+                                </p>
                             </div>
                         </div>
                         {/* end of camera car */}
@@ -632,14 +618,22 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                         <div className="photoboat">
                             <h3>Underwater Cinematography</h3>
                         <Carousel showThumbs={false} className='big-baller-carousel' style={{}}>                    
-                        {/* <ReactPlayer
+                        <ReactPlayer
                                 className='video-2-player'
-                                url='https://vimeo.com/338239605'
+                                url='https://vimeo.com/39293725'
                                 playing={false}
                                 controls={true}
                                 width='100%'
                                 height='100%'
-                            />      */}
+                            />      
+                        <ReactPlayer
+                                className='video-2-player'
+                                url='https://vimeo.com/136759179'
+                                playing={false}
+                                controls={true}
+                                width='100%'
+                                height='100%'
+                            />      
                             <div>
                                 <img src={images.UnderwaterWelding} alt='Jordy filming underwater welding' />
                             </div>

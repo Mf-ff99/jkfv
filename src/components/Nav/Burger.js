@@ -45,7 +45,7 @@ margin-top: 10px;
         }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 770px) {
         display: none !important;
     }
 `;

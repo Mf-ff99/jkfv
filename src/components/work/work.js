@@ -48,6 +48,23 @@ export default function Work() {
                         {/* <p className="legend">Legend 2</p> */}
 
                     </div>
+                    <div className='vimeo-video'>
+                        <ReactPlayer
+                            className='carousel-work-video'
+                            url='https://vimeo.com/113506620'
+                            playing={false}
+                            width='100%'
+                            
+                            // volume={.1}
+                            muted={true}
+                            controls={true}
+                            loop={true}
+                            
+                            />
+                        {/* <p className="legend">Legend 2</p> */}
+
+                    </div>
+                    
                     <div>
                     
                     <ReactPlayer
@@ -63,10 +80,11 @@ export default function Work() {
                             
                             />
                     </div>
-                    <div className='vimeo-video'>
+                 
+                    <div className='vimeo-video' style={{marginTop: '0'}}>
                         <ReactPlayer
                             className='carousel-work-video'
-                            url='https://vimeo.com/445579276'
+                            url='https://vimeo.com/105596534'
                             playing={false}
                             width='100%'
                             
@@ -81,7 +99,7 @@ export default function Work() {
                     <div className='vimeo-video' style={{marginTop: '0'}}>
                         <ReactPlayer
                             className='carousel-work-video'
-                            url='https://vimeo.com/105596534'
+                            url='https://vimeo.com/424063996'
                             playing={false}
                             width='100%'
                             
@@ -156,11 +174,25 @@ export default function Work() {
                     <h2>TechnoCranes and Camera Cars</h2>
                     <br />
                     {/* <hr style={{borderBottom: '1px solid black', width: '90px'}} /> */}
-                    <p style={{width: '70%'}}>Our work in the automotive industry is vast, utilizing our 30' robotic crane with our camera truck. Our camera truck offers a 30' reach and full FIZ control from the passenger seats.</p>
+                    <p style={{width: '70%'}}>Our work in the automotive industry is vast, utilizing our 30' robotic crane with our camera truck. Our camera truck offers a 30' reach and full FIZ control from the passenger seats. Our telescopic crane also has a 30' foot reach and is designed to accommodate any number of stablized and unstabilized remote heads.</p>
                     
                     <hr />
                 </div>
                 <Carousel showThumbs={false} infiniteLoop>
+                    <div className='vimeo-video'>
+                        <ReactPlayer
+                            className='carousel-work-video'
+                            url='https://www.youtube.com/watch?v=0I9B_cJOUmM'
+                            playing={false}
+                            width='100%'
+                            
+                            // volume={.1}
+                            muted={true}
+                            controls={true}
+                            loop={true}
+                            
+                            />
+                    </div>
                     <div className='vimeo-video'>
                         <ReactPlayer
                             className='carousel-work-video'
@@ -205,36 +237,7 @@ export default function Work() {
                             />
                         {/* <p className="legend">Legend 1</p> */}
                     </div>
-                    <div className='vimeo-video' style={{marginTop: '0'}}>
-                        <ReactPlayer
-                            className='carousel-work-video'
-                            url='https://vimeo.com/495539470'
-                            playing={false}
-                            width='100%'
-                            
-                            // volume={.1}
-                            muted={true}
-                            controls={true}
-                            loop={true}
-                            
-                            />
-                        {/* <p className="legend">Legend 1</p> */}
-                    </div>
-                    <div className='vimeo-video' style={{marginTop: '0'}}>
-                        <ReactPlayer
-                            className='carousel-work-video'
-                            url='https://vimeo.com/495539470'
-                            playing={false}
-                            width='100%'
-                            
-                            // volume={.1}
-                            muted={true}
-                            controls={true}
-                            loop={true}
-                            
-                            />
-                        {/* <p className="legend">Legend 1</p> */}
-                    </div>
+              
                     <div className='vimeo-video' style={{marginTop: '0'}}>
                         <ReactPlayer
                             className='carousel-work-video'
