@@ -131,7 +131,10 @@ export default function Home() {
                         />  */}
                     <div className='margin-divider xcam-section'>
                         <div className='xcam-logo-container'>
+                            <a href='http://xcamaerials.com' rel='noopener noreferrer' target='_blank'>
+
                         <img className='xcam-logo' src={XCamLogo} alt='XCam Aerials Logo' />
+                            </a>
                         </div>
                         <div className='span-holder'>
                             <span>

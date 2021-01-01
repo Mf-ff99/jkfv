@@ -76,7 +76,7 @@ export default class Tools extends React.Component {
                     <Animated animationIn="fadeIn" animationOut="fadeOut">
                         <h2>Our Tools</h2>
                     </Animated>
-                    <hr style={{ width: '200px', border: '1px solid black' }} />
+                    <hr style={{ width: '200px', borderBottom: '1px solid black' }} />
                     <Animated animationIn="fadeIn" animationOut="fadeOut">
 
                         <p className="tool-description animate__animated animate__backInLeft">
