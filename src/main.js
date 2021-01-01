@@ -5,9 +5,12 @@ import About from './components/about/about'
 import Contact from './components/contact/contact'
 import Work from './components/work/work'
 import Tools from './components/tools/tools'
+import ScrollToTop  from './components/Utils/ScrollToTop'
 
 export default function Main() {
     return (
+        <>
+        <ScrollToTop />
         <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/about' component={About} />
@@ -15,5 +18,6 @@ export default function Main() {
             <Route path='/work' component={Work} />
             <Route path='/tools' component={Tools} />
         </Switch>   
+        </>
     )
 }

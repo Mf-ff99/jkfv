@@ -579,7 +579,8 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                                     <div className="cameras__ul">
                                         <div>
                                             <h4>Lenses</h4>
-                                            <ul>
+                                            <p>
+                                                <ul>
                                                 <li>2x sets of Ziess Superspeed MKIII</li>
                                                 <li>Nikon prime lens set</li>
                                                 <li>Ziess 25-250 f3.2 zoom</li>
@@ -589,9 +590,12 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                                                 <li> Sigma 18-35mm f2.8 </li>
                                                 <li>Sigma 28-70mm f2.8 </li>
                                             </ul>
+                                                </p>
                                         </div>
                                         <div>
                                             <h4>Cameras</h4>
+                                            <p>
+
                                             <ul>
                                                 <li>Red Epic Dragon</li>
                                                 <li>Red Scarlet</li>
@@ -602,6 +606,7 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                                                 <li>Panasonic GH5</li>
                                                 <li>Black Magic Pocket Cinema Camera</li>
                                             </ul>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
