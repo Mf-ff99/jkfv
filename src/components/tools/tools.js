@@ -354,6 +354,28 @@ export default class Tools extends React.Component {
                                 </ul>
                             </div>
                         </div>
+                        <div className="photoboat">
+                            <h4>
+                            60’ Non-Telescopic Crane
+                            </h4>
+                            <Carousel className='big-baller-carousel' showThumbs={false} infiniteLoop style={{ minHeight: '250px' }}>
+                                <div>
+                                    <img className="d-block" src={images.SixtyFooter} alt='Triton Arm' />
+                                </div>
+                                <div>
+                                    <img className="sixty-foot" src={images.SixtyFooter2} alt='Triton Arm' />
+                                </div>
+                            </Carousel>
+
+                            <div className="header-info triton-info">
+<p>We purchased this crane arm out of necessity. We are continually called by clients and requested to fly our drones in restricted airspace or airspace that requires absorbent amounts of time to Aquire a permit to fly. For this reason, we acquired this incredible piece of gear.</p>
+
+<p>The actual arm length of the crane is 59’ from the fulcrum to the head mounting point. Once the head is mounted it adds about 9” hence the 60’ length. The total length of the crane is 68’. Max lens height is approximately 57’. The weight of the crane when fully assembled with the camera and head is approximately 1350lbs respectively. We can provide any of our “in house “ remote heads including The Movi XL, The DJI Ronin 2, and the non-stabilized head that comes standard with the crane. The max camera and gimbal weight for this crane is 40lbs. The 60’ crane can be transported with our technicians and operator via our production van. It comes in several large cases and must be assembled on site. Assembly usually takes about 2hrs including remote head and camera mounting.</p>
+
+<p>
+Once the crane is fully assembled it can be moved around the set via a large western type dolly. We can also provide a tow vehicle if the crane is required to be move over long distances such as a golf course.</p>
+                            </div>
+                        </div>
 
                         <div className="photoboat">
                             <h4>
