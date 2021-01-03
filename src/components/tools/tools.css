@@ -312,6 +312,10 @@ div.cameras__ul {
     background-color: #c5d0db;
 }
 
+#aerials h6 {
+    width: 300px;    
+}
+
 .tool-sections ul {
     list-style: square;
 }
@@ -805,6 +809,10 @@ a:hover {
         flex-direction: column;
         
         max-width: 800px;
+    }
+
+    #aerials h6 {
+        width: 600px;    
     }
 }
 
