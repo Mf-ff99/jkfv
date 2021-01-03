@@ -555,6 +555,7 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                     </div>
                     
                     {/* <hr className="big-hr" /> */}
+                    
                     <div id='lenses' className="photoboats">
                     <h3>Lenses and Cameras</h3>
                     <hr style={{ width: "90px" }} />
@@ -622,7 +623,7 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                         <div className="photoboat">
                             <h4
                             >Underwater Cinematography</h4>
-                        <Carousel showThumbs={false} className='tools-carousel' style={{}}>                    
+                        <Carousel infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>                    
                         <ReactPlayer
                                 className='video-2-player'
                                 url='https://vimeo.com/39293725'

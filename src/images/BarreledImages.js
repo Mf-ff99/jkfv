@@ -6,6 +6,8 @@ import VRDrone from './vr-drone.png'
 import Drone3D_1 from './3d-drone.png'
 import SixtyFooter from './sixty-foot-crane.png'
 import SixtyFooter2 from './sixty-foot-crane-2.png'
+import DownArrow from './down-arrow.png'
+
 let images = {
    BeachedShotcalla,
    Cammate,
@@ -15,6 +17,7 @@ let images = {
    VRDrone,
    SixtyFooter,
    SixtyFooter2,
+   DownArrow,
 } 
 
 export default images

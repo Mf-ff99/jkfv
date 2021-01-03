@@ -2,43 +2,6 @@
     --primary: #333138;
 }
 
-html {
-    /* scroll-padding-top: 50px; */
-}
-
-.carousel {
-    /* border-radius: 8px !important; */
-}
-
-/* .carousel .control-next.control-arrow:before {
-    margin: 0px 15px 0 0px;
-    margin-left: 10px;
-    display: block;
-    border-top: 18px solid transparent;
-    border-bottom: 18px solid transparent;
-    content: ''
-}
-.carousel .control-prev.control-arrow:before {
-    margin: 0 10px;
-    margin-right: 10px;
-    display: block;
-    border-top: 18px solid transparent;
-    border-bottom: 18px solid transparent;
-    content: ''
-}
- 
-.carousel .control-next.control-arrow:before:hover {
-    border-left: 8px solid rgba(168, 2, 2, 0.5) !important;
-} */
-
-@media (max-width: 500px) {
-
-    .big-baller-carousel.aerials .slide {
-        height: 300px;
-        max-width: 400px;
-    }
-}
-
 .big-baller-carousel {
     max-width: 400px;
 }
@@ -56,7 +19,6 @@ html {
 }
 
 .tools, .tool-sections {
-    /* background-color: #F0F7F4; */
     background-color: #eeeeee;
     color: black;
 }
@@ -79,102 +41,7 @@ html {
     overflow: inherit;
 }
 
-@media (min-width: 658px) {
-    .tools-carousel div {
-        padding: 0 4px 0 4px;
-    }
-}
-
-@media (max-width: 658px) {
-    .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
-        margin: 15px;
-    }
-    .carousel .control-arrow, .carousel.carousel-slider .control-arrow:hover {
-        background-color: transparent !important;
-    }
-    .carousel .control-next.control-arrow, .carousel .control-next.control-arrow:hover {
-        border: none;
-        right: -10px;
-    }
-
-    .carousel.control-prev.control-arrow {
-        
-    }
-    .carousel .control-prev.control-arrow, .carousel .control-prev.control-arrow:hover {
-        background-color: none;
-        left: -15px;
-    }
-    .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
-        opacity: 1;
-    }
-    .carousel .control-next.control-arrow:before {
-        content: '';
-        border: solid whitesmoke;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 9px;
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-    }
-    .carousel .control-prev.control-arrow:before {
-        content: '';
-        border: solid whitesmoke;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 9px;
-        transform: rotate(135deg);
-        -webkit-transform: rotate(135deg);
-    }
-}
-
-@media (min-width: 658px) {
-    .big-baller-carousel.aerials img {
-        width: 100% !important;
-    }
-
-    .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
-        margin: 15px;
-    }
-    .carousel .control-arrow, .carousel.carousel-slider .control-arrow:hover {
-        background-color: transparent !important;
-    }
-    .carousel .control-next.control-arrow, .carousel .control-next.control-arrow:hover {
-        border: none;
-        right: 13px;
-    }
-    .carousel .control-prev.control-arrow, .carousel .control-prev.control-arrow:hover {
-        background-color: none;
-        left: -5px;
-    }
-    .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
-        opacity: 1;
-    }
-    .carousel .control-next.control-arrow:before {
-        content: '';
-        border: solid whitesmoke;
-        border-width: 0 4px 4px 0;
-        display: inline-block;
-        padding: 14px;
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-    }
-    .carousel .control-prev.control-arrow:before {
-        content: '';
-        border: solid whitesmoke;
-        border-width: 0 4px 4px 0;
-        display: inline-block;
-        padding: 14px;
-        transform: rotate(135deg);
-        -webkit-transform: rotate(135deg);
-    }
-}
-
-.carousel .control-next {
-    /* padding-right: 12px !important; */
-}
-
 .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
-    /* margin: 15px; */
     width: 35px;
 }
 
@@ -182,25 +49,6 @@ html {
     background-color: rgb(179, 179, 179, .5);
     border-radius: 4px;
     transition: .5s ease-in;
-}
-
-.carousel-container {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-}
-
-.tools-carousel, .carousel .slide iframe {
-    /* align-items: center;
-    justify-content: center; */
-    margin: 0 auto;
-}
-
-.big-baller-carousel .slide iframe {
-    /* align-items: center;
-    justify-content: center; */
-    margin: 0 auto;
 }
 
 .aerials {
@@ -216,51 +64,28 @@ html {
     display: none !important;
 }
 
-.triton-info {
-    /* padding: 20px 0 0 40px !important; */
-}
-
 .tools-carousel {
-    /* background-color: white !important; */
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
     position: relative;
-    /* overflow: hidden; */
     max-height: 700px;
     width: 95%;
     padding: 0;
     z-index: 0;
 }
 
-@media (min-width: 658px) {
-    .tool-sections h3 {
-        font-size: 45px !important;
-    }
-}
-
 .big-baller-carousel {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
     position: relative;
-    /* overflow: hidden; */
     max-height: 700px;
     width: 95%;
-    /* height: 300px; */
-    /* width: 80%; */
+
     padding: 0;
 }
 
 .container-fluid {
-    /* display: block !important; */
-    /* position: absolute; */
     padding: 20px 0 0 0;
-    /* max-height: 500px; */
-    /* min-height: 400px; */
-    /* overflow-y: hidden !important; */
 }
 
 .tools-carousel div.process-trailer {
@@ -268,24 +93,9 @@ html {
 }
 
 .tools-carousel div {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
-    /* text-align: center; */
-    /* width: 100%; */
     margin: 0 auto;
-    /* padding-bottom: 10px; */
 }
 
-@media screen and (min-width: 658px) {
-    .tools-carousel div iframe {
-        padding: 20px 20px 20px 20px;
-    }
-    .carousel div iframe {
-        padding: 20px 30px 20px 30px;
-    }
-}
 
 #cameracar-carousel div img {
     /* width: 300px; */
@@ -346,20 +156,11 @@ html {
 }
 
 .drone, .crane, .photoboat {
-    /* margin: 10px; */
-    /* background-color: whitesmoke !important; */
     transition: .2s ease-out;
     border-radius: 5px;
-    /* max-width: 1000px !important; */
     min-width: 300px !important;
     max-width: 800px;
     margin-bottom: 30px;
-}
-
-.drone:hover, .crane:hover, .photoboat:hover {
-    /* background-color: #b6c1ca !important; */
-    transition: .7s ease;
-    border-radius: 5px;
 }
 
 .tool-sections-header {
@@ -372,21 +173,12 @@ html {
 }
 
 section.tools {
-    /* margin-top: 10px; */
     padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    /* min-width: 50em; */
-    /* background-color: black; */
-    /* height: 450px; */
     z-index: 1;
-}
-
-.tool-sections h3 {
-    /* font-size: 29px; */
-    /* font-weight: bold; */
 }
 
 div.tools-image-container {
@@ -398,15 +190,6 @@ div.cameras__ul {
     flex-direction: column;
 }
 
-@media screen and (min-width: 658px) {
-    .cameras__ul {
-        display: flex !important;
-        flex-direction: row !important;
-    }
-    .cameras__ul div {
-        margin-left: 80px;
-    }
-}
 
 .carousel .control-prev.control-arrow:before {
     z-index: 0 !important;
@@ -415,25 +198,20 @@ div.cameras__ul {
 .tools-sidebar {
     padding: 10px;
     font-size: 10px;
-    /* margin-top: 70px; */
     top: 0;
     max-width: 230px;
     position: fixed;
     z-index: 5;
     background-color: whitesmoke;
-    /* border-top-right-radius: 5px; */
-    /* border-bottom-right-radius: 5px; */
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
-    /* height: 350px; */
     transition: .1s ease-in-out;
 }
 
 .tools-sidebar li {
     width: 100vw;
     margin: 0;
-    /* padding: 5px 0 5px 20px !important; */
 }
 
 .tools-sidebar a {
@@ -450,13 +228,6 @@ div.cameras__ul {
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    .tools-sidebar {
-        /* position: relative !important;
-        z-index: 1; */
-    }
-}
-
 .tools-sidebar li a:hover {
     cursor: pointer;
     border-bottom: 1px solid black;
@@ -471,17 +242,12 @@ div.cameras__ul {
     text-align: center;
     margin: 0 0 0 0;
     color: black;
-    /* padding: 8px; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     background-color: white !important;
 }
 
 .tool-description {
     margin: 1px 20% 1px 20%;
     padding: 20px 0 20px 0;
-    /* background-color: white !important; */
 }
 
 .tools-footer {
@@ -491,9 +257,6 @@ div.cameras__ul {
 
 .photoboats {
     background-color: #c5d0db;
-    /* width: 100vw; */
-    /* border-bottom: 1px solid black;
-    border-top: 1px solid black; */
 }
 
 #tools {
@@ -509,8 +272,8 @@ div.cameras__ul {
 #lenses {
     padding: 20px 0 20px 0;
     background-color: #8494a5;
-    height: 700px;
-    min-height: 100vw;
+    /* height: 700px; */
+    min-height: 100vh;
 }
 
 #underwater {
@@ -519,11 +282,9 @@ div.cameras__ul {
 }
 
 .threeD {
-    /* padding: 20px 0 20px 0; */
-    /* background-color:white; */
     background-color:#ffffff;
     height: 800px;
-    min-height: 51vw;
+    min-height: 100vh;
 }
 
 #crew {
@@ -539,10 +300,10 @@ div.cameras__ul {
 }
 
 #aerials {
-    /* padding-top: 20px; */
     padding-bottom: 20px;
     background-color: #ffffff;
     height: 650px;
+    min-height: 100vh;
 }
 
 #cameracar {
@@ -591,17 +352,7 @@ div.cameras__ul {
     justify-content: center;
     max-width: 658px;
     min-width: 300px;
-    /* margin: 10px; */
-    /* padding-left: 30px;  */
-    /* max-height: auto; */
     transition: .2s ease-out;
-}
-
-@media (max-width: 750px) {
-
-    .cranes p {
-        max-width: 500px;       
-    }
 }
 
 .photoboat h4 {
@@ -615,15 +366,6 @@ div.cameras__ul {
     border-radius: 5px;
 }
 
-.photoboat .shotcalla {
-    /* width: 100%; */
-    /* margin: 10px; */
-    /* min-width:90%; */
-    /* max-width: 400px; */
-    /* height: 90%; */
-    /* margin: 10px; */
-}
-
 .crane-header {
     color: black;
 }
@@ -633,8 +375,6 @@ div.cameras__ul {
     padding: 0;
     width: auto;
 }
-
-.lenses {}
 
 .header-info p {
     max-width: 1000px;
@@ -690,20 +430,8 @@ div.cameras__ul {
     right: 0;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    /* width: 500px; */
-    /* flex-wrap: wrap; */
-    /* white-space: wrap; */
     align-items: center;
     justify-content: center;
-}
-
-@media (min-width: 658px) {
-    .cranes {
-        flex-direction: column;
-        
-        max-width: 800px;
-    }
 }
 
 .crane {
@@ -904,6 +632,123 @@ a:hover {
     /* padding: 0 0 0 20px; */
 }
 
+
+
+@media (max-width: 658px) {
+    .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+        margin: 15px;
+    }
+    .carousel .control-arrow, .carousel.carousel-slider .control-arrow:hover {
+        background-color: transparent !important;
+    }
+    .carousel .control-next.control-arrow, .carousel .control-next.control-arrow:hover {
+        border: none;
+        right: -10px;
+    }
+
+    .carousel.control-prev.control-arrow {
+        
+    }
+    .carousel .control-prev.control-arrow, .carousel .control-prev.control-arrow:hover {
+        background-color: none;
+        left: -15px;
+    }
+    .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+        opacity: 1;
+    }
+    .carousel .control-next.control-arrow:before {
+        content: '';
+        border: solid whitesmoke;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 9px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    .carousel .control-prev.control-arrow:before {
+        content: '';
+        border: solid whitesmoke;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 9px;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+}
+
+.tool-sections .carousel .slide {
+    background-color: transparent !important;
+}
+
+.tool-sections .carousel .slide iframe {
+    margin: 0 auto;
+}
+@media (min-width: 658px) {
+    
+    .tool-sections .carousel .slide iframe {
+        margin: 0 auto;
+    }
+
+    .big-baller-carousel.aerials img {
+        width: 100% !important;
+    }
+
+    .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+        margin: 15px;
+    }
+    .carousel .control-arrow, .carousel.carousel-slider .control-arrow:hover {
+        background-color: transparent !important;
+    }
+    .carousel .control-next.control-arrow, .carousel .control-next.control-arrow:hover {
+        border: none;
+        right: 13px;
+    }
+    .carousel .control-prev.control-arrow, .carousel .control-prev.control-arrow:hover {
+        background-color: none;
+        left: -5px;
+    }
+    .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+        opacity: 1;
+    }
+    .tool-sections .carousel .control-next.control-arrow:before {
+        content: '';
+        border: solid black;
+        border-width: 0 4px 4px 0;
+        display: inline-block;
+        padding: 14px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    .tool-sections .carousel .control-prev.control-arrow:before {
+        content: '';
+        border: solid black;
+        border-width: 0 4px 4px 0;
+        display: inline-block;
+        padding: 14px;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+
+    .tools-carousel div {
+        padding: 0 4px 0 4px;
+        margin: 0 auto;
+    }
+    .cameras__ul {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+    .cameras__ul div {
+        margin-left: 80px;
+
+    }
+    .tools-carousel div iframe {
+        padding: 20px 20px 20px 20px;
+    }
+    .carousel div iframe {
+        padding: 20px 30px 20px 30px;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .crane, .drone, .photoboat {
         max-width: 320px !important;
@@ -941,5 +786,30 @@ a:hover {
     .tools-sidebar ul li {
         width: 100%;
         padding: 5px 0 5px 10px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .big-baller-carousel.aerials .slide {
+        height: 300px;
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 658px) {
+    .tool-sections h3 {
+        font-size: 45px !important;
+    }
+    .cranes {
+        flex-direction: column;
+        
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .cranes p {
+        max-width: 500px;       
     }
 }

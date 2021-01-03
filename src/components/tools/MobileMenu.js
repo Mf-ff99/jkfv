@@ -109,7 +109,7 @@ const MobileNav = ({ open }) => {
                 Photoboats</HashLink></li>
             <li><HashLink smooth to="#cranes">Cranes</HashLink></li>
             <li><HashLink smooth to="#aerials">Aerials</HashLink></li>
-            <li><HashLink smooth to="#cameracar">Camera Truck</HashLink></li>
+            <li><HashLink smooth to="#cameracar">Camera Car</HashLink></li>
             <li><HashLink smooth to="#lenses">Lenses</HashLink></li>
             <li><HashLink smooth to="#underwater">Underwater</HashLink></li>
             <li><HashLink smooth to="#crew">Crew</HashLink></li>

@@ -2,9 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import { HashLink } from 'react-router-hash-link'
 import { Animated } from 'react-animated-css'
 import './work.css'
+import Images from '../../images/BarreledImages'
 import ReactPlayer from 'react-player/lazy';
+import { faArrowAltCircleDown } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -19,11 +22,13 @@ export default function Work() {
 
                 <h1>Our Work</h1>
                 <p>Over the years we have worked with thousands of clients shooting with drones, photoboats, underwater camera housings, and more. In-house we carry a large array of the latest drones, cameras, underwater housings, robotic cranes, camera cars, and photoboats. We have all the tools you need to get the shots you require.</p>
-            </div>
             <h6>The videos below showcase a fraction of what is possible with our tools.</h6>
-            <hr style={{border: '1px solid black', width: '90%'}} />
+           
+            <HashLink smooth to='#work'><img className='work-scroll-arrow' src={Images.DownArrow} alt='scroll-down arrow' /></HashLink>
+            </div>
+            {/* <hr style={{border: '1px solid black', width: '90%'}} /> */}
             <div className="projects-grid">
-                <div className='project-header'>
+                <div className='project-header' id='work'>
                     <h2>Marine + Underwater</h2>
                     <br />
                     {/* <hr style={{borderBottom: '1px solid black', width: '90px'}} /> */}
