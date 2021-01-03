@@ -23,7 +23,7 @@ export default function Contact() {
                         
                             <form className="form-style-4" action="" method="post">
                                 <label htmlFor="field1">
-                                    <span>Enter Your Name</span><input type="text" name="field1" required/>
+                                    <span>Your Name</span><input type="text" name="field1" required/>
                                 </label>
                                 <label htmlFor="field2">
                                     <span>Email Address</span><input type="email" name="field2" required />
@@ -32,7 +32,7 @@ export default function Contact() {
                                     <span>Subject</span><input type="text" name="field3" required />
                                 </label>
                                 <label htmlFor="field5">
-                                    <span>Company Name</span><input type="text" name="field5" required />
+                                    <span>Company</span><input type="text" name="field5" required />
                                 </label>
                                 <label htmlFor="field6">
                                     <span>Message</span><textarea name="field6"  required></textarea>

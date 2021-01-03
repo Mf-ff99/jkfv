@@ -205,7 +205,7 @@ html {
     position: relative;
     /* overflow: hidden; */
     max-height: 700px;
-    width: 80%;
+    width: 95%;
     padding: 0;
     z-index: 0;
 }
@@ -218,8 +218,9 @@ html {
     position: relative;
     /* overflow: hidden; */
     max-height: 700px;
+    width: 95%;
     /* height: 300px; */
-    width: 80%;
+    /* width: 80%; */
     padding: 0;
 }
 
@@ -245,24 +246,6 @@ html {
     /* width: 100%; */
     margin: 0 auto;
     /* padding-bottom: 10px; */
-}
-
-.video-3-player {
-    /* padding: 100px; */
-}
-
-/* .tools-carousel div iframe {
-    /* width: 100%; */
-    /* padding: 100px 0 100px 0; 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-} */
-
-.carousel div iframe {
-    /* padding: 100px 0 100px 0; */
 }
 
 @media screen and (min-width: 658px) {
@@ -610,12 +593,6 @@ div.cameras__ul {
         flex-direction: column;
         
         max-width: 800px;
-    }
-}
-
-@media (max-width: 658px) {
-    .cranes {
-        /* max-width: 500px; */
     }
 }
 

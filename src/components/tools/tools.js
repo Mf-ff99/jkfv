@@ -616,20 +616,20 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                         {/* end of lenses */}
                     </div>
                     <hr />
+                    <div className="photoboats">
                     <h3 id="underwater">Underwater</h3>
                     <hr style={{ width: "90px" }} />
-                    <div className="photoboats">
 
                         <div className="photoboat">
                             <h3>Underwater Cinematography</h3>
-                        <Carousel showThumbs={false} className='big-baller-carousel' style={{}}>                    
+                        <Carousel showThumbs={false} className='tools-carousel' style={{}}>                    
                         <ReactPlayer
                                 className='video-2-player'
                                 url='https://vimeo.com/39293725'
                                 playing={false}
                                 controls={true}
                                 width='100%'
-                                height='100%'
+                              
                             />      
                         <ReactPlayer
                                 className='video-2-player'
@@ -637,7 +637,7 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                                 playing={false}
                                 controls={true}
                                 width='100%'
-                                height='100%'
+                                
                             />      
                             <div>
                                 <img src={images.UnderwaterWelding} alt='Jordy filming underwater welding' />
@@ -693,7 +693,7 @@ The FaFish also has an HD video output that can be attached to a monitor at the 
                     <div className='photoboats'>
                         <div className='photoboat'>
 
-                    <Carousel infiniteLoop showThumbs={false} id='cameracar-carousel' style={{}}>                    
+                    <Carousel infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>                    
                                   
                         </Carousel>
                         <h6>JKF&V, in addition to being a provider of all types of specialty production gear and cameras can also provide the crew needed to operate the specialty equipment. 
@@ -759,7 +759,7 @@ We also build our own 3D underwater housing systems</p>
                         <div className='photoboat'>
                         <h3>Winchcam</h3>
 
-                    <Carousel showThumbs={false} id='cameracar-carousel' style={{}}>                    
+                    <Carousel showThumbs={false}  className='tools-carousel' style={{}}>                    
                     <div>
                             <ReactPlayer
                                 className='video-2-player'
@@ -817,7 +817,7 @@ Let us know what your requirements are, and we will do our best to accomidate yo
                         <div className='photoboat'>
                         <h3>Railcam</h3>
 
-                    <Carousel showThumbs={false} id='cameracar-carousel' style={{}}>                    
+                    <Carousel showThumbs={false} className='tools-carousel' style={{}}>                    
                     <div>                    
                    <ReactPlayer
                                 className='video-2-player'
