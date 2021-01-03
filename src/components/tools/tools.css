@@ -282,6 +282,7 @@ div.cameras__ul {
 }
 
 .threeD {
+    padding: 20px 0 20px 0;
     background-color:#ffffff;
     /* height: 800px; */
     min-height: 100vh;
@@ -796,10 +797,10 @@ a:hover {
     }
 }
 
+.tool-sections h3 {
+    font-size: 45px !important;
+}
 @media (min-width: 658px) {
-    .tool-sections h3 {
-        font-size: 45px !important;
-    }
     .cranes {
         flex-direction: column;
         
