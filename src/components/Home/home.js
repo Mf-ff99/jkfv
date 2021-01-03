@@ -147,7 +147,7 @@ export default function Home() {
                 </section>
                 <section className='jordys-specialties'>
                      <h3>Tools of the Trade</h3>
-                     <hr style={{width: "90px", backgroundColor: "black"}} />
+                     <hr style={{width: "90px", backgroundColor: "white"}} />
                     <div className="lower-section">
 
                     <div className='span-holder'>
@@ -173,7 +173,7 @@ export default function Home() {
                 </section>
                             <section className='tools-block'>
                      <h3>Our Expertise is a Phone Call Away</h3>
-                     <hr style={{width: "90px", backgroundColor: "white"}} />
+                     <hr style={{width: "90px", backgroundColor: "black"}} />
                     <div className="lower-section info-section">
 
                     <div className='photoboat-running-picture'>

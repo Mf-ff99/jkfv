@@ -71,32 +71,35 @@ export default class Tools extends React.Component {
                     </div>
                 </section>
 
-                <span id="photoboats"></span>
                 <div className="tool-sections" >
+                {/* <span id="photoboats"></span> */}
                     <Animated animationIn="fadeIn" animationOut="fadeOut">
+                        <div className='tool-sections-header'>
+
                         <h2>Our Tools</h2>
-                    </Animated>
+                   
                     <hr style={{ width: '200px', borderBottom: '1px solid black' }} />
-                    <Animated animationIn="fadeIn" animationOut="fadeOut">
+                   
 
                         <p className="tool-description animate__animated animate__backInLeft">
                             In house we carry a vast array of tools for filmmakers. We take pride in knowing there are few others with the capabilities that our gear provides. You can easily access any one of our equipment categories through the menu on the left-hand side.
                     </p>
                         {/* <hr style={{ width: '200px', border: '1px solid black' }} /> */}
-                        <hr className="big-hr"></hr>
+                        {/* <hr className="big-hr"></hr> */}
+                    </div>
+                    </Animated>
+                    <div className="photoboats" id='photoboats'>
                         <h3 style={{paddingTop: '40px'}}>Photoboats</h3>
                         <hr style={{ width: "90px" }} />
-                    </Animated>
-                    <div className="photoboats">
                         <br />
 
 
                         {/* <div id="photoboats" className="photoboat-container"> */}
 
                         <div className="photoboat">
-                            <h3>
+                            <h4>
                                 Shotcalla
-</h3>
+</h4>
                             <Carousel showArrows={true} infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
                                 {/* <Carousel.Item> */}
 
@@ -198,20 +201,16 @@ export default class Tools extends React.Component {
                         </div>
 
                     </div>
-                    <span id="cranes"></span>
-                    <hr className="big-hr">
+                    {/* <span id="cranes"></span> */}
+                    {/* <hr className="big-hr" /> */}
 
-                    </hr>
-                    <div className="photoboats">
+                    <div className="photoboats" id="cranes">
                     <h3 className="crane-header">Cranes</h3>
                     <hr style={{ width: "90px" }} />
-
                         <div className="photoboat">
                             <h4>
                                 30' Telescopic Crane
                             </h4>
-
-
                             <Carousel className='tools-carousel' showThumbs={false} infiniteLoop style={{ minHeight: '250px' }}>
                             <div className='d-block w-100'>
                                     <ReactPlayer
@@ -455,12 +454,12 @@ Once the crane is fully assembled it can be moved around the set via a large wes
 
                         {/* crane ends here */}
                     </div>
-                    <span id="aerials"></span>
-                    <hr />
+                    {/* <span id="aerials"></span> */}
+                    {/* <hr /> */}
                     {/* aerials begin here */}
+                    <div className="aerials" id="aerials">
                     <h3>Aerials</h3>
                     <hr style={{ width: "90px" }} />
-                    <div className="aerials">
                     <Carousel showThumbs={false} className='big-baller-carousel aerials' style={{}}>
                                 {/* <Carousel.Item> */}
 
@@ -474,11 +473,11 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                         <h6>Our Aerials are solely operated by XCam Aerials. Click the link to visit the <a href="http://xcamaerials.com/" target="_blank" rel="noopener noreferrer">XCam Aerials</a> website.</h6>
                        
                     </div>
-                    <hr className="big-hr" id="cameracar" />
+                    {/* <hr className="big-hr" id="cameracar" /> */}
+
+                    <div className="photoboats" id='cameracar'>
                     <h3>Camera Car and Process Trailer</h3>
                     <hr style={{ width: "90px" }} />
-
-                    <div className="photoboats">
                         <div className="photoboat">
                            
                             <Carousel id="cameracar-carousel"
@@ -554,11 +553,11 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                         </div>
                         {/* end of camera car */}
                     </div>
-                    <span id="lenses"></span>
-                    <hr className="big-hr" />
-                    <h3 id="lenses">Lenses and Cameras</h3>
+                    
+                    {/* <hr className="big-hr" /> */}
+                    <div id='lenses' className="photoboats">
+                    <h3>Lenses and Cameras</h3>
                     <hr style={{ width: "90px" }} />
-                    <div className="photoboats">
 
                         <div className="photoboat">
                             {/* <div className="tools-image-container">
@@ -615,13 +614,14 @@ Once the crane is fully assembled it can be moved around the set via a large wes
 
                         {/* end of lenses */}
                     </div>
-                    <hr />
-                    <div className="photoboats">
-                    <h3 id="underwater">Underwater</h3>
+                    {/* <hr /> */}
+                    <div id="underwater" className="photoboats">
+                    <h3>Underwater</h3>
                     <hr style={{ width: "90px" }} />
 
                         <div className="photoboat">
-                            <h3>Underwater Cinematography</h3>
+                            <h4
+                            >Underwater Cinematography</h4>
                         <Carousel showThumbs={false} className='tools-carousel' style={{}}>                    
                         <ReactPlayer
                                 className='video-2-player'
@@ -658,8 +658,8 @@ Underwater D/P: Jordan(Jordy) Klein Jr.</p>
                         </div>
 
                         <div className="photoboat">
-                            <h3>Underwater Drone</h3>
-                        <Carousel showThumbs={false} id="cameracar-carousel" className='underwater-carousel' style={{}}>
+                            <h4>Underwater Drone</h4>
+                        <Carousel showThumbs={false} id="cameracar-carousel" className='tools-carousel' style={{}}>
                            
                         <ReactPlayer
                                 className='video-2-player'
@@ -685,12 +685,12 @@ The FaFish also has an HD video output that can be attached to a monitor at the 
                     </div>
 
 
-                    <span id='crew'></span>
-                    <hr />
+                    {/* <span id='crew'></span> */}
+                    {/* <hr /> */}
                     {/* crew begins here */}
+                    <div id='crew' className='photoboats'>
                     <h3>The Crew</h3>
                     <hr style={{ width: '90px' }} />
-                    <div className='photoboats'>
                         <div className='photoboat'>
 
                     <Carousel infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>                    
@@ -701,15 +701,15 @@ The FaFish also has an HD video output that can be attached to a monitor at the 
 We have staff sound mixers, lighting, grip, and camera department crew available on staff. Let us know what you need!</h6>
                         </div>
                 </div>
-                <hr className='big-hr' />
+                {/* <hr className='big-hr' /> */}
                 
-                <h3 id="3D">3D & Virtual Reality Cinematography</h3>
-                    <hr style={{ width: "90px" }} />
-                    <div className="photoboats">
+                    <div id='3D' className="photoboats threeD">
+                <h3>3D & Virtual Reality Cinematography</h3>
+                    <hr style={{ width: '90px' }} />
 
                         <div className="photoboat">
                             
-                        <Carousel showThumbs={false} infiniteLoop className="tools-carousel" style={{}}>                    
+                        <Carousel showThumbs={false} infiniteLoop className='tools-carousel' style={{}}>                    
                         <div>
                             <ReactPlayer
                                 className='video-2-player'
@@ -750,14 +750,14 @@ We also build our own 3D underwater housing systems</p>
                         </div>
                     </div>
 
-                    <span id='skunkworks'></span>
-                    <hr />
+                    {/* <span ></span> */}
+                    {/* <hr /> */}
                     {/* skunkworks begins here */}
+                    <div id='skunkworks' className='photoboats'>
                     <h3>Skunkworks</h3>
                     <hr style={{ width: '90px' }} />
-                    <div className='photoboats'>
                         <div className='photoboat'>
-                        <h3>Winchcam</h3>
+                        <h4>Winchcam</h4>
 
                     <Carousel showThumbs={false}  className='tools-carousel' style={{}}>                    
                     <div>
@@ -779,7 +779,7 @@ We also build our own 3D underwater housing systems</p>
                         </div>
                         </div>
                         <div className='photoboat'>
-                        <h3>Railrunner</h3>
+                        <h4>Railrunner</h4>
 
                     <Carousel infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
                         <div>                    
@@ -815,7 +815,7 @@ Let us know what your requirements are, and we will do our best to accomidate yo
                         </div>
                         </div>
                         <div className='photoboat'>
-                        <h3>Railcam</h3>
+                        <h4>Railcam</h4>
 
                     <Carousel showThumbs={false} className='tools-carousel' style={{}}>                    
                     <div>                    
@@ -866,9 +866,12 @@ Let us know what your requirements are, and we will do our best to accomidate yo
                         </div>
                         </div>
                 </div>
-                <hr className='big-hr' />
+                {/* <hr className='big-hr' /> */}
+                <div className='tools-footer'>
+
                 <h3>Need more information?</h3>
                 <h6>Contact <Link to='/contact'>Jordy</Link> for more information regarding his equipement and team.</h6>
+                </div>
             </div>
             </>
         )

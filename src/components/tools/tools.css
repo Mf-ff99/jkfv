@@ -55,10 +55,34 @@ html {
     height: 100%;
 }
 
+.tools, .tool-sections {
+    /* background-color: #F0F7F4; */
+    background-color: #eeeeee;
+    color: black;
+}
 
+.tool-sections-header h2 {
+    font-size: 50px;
+    font-weight: 100 !important;
+}
+
+.photoboat h4 {
+    font-size: 37px !important; 
+    font-weight: 500 !important;
+}
+.photoboat h3 {
+    font-size: 45px !important; 
+    font-weight: 500 !important;
+}
 
 .carousel.carousel-slider {
     overflow: inherit;
+}
+
+@media (min-width: 658px) {
+    .tools-carousel div {
+        padding: 0 4px 0 4px;
+    }
 }
 
 @media (max-width: 658px) {
@@ -210,6 +234,12 @@ html {
     z-index: 0;
 }
 
+@media (min-width: 658px) {
+    .tool-sections h3 {
+        font-size: 45px !important;
+    }
+}
+
 .big-baller-carousel {
     display: flex;
     flex-direction: column;
@@ -323,12 +353,22 @@ html {
     /* max-width: 1000px !important; */
     min-width: 300px !important;
     max-width: 800px;
+    margin-bottom: 30px;
 }
 
 .drone:hover, .crane:hover, .photoboat:hover {
     /* background-color: #b6c1ca !important; */
     transition: .7s ease;
     border-radius: 5px;
+}
+
+.tool-sections-header {
+    height: 450px;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 section.tools {
@@ -340,12 +380,13 @@ section.tools {
     align-items: flex-start;
     /* min-width: 50em; */
     /* background-color: black; */
+    /* height: 450px; */
     z-index: 1;
 }
 
 .tool-sections h3 {
-    font-size: 29px;
-    font-weight: bold;
+    /* font-size: 29px; */
+    /* font-weight: bold; */
 }
 
 div.tools-image-container {
@@ -428,16 +469,85 @@ div.cameras__ul {
 
 .tool-sections {
     text-align: center;
-    margin: 40px 0 0 0;
+    margin: 0 0 0 0;
     color: black;
-    padding: 8px;
+    /* padding: 8px; */
     /* display: flex;
     flex-direction: column;
     align-items: center; */
+    background-color: white !important;
 }
 
 .tool-description {
     margin: 1px 20% 1px 20%;
+    padding: 20px 0 20px 0;
+    /* background-color: white !important; */
+}
+
+.tools-footer {
+    height: 100%;
+    padding: 20px;
+}
+
+.photoboats {
+    background-color: #c5d0db;
+    /* width: 100vw; */
+    /* border-bottom: 1px solid black;
+    border-top: 1px solid black; */
+}
+
+#tools {
+    background-color: white;
+}
+
+#cranes {
+    padding-top: 20px;
+    background-color: #8494a5 !important;
+    color: white !important;
+}
+
+#lenses {
+    padding: 20px 0 20px 0;
+    background-color: #8494a5;
+    height: 700px;
+    min-height: 100vw;
+}
+
+#underwater {
+    padding: 20px 0 20px 0;
+    background-color:#c5d0db;
+}
+
+.threeD {
+    /* padding: 20px 0 20px 0; */
+    /* background-color:white; */
+    background-color:#ffffff;
+    height: 800px;
+    min-height: 51vw;
+}
+
+#crew {
+    height: 600px;
+    padding: 20px 0 20px 0;
+    background-color:#8494a5;
+    min-height: 100vh;
+}
+
+#skunkworks {
+    padding: 20px 0 20px 0;
+    background-color: #c5d0db;
+}
+
+#aerials {
+    /* padding-top: 20px; */
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    height: 650px;
+}
+
+#cameracar {
+    padding: 20px 0 20px 0;
+    background-color: #c5d0db;
 }
 
 .tool-sections ul {
@@ -825,7 +935,7 @@ a:hover {
         margin-top: 75px;
     }
     .tool-sections {
-        margin-top: 100px;
+        /* margin-top: 100px; */
         margin-left: 0;
     }
     .tools-sidebar ul li {
