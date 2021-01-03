@@ -12,10 +12,10 @@ export default function Contact() {
                     <div className="contact-upper">
 
                         <h2>Contact Us</h2>
+                        <h6>Call or email us, or simply fill out the form and we will be in touch with you as soon as possible.</h6>
                         <hr />
                         <span>352-427-2560</span>
                         <span><a className="email" href="mailto:jordy@jordy.com" >jordy@jordy.com</a></span>
-                        <h6>Call or email us, or simply fill out the form and we will be in touch with you as soon as possible.</h6>
                     </div>
                 
                     <hr />

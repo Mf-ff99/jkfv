@@ -7,7 +7,7 @@ html {
 }
 
 .carousel {
-    border-radius: 8px !important;
+    /* border-radius: 8px !important; */
 }
 
 /* .carousel .control-next.control-arrow:before {
@@ -197,7 +197,7 @@ html {
 }
 
 .tools-carousel {
-    /* background-color: black; */
+    /* background-color: white !important; */
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -248,29 +248,29 @@ html {
 }
 
 .video-3-player {
-    padding: 100px;
+    /* padding: 100px; */
 }
 
-.tools-carousel div iframe {
+/* .tools-carousel div iframe {
     /* width: 100%; */
-    /* padding: 100px 0 100px 0; */
+    /* padding: 100px 0 100px 0; 
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
+} */
 
 .carousel div iframe {
-    padding: 100px 0 100px 0;
+    /* padding: 100px 0 100px 0; */
 }
 
 @media screen and (min-width: 658px) {
     .tools-carousel div iframe {
-        padding: 50px 0 50px 0;
+        padding: 20px 20px 20px 20px;
     }
     .carousel div iframe {
-        padding: 70px 0 70px 0;
+        padding: 20px 30px 20px 30px;
     }
 }
 
@@ -318,7 +318,7 @@ html {
 @media (min-width: 500px) {
     .carousel-inner {
         /* text-align: middle; */
-        background-color: black;
+        /* background-color: black; */
         max-height: 450px;
         /* overflow: hidden; */
     }
@@ -397,13 +397,13 @@ div.cameras__ul {
     position: fixed;
     z-index: 5;
     background-color: whitesmoke;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    /* border-top-right-radius: 5px; */
+    /* border-bottom-right-radius: 5px; */
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
     /* height: 350px; */
-    transition: .2s ease-in;
+    transition: .1s ease-in-out;
 }
 
 .tools-sidebar li {
@@ -784,8 +784,8 @@ a:hover {
     flex-direction: column;
     align-items: center;
     background-color: whitesmoke;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    /* border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-right: 1px solid black;

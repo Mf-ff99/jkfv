@@ -38,15 +38,13 @@ export default function Work() {
                             url='https://vimeo.com/458941481'
                             playing={false}
                             width='100%'
-                            
+                            // responsive={true}
                             // volume={.1}
                             muted={true}
                             controls={true}
                             loop={true}
                             
                             />
-                        {/* <p className="legend">Legend 2</p> */}
-
                     </div>
                     <div className='vimeo-video'>
                         <ReactPlayer
@@ -54,15 +52,12 @@ export default function Work() {
                             url='https://vimeo.com/113506620'
                             playing={false}
                             width='100%'
-                            
                             // volume={.1}
                             muted={true}
                             controls={true}
                             loop={true}
                             
                             />
-                        {/* <p className="legend">Legend 2</p> */}
-
                     </div>
                     
                     <div>
@@ -140,7 +135,7 @@ export default function Work() {
                             
                         />
                     </div>
-                <div infiniteLoop className='vimeo-video' style={{marginTop: '0'}}>
+                <div className='vimeo-video' style={{marginTop: '0'}}>
                     <ReactPlayer
                             className='carousel-work-video'
                             url='https://player.vimeo.com/video/347630793?title=0&byline=0&portrait=0&app_id=122963'
@@ -264,7 +259,7 @@ export default function Work() {
                     
                     <hr />
                 </div>
-            <Carousel showThumbs={false}>
+            <Carousel infinteLoop emulateTouch showThumbs={false}>
                     <div className='vimeo-video'>
                         <ReactPlayer
                             className='carousel-work-video'

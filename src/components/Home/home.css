@@ -12,20 +12,24 @@ body {
     top: 0;
 }
 
-.xcam-logo {
+img.xcam-logo {
     width: 310px;
     padding: 5px;
     text-align: center;
+    color: black !important;
+    background-color: black;
 }
 
 .xcam-logo-container {
     display: flex;
     flex-direction: column;
+    color: black;
     margin: 0 auto;
     padding-bottom: 20px;
 }
 
 .xcam-section {
+    color: black;
     display: flex;
     flex-direction: column !important;
     align-items: center !important;
@@ -121,6 +125,7 @@ body {
 .xcam-img{
     width: 35%;
     height: 47px;
+    color: black;
     background-color: black;
     border-radius: 10px;
 }
@@ -278,7 +283,8 @@ section.jordys-specialties {
     justify-content: center;
     align-items: center;
     height: 450px;
-    background-color: white;
+    color: white;
+    background-color: black;
     width: 100%;
     padding: 0 30px 0 30px;
 }
@@ -304,7 +310,7 @@ section.jordys-specialties {
 @media screen and (max-width: 650px) {
 
     section.jordys-aerials {
-        height: 650px !important;
+        /* height: 650px !important; */
         padding-top: 25px;
     }
 
@@ -369,12 +375,13 @@ section.jordys-specialties {
 section.jordys-aerials {
     background: black;
     width: 100%;
-    color: white;
+    color: black;
+    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 550px;
+    /* height: 450px; */
 }
 
 .background-video-container {
@@ -430,7 +437,7 @@ object-fit: fill !important;
 }
 
 .span-holder span a {
-    color: white !important;
+    color: black !important;
     text-decoration: underline;
 }
 
@@ -446,6 +453,10 @@ object-fit: fill !important;
 .margin-divider {
     display: flex;
     align-items: center;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 500px;
     /* margin: 10px; */
     /* margin-bottom: 10%; */
 }
@@ -535,10 +546,28 @@ ul.client-logos li.client-logo img {
 .tools-block {
     text-align: center;
     padding: 20px 8% 40px 8%;
-    background-color: black !important;
-    color: white !important;
+    background-color: white !important;
+    color: black !important;
     display: flex;
     flex-direction: column;
+}
+
+.black-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+
+.black-div h5 {
+    border: 2px solid white;
+    padding: 5px;
+    font-size: 25px;
+    margin-top: 20px;
 }
 
 .tools-block div span a {

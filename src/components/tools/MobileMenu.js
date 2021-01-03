@@ -64,7 +64,7 @@ const UL = styled.ul`
         flex-direction: column !important;
         justify-content: center !important;
         align-items: center !important;
-        background-color: whitesmoke;
+        background-color: white;
         border-top: 1px solid black;
         border-right: 1px solid black;
         border-bottom: 1px solid black;
@@ -77,8 +77,8 @@ const UL = styled.ul`
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;
        
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+        /* border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px; */
 
     a {
         color: black !important;

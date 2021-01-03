@@ -37,16 +37,12 @@
     height: 300px;
 }
 
-div.carousel ul li {
-    /* margin: 0; */
-}
-
-.projects-grid #player {
-    /* margin-right: 10px; */
-}
-
-.vimeo-video iframe {
+.work-page .vimeo-video iframe {
     margin-bottom: 20px;
+}
+
+.work-page .carousel {
+    max-width: 750px;
 }
 
 .project-header {
@@ -118,12 +114,6 @@ section.work-page h6 {
     margin-left: 0;
 }
 
-@media (min-width: 500px) {
-    .carousel-root {
-        width: 80%;
-    }
-
-}
 
 @media (max-width: 500px) {
     .carousel-root {
@@ -132,7 +122,7 @@ section.work-page h6 {
     
 }
 @media (max-width: 360px) {
-
+    
     .carousel-root {
         width: 300px;
         /* padding-left: 10px; */
@@ -144,12 +134,16 @@ section.work-page h6 {
         margin: 0 100px 0 100px;
         
     }
-
+    
     .vimeo-video iframe {
         margin-bottom: 20px;
         padding: 25px;
     }
 
-    
-    
+}
+@media (min-width: 500px) {
+    .carousel-root {
+        /* width: 80%; */
+    }
+
 }

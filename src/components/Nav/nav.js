@@ -27,7 +27,7 @@ const StyledLogo = styled.div`
     }
 
     @media (min-width: 768px) {
-        display: none !important;
+        /* display: none !important; */
         /* color: red !important; */
     }
 `;
@@ -93,12 +93,6 @@ const NavStyled = styled.nav`
         padding: 10px;
         width: 100vw;
     }
-
-    /* @media (min-width: 768px) {
-        display: none !important;
-    } */
-
-  
 `;
 
 export default class Nav extends React.Component {

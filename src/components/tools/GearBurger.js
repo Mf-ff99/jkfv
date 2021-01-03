@@ -19,7 +19,7 @@ margin-top: 10px;
         width: 2rem;
         height: .25rem;
         border: 1px solid black;
-        border-radius: 10px;
+        /* border-radius: 10px; */
         background-color: ${({open}) => open ? 'black' : '#333'};
         transform-origin: 1px;
         transition: all .3s;

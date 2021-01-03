@@ -115,6 +115,10 @@ export default function Home() {
                 </section>
                
                 {/* <br /> */}
+                <section className='black-div contact-jordy'>
+                    <h4>Get a Quote from Jordy</h4>
+                    <h5>352-427-2560</h5>
+                </section>
                 <section className='jordys-aerials'>
                     {/* <ReactPlayer
                             className='video-2-player'

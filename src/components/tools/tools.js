@@ -97,7 +97,7 @@ export default class Tools extends React.Component {
                             <h3>
                                 Shotcalla
 </h3>
-                            <Carousel swipeable={true} showArrows={true} infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
+                            <Carousel showArrows={true} infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
                                 {/* <Carousel.Item> */}
 
                                 
@@ -152,7 +152,7 @@ export default class Tools extends React.Component {
                             <h4>
                                 The PBJ (Photoboat Junior)
                             </h4>
-                            <Carousel infiniteLoop showThumbs={false} className='big-baller-carousel'>
+                            <Carousel showThumbs={false} className='big-baller-carousel'>
                                 <div>
                                     <img src={PBJ} alt='Pontoon Boat: The Big Baller' />
                                 </div>
@@ -177,7 +177,7 @@ export default class Tools extends React.Component {
                             <h4>
                                 The Big Baller
                             </h4>
-                            <Carousel infiniteLoop showThumbs={false} className='big-baller-carousel'>
+                            <Carousel showThumbs={false} className='big-baller-carousel'>
                                 <div>
                                     <img src={Pontoon} alt='Pontoon Boat: The Big Baller' />
                                 </div>
@@ -333,7 +333,7 @@ export default class Tools extends React.Component {
                             <h4>
                             60’ Non-Telescopic Crane
                             </h4>
-                            <Carousel className='big-baller-carousel' showThumbs={false} infiniteLoop style={{ minHeight: '250px' }}>
+                            <Carousel className='big-baller-carousel' showThumbs={false} style={{ minHeight: '250px' }}>
                                 <div>
                                     <img className="d-block" src={images.SixtyFooter} alt='Triton Arm' />
                                 </div>
@@ -426,7 +426,7 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                                 CamMate Jib
                                 </h4>
                             <Carousel
-                                showThumbs={false} className='tools-carousel' infiniteLoop style={{ minHeight: '250px' }}>
+                                showThumbs={false} className='tools-carousel' style={{ minHeight: '250px' }}>
 
                                 <div className='d-block w-100'>
                                     <ReactPlayer
@@ -659,7 +659,7 @@ Underwater D/P: Jordan(Jordy) Klein Jr.</p>
 
                         <div className="photoboat">
                             <h3>Underwater Drone</h3>
-                        <Carousel infiniteLoop showThumbs={false} id="cameracar-carousel" className='underwater-carousel' style={{}}>
+                        <Carousel showThumbs={false} id="cameracar-carousel" className='underwater-carousel' style={{}}>
                            
                         <ReactPlayer
                                 className='video-2-player'
@@ -759,7 +759,7 @@ We also build our own 3D underwater housing systems</p>
                         <div className='photoboat'>
                         <h3>Winchcam</h3>
 
-                    <Carousel infiniteLoop showThumbs={false} id='cameracar-carousel' style={{}}>                    
+                    <Carousel showThumbs={false} id='cameracar-carousel' style={{}}>                    
                     <div>
                             <ReactPlayer
                                 className='video-2-player'
@@ -817,7 +817,7 @@ Let us know what your requirements are, and we will do our best to accomidate yo
                         <div className='photoboat'>
                         <h3>Railcam</h3>
 
-                    <Carousel infiniteLoop showThumbs={false} id='cameracar-carousel' style={{}}>                    
+                    <Carousel showThumbs={false} id='cameracar-carousel' style={{}}>                    
                     <div>                    
                    <ReactPlayer
                                 className='video-2-player'
