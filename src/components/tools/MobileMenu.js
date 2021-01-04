@@ -10,7 +10,7 @@ const UL = styled.ul`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    max-width: 170px;
+    max-width: 180px;
     min-width: 10%;
     // min-height: 800px;
     margin-left: 0;
@@ -72,9 +72,9 @@ const UL = styled.ul`
         transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
         /* top: 185px; */
         left: 0;
-        height: 400px;
+        height: 430px;
         /* width: 1500px; */
-        padding: 15px 0 0 0;
+        padding: 15px 15px 0 0;
         transition: .3s ease-in-out;
        
         /* border-top-right-radius: 10px;

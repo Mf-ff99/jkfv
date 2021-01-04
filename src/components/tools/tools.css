@@ -283,7 +283,7 @@ div.cameras__ul {
 
 .threeD {
     padding: 20px 0 20px 0;
-    background-color:#ffffff;
+    background-color:white;
     /* height: 800px; */
     min-height: 100vh;
 }
@@ -640,8 +640,24 @@ a:hover {
 
 
 @media (max-width: 658px) {
-    .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
-        margin: 15px;
+
+    .tool-sections .carousel .control-next.control-arrow {
+        right: 0 !important;
+    }
+
+    .tool-sections .carousel .control-arrow.control-next {
+        margin: -26px;
+    }
+   .threeD .carousel .control-next.control-arrow:before {
+        border: 1px solid black;
+        border-width: 0 3px 3px 0;
+    }
+   .threeD .carousel .control-prev.control-arrow:before {
+        border: 1px solid black;
+        border-width: 0 3px 3px 0;
+    }
+    .tool-sections .carousel .control-arrow.control-prev {
+        margin: -15px;
     }
     .carousel .control-arrow, .carousel.carousel-slider .control-arrow:hover {
         background-color: transparent !important;
@@ -678,6 +694,11 @@ a:hover {
         padding: 9px;
         transform: rotate(135deg);
         -webkit-transform: rotate(135deg);
+    }
+
+    .sixty-footer {
+        width: 100%;
+        margin: 10px 0 10px 0;
     }
 }
 

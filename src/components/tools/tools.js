@@ -332,12 +332,12 @@ export default class Tools extends React.Component {
                             <h4>
                             60’ Non-Telescopic Crane
                             </h4>
-                            <Carousel className='big-baller-carousel' showThumbs={false} style={{ minHeight: '250px' }}>
+                            {/* <Carousel className='tools-carousel' showThumbs={false} style={{ minHeight: '250px' }}> */}
                                 <div>
-                                    <img className="d-block" src={images.SixtyFooter} alt='Triton Arm' />
+                                    <img className="d-block sixty-footer" src={images.SixtyFooter} alt='60 foot non-telescopic crane' />
                                 </div>
                                
-                            </Carousel>
+                            {/* </Carousel> */}
 
                             <div className="header-info triton-info">
 <p>We purchased this crane arm out of necessity. We are continually called by clients and requested to fly our drones in restricted airspace or airspace that requires absorbent amounts of time to Aquire a permit to fly. For this reason, we acquired this incredible piece of gear.</p>
