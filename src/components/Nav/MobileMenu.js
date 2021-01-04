@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import React from 'react'
 import Logo from './jordy_logo.png'
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+
 
 const UL = styled.ul`
     list-style: none;
@@ -89,11 +91,33 @@ const UL = styled.ul`
     }
 `
 
-const MobileNav = ({ open }) => {
-
+class MobileNav extends React.Component {
+    componentDidMount() {
+        // 2. Get a target element that you want to persist scrolling for (such as a modal/lightbox/flyout/nav).
+        // Specifically, the target element is the one we would like to allow scroll on (NOT a parent of that element).
+        // This is also the element to apply the CSS '-webkit-overflow-scrolling: touch;' if desired.
+        this.targetElement = document.querySelector('#mobile-nav');
+        
+    }
     
-    return (
-        <UL id='mobile-nav' open={open}>
+    showTargetElement = (open) => {
+          if(open = true) enableBodyScroll(this.targetElement);
+         
+      };
+      componentWillUnmount() {
+        // 5. Useful if we have called disableBodyScroll for multiple target elements,
+        // and we just want a kill-switch to undo all that.
+        // OR useful for if the `hideTargetElement()` function got circumvented eg. visitor
+        // clicks a link which takes him/her to a different page within the app.
+        
+      }
+    render() {
+        let open = this.props.open
+        // console.log(open, 'this is open')
+        if(open) disableBodyScroll(this.targetElement)
+        if(!open) clearAllBodyScrollLocks()
+        return (
+            <UL id='mobile-nav' open={open}>
             <li className="mobile logo">
                 {open ? <a href='/'><img src={Logo} alt="Jordan Klein Film and Video Logo" /></a> : ''}
 
@@ -116,6 +140,7 @@ const MobileNav = ({ open }) => {
             </li>
         </UL>
     )
+}
 
 }
 
