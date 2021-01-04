@@ -717,7 +717,7 @@ a:hover {
         width: 100% !important;
     }
 
-    .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+    .tool-sections .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
         margin: 15px;
     }
     .carousel .control-arrow, .carousel.carousel-slider .control-arrow:hover {

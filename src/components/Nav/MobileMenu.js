@@ -90,8 +90,10 @@ const UL = styled.ul`
 `
 
 const MobileNav = ({ open }) => {
+
+    
     return (
-        <UL open={open}>
+        <UL id='mobile-nav' open={open}>
             <li className="mobile logo">
                 {open ? <a href='/'><img src={Logo} alt="Jordan Klein Film and Video Logo" /></a> : ''}
 
