@@ -4,6 +4,7 @@ import Photoboat from '../../images/photoboat.png'
 import PBJ from '../../images/pbj.png'
 import Pontoon from '../../images/pontoon.png'
 import TritonArm from '../../images/triton-arm.png'
+import SixtyFooter from '../../images/sixty-foot-crane.png'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel'
 import { Animated } from 'react-animated-css'
@@ -334,7 +335,7 @@ export default class Tools extends React.Component {
                             </h4>
                             {/* <Carousel className='tools-carousel' showThumbs={false} style={{ minHeight: '250px' }}> */}
                                 <div>
-                                    <img className="d-block sixty-footer" src={images.SixtyFooter} alt='60 foot non-telescopic crane' />
+                                    <img className="d-block sixty-footer" src={SixtyFooter} alt='60 foot non-telescopic crane' />
                                 </div>
                                
                             {/* </Carousel> */}
