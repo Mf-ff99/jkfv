@@ -5,7 +5,7 @@ import PBJ from '../../images/pbj.png'
 import Pontoon from '../../images/pontoon.png'
 import TritonArm from '../../images/triton-arm.png'
 import SixtyFooter from '../../images/sixty-foot-crane.png'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
 import { Animated } from 'react-animated-css'
 import './tools.css'
@@ -13,6 +13,8 @@ import GearBurger from './GearBurger'
 import ReactPlayer from 'react-player/lazy'
 import images from '../../images/BarreledImages'
 import MFD from '../../images/RED-MFD-5000.jpg'
+import { HashLink } from 'react-router-hash-link'
+import Images from '../../images/BarreledImages'
 
 export default class Tools extends React.Component {
 
@@ -87,6 +89,11 @@ export default class Tools extends React.Component {
                     </p>
                         {/* <hr style={{ width: '200px', border: '1px solid black' }} /> */}
                         {/* <hr className="big-hr"></hr> */}
+                        <div className='tools-pointer'>
+
+                        <h6>Explore Our Tools Below</h6>
+                        <HashLink smooth to='#photoboats'><img className='work-scroll-arrow' src={Images.DownArrow} alt='scroll-down arrow' /></HashLink>
+                        </div>
                     </div>
                     </Animated>
                     <div className="photoboats" id='photoboats'>

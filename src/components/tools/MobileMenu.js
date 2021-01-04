@@ -72,7 +72,7 @@ const UL = styled.ul`
         transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
         /* top: 185px; */
         left: 0;
-        height: 430px;
+        height: 440px;
         /* width: 1500px; */
         padding: 15px 15px 0 0;
         transition: .3s ease-in-out;
@@ -112,6 +112,7 @@ const MobileNav = ({ open }) => {
             <li><HashLink smooth to="#cameracar">Camera Car</HashLink></li>
             <li><HashLink smooth to="#cameracar">Process Trailer</HashLink></li>
             <li><HashLink smooth to="#lenses">Lenses</HashLink></li>
+            <li><HashLink smooth to="#lenses">Cameras</HashLink></li>
             <li><HashLink smooth to="#underwater">Underwater</HashLink></li>
             <li><HashLink smooth to="#crew">Crew</HashLink></li>
             <li><HashLink smooth to="#3D">3D & VR</HashLink></li>

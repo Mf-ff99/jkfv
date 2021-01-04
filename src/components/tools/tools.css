@@ -7,6 +7,21 @@
 }
 
 
+.tools-pointer {
+    padding-top: 100px;
+    margin-top: 100px;
+}
+
+.tools-pointer img {
+    width: 65px;
+    margin-top: 20px;
+}
+
+.tools-pointer h6 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
 .big-baller-carousel.aerials {
     margin-bottom: 20px;
 

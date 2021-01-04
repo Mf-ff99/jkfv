@@ -142,7 +142,7 @@ export default function Home() {
                         </div>
                         <div className='span-holder'>
                             <span>
-                           Our drone division, XCam Aerials, is only a click away. Feel free to visit <a href='http://xcamaerials.com/' target="_blank" rel="noopener noreferrer">XCamAerials.com</a> for more information.                        </span>                        </div>
+                           Our drone division and sister company, XCam Aerials, is only a click away. Feel free to visit <a href='http://xcamaerials.com/' target="_blank" rel="noopener noreferrer">XCamAerials.com</a> for more information.                        </span>                        </div>
                     </div>
                 </section>
                 <section className='jordys-specialties'>
