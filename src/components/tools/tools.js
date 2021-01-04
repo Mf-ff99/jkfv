@@ -334,9 +334,9 @@ export default class Tools extends React.Component {
                             60’ Non-Telescopic Crane
                             </h4>
                             {/* <Carousel className='tools-carousel' showThumbs={false} style={{ minHeight: '250px' }}> */}
-                                <div>
+                                {/* <div> */}
                                     <img className="sixty-footer" src={SixtyFooter} alt='60 foot non-telescopic crane' />
-                                </div>
+                                {/* </div> */}
                                
                             {/* </Carousel> */}
 
