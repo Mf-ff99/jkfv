@@ -8,11 +8,12 @@ const UL = styled.ul`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
+    width: 100vh;
     // min-height: 800px;
     margin-left: 0;
     padding-left: 0;
     z-index: 2000;
+    overflow: hidden;
 
     li {
         color: black !important;
@@ -65,6 +66,7 @@ const UL = styled.ul`
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;
         z-index: 1000;
+        /* scroll-behavior: unset; */
 
     a {
         color: black !important;
@@ -77,6 +79,12 @@ const UL = styled.ul`
             flex-direction: column;
             justify-content: center !important;
         }
+    }
+    @media (min-width: 768px) {
+        li.mobile a img{
+            display: none !important;
+            /* border: 1px solid red; */
+        }
 
     }
 `
@@ -84,7 +92,7 @@ const UL = styled.ul`
 const MobileNav = ({ open }) => {
     return (
         <UL open={open}>
-            <li className="logo">
+            <li className="mobile logo">
                 {open ? <a href='/'><img src={Logo} alt="Jordan Klein Film and Video Logo" /></a> : ''}
 
                 {/* {open ? '' : <span className="logo-text-left"><a href='/'>Jordan Klein Film & Video</a></span>} */}

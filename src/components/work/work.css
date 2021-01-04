@@ -58,6 +58,7 @@
     align-items: center;
     padding-top: 20px;
     margin-top: 40px;
+    padding: 10px;
 }
 
 .work-page .carousel .control-next.control-arrow:before {
@@ -113,6 +114,7 @@ div.work-page-header h1 {
 
 div.work-page-header p {
     max-width: 800px;
+    padding: 0 20px 0 20px;
 }
 
 section.work-page h6 {

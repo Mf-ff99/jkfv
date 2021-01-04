@@ -52,13 +52,35 @@ body {
     padding-left: 10px;
 }
 
+.about-page-upper h5 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
 div.p-1 {
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
+    align-items: space-between;
+    justify-content: space-around;
+    min-height: 50vh;
 }
 
 .about-page:before {
-    opacity: 50%;
+    opacity: .5;
+}
+
+div.p-2 {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding-top: 10px;
+}
+
+div.p-3 {
+    min-height: 30vh;
 }
 
 
@@ -87,14 +109,7 @@ div.p-1 {
     -webkit-backface-visibility: hidden;
 } */
 
-.content {
-    color: whitesmoke;
-    font-size: 24px;
-    margin-left: 10%;
-    /* margin-right: 10%; */
-    /* margin-top: 5em; */
-    position: relative;
-}
+
   
 @media screen and (max-width: 680px) {
     .about-page {
@@ -102,9 +117,9 @@ div.p-1 {
     }
     
     .about-page-upper {
-        font-size: 12px !important;
+        font-size: 18px !important;
     }
     .about-page-upper h2 {
-        font-size: 16px;
+        font-size: 29px;
     }
 }

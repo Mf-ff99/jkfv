@@ -648,7 +648,7 @@ a:hover {
     }
     .carousel .control-next.control-arrow, .carousel .control-next.control-arrow:hover {
         border: none;
-        right: -10px;
+        /* right: -10px; */
     }
 
     .carousel.control-prev.control-arrow {

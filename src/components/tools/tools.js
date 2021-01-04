@@ -460,17 +460,21 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                     <div className="aerials" id="aerials">
                     <h3>Aerials</h3>
                     <hr style={{ width: "90px" }} />
-                    <Carousel showThumbs={false} className='big-baller-carousel aerials' style={{}}>
+                    <a href='http://xcamaerials.com/' target='_blank' rel='noopener noreferrer'>
+                    <Carousel showStatus={false} renderIndicator={false} showThumbs={false} className='big-baller-carousel aerials' style={{}}>
                                 {/* <Carousel.Item> */}
 
                                 
                                    <div>
-                                       <img className="mfd-image" src={MFD} alt='MFD 5000 Drone with RED camera and Ronin 2 gimbal' />
+                                       {/* <a href='https://xcamaerials.com' target='_blank' rel='noopener noreferrer'> */}
+                                           <img className="mfd-image" src={MFD} alt='MFD 5000 Drone with RED camera and Ronin 2 gimbal' />
+                                           {/* </a> */}
                                    </div>
                                 
 
                         </Carousel>
-                        <h6>Our Aerials are solely operated by XCam Aerials. Click the link to visit the <a href="http://xcamaerials.com/" target="_blank" rel="noopener noreferrer">XCam Aerials</a> website.</h6>
+                        </a>
+                        <h6>Our Aerials are solely operated by our sister company XCam Aerials. Click the link to visit the <a href="http://xcamaerials.com/" target="_blank" rel="noopener noreferrer">XCam Aerials</a> website.</h6>
                        
                     </div>
                     {/* <hr className="big-hr" id="cameracar" /> */}

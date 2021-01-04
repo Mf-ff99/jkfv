@@ -8,18 +8,20 @@ import MobileNav from './MobileMenu';
 
 
 const StyledBurger = styled.div`
-margin-top: 10px;
+margin-top: 5px;
     width: 2rem;
     height: 2rem;
-    top: 15px;
+    top: ${({open}) => open ? '30px' : '10px'};
     right: 30px;
     margin-right: 10px;
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
     cursor: pointer;
-    z-index: 40000;
+    z-index: 4000;
     /* float: right; */
+    position: ${({open}) => open ? 'fixed' : 'relative'};
+    transition: .5s ease-in-out;
     div {
         width: 2rem;
         height: .25rem;
@@ -28,6 +30,7 @@ margin-top: 10px;
         background-color: ${({open}) => open ? 'black' : 'black'};
         transform-origin: 1px;
         transition: all .3s;
+        transform: ${({open}) => open ? 'rotate(90deg)' : 'rotate(0deg)'};
 
         &:nth-child(1) {
             transform: ${({open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
@@ -45,7 +48,7 @@ margin-top: 10px;
         }
     }
 
-    @media (min-width: 770px) {
+    @media (min-width: 768px) {
         display: none !important;
     }
 `;

@@ -403,7 +403,7 @@ section.jordys-aerials {
     min-width: 100% !important;
     min-height: 100% !important;
     z-index: -100;
-    opacity: 1;
+    opacity: .8;
 }
 
 .background-video-container-2 {
