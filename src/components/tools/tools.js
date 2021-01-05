@@ -105,9 +105,11 @@ export default class Tools extends React.Component {
                         {/* <div id="photoboats" className="photoboat-container"> */}
 
                         <div className="photoboat">
+                            <div className='photoboat-header'>
                             <h4>
                                 Shotcalla
 </h4>
+
                             <Carousel showArrows={true} infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
                                 {/* <Carousel.Item> */}
 
@@ -119,12 +121,16 @@ export default class Tools extends React.Component {
                                         controls={true}
                                         width='100%'
 
-                                    />
+                                        />
                                 
 
-
                                 <div>
-                                    <img src={Photoboat} alt='the shotcalla' />
+                                    <img src={images.ShotcallaWings} alt='the shotcalla beached at sunset' />
+
+
+                                </div>
+                                <div>
+                                    <img src={images.ShotcallaFloating} alt='the shotcalla' />
                                 </div>
                                 <div>
                                     <ReactPlayer
@@ -134,18 +140,15 @@ export default class Tools extends React.Component {
                                         controls={true}
                                         width='100%'
 
-                                    />
+                                        />
                                 </div>
 
 
 
-                                <div>
-                                    <img src={images.BeachedShotcalla} alt='the shotcalla beached at sunset' />
-
-
-                                </div>
+                                
 
                             </Carousel>
+                                        </div>
 
                             <div className="header-info">
                                 <p>Jordan Klein Film and Video’s 31’ offshore catamaran is unlike any other photoboat in the world. It is truly a modern marvel. Besides being a 65mph super-stable offshore catamaran, it can also be equipped with robotic crane and stabilized head . We can show up to location with this as a complete turn-key package! This boat can also be equipped with wings that allow the camera operator to walk out 13’ and be 12’ above the water to achieve vertical shots of watercraft</p>
@@ -160,6 +163,7 @@ export default class Tools extends React.Component {
                         </div>
 
                         <div className="photoboat">
+                        <div className='photoboat-header'>
                             <h4>
                                 The PBJ (Photoboat Junior)
                             </h4>
@@ -169,6 +173,7 @@ export default class Tools extends React.Component {
                                 </div>
 
                             </Carousel>
+                            </div>
                             <div className="header-info">
 
 
@@ -185,6 +190,7 @@ export default class Tools extends React.Component {
                         </div>
 
                         <div className="photoboat">
+                        <div className='photoboat-header'>
                             <h4>
                                 The Big Baller
                             </h4>
@@ -194,6 +200,7 @@ export default class Tools extends React.Component {
                                 </div>
 
                             </Carousel>
+                            </div>
                             <div className="header-info">
 
                                 <p>Our 30’ Pontoon boat is equipped to carry up to 17 people comfortably. It has 20’ of shaded area so clients stay cool all day, It can also be equipped with long range wireless video so clients can watch in comfort. Additionally, the upholstery can be removed and the boat can be used to carry support equipment such as lighting and grip gear or even a large production generator!</p>
@@ -216,6 +223,7 @@ export default class Tools extends React.Component {
                     <h3 className="crane-header">Cranes</h3>
                     <hr style={{ width: "90px" }} />
                         <div className="photoboat">
+                        <div className='photoboat-header'>
                             <h4>
                                 30' Telescopic Crane
                             </h4>
@@ -264,8 +272,8 @@ export default class Tools extends React.Component {
                               
 
                             </Carousel>
-
-                            <div className="header-info">
+            </div>
+                            <div className="header-info telescopic-crane">
                                 <p>Our Telescopic crane arm can accommodate any number of stabilized and Unstabilized remote heads (any head that uses a Mitchel type mount). The heads that we can offer “in house” for the telescopic crane are The Movi XL, The DJI Ronin 2, and the non-stabilized head that comes standard with the crane.</p><p> The arm has a max reach of 30’ and a minimum reach of 15’ the weight when fully assembled with the camera is about 1750lbs respectively. The max camera/gimbal weight that can be accommodated is 70lbs. </p><p>The crane and all of its accessories are transported in a customized 24’ enclosed trailer. We can provide a complete crew for the operation of this crane including delivery to set. Additionally, we can provide this crane with a turn-key camera and lens package with FIZ, and wireless video transmitter. Just let us know what you need!</p>
                                 <ul>
                                     <li>Reach: 30'</li>
@@ -283,6 +291,7 @@ export default class Tools extends React.Component {
                         </div>
                         {/* crane starts here */}
                         <div className="photoboat">
+                        <div className='photoboat-header'>
                             <h4>
                                 Triton Arm
                             </h4>
@@ -317,6 +326,7 @@ export default class Tools extends React.Component {
                                     />
                                 </div>
                             </Carousel>
+                            </div>
 
                             <div className="header-info">
 
@@ -337,6 +347,7 @@ export default class Tools extends React.Component {
                             </div>
                         </div>
                         <div className="photoboat">
+                        <div className='photoboat-header'>
                             <h4>
                             60’ Non-Telescopic Crane
                             </h4>
@@ -346,6 +357,7 @@ export default class Tools extends React.Component {
                                 {/* </div> */}
                                
                             {/* </Carousel> */}
+                            </div>
 
                             <div className="header-info triton-info">
 <p>We purchased this crane arm out of necessity. We are continually called by clients and requested to fly our drones in restricted airspace or airspace that requires absorbent amounts of time to Aquire a permit to fly. For this reason, we acquired this incredible piece of gear.</p>
@@ -358,6 +370,7 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                         </div>
 
                         <div className="photoboat">
+                        <div className='photoboat-header'>
                             <h4>
                                 22' Robotic Arm
                             </h4>
@@ -410,6 +423,7 @@ Once the crane is fully assembled it can be moved around the set via a large wes
 
 
                             </Carousel>
+                            </div>
 
                             <div className="header-info">
                                 <p>This arm was a custom build by JKF&V in our Machine shop and fabrication facility. This crane is fully wirelessly controlled in its pan and tilt axis has a max lens reach of 22’ from the fulcrum and has a total length of 27’ the crane has a max weight of 1850lbs with a camera and head attached.</p><p> This Robotic arm can be provided with either of our 2 in house stabilized heads (The Movi XL  or the Ronin 2 stabilized head). It can also accept any stabilized head that uses a Mitchell mounting system. The crane can be mounted to any vehicle or structure that can accommodate the weight. (see camera car and Photoboat).</p>
@@ -429,13 +443,14 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                         </div>
 
                         <div className="photoboat">
+                        <div className='photoboat-header'>
                             <h4>
                                 CamMate Jib
                                 </h4>
-                            <Carousel
-                                showThumbs={false} className='tools-carousel' style={{ minHeight: '250px' }}>
+                            {/* <Carousel
+                                showThumbs={false} showStatus={false} showIndicators={false} className='tools-carousel' style={{ minHeight: '250px' }}> */}
 
-                                <div className='d-block w-100'>
+                                <div className=''>
                                     <ReactPlayer
                                         className='video-3-player'
                                         url='https://vimeo.com/450546354'
@@ -445,8 +460,9 @@ Once the crane is fully assembled it can be moved around the set via a large wes
 
                                     />
                                 </div>
-                            </Carousel>
-                            <div className="header-info">
+                            {/* </Carousel> */}
+                            </div>
+                            <div className="header-info cammate-jib">
 
                                 <p>The world-famous CamMate Travel Series is a more economical version that consists of four-foot sections packed in durable hard cases for frequent location traveling. In addition to our strong aerospace design, the Travel series features 15 minutes set up times; configuration changes in 10 minutes, and electronic head inversions in less than 30 seconds. All of these design features make your job on location faster and easier.</p>
                                 <ul>
@@ -568,10 +584,10 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                     
                     {/* <hr className="big-hr" /> */}
                     
+
                     <div id='lenses' className="photoboats">
                     <h3>Lenses and Cameras</h3>
                     <hr style={{ width: "90px" }} />
-
                         <div className="photoboat">
                             {/* <div className="tools-image-container">
                            
@@ -633,6 +649,7 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                     <hr style={{ width: "90px" }} />
 
                         <div className="photoboat">
+                        <div className='photoboat-header'>
                             <h4
                             >Underwater Cinematography</h4>
                         <Carousel infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>                    
@@ -656,6 +673,7 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                                 <img src={images.UnderwaterWelding} alt='Jordy filming underwater welding' />
                             </div>
                                   </Carousel>
+                                  </div>
                         <div className='header-info'>
                             <p>Jordan Klein Film and Video and The Klein family have been at the forefront of underwater cinematography technology for over 50 years! Jordan Klein, Sr opened the first dive shop on Miami beach shortly after World War II and developed some of the first underwater cameras. </p><p>Jordan Klein, Sr's son,  Jordy Klein has continued the legacy and is still pushing the boundaries of underwater filmmaking.
 
@@ -671,8 +689,9 @@ Underwater D/P: Jordan(Jordy) Klein Jr.</p>
                         </div>
 
                         <div className="photoboat">
+                        <div className='photoboat-header'>
                             <h4>Underwater Drone</h4>
-                        <Carousel showThumbs={false} id="cameracar-carousel" className='tools-carousel' style={{}}>
+                        {/* <Carousel showThumbs={false} className='tools-carousel' style={{}}> */}
                            
                         <ReactPlayer
                                 className='video-2-player'
@@ -684,7 +703,8 @@ Underwater D/P: Jordan(Jordy) Klein Jr.</p>
                                 />      
                                                 
                             
-                                  </Carousel>
+                                  {/* </Carousel> */}
+                                  </div>
                         <div className='header-info'>
                             <p>The Fafish is a fully remotely controlled underwater drone. It has a 350’ teather and can travel to depths of 300’. The Fafish has a 1” sensor and can shoot 4k video at 24 or 30fps it can also shoot 1080p at 60fps
 
@@ -746,7 +766,7 @@ We have staff sound mixers, lighting, grip, and camera department crew available
                            
                                   </Carousel>
                         <div className='header-info'>
-                            <p>Jordan Klein Film and Video has alway been one of the few companies at the forefront of 3D and immersive technology. We are the only company in the Southeast USA with latest 3ality Technica, ATOM, 3D Beamspiltter rig.
+                            <p>Jordan Klein Film and Video has alway been one of the few companies at the forefront of 3D and immersive technology. We are the only company in the Southeast USA with latest 3ality Technica, ATOM, 3D Beamsplitter rig.
 
  
 
@@ -770,9 +790,10 @@ We also build our own 3D underwater housing systems</p>
                     <h3>Skunkworks</h3>
                     <hr style={{ width: '90px' }} />
                         <div className='photoboat'>
+                        <div className='photoboat-header'>
                         <h4>Winchcam</h4>
 
-                    <Carousel showThumbs={false}  className='tools-carousel' style={{}}>                    
+                    {/* <Carousel showThumbs={false}  className='tools-carousel' style={{}}>                     */}
                     <div>
                             <ReactPlayer
                                 className='video-2-player'
@@ -783,7 +804,8 @@ We also build our own 3D underwater housing systems</p>
                                 // height='100%'
                                 />      
                                 </div>
-                        </Carousel>
+                        {/* </Carousel> */}
+                        </div>
                         <div className='header-info'>
 
                         <p>The Winchcam is a portable 4 point system that allows you to fly your choice of gimbals and most cameras in a 3-dimensional space. The Winchcam is designed to attach to 2, 3, or 4 hardpoints that are above the stage. The maximum space between each attach point can be 100’.</p>
@@ -792,6 +814,7 @@ We also build our own 3D underwater housing systems</p>
                         </div>
                         </div>
                         <div className='photoboat'>
+                        <div className='photoboat-header'>
                         <h4>Railrunner</h4>
 
                     <Carousel infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
@@ -816,6 +839,7 @@ We also build our own 3D underwater housing systems</p>
                                 />      
                                 </div>
                         </Carousel>
+                        </div>
                         <div className='header-info'>
 
                         <p>The RailRunner dolly system was designed to allow the user to quickly attach the device to any tubular pipe that is 1 1/2” thru 2” in outside diameter. (IE: Speedrail or PVC pipe.) We can build the Railrunner in any variation of speed and torque.
@@ -828,9 +852,10 @@ Let us know what your requirements are, and we will do our best to accomidate yo
                         </div>
                         </div>
                         <div className='photoboat'>
+                        <div className='photoboat-header'>
                         <h4>Railcam</h4>
 
-                    <Carousel showThumbs={false} className='tools-carousel' style={{}}>                    
+                    {/* <Carousel showThumbs={false} className='tools-carousel' style={{}}>                     */}
                     <div>                    
                    <ReactPlayer
                                 className='video-2-player'
@@ -841,7 +866,8 @@ Let us know what your requirements are, and we will do our best to accomidate yo
                                 // height='100%'
                                 />      
                                 </div>
-                        </Carousel>
+                        {/* </Carousel> */}
+                        </div>
                         <div className='header-info'>
 
                         <p>The railcam was originally developed to shoot the AKC dog shows. We needed a device that could transport a camera and gimbal up to 20mph at “dog height” for about 120’ the Railcam is designed to run on a speed rail that is linked together with internal links that are spaced about 18” apart. we have since modified the Railcam to track Olympic class runners at various track and field events. and like the Railrunner, the Railcam can be modified to travel an almost any speed with almost any camera payload. Let us know your requirements and we will do our best to accommodate you.
@@ -849,6 +875,7 @@ Let us know what your requirements are, and we will do our best to accomidate yo
                         </div>
                         </div>
                         <div className='photoboat'>
+                        <div className='photoboat-header'>
                         <h3>Underwater Dolly</h3>
 
                     <Carousel infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>                    
@@ -873,6 +900,7 @@ Let us know what your requirements are, and we will do our best to accomidate yo
                                 />      
                                 </div>
                         </Carousel>
+                        </div>
                         <div className='header-info'>
 
                         <p>Our high speed underwater Dolly was designed to track Olympic class swimmers from an underwater view. We wanted the Underwater dolly to be compleatly remote controlled from the surface. We also wanted to be able to attach a large cinema camera to the dolly so that it can be used for any application. The Underwater dolly can travel at speeds of 1-10mph.</p>

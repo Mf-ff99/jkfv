@@ -51,6 +51,12 @@
     margin: 0 auto !important;
 }
 
+.work-page h2 {
+    
+        font-family: 'Staatliches', cursive;
+    font-size: 40px;
+}
+
 .project-header {
     display: flex;
     flex-direction: column;

@@ -8,8 +8,8 @@
 
 
 .tools-pointer {
-    padding-top: 100px;
-    margin-top: 100px;
+    padding-top: 40px;
+    margin-top: 40px;
 }
 
 .tools-pointer img {
@@ -346,6 +346,10 @@ div.cameras__ul {
     max-width: 700px;
 }
 
+.photoboat h4, .photoboats h3 {
+    font-family: 'Staatliches', cursive;
+}
+
 .header-info img {
     max-width: 500px;
 }
@@ -539,7 +543,7 @@ main {
 }
 
 .down-arrow {
-    transition-duration: 1s ease-in;
+    transition-duration: 1s ease-in-out;
 }
 
 section.tools ul {
@@ -855,4 +859,93 @@ a:hover {
     .cranes p {
         max-width: 500px;       
     }
+}
+
+@media (min-width: 1100px) {
+    .photoboat {
+        flex-direction: row;
+        max-width: 1000px !important;
+        min-height: 75vh;
+    }
+
+    .photoboat p {
+        min-width: 500px !important;
+        max-width: 650px !important;
+    }
+
+    .photoboat-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        padding-right: 15px;
+        align-items: center;
+    }
+
+    .photoboat h4 {
+        font-size: 50px !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+
+    #cameracar .photoboat {
+        flex-direction: column;
+    }
+    #cameracar .photoboat .carousel {
+        max-width: 650px;
+    }
+    #cameracar .photoboat .carousel .carousel-status {
+        margin-right: 65px;
+    }
+
+    #lenses .photoboat {
+        min-height: 50vh;
+    }
+
+    #crew h6 {
+        font-size: 20px !important;
+    }
+
+    .photoboat p.carousel-status {
+        display: none !important;
+    }
+
+    .photoboat .control-arrow {
+        margin: 10px;
+    }
+
+    .photoboat ul.control-dots li.dot {
+        color: black !important;
+    }
+
+    .header-info {
+        /* display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; */
+        /* width: 100%; */
+    }
+
+    #underwater .header-info {
+        padding-top: 120px;
+    }
+
+    #skunkworks .header-info {
+        padding-top: 110px;
+    }
+
+    #cranes .header-info.telescopic-crane {
+        padding-top: 320px;
+    }
+    #cranes .header-info {
+        padding-top: 240px;
+    }
+
+    #cranes .cammate-jib {
+        padding-top: 100px !important;
+    }
+
+    #photoboats .header-info {
+        padding-top: 120px;
+    }
+    
 }

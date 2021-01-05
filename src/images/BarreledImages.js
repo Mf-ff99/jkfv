@@ -7,6 +7,8 @@ import Drone3D_1 from './3d-drone.png'
 import SixtyFooter from './sixty-foot-crane.png'
 import SixtyFooter2 from './sixty-foot-crane-2.png'
 import DownArrow from './down-arrow.png'
+import ShotcallaWings from './shotcalla-wings.png'
+import ShotcallaFloating from './shotcalla-floating.png'
 
 let images = {
    BeachedShotcalla,
@@ -18,6 +20,8 @@ let images = {
    SixtyFooter,
    SixtyFooter2,
    DownArrow,
+   ShotcallaWings,
+   ShotcallaFloating,
 } 
 
 export default images
