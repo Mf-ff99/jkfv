@@ -84,7 +84,7 @@ const UL = styled.ul`
             justify-content: center !important;
         }
     }
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
         li.mobile a img{
             display: none !important;
             /* border: 1px solid red; */

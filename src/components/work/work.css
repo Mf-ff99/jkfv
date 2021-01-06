@@ -178,6 +178,10 @@ width: 70px;
     .carousel-root {
         width: 300px;
     }
+
+    .carousel .control-prev.control-arrow:hover {
+        left: 0px !important;
+    }
     
 }
 @media (max-width: 360px) {
@@ -197,6 +201,13 @@ width: 70px;
     .vimeo-video iframe {
         margin-bottom: 20px;
         padding: 25px;
+    }
+    .work-page .carousel .control-next.control-arrow:hover {
+        right: 1px;
+    }
+    
+    .work-page .carousel .control-prev.control-arrow:hover {
+        left: -7.5px;
     }
 
 }

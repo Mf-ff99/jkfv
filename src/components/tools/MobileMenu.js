@@ -14,7 +14,8 @@ const UL = styled.ul`
     // min-height: 800px;
     margin-left: 0;
     padding-left: 20px !important;
-    z-index: 150;
+    /* z-index: ${({open}) => open ? 1000 : -1}; */
+    visibility: ${({open}) => open ? '' : 'hidden !important'}; 
 
     li a {
         color: black !important;

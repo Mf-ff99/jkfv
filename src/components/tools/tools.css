@@ -727,6 +727,14 @@ a:hover {
     margin: 0 auto;
 }
 @media (min-width: 658px) {
+
+    .tool-sections .carousel .control-next.control-arrow:hover {
+        right: 1px;
+    }
+
+    .tool-sections .carousel .control-prev.control-arrow:hover {
+        left: -15px;
+    }
     
     .tool-sections .carousel .slide iframe {
         margin: 0 auto;
@@ -746,8 +754,8 @@ a:hover {
         border: none;
         right: 13px;
     }
-    .carousel .control-prev.control-arrow, .carousel .control-prev.control-arrow:hover {
-        background-color: none;
+    .carousel .control-prev.control-arrow, .carousel {
+        background-color: transparent;
         left: -5px;
     }
     .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
@@ -836,6 +844,24 @@ a:hover {
     .big-baller-carousel.aerials .slide {
         height: 300px;
         max-width: 400px;
+    }
+
+    .photoboat-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tool-sections .carousel .control-arrow.control-next {
+        margin: 0px !important;
+    }
+    .tool-sections .carousel .control-arrow.control-prev {
+        margin-left: -5px !important;
+    }
+    .tool-sections .carousel .control-arrow.control-prev
+    {
+        left: 0px !important;
     }
 }
 
