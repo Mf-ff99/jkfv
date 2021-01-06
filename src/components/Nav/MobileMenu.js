@@ -16,6 +16,7 @@ const UL = styled.ul`
     padding-left: 0;
     z-index: 2000;
     overflow: hidden;
+    font-size: 20px;
 
     li {
         color: black !important;
@@ -68,6 +69,7 @@ const UL = styled.ul`
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;
         z-index: 1000;
+        font-size: 25px;
         /* scroll-behavior: unset; */
 
     a {
@@ -103,17 +105,9 @@ class MobileNav extends React.Component {
     showTargetElement = (open) => {
           if(open = true) enableBodyScroll(this.targetElement);
          
-      };
-      componentWillUnmount() {
-        // 5. Useful if we have called disableBodyScroll for multiple target elements,
-        // and we just want a kill-switch to undo all that.
-        // OR useful for if the `hideTargetElement()` function got circumvented eg. visitor
-        // clicks a link which takes him/her to a different page within the app.
-        
-      }
+      } 
     render() {
         let open = this.props.open
-        // console.log(open, 'this is open')
         if(open) disableBodyScroll(this.targetElement)
         if(!open) clearAllBodyScrollLocks()
         return (

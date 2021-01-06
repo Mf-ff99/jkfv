@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import React from 'react'
 import { HashLink } from 'react-router-hash-link'
-import Arrow from '../../images/down-arrow.png'
 
 
 const UL = styled.ul`

@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import MobileNav from './MobileMenu';
+import useWindowDimensions from '../Utils/UseWindowDimensions'
 
 const StyledGearBurger = styled.div`
 margin-top: 10px;
@@ -20,23 +21,23 @@ margin-top: 10px;
         height: .25rem;
         border: 1px solid black;
         /* border-radius: 10px; */
-        background-color: ${({open}) => open ? 'black' : '#333'};
+        background-color: ${({ open }) => open ? 'black' : '#333'};
         transform-origin: 1px;
         transition: all .3s;
 
         &:nth-child(1) {
-            transform: ${({open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+            transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
         } 
         
         &:nth-child(2) {
-            transform: ${({open }) => open ? 'translateX(-100%)' : 'translateX(0%)'};
+            transform: ${({ open }) => open ? 'translateX(-100%)' : 'translateX(0%)'};
             
-            opacity: ${({open }) => open ? '0' : '1'};
+            opacity: ${({ open }) => open ? '0' : '1'};
         
         }
 
         &:nth-child(3) {
-            transform: ${({open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+            transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
         }
     }
 
@@ -46,16 +47,48 @@ margin-top: 10px;
 `;
 const GearBurger = () => {
     const [open, setOpen] = useState(false)
+    const [scroll, setScroll] = useState(false) 
+    const { width } = useWindowDimensions();
+
+    if(width >= 1000 && scroll === true) {
+        setOpen(true)
+    }
+   
+    useEffect(() => {
+        window.addEventListener('scroll', listenToScroll)
+        
+        // returned function will be called on component unmount 
+        return () => {
+            window.removeEventListener('scroll', listenToScroll)
+        }
+      }, [])
+
+    let listenToScroll = () => {
+        const winScroll =
+            document.body.scrollTop || document.documentElement.scrollTop
+
+        const height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight
+
+        const scrolled = winScroll / height
+
+        
+        // addStickyClassToolsNav(scrolled)
+        if(scrolled > 0.0574) {
+            // setScroll(true)
+        }
+        // console.log(scrolled)
+    }
 
     return (
         <>
-            
-        <StyledGearBurger open={open} onClick={() => setOpen(!open)}>
-            <div></div>
-            <div></div>
-            <div></div>
-        </StyledGearBurger>
-        <MobileNav open={open}/>
+            <StyledGearBurger open={open} onClick={() => setOpen(!open)}>
+                <div></div>
+                <div></div>
+                <div></div>
+            </StyledGearBurger>
+            <MobileNav open={open} />
         </>
     )
 }
