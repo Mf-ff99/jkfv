@@ -14,7 +14,7 @@ const UL = styled.ul`
     // min-height: 800px;
     margin-left: 0;
     padding-left: 0;
-    z-index: 2000;
+    z-index: 1000;
     overflow: hidden;
     font-size: 20px;
 

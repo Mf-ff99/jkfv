@@ -31,7 +31,7 @@ export default function Home() {
                     />
             </div>
                     <div className="landing-container">
-                        <Animated animationIn="bounceInDown" animationOut="fadeOut">
+                        <Animated animationIn="bounceInRight" animationOut="fadeOut" animationInDuration={1100}>
                         <div className="logo-container">
                             <img className='jordy-logo' src={Logo2} alt="company logo" />
                         </div>
