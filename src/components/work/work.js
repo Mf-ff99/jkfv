@@ -264,7 +264,10 @@ export default function Work() {
                     
                     <hr />
                 </div>
-            <Carousel infinteLoop emulateTouch showThumbs={false}>
+            <Carousel
+             showThumbs={false}
+             infiniteLoop
+             >
                     <div className='vimeo-video'>
                         <ReactPlayer
                             className='carousel-work-video'
