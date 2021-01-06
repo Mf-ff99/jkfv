@@ -6,19 +6,19 @@ import Contact from './components/contact/contact'
 import Work from './components/work/work'
 import Tools from './components/tools/tools'
 import ScrollToTop  from './components/Utils/ScrollToTop'
-
+import NotFound from './components/404NotFoundPage/NotFound'
 export default function Main() {
     return (
         <>
             <ScrollToTop />
         <Switch>
-
             <Route exact path='/' component={Home} />
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
             <Route path='/work' component={Work} />
             
             <Route path='/tools' component={Tools} />
+            <Route component={NotFound} />
         </Switch>   
         </>
     )
