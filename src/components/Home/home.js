@@ -31,7 +31,7 @@ export default function Home() {
                     />
             </div>
                     <div className="landing-container">
-                        <Animated animationIn="bounceInRight" animationOut="fadeOut" animationInDuration={1100}>
+                        <Animated animationInDelay={300} animationIn="fadeIn" animationOut="fadeOut" animationInDuration={1100}>
                         <div className="logo-container">
                             <img className='jordy-logo' src={Logo2} alt="company logo" />
                         </div>
@@ -39,14 +39,14 @@ export default function Home() {
 
                         <div className="social-links">
                             {/* <a href="https://www.linkedin.com/in/jordy-klein-9697775/" target='_blank' rel="noopener noreferrer" > <i className="fab fa-linkedin fa-3x"></i></a> */}
-                        <Animated animationIn="bounceInUp" animationInDuration={1500} animationOut="fadeOut">
+                        <Animated animationInDelay={400} animationIn="bounceInUp" animationInDuration={1500} animationOut="fadeOut">
                             <a href="https://www.facebook.com/JKFandV" target="_blank" rel="noopener noreferrer" ><i className="fab fa-facebook-square fa-2x"></i></a>
                         </Animated>
-                            <Animated animationIn='bounceInLeft' animationInDuration={1500} animationOut='fadeOut'>
+                            <Animated animationInDelay={400} animationIn='bounceInLeft' animationInDuration={1500} animationOut='fadeOut'>
                             <a href="https://www.instagram.com/jordankleinfilmandvideo/" target="_blank" rel="noopener noreferrer" ><i className="fab fa-instagram-square fa-2x"></i></a>
                             </Animated>
                             {/*  <img src={Logo} alt="Xcam Aerials Logo" className="xcam-img" /> */}
-                        <Animated animationIn="bounceInUp" animationInDuration={1500} animationOut="fadeOut">
+                        <Animated animationInDelay={400} animationIn="bounceInUp" animationInDuration={1500} animationOut="fadeOut">
                             <a href="https://vimeo.com/user1974921" target="_blank" rel="noopener noreferrer" ><i className="fab fa-vimeo-square fa-2x"></i></a>
                             </Animated>
                         </div>
