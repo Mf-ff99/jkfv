@@ -6,7 +6,7 @@ const FooterContainer = styled.footer`
     left: 0;
     right: 0;
     height: 50px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -38,6 +38,7 @@ const FooterContainer = styled.footer`
 
     @media (max-width: 450px) {
         font-size: 10px;
+        max-width: 100vw;
         ul li:nth-child(2) {
             padding-right: 0px;
         }

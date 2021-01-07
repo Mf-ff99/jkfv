@@ -20,13 +20,13 @@ export default function About() {
                     </div>
                     <div className='p-2'>
 
-                    <h2>Jordy Klein</h2>
+                    {/* <h2>Jordy Klein</h2>
                     <h5>Director of Photography</h5>
                     <p>
                     Jordan “ Jordy  Klein Jr. is a legendary aerial and aquatic cinematographer, and owner of Jordan Klein Film & Video and Xcam Aerials Inc. Jordy has worked for years alongside his Academy Award-winning D/P father, Jordan Klein Sr. Jordy has shot numerous movies, commercials, documentaries, and industrial films for clients such as CSI Miami, One Tree Hill, HBO, Netflix, Sea World, Sea-Doo Watercraft, Discovery Channel, and most Hollywood studios. Jordy is an accomplished R/C, and drone pilot and holds a part 107 drone license. Jordy is also a commercial full-sized helicopter and fixed-wing pilot.</p><p> 
 
 Additionally, Jordy is an accomplished Steadicam operator and Underwater cinematographer and holds an advanced mixed-gas scuba license. 
-                    </p>
+                    </p> */}
                     <div className="p-2">
                     <h2>About Jordy</h2>
                     <p>Jordan Klein Jr., “Jordy” as he is known throughout the industry, started Jordan Klein Film & Video in the mid 80s. After years of working with his dad, Jordy wanted to continue the family heritage:  providing knowledge and equipment to get the shot, no matter how big or small. “We like to hear creative ideas from directors and D/Ps that require us to figure out the best way to accomplish them”. If you are looking to shoot a basic “talking head” interview, Jordy probably isn't the best place to call. (although he does appreciate a simple job every now and again..)</p>

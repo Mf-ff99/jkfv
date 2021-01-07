@@ -133,6 +133,9 @@ export default class Tools extends React.Component {
                                     <img src={images.ShotcallaFloating} alt='the shotcalla' />
                                 </div>
                                 <div>
+                                    <img src={images.ShotcallaOnBeach} alt='the shotcalla' />
+                                </div>
+                                <div>
                                     <ReactPlayer
                                         className='video-3-player'
                                         url='https://vimeo.com/357656228'
@@ -545,6 +548,18 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                                 <div className='process-trailer'>
                                     <img src={images.ProcessTrailer} alt='process trailer' />
                                 </div>
+                                <div className='process-trailer'>
+                                    <img src={images.PT2} alt='process trailer' />
+                                </div>
+                                <div className='process-trailer'>
+                                    <img src={images.PT3} alt='process trailer' />
+                                </div>
+                                <div className='process-trailer'>
+                                    <img src={images.PT4} alt='process trailer' />
+                                </div>
+                                <div className='process-trailer'>
+                                    <img src={images.PT5} alt='process trailer' />
+                                </div>
 
                             </Carousel>
 
@@ -580,6 +595,29 @@ Once the crane is fully assembled it can be moved around the set via a large wes
                             </div>
                         </div>
                         {/* end of camera car */}
+                        <div id='towdolly' className="photoboat">
+                    <h3>Tow Dolly</h3>
+                    <hr style={{ width: "90px" }} />
+                           
+                            <Carousel id="cameracar-carousel" className='tow-dolly-carousel'
+                                showThumbs={false} infiniteLoop style={{ minHeight: '250px' }}>
+
+                               
+                                <div className='process-trailer'>
+                                    <img src={images.TowDolly2} alt='tow dolly' />
+                                </div>
+                                <div className='process-trailer'>
+                                    <img src={images.TowDolly} alt='tow dolly hard at work' />
+                                </div>
+
+                            </Carousel>
+
+                            <div className="header-info">
+
+                                <p>JKF&V can also provide a Tow Dolly . The Tow Dolly allows you to achieve vertical, or “straight down” shots without seeing the trailer in the shot.The tow dolly is usually best used with our telescopic crane on the camera car.</p>
+                            </div>
+                        </div>
+
                     </div>
                     
                     {/* <hr className="big-hr" /> */}

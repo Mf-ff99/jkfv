@@ -10,6 +10,9 @@ const StyledLogo = styled.div`
     display: flex;
     align-items: center;
     padding-right: 10px;
+    font-family: 'Staatliches', cursive;
+    font-weight: 200;
+    font-size: 20px;
         img {
         padding: 0;
         height: 90px; 

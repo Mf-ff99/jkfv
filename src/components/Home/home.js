@@ -106,24 +106,6 @@ export default function Home() {
                 {/* <br />
                 <br /> */}
 
-                <section className="clients">
-                    <h3>Our Clients</h3>
-                    <hr style={{width: "90px", backgroundColor: "black"}} />
-                    {/* <img src={Clients} alt="client logos"></img> */}
-                    <ul className='client-logos'>
-                        <li className='client-logo'><img src={logos.NFL} alt="NFL logo" /></li>
-                        <li className='client-logo'><img src={logos.Redbull} alt="NFL logo" /></li>
-                        <li className='client-logo'><img src={logos.SpaceX} alt="NFL logo" /></li>
-                        <li className='client-logo'><img src={logos.Discovery} alt="NFL logo" /></li>
-                        <li className='client-logo'><img src={logos.Nike} alt="NFL logo" /></li>
-                        <li className='client-logo'><img src={logos.Nissan} alt="NFL logo" /></li>
-                        <li className='client-logo'><img src={logos.NatGeo} alt="NFL logo" /></li>
-                        <li className='client-logo'><img src={logos.Publix} alt="NFL logo" /></li>
-                        <li className='client-logo'><img src={logos.Nasa} alt="NFL logo" /></li>
-                        <li className='client-logo'><img src={logos.Malibu} alt="NFL logo" /></li>
-                    </ul>
-                </section>
-               
                 {/* <br /> */}
                 <section className='black-div contact-jordy'>
                     <h4>Get a Quote from Jordy</h4>
@@ -143,17 +125,26 @@ export default function Home() {
                             loop={true}
                             
                         />  */}
-                    <div className='margin-divider xcam-section'>
-                        <div className='xcam-logo-container'>
-                            <a href='http://xcamaerials.com' rel='noopener noreferrer' target='_blank'>
-
-                        <img className='xcam-logo' src={XCamLogo} alt='XCam Aerials Logo' />
-                            </a>
-                        </div>
-                        <div className='span-holder'>
-                            <span>
-                           Our drone division and sister company, XCam Aerials, is only a click away. Feel free to visit <a href='http://xcamaerials.com/' target="_blank" rel="noopener noreferrer">XCamAerials.com</a> for more information.                        </span>                        </div>
-                    </div>
+                        
+                <section className="clients">
+                    <h3>Our Clients</h3>
+                    <hr style={{width: "90px", backgroundColor: "black"}} />
+                    {/* <img src={Clients} alt="client logos"></img> */}
+                    <ul className='client-logos'>
+                        <li className='client-logo'><img src={logos.NFL} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.Redbull} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.SpaceX} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.Discovery} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.Nike} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.Nissan} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.NatGeo} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.Publix} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.Nasa} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.Malibu} alt="NFL logo" /></li>
+                    </ul>
+                </section>
+               
+                   
                 </section>
                 <section className='jordys-specialties'>
                      <h3>Tools of the Trade</h3>
@@ -181,9 +172,20 @@ export default function Home() {
                     </div>
                     </div>
                 </section>
+                <div className='margin-divider xcam-section'>
+                        <div className='xcam-logo-container'>
+                            <a href='http://xcamaerials.com' rel='noopener noreferrer' target='_blank'>
+
+                        <img className='xcam-logo' src={XCamLogo} alt='XCam Aerials Logo' />
+                            </a>
+                        </div>
+                        <div className='span-holder'>
+                            <span>
+                           Our drone division and sister company, XCam Aerials, is only a click away. Feel free to visit <a href='http://xcamaerials.com/' target="_blank" rel="noopener noreferrer">XCamAerials.com</a> for more information.                        </span>                        </div>
+                    </div>
                             <section className='tools-block'>
                      <h3>Our Expertise is a Phone Call Away</h3>
-                     <hr style={{width: "90px", backgroundColor: "black"}} />
+                     <hr style={{width: "90px", backgroundColor: "white"}} />
                     <div className="lower-section info-section">
 
                     <div className='photoboat-running-picture'>

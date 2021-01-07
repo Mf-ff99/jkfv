@@ -1,0 +1,53 @@
+.jordy-klein {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+    color: #e2dfff;
+}
+
+.jordy-klein .jordy-klein-header h2 {
+    font-size: 80px !important;
+    font-family: 'Staatliches', cursive;
+}
+
+.jordy-klein .about-jordy-klein-p-container {
+    
+}
+
+.jordy-klein .jordy-klein-header {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.jordy-klein p {
+    max-width: 700px;
+    padding: 10px 40px 10px 40px;
+}
+
+.jordy-klein h2 {
+    
+}
+
+.jordy-klein h4 {
+    font-family: 'Staatliches', cursive;
+}
+
+@media (min-width: 658px) {
+    .jordy-klein .jordy-klein-header {
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+    .jordy-klein-header h4 {
+        padding-top: 80px;
+        /* left: 49%; */
+        position: absolute;
+    }
+}

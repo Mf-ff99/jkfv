@@ -57,9 +57,6 @@ const UL = styled.ul`
         
     }
 
-   
-        /* display: none !important; */
-        /* min-height: 400px; */
         display: flex;
         flex-direction: column !important;
         justify-content: center !important;
@@ -70,15 +67,12 @@ const UL = styled.ul`
         border-bottom: 1px solid black;
         position: fixed;
         transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
-        /* top: 185px; */
+        
         left: 0;
-        height: 455px;
-        /* width: 1500px; */
+        height: fit-content;
+        
         padding: 15px 15px 0 0;
         transition: .3s ease-in-out;
-       
-        /* border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px; */
 
     a {
         color: black !important;
@@ -111,6 +105,7 @@ const MobileNav = ({ open }) => {
             <li><HashLink smooth to="#aerials">Aerials</HashLink></li>
             <li><HashLink smooth to="#cameracar">Camera Car</HashLink></li>
             <li><HashLink smooth to="#cameracar">Process Trailer</HashLink></li>
+            <li><HashLink smooth to="#towdolly">Tow Dolly</HashLink></li>
             <li><HashLink smooth to="#lenses">Lenses</HashLink></li>
             <li><HashLink smooth to="#lenses">Cameras</HashLink></li>
             <li><HashLink smooth to="#underwater">Underwater</HashLink></li>

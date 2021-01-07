@@ -7,6 +7,7 @@ import Work from './components/work/work'
 import Tools from './components/tools/tools'
 import ScrollToTop  from './components/Utils/ScrollToTop'
 import NotFound from './components/404NotFoundPage/NotFound'
+import JordyKlein from './components/JordyKlein/JordyKlein'
 export default function Main() {
     return (
         <>
@@ -16,7 +17,7 @@ export default function Main() {
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
             <Route path='/work' component={Work} />
-            
+            <Route path='/jordy-klein' component={JordyKlein} />
             <Route path='/tools' component={Tools} />
             <Route component={NotFound} />
         </Switch>   

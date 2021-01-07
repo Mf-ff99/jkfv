@@ -840,6 +840,15 @@ a:hover {
     }
 }
 
+.tow-dolly-carousel .slide {
+    max-height: 350px !important;
+    padding: 50px;
+}
+
+.tow-dolly-carousel .slide img {
+
+}
+
 @media (max-width: 500px) {
     .big-baller-carousel.aerials .slide {
         height: 300px;

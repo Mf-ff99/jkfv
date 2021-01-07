@@ -17,6 +17,8 @@ const UL = styled.ul`
     z-index: 1000;
     overflow: hidden;
     font-size: 20px;
+    font-family: 'Staatliches', cursive;
+    font-weight: 200;
 
     li {
         color: black !important;
@@ -123,6 +125,9 @@ class MobileNav extends React.Component {
             </li>
             <li className="right-side-nav">
                 <a href='/tools'>Tools</a>
+            </li>
+            <li className="right-side-nav">
+                <a href='/jordy-klein'>Jordy Klein</a>
             </li>
             <li className="right-side-nav">
                 <a href="/contact">Contact</a>
