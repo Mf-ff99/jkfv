@@ -19,6 +19,9 @@ const UL = styled.ul`
     font-size: 20px;
     font-family: 'Staatliches', cursive;
     font-weight: 200;
+    max-width: 700px;
+    padding-right: 80px;
+    padding-top: 10px;
 
     li {
         color: black !important;
@@ -67,7 +70,10 @@ const UL = styled.ul`
         top: 0;
         right: 0;
         height: 100vh;
-        width: 200px;
+        width: 75vw !important;
+        border-left: 1px solid black;
+        border-radius: 3px;
+
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;
         z-index: 1000;
