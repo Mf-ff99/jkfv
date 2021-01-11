@@ -3,7 +3,7 @@ body {
 }
 
 .about-page {
-    margin: 0 8% 0 8%;
+    /* margin: 0 8% 0 8%; */
     padding: 0 30px 0 30px;
     /* margin-top: 50px; */
     display: flex;
@@ -12,19 +12,14 @@ body {
     justify-content: center;
     /* background-color: #93A8AC; */
     background-color: white;
-    /* min-height: 100vh; */
+    color: #333;
 }
 
 .about-page img {
     margin: 0;
-    /* padding-top: 5%; */
     width: 50%;
     height: 50%;
 }
-
-/* h1 {
-    align-self: flex-start;
-} */
 
 .about-page-upper {
     height: 100%;
@@ -33,7 +28,7 @@ body {
     /* padding-right: 10%; */
     /* padding-left: 10%; */
     padding: 20px 10% 20px 10%;
-    border-top: 4px solid #53687e;
+    /* border-top: 4px solid #53687e; */
     border-radius: 1px;
     /* background-color:#b5d5db;  */
     background-color: white;
@@ -44,8 +39,10 @@ body {
 }
 
 .about-page-upper h2 {
-    border-left: 5px solid #424B54;
-    padding-left: 10px;
+    /* border-left: 5px solid #424B54; */
+    align-self: center;
+    font-size: 35px;
+    padding-left: 25px;
 }
 
 .about-page-upper p {

@@ -7,14 +7,15 @@ export default function About() {
     return (
         <>
 
-          <Animated animationIn="fadeIn" animationOut="fadeOut">
+          <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={1200}>
         <section className="about-page">
-
-            <img src={JordyLogo} alt="Jordan Klein Logo"></img>
+            {/* <Animated animationIn='fadeIn'> */}
+            {/* <img src={JordyLogo} alt="Jordan Klein Logo" /> */}
+            {/* </Animated> */}
             <div className="about-page-container">
                 <div className='about-page-upper'>
                     <div className="p-2">
-                    <h2>The Klein Family</h2>
+                    <h2>About The Klein Family</h2>
                     
                     <p>The Klein Family has been in the motion picture industry for over 60 years. Jordan Klein Sr. experience in the industry began in the 1950s never looked back. Over the course of his career, he accumulated innumerable credits and cinched two academy awards along the way. Klein sr is now retired and living in Central Florida to be with his family.</p>
                     </div>
@@ -36,7 +37,7 @@ Additionally, Jordy is an accomplished Steadicam operator and Underwater cinemat
 
 
                     
-                    <div className="p-3">
+                    <div className="p-3 p-2">
                     <h2>A Note to the Clients</h2>
                     <p>     A note to potential clients from JKF&V President, Jordy Klein:
                         <br /> I hate being nickel and dimed! Over the years I have hired many industry professionals. I have managed to weed out the ones that have a tendency to complain and overcharge after a set rate is agreed upon.
