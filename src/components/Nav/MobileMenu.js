@@ -26,7 +26,13 @@ const UL = styled.ul`
     li {
         color: black !important;
         padding: 18px 10px;
+        /* min-width: 110px; */
+        &:nth-child(4) {
+            min-width: 120px;
+        }
     }
+
+    
 
     img {
         padding: 0;
