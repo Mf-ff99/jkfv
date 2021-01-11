@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Photoboat from '../../images/photoboat.png'
 import PBJ from '../../images/pbj.png'
 import Pontoon from '../../images/pontoon.png'
 import TritonArm from '../../images/triton-arm.png'

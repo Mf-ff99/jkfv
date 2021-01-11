@@ -116,8 +116,8 @@ class MobileNav extends React.Component {
         
     }
     
-    showTargetElement = (open) => {
-          if(open = true) enableBodyScroll(this.targetElement);
+    showTargetElement = (open = true) => {
+          if(open === true) enableBodyScroll(this.targetElement);
          
       } 
     render() {

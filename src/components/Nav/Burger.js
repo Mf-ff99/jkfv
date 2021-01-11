@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Animated } from 'react-animated-css';
 import styled from 'styled-components'
 import MobileNav from './MobileMenu';
 

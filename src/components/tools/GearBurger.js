@@ -47,7 +47,7 @@ margin-top: 10px;
 `;
 const GearBurger = () => {
     const [open, setOpen] = useState(false)
-    const [scroll, setScroll] = useState(false) 
+    const [scroll] = useState(false) 
     const { width } = useWindowDimensions();
 
     if(width >= 1000 && scroll === true) {

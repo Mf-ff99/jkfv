@@ -1,25 +1,17 @@
 import React from 'react'
 import './home.css'
 import logos from '../../images/logos/logos'
-import ArrowLogo from '../../images/down-arrow.png'
 import Logo2 from '../../images/logo_attempt_2_jordy.png'
 import { Link } from 'react-router-dom'
-import { HashLink } from 'react-router-hash-link'
 import ReactPlayer from 'react-player/lazy'
-import YS2 from '../../images/Yard-Sale_2.mp4'
 import ShotcallRunning from '../../images/shotcalla-running.jpg'
 import XCamLogo from '../../images/Logo.png'
 import { Animated } from 'react-animated-css'
-const MFD = "https://secureservercdn.net/198.71.233.44/23d.ff1.myftpupload.com/wp-content/uploads/2019/11/MFD_1.mp4"
 
 export default function Home() {
     return (
         <div className="home">
             <div className="background-video-container">
-                {/* <video loop="loop" autoPlay playsInline muted >
-                    <source type="video/mp4" src={YS2} />
-
-                </video> */}
                 <ReactPlayer
                     url="https://video.wixstatic.com/video/b52317_a47aed43aa94462db9e7e268c0c41e41/1080p/mp4/file.mp4"
                     playing={true}

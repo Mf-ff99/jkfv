@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { HashLink } from 'react-router-hash-link'
@@ -7,7 +6,6 @@ import { Animated } from 'react-animated-css'
 import './work.css'
 import Images from '../../images/BarreledImages'
 import ReactPlayer from 'react-player/lazy';
-import { faArrowAltCircleDown } from '@fortawesome/free-solid-svg-icons';
 
 
 
