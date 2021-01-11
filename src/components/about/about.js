@@ -7,7 +7,7 @@ export default function About() {
     return (
         <>
 
-          <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={1300}>
+          <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={2000}>
         <section className="about-page">
             {/* <Animated animationIn='fadeIn'> */}
             <img src={JordyLogo} alt="Jordan Klein Logo" />
@@ -43,7 +43,7 @@ Additionally, Jordy is an accomplished Steadicam operator and Underwater cinemat
 
                     
                     <div className="p-3 p-2">
-                        <Animated animationIn='bounceInUp'>
+                        <Animated animationIn='slideInUp'>
 
                     <h2>A Note to the Clients</h2>
                     <p>     A note to potential clients from JKF&V President, Jordy Klein:

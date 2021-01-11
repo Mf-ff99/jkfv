@@ -62,7 +62,7 @@ export default function Home() {
 
                     {/* <span className='about-header-words'> Jordy's team has the tools and industry knowledge to get any shot a director could possibly want </span> */}
                     <div className='about-work-header'>
-                       <h3>Our Work</h3>
+                       <h3><Link to='/work'>Our Work</Link></h3>
                        <hr style={{width: "90px", backgroundColor: "white"}} /> 
                     </div>
                     <div className='about-work-examples'>
@@ -108,7 +108,7 @@ export default function Home() {
 
                 {/* <br /> */}
                 <section className='black-div contact-jordy'>
-                    <h4>Get a Quote from Jordy</h4>
+                    <h4><Link to='/contact'>Get a Quote from Jordy</Link></h4>
                     <h5>352-427-2560</h5>
                 </section>
                 <section className='jordys-aerials'>
@@ -152,8 +152,9 @@ export default function Home() {
                     <div className="lower-section">
 
                     <div className='span-holder'>
-
-                        <span className="tools-of-the-trade">From photoboats to camera cars of various sizes, our vehicles and teams are capable to take on any and every shot. For more details, you can check out our tools <Link to="/tools">here</Link></span>
+                        <span className="tools-of-the-trade">From photoboats to camera cars of various sizes, our vehicles and teams are capable to take on any and every shot. 
+                        </span>
+                        <Link to='/tools'><button type='click'>Our Tools</button></Link>
                     </div>
 
                     <div className='photoboat-running-shot'>
@@ -193,8 +194,8 @@ export default function Home() {
                     </div>
                     <div className='span-holder'>
 
-                        <span className="photoboat-tool-text">Drones, camera cars, photoboats, and cranes of various sizes, our equipment is custom-built for smooth shooting and intense gigs. You can check out our work <Link to="/work" className='to-tools-link'>here</Link>.</span>
-                        <span className="photoboat-tool-text"> Contact Jordy for more information on our <Link to="/contact">contact page</Link></span>
+                        <span className="photoboat-tool-text">Drones, camera cars, photoboats, and cranes of various sizes, our equipment is custom-built for smooth shooting and intense gigs. Our teams can be ready to deploy at a moments notice. Contact Jordy for more information.</span>
+                        <Link to='/contact'><button type='click'>Request a Quote</button></Link>
                     </div>
 
                     </div>

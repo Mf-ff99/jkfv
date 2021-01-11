@@ -5,7 +5,9 @@ import './JordyKlein.css'
 const JordyKlein = () => {
 
     return (
+            <Animated animationInDuration={800} animationIn='fadeIn'>
         <div className='jordy-klein'>
+
             <div className='jordy-klein-header'>
             <Animated animationInDuration={1200} animationIn='slideInLeft'>
 
@@ -29,6 +31,7 @@ Additionally, Jordy is an accomplished Steadicam operator and Underwater cinemat
             </Animated>
             </div>
         </div>
+            </Animated>
     )
 }
 export default JordyKlein

@@ -600,6 +600,42 @@ ul.client-logos li.client-logo img {
     text-align: center;
 }
 
+.home button {
+    border: 1px solid #333;
+    background-color: white;
+    color: #333;
+    transition: .3s ease-in-out;
+    margin-top: 20px;
+    padding: 4px 8px 4px 8px;;
+    width: auto;
+    min-width: 140px;
+}
+
+.home .about-work a {
+    color: black;
+}
+
+.home a {
+    color: white;
+}
+
+.home button:hover {
+    /* border: 1px solid white; */
+    /* background-color: black; */
+    /* background-color: #333; */
+}
+
+.home button a {
+    /* color: black; */
+    
+}
+.home a button:hover {
+    color: gray !important;
+    transition: .3s ease-in-out;
+    /* color: white; */
+    
+}
+
 @media (min-width: 600px) {
     .photoboat-tool-text {
         padding-left: 25px;
