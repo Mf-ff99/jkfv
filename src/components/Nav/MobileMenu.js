@@ -16,9 +16,9 @@ const UL = styled.ul`
     padding-left: 0;
     z-index: 1000;
     overflow: hidden;
-    font-size: 20px;
-    font-family: 'Staatliches', cursive;
-    font-weight: 200;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     max-width: 700px;
     padding-right: 80px;
     padding-top: 10px;

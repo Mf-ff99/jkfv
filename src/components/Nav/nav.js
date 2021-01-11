@@ -10,9 +10,9 @@ const StyledLogo = styled.div`
     display: flex;
     align-items: center;
     padding-right: 10px;
-    font-family: 'Staatliches', cursive;
-    font-weight: 200;
-    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
         img {
         padding: 0;
         height: 90px; 
@@ -69,7 +69,6 @@ const NavStyled = styled.nav`
 
     li {
         padding: 18px 10px;
-
     }
 
     .logo {
