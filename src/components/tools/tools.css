@@ -446,7 +446,6 @@ div.cameras__ul {
 }
 
 .cranes {
-    /* background-color: #FFFFFA; */
     color: black;
     margin: 0;
     padding: 0;
@@ -466,9 +465,6 @@ div.cameras__ul {
     max-width: 450px;
     padding: 10px;
     min-width: 80%;
-    /* border-right: 1px solid black; */
-    /* background-color: #FFFFFA; */
-    /* border: 2px solid gray inset; */
     transition: .2s ease-out;
 }
 
@@ -480,13 +476,11 @@ div.cameras__ul {
 
 .triton-arm-image {
     width: 100%;
-    /* margin: 10px; */
 }
 
 /* Drone styles */
 
 .drones {
-    /* background-color: #FFFFFA; */
     color: black;
     margin: 0;
     padding: 0;
@@ -515,17 +509,13 @@ div.drones h3 {
     max-width: 450px;
     padding: 10px;
     min-width: 80%;
-    /* border-right: 1px solid black; */
-    /* background-color: #FFFFFA; */
     color: black;
-    /* border: 2px solid gray inset; */
     transition: .2s ease-out;
 }
 
 /* lenses styles */
 
 .lenses {
-    /* background-color: #FFFFFA; */
     color: black;
     margin: 0;
     padding: 0;
@@ -551,11 +541,9 @@ section.tools ul {
     list-style: none;
     font-size: 2em;
     color: black;
-    /* z-index: 10; */
 }
 
 section.tools ul li {
-    /* z-index: 1; */
     transition: .2 ease-in-out .5s;
 }
 
@@ -565,9 +553,7 @@ img.shotcalla {
 
 .photoboat-container {
     border-bottom: 1px solid black;
-    /* border-radius: 20px; */
     padding: .5em;
-    /* background-color: whitesmoke; */
 }
 
 a:hover {
@@ -586,8 +572,6 @@ a:hover {
 
 .photoboats-expanded-info h3 {
     font-size: 2em;
-    /* background-color: black;
-     color: white; */
 }
 
 .divider {
@@ -604,7 +588,6 @@ a:hover {
     display: inline-block;
     padding: 8px;
     margin-left: 25%;
-    /* height: 0 !important; */
 }
 
 .up {
@@ -623,12 +606,9 @@ a:hover {
     flex-direction: column;
     align-items: center;
     background-color: whitesmoke;
-    /* border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px; */
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
-    /* height: 350px; */
     transition: .2s ease-in;
 }
 
@@ -653,7 +633,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-content: flex-end;
-    /* padding: 0 0 0 20px; */
 }
 
 @media (max-width: 658px) {
@@ -681,7 +660,7 @@ a:hover {
     }
     .carousel .control-next.control-arrow, .carousel .control-next.control-arrow:hover {
         border: none;
-        /* right: -10px; */
+      
     }
 
     .carousel.control-prev.control-arrow {
@@ -805,21 +784,15 @@ a:hover {
         max-width: 320px !important;
     }
     section.tools {
-        /* width: 100%; */
         width: 100vw !important;
         max-width: 650px !important;
         flex-wrap: wrap;
     }
     .tools-sidebar {
-        /* position: fixed !important; */
-        /* margin-top: 20px !important; */
-        /* top: 0px; */
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
-        /* width: 15% !important; */
-        /* max-width: 100% !important; */
     }
     .tools-sidebar ul {
         flex-wrap: wrap;
@@ -827,11 +800,9 @@ a:hover {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        /* width: 80% !important; */
         margin-top: 75px;
     }
     .tool-sections {
-        /* margin-top: 100px; */
         margin-left: 0;
     }
     .tools-sidebar ul li {
@@ -922,10 +893,6 @@ a:hover {
         left: 0 !important;
     }
 
-    #aerials h3 {
-    
-    }
-
     #cameracar .photoboat {
         flex-direction: column;
     }
@@ -954,14 +921,6 @@ a:hover {
 
     .photoboat ul.control-dots li.dot {
         color: black !important;
-    }
-
-    .header-info {
-        /* display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center; */
-        /* width: 100%; */
     }
 
     #underwater .header-info {
