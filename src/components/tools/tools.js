@@ -613,7 +613,7 @@ Once the crane is fully assembled it can be moved around the set via a large wes
 
                             <div className="header-info">
 
-                                <p>JKF&V can also provide a Tow Dolly . The Tow Dolly allows you to achieve vertical, or “straight down” shots without seeing the trailer in the shot.The tow dolly is usually best used with our telescopic crane on the camera car.</p>
+                                <p>JKF&V can also provide a Tow Dolly. The Tow Dolly allows you to achieve vertical, or “straight down” shots without seeing the trailer in the shot.The tow dolly is usually best used with our telescopic crane on the camera car.</p>
                             </div>
                         </div>
 
