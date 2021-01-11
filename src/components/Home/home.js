@@ -63,9 +63,11 @@ export default function Home() {
                     {/* <span className='about-header-words'> Jordy's team has the tools and industry knowledge to get any shot a director could possibly want </span> */}
                     <div className='about-work-header'>
                        <h3><Link to='/work'>Our Work</Link></h3>
-                       <hr style={{width: "90px", backgroundColor: "white"}} /> 
+                       <hr style={{width: "90px", backgroundColor: "black"}} /> 
                     </div>
                     <div className='about-work-examples'>
+                        <div className='video-desc'>
+                        <h4>AT&T Audience Sports</h4>
                         <div className='video video-1'>
                             <ReactPlayer
                                 className='video-1-player'
@@ -74,8 +76,11 @@ export default function Home() {
                                 controls={true}
                                 width='100%'
                                 height='100%'
-                            />
+                                />
                         </div>
+                                </div>
+                                <div className='video-desc'>
+                                    <h4>Cadillac Racing</h4>
                         <div className='video video-2'>
                             <ReactPlayer
                                 className='video-2-player'
@@ -84,9 +89,12 @@ export default function Home() {
                                 controls={true}
                                 width='100%'
                                 height='100%'
-                            />
+                                />
 
                         </div>
+                        </div>
+                        <div className='video-desc'>
+                                <h4>Estée Lauder</h4>
                         <div className='video video-3'>
                             <ReactPlayer
                                 className='video-2-player'
@@ -100,6 +108,7 @@ export default function Home() {
                                 controls={true}
 
                             />
+                        </div>
                         </div>
                     </div>
                 </div>

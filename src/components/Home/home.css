@@ -611,12 +611,25 @@ ul.client-logos li.client-logo img {
     min-width: 140px;
 }
 
+.video-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .home .about-work a {
     color: black;
+}
+.home .about-work a:hover {
+    color: #333;
 }
 
 .home a {
     color: white;
+}
+.home a:hover {
+    color: whitesmoke;
 }
 
 .home button:hover {
