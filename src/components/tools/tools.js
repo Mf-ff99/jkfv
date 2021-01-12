@@ -196,15 +196,13 @@ export default class Tools extends React.Component {
                             <h4>
                                 The Big Baller
                             </h4>
-                            <Carousel showThumbs={false} className='big-baller-carousel'>
+                            <Carousel showThumbs={false} className=''>
                                 <div>
-                                    <img src={Pontoon} alt='Pontoon Boat: The Big Baller' />
+                                    <img style={{minHeight: '%'}}src={Pontoon} alt='Pontoon Boat: The Big Baller' />
                                 </div>
-
                             </Carousel>
                             </div>
                             <div className="header-info">
-
                                 <p>Our 30’ Pontoon boat is equipped to carry up to 17 people comfortably. It has 20’ of shaded area so clients stay cool all day, It can also be equipped with long range wireless video so clients can watch in comfort. Additionally, the upholstery can be removed and the boat can be used to carry support equipment such as lighting and grip gear or even a large production generator!</p>
                                 <ul>
                                     <li>30' Long</li>
@@ -212,14 +210,11 @@ export default class Tools extends React.Component {
                                     <li>24 MPH Top Speed</li>
                                     <li>Loading Ramp</li>
                                     <li>Space for camera carts, crafty, and clients!</li>
-
                                 </ul>
                             </div>
                         </div>
 
                     </div>
-                    {/* <span id="cranes"></span> */}
-                    {/* <hr className="big-hr" /> */}
 
                     <div className="photoboats" id="cranes">
                     <h3 className="crane-header">Cranes</h3>
