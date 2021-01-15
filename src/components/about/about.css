@@ -11,8 +11,11 @@
     align-items: center;
     justify-content: center;
     /* background-color: #93A8AC; */
-    background-color: white;
     color: #333;
+}
+
+.about-container {
+    background-color: whitesmoke;
 }
 
 .about-page img {
@@ -77,6 +80,7 @@ div.p-2 {
     /* align-items: center; */
     justify-content: center;
     padding-top: 10px;
+    max-width: 900px;
 }
 
 div.p-3 {

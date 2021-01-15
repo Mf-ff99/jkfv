@@ -27,6 +27,8 @@ export default function Contact() {
                     </div>
                 
                     <hr />
+                    <div className='contact-container-lower'>
+
                     <div className='contact-lower'>
                         
                             <form id='form' className="form-style-4" action="" method="post">
@@ -50,6 +52,7 @@ export default function Contact() {
                                 </label>
                             </form>
                     
+                    </div>
                     </div>
 
                 </div>
