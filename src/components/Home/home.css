@@ -538,14 +538,15 @@ ul.client-logos li.client-logo img {
 
 .photoboat-running-picture {
     width: 50%;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
 }
 
 .photoboat-running-picture img {
     width: 100%;
-    max-width: 350px;
+    max-width: 280px;
     height: 100%;
+    /* max-height: 325px; */
     margin-right: 0;
     padding-top: 20px;
 }
@@ -648,6 +649,8 @@ ul.client-logos li.client-logo img {
     /* color: white; */
     
 }
+
+
 
 @media (min-width: 600px) {
     .photoboat-tool-text {
