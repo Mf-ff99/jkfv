@@ -148,7 +148,7 @@ export default function Home() {
                    
                 </section>
                 <section className='jordys-specialties'>
-                     <h3>Tools of the Trade</h3>
+                     <Link to='/tools'><h3>Tools of the Trade</h3></Link>
                      <hr style={{width: "90px", backgroundColor: "white"}} />
                     <div className="lower-section">
 
@@ -186,7 +186,7 @@ export default function Home() {
                            Our drone division and sister company, XCam Aerials, is only a click away. Feel free to visit <a href='http://xcamaerials.com/' target="_blank" rel="noopener noreferrer">XCamAerials.com</a> for more information.                        </span>                        </div>
                     </div>
                             <section className='tools-block'>
-                     <h3>Our Expertise is a Phone Call Away</h3>
+                     <Link to='/contact'><h3>Our Expertise is a Phone Call Away</h3></Link>
                      <hr style={{width: "90px", backgroundColor: "white"}} />
                     <div className="lower-section info-section">
 

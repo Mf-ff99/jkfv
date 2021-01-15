@@ -90,7 +90,7 @@ export default class Tools extends React.Component {
                         {/* <hr className="big-hr"></hr> */}
                         <div className='tools-pointer'>
 
-                        <Animated animationIn='slideInUp' animationInDuration={1200}>
+                        <Animated animationIn='fadeIn' animationInDuration={1200}>
                         <h6>Explore Our Tools Below</h6>
                         <HashLink smooth to='#photoboats'><img className='work-scroll-arrow' src={Images.DownArrow} alt='scroll-down arrow' /></HashLink>
                         </Animated>
