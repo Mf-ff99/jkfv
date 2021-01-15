@@ -13,7 +13,7 @@ const FooterContainer = styled.footer`
     justify-content: center;
     font-size: 15px;
     background-color: whitesmoke;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     /* border-top: 1px solid gray; */
     
     ul {
@@ -21,10 +21,16 @@ const FooterContainer = styled.footer`
         flex-direction: row;
         list-style: none;
         width: 100vw;
+        align-items: center;
         justify-content: space-between;
         padding-left: 5px;
         padding-right: 5px;
         margin-left: 0;
+        margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 15px;
 
         li:nth-child(2) {
             padding-right: 15px;
