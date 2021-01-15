@@ -31,7 +31,6 @@ const FooterContainer = styled.footer`
     margin-inline-start: 0;
     margin-inline-end: 0;
     padding-inline-start: 15px;
-
         li:nth-child(2) {
             padding-right: 15px;
         }
