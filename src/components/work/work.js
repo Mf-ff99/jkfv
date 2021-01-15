@@ -258,7 +258,7 @@ export default function Work() {
                     <h2>Drone + Helicopter Aerials</h2>
                     <br />
                     {/* <hr style={{borderBottom: '1px solid black', width: '90px'}} /> */}
-                    <p style={{width: '70%'}}>Aerial photography is an art, and no one does it better than our team here at Jordan Klein Film & Video. From flying full-size camera packages to the Mavic Pro 2, we have, and do, it all. You can find out more about our drones on our dedicated <a href="http://xcamaerials.com" target="_blank" rel="noopener noreferrer" >XCam Aerials</a> website.</p>
+                    <p style={{width: '70%'}}>Aerial photography is an art, and no one does it better than our sister company XCam Aerials. From flying full-size camera packages to the Mavic Pro 2, we do it all. XCam Aerials is one of the few aerial companies that operate by the Motion Picture aerial manual. We also maintain both the FAA 333 exemption and the newly established Part 107 certifications. This allows all of our pilots to enjoy the same privileges as full-size commercial aircraft operators.You can find out more at the <a href="http://xcamaerials.com" target="_blank" rel="noopener noreferrer" >XCam Aerials</a> website.</p>
                     
                     <hr />
                 </div>
