@@ -21,8 +21,9 @@ export default function Work() {
                 <h1>Our Work</h1>
                 <p>Over the years we have worked with thousands of clients shooting with drones, photoboats, underwater camera housings, and more. In-house we carry a large array of the latest drones, cameras, underwater housings, robotic cranes, camera cars, and photoboats. We have all the tools you need to get the shots you require.</p>
             <h6>The videos below showcase a fraction of what is possible with our tools.</h6>
-           
+            <Animated animationIn='slideInUp' animationInDuration={1200}>
             <HashLink smooth to='#work'><img className='work-scroll-arrow' src={Images.DownArrow} alt='scroll-down arrow' /></HashLink>
+            </Animated>
             </div>
             {/* <hr style={{border: '1px solid black', width: '90%'}} /> */}
             <div className="projects-grid">
