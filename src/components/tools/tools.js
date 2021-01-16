@@ -15,6 +15,132 @@ import MFD from '../../images/RED-MFD-5000.jpg'
 import { HashLink } from 'react-router-hash-link'
 import Images from '../../images/BarreledImages'
 
+
+const ToolItemsArray = [
+    {
+        name: 'Photoboats',
+        tool: [
+            {
+                toolName: 'Shotcalla',
+                description: 'Jordan Klein Film and Video’s 31’ offshore catamaran is unlike any other photoboat in the world. It is truly a modern marvel. Besides being a 65mph super-stable offshore catamaran, it can also be equipped with robotic crane and stabilized head . We can show up to location with this as a complete turn-key package! This boat can also be equipped with wings that allow the camera operator to walk out 13’ and be 12’ above the water to achieve vertical shots of watercraft',
+                li: [
+                    `31' Long`,
+                    '65 MPH',
+                    `22' Stabilized Robotic Crane`,
+                    'Stablized Remote Head',
+                    `12' Wings`,
+                ],
+                images: [
+                    images.ShotcallaWings,
+                    images.ShotcallaFloating,
+                    images.ShotcallaOnBeach,
+
+                ],
+                videos: [
+                    'https://vimeo.com/460494916',
+                    'https://vimeo.com/357656228',
+                ]
+            },
+            {
+                toolName: 'The PBJ (Photoboat Junior)',
+                description: `The PBJ is an 18’ Catamaran that is just like its big sister (“Shotcalla”). Except it is 12’ shorter. The PBJ is great for shooting stills with its 8' tower, and is great for transporting crew back and forth to shore. It is an excellent choice for smaller venues where a larger photoboat is not required. The PBJ has a top speed of 33mph.`,
+                li: [
+                    `Outboard Motor`,
+                    `8' Tower`,
+                    '33 MPH',
+                    `18' Long`,
+                ],
+                images: [
+                    PBJ,
+                ],
+                videos: [
+                    
+                ],
+            },
+            {
+                toolName: 'The Big Baller',
+                description: `Our 30’ Pontoon boat is equipped to carry up to 17 people comfortably. It has 20’ of shaded area so clients stay cool all day, It can also be equipped with long range wireless video so clients can watch in comfort. Additionally, the upholstery can be removed and the boat can be used to carry support equipment such as lighting and grip gear or even a large production generator!`,
+                li: [
+                    `30' Long`,
+                    `17 Person Capacity`,
+                    '24 MPH Top Speed',
+                    'Loading Ramp',
+                    `Space for camera carts, crafty, and clients!`,
+                ],
+                images: [
+                    Pontoon,
+                ],
+                videos: [
+                ],
+            },
+
+        ]
+    }
+]
+
+
+
+const ToolItems = (toolCategory) => {
+    const toolItems = ToolItemsArray[toolCategory].map((item) => {
+        
+                const toolItem = item.tool.map(tool => {
+        
+                    let newItem = tool
+                    // console.log(tool.videos)
+                const videos = tool.videos.map(video => {
+                    if(video !== undefined) {
+        
+                        return (
+                            <ReactPlayer
+                            className='video-3-player'
+                            url={video}
+                            playing={false}
+                            controls={true}
+                            width='100%'
+                            
+                            />
+                            )
+                        }
+                        else {
+                            return;
+                        }
+                })
+
+        let images = tool.images.map(image => {
+            return (
+                <div>
+                    <img src={image} alt={tool.toolName} />
+                </div>
+            )
+        })
+
+        return (
+            <div className='photoboat'>
+            
+            <div className='photoboat-header'>
+                <h4>{newItem.toolName}</h4>
+                <Carousel showArrows={true} infiniteLoop showThumbs={false} className={newItem.videos.length > 0 ? 'tools-carousel' : ''} style={{}}>
+                    {videos}
+                    {images}
+                </Carousel>
+                </div>
+                <div className="header-info">
+                            <p>{newItem.description}</p>
+                            <ul>
+                                {/* {newItem.li.map(li => {
+                                    <li>{li}</li>
+                                })} */}
+                            </ul>
+                        </div>
+        </div>
+        )
+    })
+        return toolItem
+    })
+    
+    return toolItems
+}
+
 export default class Tools extends React.Component {
 
     state = {
@@ -63,131 +189,68 @@ export default class Tools extends React.Component {
         return;
     }
 
-    ToolItemsArray = [
-        {
-            name: 'Photoboats',
-            tool: [
-                {
-                    toolName: 'Shotcalla',
-                    description: 'Jordan Klein Film and Video’s 31’ offshore catamaran is unlike any other photoboat in the world. It is truly a modern marvel. Besides being a 65mph super-stable offshore catamaran, it can also be equipped with robotic crane and stabilized head . We can show up to location with this as a complete turn-key package! This boat can also be equipped with wings that allow the camera operator to walk out 13’ and be 12’ above the water to achieve vertical shots of watercraft',
-                    li: [
-                        `31' Long`,
-                        '65 MPH',
-                        `22' Stabilized Robotic Crane`,
-                        'Stablized Remote Head',
-                        `12' Wings`,
-                    ],
-                    images: [
-                        images.ShotcallaWings,
-                        images.ShotcallaFloating,
-                        images.ShotcallaOnBeach,
-
-                    ],
-                    videos: [
-                        'https://vimeo.com/460494916',
-                        'https://vimeo.com/357656228',
-                    ]
-                },
-                {
-                    toolName: 'The PBJ (Photoboat Junior)',
-                    description: `The PBJ is an 18’ Catamaran that is just like its big sister (“Shotcalla”). Except it is 12’ shorter. The PBJ is great for shooting stills with its 8' tower, and is great for transporting crew back and forth to shore. It is an excellent choice for smaller venues where a larger photoboat is not required. The PBJ has a top speed of 33mph.`,
-                    li: [
-                        `Outboard Motor`,
-                        `8' Tower`,
-                        '33 MPH',
-                        `18' Long`,
-                    ],
-                    images: [
-                        PBJ,
-                    ],
-                    videos: [
-                        
-                    ],
-                },
-                {
-                    toolName: 'The Big Baller',
-                    description: `Our 30’ Pontoon boat is equipped to carry up to 17 people comfortably. It has 20’ of shaded area so clients stay cool all day, It can also be equipped with long range wireless video so clients can watch in comfort. Additionally, the upholstery can be removed and the boat can be used to carry support equipment such as lighting and grip gear or even a large production generator!`,
-                    li: [
-                        `30' Long`,
-                        `17 Person Capacity`,
-                        '24 MPH Top Speed',
-                        'Loading Ramp',
-                        `Space for camera carts, crafty, and clients!`,
-                    ],
-                    images: [
-                        Pontoon,
-                    ],
-                    videos: [
-                    ],
-                },
-
-            ]
-        }
-    ]
-
-    ToolItems = () => {
-        const toolItems = this.ToolItemsArray.map((item) => {
+    
+    // ToolItems = () => {
+    //     const toolItems = this.ToolItemsArray.map((item) => {
             
-                    const Tool = item.tool.map(tool => {
+    //                 item.tool.map(tool => {
             
-                        let newItem = tool
-                        console.log(tool.videos)
-                    const videos = tool.videos.map(video => {
-                        if(video === undefined) {
+    //                     let newItem = tool
+    //                     // console.log(tool.videos)
+    //                 const videos = tool.videos.map(video => {
+    //                     if(video !== undefined) {
             
-                            return (
-                                <ReactPlayer
-                                className='video-3-player'
-                                url={video}
-                                playing={false}
-                                controls={true}
-                                width='100%'
+    //                         return (
+    //                             <ReactPlayer
+    //                             className='video-3-player'
+    //                             url={video}
+    //                             playing={false}
+    //                             controls={true}
+    //                             width='100%'
                                 
-                                />
-                                )
-                            }
-                            else {
-                                return;
-                            }
-                    })
-            
-            
+    //                             />
+    //                             )
+    //                         }
+    //                         else {
+    //                             return;
+    //                         }
+    //                 })
 
-            let images = tool.images.map(image => {
-                return (
-                    <div>
-                        <img src={image} alt='the shotcalla beached at sunset' />
-                    </div>
-                )
-            })
+    //         let images = tool.images.map(image => {
+    //             return (
+    //                 <div>
+    //                     <img src={image} alt='the shotcalla beached at sunset' />
+    //                 </div>
+    //             )
+    //         })
             
-            return (
-                <div className='photoboat'>
+    //         return (
+    //             <div className='photoboat'>
                 
-                <div className='photoboat-header'>
-                    <h4>{newItem.name}</h4>
-                    <Carousel showArrows={true} infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
-                        {videos}
-                        {images}
-                    </Carousel>
-                    </div>
-                    <div className="header-info">
-                                <p>{newItem.description}</p>
-                                <ul>
-                                    {/* {newItem.li.map(li => {
-                                        <li>{li}</li>
-                                    })} */}
-                                </ul>
-                            </div>
-            </div>
-            )
-        })
-        })
-        return toolItems
-    }
+    //             <div className='photoboat-header'>
+    //                 <h4>{newItem.name}</h4>
+    //                 <Carousel showArrows={true} infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
+    //                     {videos}
+    //                     {images}
+    //                 </Carousel>
+    //                 </div>
+    //                 <div className="header-info">
+    //                             <p>{newItem.description}</p>
+    //                             <ul>
+    //                                 {/* {newItem.li.map(li => {
+    //                                     <li>{li}</li>
+    //                                 })} */}
+    //                             </ul>
+    //                         </div>
+    //         </div>
+    //         )
+    //     })
+    //     })
+    //     return toolItems
+    // }
 
     render() {
-        const ToolItems = this.ToolItems
+        
         return (
             <>
                 <section id='tools' className='tools'>
@@ -225,121 +288,12 @@ export default class Tools extends React.Component {
                         <h3 style={{ paddingTop: '40px' }}>Photoboats</h3>
                         <hr style={{ width: "90px" }} />
                         <br />
-
+                        
 
                         {/* <div id="photoboats" className="photoboat-container"> */}
 
-                           <ToolItems />
-                        <div className="photoboat">
-                            <div className='photoboat-header'>
-                                <h4>
-                                    Shotcalla
-</h4>
-
-                                <Carousel showArrows={true} infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
-                                    {/* <Carousel.Item> */}
-
-
-                                    <ReactPlayer
-                                        className='video-3-player'
-                                        url='https://vimeo.com/460494916'
-                                        playing={false}
-                                        controls={true}
-                                        width='100%'
-
-                                    />
-
-
-                                    <div>
-                                        <img src={images.ShotcallaWings} alt='the shotcalla beached at sunset' />
-
-
-                                    </div>
-                                    <div>
-                                        <img src={images.ShotcallaFloating} alt='the shotcalla' />
-                                    </div>
-                                    <div>
-                                        <img src={images.ShotcallaOnBeach} alt='the shotcalla' />
-                                    </div>
-                                    <div>
-                                        <ReactPlayer
-                                            className='video-3-player'
-                                            url='https://vimeo.com/357656228'
-                                            playing={false}
-                                            controls={true}
-                                            width='100%'
-
-                                        />
-                                    </div>
-
-
-
-
-
-                                </Carousel>
-                            </div>
-
-                            <div className="header-info">
-                                <p>Jordan Klein Film and Video’s 31’ offshore catamaran is unlike any other photoboat in the world. It is truly a modern marvel. Besides being a 65mph super-stable offshore catamaran, it can also be equipped with robotic crane and stabilized head . We can show up to location with this as a complete turn-key package! This boat can also be equipped with wings that allow the camera operator to walk out 13’ and be 12’ above the water to achieve vertical shots of watercraft</p>
-                                <ul>
-                                    <li>31' Long</li>
-                                    <li>65 MPH </li>
-                                    <li>22' Stabilized Robotic Crane</li>
-                                    <li>Stablized Remote Head</li>
-                                    <li>12' Wings</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="photoboat">
-                            <div className='photoboat-header'>
-                                <h4>
-                                    The PBJ (Photoboat Junior)
-                            </h4>
-                                <Carousel showThumbs={false} className='big-baller-carousel'>
-                                    <div>
-                                        <img src={PBJ} alt='Pontoon Boat: The Big Baller' />
-                                    </div>
-
-                                </Carousel>
-                            </div>
-                            <div className="header-info">
-
-
-                                <p>The PBJ is an 18’ Catamaran that is just like its big sister (“Shotcalla”). Except it is 12’ shorter. The PBJ is great for shooting stills with its 8' tower, and is great for transporting crew back and forth to shore. It is an excellent choice for smaller venues where a larger photoboat is not required. The PBJ has a top speed of 33mph.
-</p>
-                                <ul>
-                                    <li>18' Long</li>
-                                    <li>33 MPH </li>
-                                    <li>8' Tower</li>
-                                    <li>Outboard Motor</li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="photoboat">
-                            <div className='photoboat-header'>
-                                <h4>
-                                    The Big Baller
-                            </h4>
-                                <Carousel showThumbs={false} className=''>
-                                    <div>
-                                        <img style={{ minHeight: '%' }} src={Pontoon} alt='Pontoon Boat: The Big Baller' />
-                                    </div>
-                                </Carousel>
-                            </div>
-                            <div className="header-info">
-                                <p>Our 30’ Pontoon boat is equipped to carry up to 17 people comfortably. It has 20’ of shaded area so clients stay cool all day, It can also be equipped with long range wireless video so clients can watch in comfort. Additionally, the upholstery can be removed and the boat can be used to carry support equipment such as lighting and grip gear or even a large production generator!</p>
-                                <ul>
-                                    <li>30' Long</li>
-                                    <li>17 Person Capacity</li>
-                                    <li>24 MPH Top Speed</li>
-                                    <li>Loading Ramp</li>
-                                    <li>Space for camera carts, crafty, and clients!</li>
-                                </ul>
-                            </div>
-                        </div>
+                           <ToolItems /> 
+                           {/* photoboats, use props to reuse ToolItems */}
 
                     </div>
 
