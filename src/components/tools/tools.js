@@ -93,14 +93,11 @@ const ToolItems = (toolArray) => {
     if(toolArray.length) return;
     else toolArray = ToolsArray
     const toolItems = toolArray.map((item) => {
-        
                 const toolItem = item.tool.map(tool => {
-        
                     let newItem = tool
                     // console.log(tool.videos)
                 const videos = tool.videos.map(video => {
                     if(video !== undefined) {
-        
                         return (
                             <ReactPlayer
                             className='video-3-player'
@@ -115,7 +112,6 @@ const ToolItems = (toolArray) => {
                             return;
                         }
                 })
-
         let images = tool.images.map(image => {
             return (
                 <div>
@@ -123,7 +119,6 @@ const ToolItems = (toolArray) => {
                 </div>
             )
         })
-
         return (
             <div className='photoboat'>
             
@@ -137,8 +132,8 @@ const ToolItems = (toolArray) => {
                 <div className="header-info">
                             <p>{newItem.description}</p>
                             <ul>
-                            {newItem.li.map(li => {
-                                    return <li>{li}</li>
+                            {newItem.li.map((li, index) => {
+                                    return <li key={index*2}>{li}</li>
                                 })}
                             </ul>
                         </div>
