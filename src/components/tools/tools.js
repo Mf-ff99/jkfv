@@ -189,66 +189,6 @@ export default class Tools extends React.Component {
         return;
     }
 
-    
-    // ToolItems = () => {
-    //     const toolItems = this.ToolItemsArray.map((item) => {
-            
-    //                 item.tool.map(tool => {
-            
-    //                     let newItem = tool
-    //                     // console.log(tool.videos)
-    //                 const videos = tool.videos.map(video => {
-    //                     if(video !== undefined) {
-            
-    //                         return (
-    //                             <ReactPlayer
-    //                             className='video-3-player'
-    //                             url={video}
-    //                             playing={false}
-    //                             controls={true}
-    //                             width='100%'
-                                
-    //                             />
-    //                             )
-    //                         }
-    //                         else {
-    //                             return;
-    //                         }
-    //                 })
-
-    //         let images = tool.images.map(image => {
-    //             return (
-    //                 <div>
-    //                     <img src={image} alt='the shotcalla beached at sunset' />
-    //                 </div>
-    //             )
-    //         })
-            
-    //         return (
-    //             <div className='photoboat'>
-                
-    //             <div className='photoboat-header'>
-    //                 <h4>{newItem.name}</h4>
-    //                 <Carousel showArrows={true} infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
-    //                     {videos}
-    //                     {images}
-    //                 </Carousel>
-    //                 </div>
-    //                 <div className="header-info">
-    //                             <p>{newItem.description}</p>
-    //                             <ul>
-    //                                 {/* {newItem.li.map(li => {
-    //                                     <li>{li}</li>
-    //                                 })} */}
-    //                             </ul>
-    //                         </div>
-    //         </div>
-    //         )
-    //     })
-    //     })
-    //     return toolItems
-    // }
-
     render() {
         
         return (
@@ -292,7 +232,7 @@ export default class Tools extends React.Component {
 
                         {/* <div id="photoboats" className="photoboat-container"> */}
 
-                           <ToolItems /> 
+                           <ToolItems toolCategory={0}/> 
                            {/* photoboats, use props to reuse ToolItems */}
 
                     </div>
