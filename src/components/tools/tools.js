@@ -16,7 +16,7 @@ import { HashLink } from 'react-router-hash-link'
 import Images from '../../images/BarreledImages'
 
 
-const ToolsArray = [
+const PhotoboatArray = [
     {
         name: 'Photoboats',
         tool: [
@@ -76,26 +76,89 @@ const ToolsArray = [
 
         ]
     },
-    // {
-    //     name: 'Cranes',
-    //     tool: [
-    //         {
+]
+const CraneArray = [
+    {
+        name: 'Cranes',
+        tool: [
+            {
+                toolName: `30' Telescopic Crane`,
+                description: 'Our Telescopic crane arm can accommodate any number of stabilized and Unstabilized remote heads (any head that uses a Mitchel type mount). The heads that we can offer “in house” for the telescopic crane are The Movi XL, The DJI Ronin 2, and the non-stabilized head that comes standard with the crane. The arm has a max reach of 30’ and a minimum reach of 15’ the weight when fully assembled with the camera is about 1750lbs respectively. The max camera/gimbal weight that can be accommodated is 70lbs. The crane and all of its accessories are transported in a customized 24’ enclosed trailer. We can provide a complete crew for the operation of this crane including delivery to set. Additionally, we can provide this crane with a turn-key camera and lens package with FIZ, and wireless video transmitter. Just let us know what you need!',
+                li: [
+                    `Reach: 30'`,
+                    'Max Camera/Gimbal weight: 75lbs',
+                    `22' Stabilized Robotic Crane`,
+                    'Weight: 1750lbs',
+                    `Min-Reach: 15'`,
+                    'Mitchel Mount', 
+                    'Complete Onsite crew can be provided',
+                    'Full FIZ control',
+                    'Wireless Video',
+                ],
+                images: [
+                ],
+                videos: [
+                    'https://vimeo.com/495537100',
+                    'https://vimeo.com/495538039',
+                    'https://vimeo.com/371614461',
+                    'https://vimeo.com/495539470',
 
-    //         },
-    //     ]
+                ]
+            },
+            {
+                toolName: 'Triton Arm',
+                description: `The Triton arm is a lightweight crane that can be mounted to almost anything. The Triton is fully robotically controlled via a wireless transmitter. It can accommodate our Movi Pro or DJI Ronin 2 stabilized heads. The Triton can be built in 2 lengths, 6’ and 11’. The max camera package that the Triton can accommodate is 25lbs. The total weight of the Triton with a camera and the remote head is approximately 170lbs respectively. The Triton can be mounted to a standard Reese trailer hitch on any vehicle or anything Mitchell mount configuration. Also see our custom electric ATV that holds the Triton arm.`,
+                li: [
+                    `Reach: 11'`,
+                    `Min-Reach: 6'`,
+                    'Weight: 145lbs',
+                    `Weight with Max-Package: 170lbs`,
+                    'Max Camera/Gimbal weight: 25lbs',
+                    'Mitchel Mount', 
+                    'Complete Onsite crew can be provided',
+                    'Full FIZ control',
+                    'Wireless Video',
+                    'Wireless crane control',
+                    'Wireless gimbal control',
+                ],
+                images: [
+                    TritonArm,
+                ],
+                videos: [
+                    'https://vimeo.com/146350055',
+                    'https://vimeo.com/311587255',
+                ],
+            },
+            {
+                toolName: 'The Big Baller',
+                description: `Our 30’ Pontoon boat is equipped to carry up to 17 people comfortably. It has 20’ of shaded area so clients stay cool all day, It can also be equipped with long range wireless video so clients can watch in comfort. Additionally, the upholstery can be removed and the boat can be used to carry support equipment such as lighting and grip gear or even a large production generator!`,
+                li: [
+                    `30' Long`,
+                    `17 Person Capacity`,
+                    '24 MPH Top Speed',
+                    'Loading Ramp',
+                    `Space for camera carts, crafty, and clients!`,
+                ],
+                images: [
+                    Pontoon,
+                ],
+                videos: [
+                ],
+            },
 
-    // },
+        ]
+    },
 ]
 
 
 
 const ToolItems = (toolArray) => {
     if(toolArray.length) return;
-    else toolArray = ToolsArray
+    else toolArray = PhotoboatArray
     const toolItems = toolArray.map((item) => {
                 const toolItem = item.tool.map(tool => {
                     let newItem = tool
-                    // console.log(tool.videos)
+                    
                 const videos = tool.videos.map(video => {
                     if(video !== undefined) {
                         return (
@@ -233,12 +296,14 @@ export default class Tools extends React.Component {
                         <h3 style={{ paddingTop: '40px' }}>Photoboats</h3>
                         <hr style={{ width: "90px" }} />
                         <br />
-                           <ToolItems toolArray={ToolsArray}/> 
+                           <ToolItems toolArray={PhotoboatArray}/> 
                     </div>
 
                     <div className="photoboats" id="cranes">
                         <h3 className="crane-header">Cranes</h3>
                         <hr style={{ width: "90px" }} />
+
+                        {/* <ToolItems toolArray={CraneArray} /> */}
                         <div className="photoboat">
                             <div className='photoboat-header'>
                                 <h4>
