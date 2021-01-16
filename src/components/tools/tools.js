@@ -16,7 +16,7 @@ import { HashLink } from 'react-router-hash-link'
 import Images from '../../images/BarreledImages'
 
 
-const ToolItemsArray = [
+const ToolsArray = [
     {
         name: 'Photoboats',
         tool: [
@@ -89,9 +89,10 @@ const ToolItemsArray = [
 
 
 
-const ToolItems = (toolCategory) => {
-    console.log(ToolItemsArray)
-    const toolItems = ToolItemsArray.map((item) => {
+const ToolItems = (toolArray) => {
+    if(toolArray.length) return;
+    else toolArray = ToolsArray
+    const toolItems = toolArray.map((item) => {
         
                 const toolItem = item.tool.map(tool => {
         
@@ -107,7 +108,6 @@ const ToolItems = (toolCategory) => {
                             playing={false}
                             controls={true}
                             width='100%'
-                            
                             />
                             )
                         }
@@ -238,7 +238,7 @@ export default class Tools extends React.Component {
                         <h3 style={{ paddingTop: '40px' }}>Photoboats</h3>
                         <hr style={{ width: "90px" }} />
                         <br />
-                           <ToolItems toolCategory={0}/> 
+                           <ToolItems toolArray={ToolsArray}/> 
                     </div>
 
                     <div className="photoboats" id="cranes">
