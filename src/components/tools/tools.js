@@ -75,12 +75,22 @@ const ToolItemsArray = [
             },
 
         ]
-    }
+    },
+    // {
+    //     name: 'Cranes',
+    //     tool: [
+    //         {
+
+    //         },
+    //     ]
+
+    // },
 ]
 
 
 
 const ToolItems = (toolCategory) => {
+    console.log(ToolItemsArray)
     const toolItems = ToolItemsArray.map((item) => {
         
                 const toolItem = item.tool.map(tool => {
@@ -127,9 +137,9 @@ const ToolItems = (toolCategory) => {
                 <div className="header-info">
                             <p>{newItem.description}</p>
                             <ul>
-                                {/* {newItem.li.map(li => {
-                                    <li>{li}</li>
-                                })} */}
+                            {newItem.li.map(li => {
+                                    return <li>{li}</li>
+                                })}
                             </ul>
                         </div>
         </div>
@@ -228,13 +238,7 @@ export default class Tools extends React.Component {
                         <h3 style={{ paddingTop: '40px' }}>Photoboats</h3>
                         <hr style={{ width: "90px" }} />
                         <br />
-                        
-
-                        {/* <div id="photoboats" className="photoboat-container"> */}
-
                            <ToolItems toolCategory={0}/> 
-                           {/* photoboats, use props to reuse ToolItems */}
-
                     </div>
 
                     <div className="photoboats" id="cranes">
