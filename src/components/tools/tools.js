@@ -81,7 +81,7 @@ const ToolItemsArray = [
 
 
 const ToolItems = (toolCategory) => {
-    const toolItems = ToolItemsArray[toolCategory].map((item) => {
+    const toolItems = ToolItemsArray.map((item) => {
         
                 const toolItem = item.tool.map(tool => {
         
