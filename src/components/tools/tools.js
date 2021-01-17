@@ -16,7 +16,7 @@ import { HashLink } from 'react-router-hash-link'
 import Images from '../../images/BarreledImages'
 
 
-const PhotoboatArray = [
+const ToolArray = [
     {
         name: 'Photoboats',
         tool: [
@@ -76,8 +76,6 @@ const PhotoboatArray = [
 
         ]
     },
-]
-const CraneArray = [
     {
         name: 'Cranes',
         tool: [
@@ -152,61 +150,79 @@ const CraneArray = [
 
 
 
-const ToolItems = (toolArray) => {
-    if(toolArray.length) return;
-    else toolArray = PhotoboatArray
-    const toolItems = toolArray.map((item) => {
-                const toolItem = item.tool.map(tool => {
-                    let newItem = tool
-                    
-                const videos = tool.videos.map(video => {
-                    if(video !== undefined) {
-                        return (
-                            <ReactPlayer
-                            className='video-3-player'
-                            url={video}
-                            playing={false}
-                            controls={true}
-                            width='100%'
-                            />
-                            )
-                        }
-                        else {
-                            return;
-                        }
-                })
-        let images = tool.images.map(image => {
-            return (
-                <div>
-                    <img src={image} alt={tool.toolName} />
-                </div>
-            )
-        })
-        return (
-            <div className='photoboat'>
-            
-            <div className='photoboat-header'>
-                <h4>{newItem.toolName}</h4>
-                <Carousel showArrows={true} infiniteLoop showThumbs={false} className={newItem.videos.length > 0 ? 'tools-carousel' : ''} style={{}}>
-                    {videos}
-                    {images}
-                </Carousel>
-                </div>
-                <div className="header-info">
-                            <p>{newItem.description}</p>
-                            <ul>
-                            {newItem.li.map((li, index) => {
-                                    return <li key={index*2}>{li}</li>
-                                })}
-                            </ul>
-                        </div>
+const ToolItems = () => {
+
+    const Tools = ToolArray.map(ToolHeader => {
+        console.log(ToolHeader.tool)
+        let videos
+        if(ToolHeader.tool.videos !== undefined) {
+
+            videos = ToolHeader.tool.videos.map(video => {
+                if(video !== undefined) {
+                return (
+                    <ReactPlayer
+                    className='video-3-player'
+                    url={video}
+                    playing={false}
+                    controls={true}
+                    width='100%'
+                    />
+                    )
+                }
+                else {
+                    return;
+                }
+            })
+        }
+        let images 
+        if(ToolHeader.tool.images !== undefined){
+
+            images = ToolHeader.tool.images.map(image => {
+                return (
+                    <div>
+            <img src={image} alt={ToolHeader.tool.toolName} />
         </div>
+    )
+})
+}
+console.log(ToolHeader.tool[0].li)
+        return (
+            <>
+            <div className='photoboats' id={ToolHeader.name.toLowerCase()}>
+            <h3>{ToolHeader.name.toLowerCase()}</h3>
+            <hr style={{ width: "90px" }} />
+            {ToolArray.map((tools) => {   
+                return tools.tool.map(item => {
+                    return (
+                        <div className='photoboat'>
+                    <div className='photoboat-header'>
+                        <h4>{item.toolName}</h4>
+                        <Carousel showArrows={true} infiniteLoop showThumbs={false} className={item.videos !== undefined ? 'tools-carousel' : ''}>
+                            {videos}
+                            {images}
+                        </Carousel>
+                        </div>
+                        <div className="header-info">
+                                    <p>{item.description}</p>
+                                    <ul>
+                                    {item.li.map((li, index) => {
+                                        return <li key={index*2}>{li}</li>
+                                    })}
+                                    </ul>
+                                </div>
+                </div>
+                )
+            })
+            })}
+            </div>
+            </>
         )
     })
-        return toolItem
-    })
-    
-    return toolItems
+    return (
+        <>
+        {/* {Tools} */}
+    </>
+    )
 }
 
 export default class Tools extends React.Component {
@@ -292,18 +308,18 @@ export default class Tools extends React.Component {
                             </div>
                         </div>
                     </Animated>
-                    <div className="photoboats" id='photoboats'>
+                    {/* <div className="photoboats" id='photoboats'>
                         <h3 style={{ paddingTop: '40px' }}>Photoboats</h3>
                         <hr style={{ width: "90px" }} />
-                        <br />
-                           <ToolItems toolArray={PhotoboatArray}/> 
-                    </div>
+                        <br /> */}
+                           {/* <ToolItems toolArrayString={'PhotoboatArray'}/>  */}
+                    {/* </div> */}
 
                     <div className="photoboats" id="cranes">
                         <h3 className="crane-header">Cranes</h3>
                         <hr style={{ width: "90px" }} />
 
-                        {/* <ToolItems toolArray={CraneArray} /> */}
+                        <ToolItems toolArrayString={'CraneArray'} />
                         <div className="photoboat">
                             <div className='photoboat-header'>
                                 <h4>
