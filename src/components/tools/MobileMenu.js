@@ -9,7 +9,7 @@ const UL = styled.ul`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    max-width: 180px;
+    max-width: 190px;
     min-width: 10%;
     // min-height: 800px;
     margin-left: 0;
