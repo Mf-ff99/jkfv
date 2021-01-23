@@ -630,19 +630,27 @@ ul.client-logos li.client-logo img {
 }
 .home .about-work a:hover {
     color: #333;
+    cursor: pointer;
 }
 
 .home a {
     color: white;
+    font-size: 25px;
 }
 .home a:hover {
     color: whitesmoke;
+    cursor: pointer;
+}
+
+.home button {
+    font-size: 24px;
 }
 
 .home button:hover {
     /* border: 1px solid white; */
     /* background-color: black; */
     /* background-color: #333; */
+    cursor: pointer;
 }
 
 .home button a {

@@ -28,7 +28,7 @@ const UL = styled.ul`
         padding: 18px 10px;
         /* min-width: 110px; */
         &:nth-child(4) {
-            min-width: 120px;
+            min-width: 102px;
         }
     }
 
@@ -138,9 +138,7 @@ class MobileNav extends React.Component {
             <li className="right-side-nav">
                 <a href='/tools'>Tools</a>
             </li>
-            <li className="right-side-nav">
-                <a href='/jordy-klein'>Jordy Klein</a>
-            </li>
+            <li className="right-side-nav"><a href='/jordy-klein'>Jordy Klein</a></li>
             <li className="right-side-nav">
                 <a href="/contact">Contact</a>
 
