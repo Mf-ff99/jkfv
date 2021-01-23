@@ -32,7 +32,6 @@ const ToolItems = (props) => {
         })
         return (
             <div className='photoboat'>
-            
             <div className='photoboat-header'>
                 <h4>{newItem.toolName === undefined ? '' :  newItem.toolName}</h4>
                 <Carousel showArrows={true} infiniteLoop showThumbs={false} className={newItem.videos.length > 0 ? 'tools-carousel' : ''} style={{}}>
