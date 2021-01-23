@@ -310,7 +310,6 @@ export default class Tools extends React.Component {
 
                         {/* end of lenses */}
                     </div>
-                    {/* <hr /> */}
                     <div id="underwater" className="photoboats">
                         <h3>Underwater</h3>
                         <hr style={{ width: "90px" }} />
@@ -319,70 +318,21 @@ export default class Tools extends React.Component {
 
                     </div>
 
-
-                    {/* <span id='crew'></span> */}
-                    {/* <hr /> */}
                     {/* crew begins here */}
                     <div id='crew' className='photoboats'>
                         <h3>The Crew</h3>
                         <hr style={{ width: '90px' }} />
                         <div className='photoboat'>
-
-                            <Carousel infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
-
-                            </Carousel>
-                            <h6>JKF&V, in addition to being a provider of all types of specialty production gear and cameras can also provide the crew needed to operate the specialty equipment.
-
-We have staff sound mixers, lighting, grip, and camera department crew available on staff. Let us know what you need!</h6>
+                            <h6>JKF&V, in addition to being a provider of all types of specialty production gear and cameras can also provide the crew needed to operate the specialty equipment. We have staff sound mixers, lighting, grip, and camera department crew available on staff. Let us know what you need!</h6>
                         </div>
                     </div>
-                    {/* <hr className='big-hr' /> */}
 
                     <div id='3D' className="photoboats threeD">
                         <h3>3D & Virtual Reality Cinematography</h3>
                         <hr style={{ width: '90px' }} />
 
-                        <div className="photoboat">
-
-                            <Carousel showThumbs={false} infiniteLoop className='tools-carousel' style={{}}>
-                                <div>
-                                    <ReactPlayer
-                                        className='video-2-player'
-                                        url='https://vimeo.com/26424346'
-                                        playing={false}
-                                        controls={true}
-                                        width='100%'
-                                    // height='100%'
-                                    />
-                                </div>
-                                <div>
-                                    <ReactPlayer
-                                        className='video-2-player'
-                                        url='https://vimeo.com/189631277'
-                                        playing={false}
-                                        controls={true}
-                                        width='100%'
-                                    // height='100%'
-                                    />
-                                </div>
-
-                            </Carousel>
-                            <div className='header-info'>
-                                <p>Jordan Klein Film and Video has alway been one of the few companies at the forefront of 3D and immersive technology. We are the only company in the Southeast USA with latest 3ality Technica, ATOM, 3D Beamsplitter rig.
-
-                                
-
-                                The Atom can be rigged with any of the latest Arri, Red, or Sony cameras.
-                                
-
-                                Additionally, we have worked with several of the newest immersive technology companies such as Oculus Rift and Google cardboard. On one occasion we rigged 5 Black magic Pocket Cinema cameras to our Octocopter with a fully stabilized gimbal.
-
-                                
-
-We also build our own 3D underwater housing systems</p>
-                            </div>
-
-                        </div>
+                        <ToolItems toolArray={ToolsArrays.ThreeD} />
+                        
                     </div>
 
                     {/* <span ></span> */}

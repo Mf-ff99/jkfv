@@ -4,6 +4,30 @@ import TritonArm from '../../images/triton-arm.png'
 import SixtyFooter from '../../images/sixty-foot-crane.png'
 import images from '../../images/BarreledImages'
 
+const ThreeD = [
+    {
+        name: undefined,
+        tool: [
+            {
+                toolName: undefined,
+                description: `Jordan Klein Film and Video has alway been one of the few companies at the forefront of 3D and immersive technology. We are the only company in the Southeast USA with latest 3ality Technica, ATOM, 3D Beamsplitter rig. The Atom can be rigged with any of the latest Arri, Red, or Sony cameras. Additionally, we have worked with several of the newest immersive technology companies such as Oculus Rift and Google cardboard. On one occasion we rigged 5 Black magic Pocket Cinema cameras to our Octocopter with a fully stabilized gimbal.
+We also build our own 3D underwater housing systems`,
+                li: [
+
+                ],
+                images: [
+
+                ],
+                videos: [
+                    'https://vimeo.com/189631277',
+                    'https://vimeo.com/26424346',
+                ],
+            }
+
+        ]
+    }
+]
+
 const PhotoboatArray = [
     {
         name: 'Photoboats',
@@ -226,6 +250,8 @@ const ToolsArrays = {
     PhotoboatArray,
     CraneArray,
     UnderwaterArray,
+    ThreeD,
+
 }
 
 export default ToolsArrays
