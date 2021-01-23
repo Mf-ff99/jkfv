@@ -130,19 +130,58 @@ const CraneArray = [
                 ],
             },
             {
-                toolName: 'The Big Baller',
-                description: `Our 30’ Pontoon boat is equipped to carry up to 17 people comfortably. It has 20’ of shaded area so clients stay cool all day, It can also be equipped with long range wireless video so clients can watch in comfort. Additionally, the upholstery can be removed and the boat can be used to carry support equipment such as lighting and grip gear or even a large production generator!`,
+                toolName: `60' Non-Telescopic Crane`,
+                description: `We purchased this crane arm out of necessity. We are continually called by clients and requested to fly our drones in restricted airspace or airspace that requires absorbent amounts of time to Aquire a permit to fly. For this reason, we acquired this incredible piece of gear. The actual arm length of the crane is 59’ from the fulcrum to the head mounting point. Once the head is mounted it adds about 9” hence the 60’ length. The total length of the crane is 68’. Max lens height is approximately 57’. The weight of the crane when fully assembled with the camera and head is approximately 1350lbs respectively. We can provide any of our in-house remote heads including The Movi XL, The DJI Ronin 2, and the non-stabilized head that comes standard with the crane. The max camera and gimbal weight for this crane is 40lbs. The 60’ crane can be transported with our technicians and operator via our production van. It comes in several large cases and must be assembled on site. Assembly usually takes about 2 hours including remote head and camera mounting. Once the crane is fully assembled it can be moved around the set via a large western type dolly. We can also provide a tow vehicle if the crane is required to be move over long distances such as a golf course.`,
                 li: [
-                    `30' Long`,
-                    `17 Person Capacity`,
-                    '24 MPH Top Speed',
-                    'Loading Ramp',
-                    `Space for camera carts, crafty, and clients!`,
+                    
                 ],
                 images: [
-                    Pontoon,
+                    SixtyFooter,
                 ],
                 videos: [
+                ],
+            },
+            {
+                toolName: `22' Robotic Arm`,
+                description: `This arm was a custom build by JKF&V in our Machine shop and fabrication facility. This crane is fully wirelessly controlled in its pan and tilt axis has a max lens reach of 22’ from the fulcrum and has a total length of 27’ the crane has a max weight of 1850lbs with a camera and head attached. This Robotic arm can be provided with either of our 2 in house stabilized heads (The Movi XL  or the Ronin 2 stabilized head). It can also accept any stabilized head that uses a Mitchell mounting system. The crane can be mounted to any vehicle or structure that can accommodate the weight. (see camera car and Photoboat).`,
+                li: [
+                    `Lens-reach: 22'`,
+                    `Length: 27'`,
+                    `Weight: 1850lbs`,
+                    `Max Camera/Gimbal weight: 75lbs`,
+                    `Mitchell Mount`,
+                    `Full FIZ control`,
+                    `Wireless Video`,
+                    `Wireless crane control`,
+                    `Wireless gimbal control`,
+                    `Max speed: 60mph`,
+                    
+                ],
+                images: [
+        
+                ],
+                videos: [
+                    'https://vimeo.com/338239605',
+                    'https://vimeo.com/357656228',
+                    'https://vimeo.com/361503204',
+                    'https://vimeo.com/395772274',
+                ],
+            },
+            {
+                toolName: `CamMate Jib`,
+                description: `The world-famous CamMate Travel Series is a more economical version that consists of four-foot sections packed in durable hard cases for frequent location traveling. In addition to our strong aerospace design, the Travel series features 15 minutes set up times; configuration changes in 10 minutes, and electronic head inversions in less than 30 seconds. All of these design features make your job on location faster and easier.`,
+                li: [
+                    `Lens-height: 25'`,
+                    `Reach: 21'`,
+                    `Length: 15'5"`,
+                    `Ballast: 247lbs`,
+                    `Weight: 126lbs`,
+                ],
+                images: [
+        
+                ],
+                videos: [
+                    'https://vimeo.com/450546354',
                 ],
             },
 
@@ -152,10 +191,8 @@ const CraneArray = [
 
 
 
-const ToolItems = (toolArray) => {
-    if(toolArray.length) return;
-    else toolArray = PhotoboatArray
-    const toolItems = toolArray.map((item) => {
+const ToolItems = (props) => {
+    const toolItems = props.toolArray.map((item) => {
                 const toolItem = item.tool.map(tool => {
                     let newItem = tool
                     
@@ -195,9 +232,9 @@ const ToolItems = (toolArray) => {
                 <div className="header-info">
                             <p>{newItem.description}</p>
                             <ul>
-                            {newItem.li.map((li, index) => {
+                            {newItem.li.length ? newItem.li.map((li, index) => {
                                     return <li key={index*2}>{li}</li>
-                                })}
+                                }) : ''}
                             </ul>
                         </div>
         </div>
@@ -279,7 +316,7 @@ export default class Tools extends React.Component {
 
 
                             <p className="tool-description animate__animated animate__backInLeft">
-                                In house we carry a vast array of tools for filmmakers. We take pride in knowing there are few others with the capabilities that our gear provides. You can easily access any one of our equipment categories through the menu on the left-hand side.
+                                In-house we carry a vast array of tools for filmmakers. We take pride in knowing there are few others with the capabilities that our gear provides. You can easily access any one of our equipment categories through the menu on the left-hand side.
                     </p>
                             {/* <hr style={{ width: '200px', border: '1px solid black' }} /> */}
                             {/* <hr className="big-hr"></hr> */}
@@ -302,261 +339,7 @@ export default class Tools extends React.Component {
                     <div className="photoboats" id="cranes">
                         <h3 className="crane-header">Cranes</h3>
                         <hr style={{ width: "90px" }} />
-
-                        {/* <ToolItems toolArray={CraneArray} /> */}
-                        <div className="photoboat">
-                            <div className='photoboat-header'>
-                                <h4>
-                                    30' Telescopic Crane
-                            </h4>
-                                <Carousel className='tools-carousel' showThumbs={false} infiniteLoop style={{ minHeight: '250px' }}>
-                                    <div className='d-block w-100'>
-                                        <ReactPlayer
-                                            className='video-3-player'
-                                            url='https://vimeo.com/495537100'
-                                            playing={false}
-                                            controls={true}
-                                            width='100%'
-
-                                        />
-                                    </div>
-                                    <div className='d-block w-100'>
-                                        <ReactPlayer
-                                            className='video-3-player'
-                                            url='https://vimeo.com/495538039'
-                                            playing={false}
-                                            controls={true}
-                                            width='100%'
-
-                                        />
-                                    </div>
-
-                                    <div className='d-block w-100'>
-                                        <ReactPlayer
-                                            className='video-3-player'
-                                            url='https://vimeo.com/371614461'
-                                            playing={false}
-                                            controls={true}
-                                            width='100%'
-
-                                        />
-                                    </div>
-                                    <div className='d-block w-100'>
-                                        <ReactPlayer
-                                            className='video-3-player'
-                                            url='https://vimeo.com/495539470'
-                                            playing={false}
-                                            controls={true}
-                                            width='100%'
-
-                                        />
-                                    </div>
-
-
-                                </Carousel>
-                            </div>
-                            <div className="header-info telescopic-crane">
-                                <p>Our Telescopic crane arm can accommodate any number of stabilized and Unstabilized remote heads (any head that uses a Mitchel type mount). The heads that we can offer “in house” for the telescopic crane are The Movi XL, The DJI Ronin 2, and the non-stabilized head that comes standard with the crane.</p><p> The arm has a max reach of 30’ and a minimum reach of 15’ the weight when fully assembled with the camera is about 1750lbs respectively. The max camera/gimbal weight that can be accommodated is 70lbs. </p><p>The crane and all of its accessories are transported in a customized 24’ enclosed trailer. We can provide a complete crew for the operation of this crane including delivery to set. Additionally, we can provide this crane with a turn-key camera and lens package with FIZ, and wireless video transmitter. Just let us know what you need!</p>
-                                <ul>
-                                    <li>Reach: 30'</li>
-                                    <li>Min-Reach: 15'</li>
-                                    <li>Weight: 1750lbs</li>
-                                    <li>Max Camera/Gimbal weight: 75lbs</li>
-                                    <li>Mitchel Mount</li>
-                                    <li>Complete Onsite crew can be provided</li>
-                                    <li>Full FIZ control</li>
-                                    <li>Wireless Video</li>
-
-                                </ul>
-                            </div>
-
-                        </div>
-                        {/* crane starts here */}
-                        <div className="photoboat">
-                            <div className='photoboat-header'>
-                                <h4>
-                                    Triton Arm
-                            </h4>
-
-
-                                <Carousel className='tools-carousel' showThumbs={false} infiniteLoop style={{ minHeight: '250px' }}>
-
-                                    <div className=''>
-                                        <img className="d-block w-100 crane-pic-1" src={TritonArm} alt='Triton Arm' />
-
-
-                                    </div>
-                                    <div className='d-block w-100'>
-                                        <ReactPlayer
-                                            className='video-3-player'
-                                            url='https://vimeo.com/146350055'
-                                            playing={false}
-                                            controls={true}
-                                            width='100%'
-
-                                        />
-                                    </div>
-
-                                    <div className='d-block w-100'>
-                                        <ReactPlayer
-                                            className='video-3-player'
-                                            url='https://vimeo.com/311587255'
-                                            playing={false}
-                                            controls={true}
-                                            width='100%'
-
-                                        />
-                                    </div>
-                                </Carousel>
-                            </div>
-
-                            <div className="header-info">
-
-                                <p>The Triton arm is a lightweight crane that can be mounted to almost anything. The Triton is fully robotically controlled via a wireless transmitter. It can accommodate our Movi Pro or DJI Ronin 2 stabilized heads. The Triton can be built in 2 lengths, 6’ and 11’. The max camera package that the Triton can accommodate is 25lbs. The total weight of the Triton with a camera and the remote head is approximately 170lbs respectively. The Triton can be mounted to a standard Reese trailer hitch on any vehicle or anything Mitchell mount configuration. Also see our custom electric ATV that holds the Triton arm.</p>
-                                <ul>
-                                    <li>Reach: 11'</li>
-                                    <li>Min-Reach: 6'</li>
-                                    <li>Weight: 145lbs</li>
-                                    <li>Weight with Max-Package: 170lbs</li>
-                                    <li>Max Camera/Gimbal weight: 25lbs</li>
-                                    <li>Mitchell Mount</li>
-                                    <li>Full FIZ control</li>
-                                    <li>Wireless Video</li>
-                                    <li>Wireless crane control</li>
-                                    <li>Wireless gimbal control</li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="photoboat">
-                            <div className='photoboat-header'>
-                                <h4>
-                                    60’ Non-Telescopic Crane
-                            </h4>
-                                {/* <Carousel className='tools-carousel' showThumbs={false} style={{ minHeight: '250px' }}> */}
-                                {/* <div> */}
-                                <img className="sixty-footer" src={SixtyFooter} alt='60 foot non-telescopic crane' />
-                                {/* </div> */}
-
-                                {/* </Carousel> */}
-                            </div>
-
-                            <div className="header-info triton-info">
-                                <p>We purchased this crane arm out of necessity. We are continually called by clients and requested to fly our drones in restricted airspace or airspace that requires absorbent amounts of time to Aquire a permit to fly. For this reason, we acquired this incredible piece of gear.</p>
-
-                                <p>The actual arm length of the crane is 59’ from the fulcrum to the head mounting point. Once the head is mounted it adds about 9” hence the 60’ length. The total length of the crane is 68’. Max lens height is approximately 57’. The weight of the crane when fully assembled with the camera and head is approximately 1350lbs respectively. We can provide any of our “in house “ remote heads including The Movi XL, The DJI Ronin 2, and the non-stabilized head that comes standard with the crane. The max camera and gimbal weight for this crane is 40lbs. The 60’ crane can be transported with our technicians and operator via our production van. It comes in several large cases and must be assembled on site. Assembly usually takes about 2hrs including remote head and camera mounting.</p>
-
-                                <p>
-                                    Once the crane is fully assembled it can be moved around the set via a large western type dolly. We can also provide a tow vehicle if the crane is required to be move over long distances such as a golf course.</p>
-                            </div>
-                        </div>
-
-                        <div className="photoboat">
-                            <div className='photoboat-header'>
-                                <h4>
-                                    22' Robotic Arm
-                            </h4>
-                                <Carousel showThumbs={false} className='tools-carousel' infiniteLoop style={{ minHeight: '250px' }}>
-
-                                    <div className='d-block w-100'>
-                                        <ReactPlayer
-                                            className='video-3-player'
-                                            url='https://vimeo.com/338239605'
-                                            playing={false}
-                                            controls={true}
-                                            width='100%'
-
-                                        />
-                                    </div>
-                                    <div className='d-block w-100'>
-                                        <ReactPlayer
-                                            className='video-3-player'
-                                            url='https://vimeo.com/357656228'
-                                            playing={false}
-                                            controls={true}
-                                            width='100%'
-
-                                        />
-                                    </div>
-
-
-                                    <div className='d-block w-100'>
-                                        <ReactPlayer
-                                            className='video-3-player'
-                                            url='https://vimeo.com/361503204'
-                                            playing={false}
-                                            controls={true}
-                                            width='100%'
-
-                                        />
-                                    </div>
-                                    <div className='d-block w-100'>
-                                        <ReactPlayer
-                                            className='video-3-player'
-                                            url='https://vimeo.com/395772274'
-                                            playing={false}
-                                            controls={true}
-                                            width='100%'
-
-                                        />
-                                    </div>
-
-
-
-
-                                </Carousel>
-                            </div>
-
-                            <div className="header-info">
-                                <p>This arm was a custom build by JKF&V in our Machine shop and fabrication facility. This crane is fully wirelessly controlled in its pan and tilt axis has a max lens reach of 22’ from the fulcrum and has a total length of 27’ the crane has a max weight of 1850lbs with a camera and head attached.</p><p> This Robotic arm can be provided with either of our 2 in house stabilized heads (The Movi XL  or the Ronin 2 stabilized head). It can also accept any stabilized head that uses a Mitchell mounting system. The crane can be mounted to any vehicle or structure that can accommodate the weight. (see camera car and Photoboat).</p>
-                                <ul>
-                                    <li>Lens-reach: 22'</li>
-                                    <li>Length: 27'</li>
-                                    <li>Weight: 1850lbs</li>
-                                    <li>Max Camera/Gimbal weight: 75lbs</li>
-                                    <li>Mitchell Mount</li>
-                                    <li>Full FIZ control</li>
-                                    <li>Wireless Video</li>
-                                    <li>Wireless crane control</li>
-                                    <li>Wireless gimbal control</li>
-                                    <li>Max speed: 60mph</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="photoboat">
-                            <div className='photoboat-header'>
-                                <h4>
-                                    CamMate Jib
-                                </h4>
-                                {/* <Carousel
-                                showThumbs={false} showStatus={false} showIndicators={false} className='tools-carousel' style={{ minHeight: '250px' }}> */}
-
-                                <div className=''>
-                                    <ReactPlayer
-                                        className='video-3-player'
-                                        url='https://vimeo.com/450546354'
-                                        playing={false}
-                                        controls={true}
-                                        width='100%'
-
-                                    />
-                                </div>
-                                {/* </Carousel> */}
-                            </div>
-                            <div className="header-info cammate-jib">
-
-                                <p>The world-famous CamMate Travel Series is a more economical version that consists of four-foot sections packed in durable hard cases for frequent location traveling. In addition to our strong aerospace design, the Travel series features 15 minutes set up times; configuration changes in 10 minutes, and electronic head inversions in less than 30 seconds. All of these design features make your job on location faster and easier.</p>
-                                <ul>
-                                    <li>Lens-height: 25'</li>
-                                    <li>Reach: 21'</li>
-                                    <li>Length: 15'5"</li>
-                                    <li>Ballast: 247lbs</li>
-                                    <li>Weight: 126lbs</li>
-                                </ul>
-                            </div>
-                        </div>
-
+                           <ToolItems toolArray={CraneArray}/> 
 
                         {/* crane ends here */}
                     </div>
