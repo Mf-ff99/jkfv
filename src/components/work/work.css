@@ -125,6 +125,12 @@ div.work-page-header h1 {
     font-size: 55px;
 }
 
+.page-header {
+    font-size: 50px !important;
+    font-weight: 100 !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
 div.work-page-header p {
     max-width: 800px;
     padding: 0 20px 0 20px;

@@ -65,7 +65,7 @@ export default class Tools extends React.Component {
                 <div className="tool-sections" >
                     <Animated animationIn="fadeIn" animationOut="fadeOut">
                         <div className='tool-sections-header'>
-                            <h2>Our Tools</h2>
+                            <h2 className='page-header'>Our Tools</h2>
                             <hr style={{ width: '200px', borderBottom: '1px solid black' }} />
                             <p className="tool-description animate__animated animate__backInLeft">
                                 In-house we carry a vast array of tools for filmmakers. We take pride in knowing there are few others with the capabilities that our gear provides. You can easily access any one of our equipment categories through the menu on the left-hand side.

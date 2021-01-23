@@ -101,7 +101,7 @@ export default function Work() {
 
             <div className="work-page-header">
 
-                <h1>Our Work</h1>
+                <h2 className='page-header'>Our Work</h2>
                 <p>Over the years we have worked with thousands of clients shooting with drones, photoboats, underwater camera housings, and more. In-house we carry a large array of the latest drones, cameras, underwater housings, robotic cranes, camera cars, and photoboats. We have all the tools you need to get the shots you require.</p>
             <h6>The videos below showcase a fraction of what is possible with our tools.</h6>
             <Animated animationIn='fadeIn' animationInDuration={1200}>
