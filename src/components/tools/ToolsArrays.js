@@ -54,7 +54,7 @@ const SkunkworksArray = [
 
                 We presently have systems that can carry up to 30lbs and travel at speeds of 30mph. We have recently been asked to design a RailRunner to reach speeds of 100mph in 1/4 mile. The RailRunner Can be configured to operate as a 2 person or single person system. (IE: One person can operate the camera gimbal and one person can operate the RailRunner or one person can operate both functions.)
                 
-                Let us know what your requirements are, and we will do our best to accomidate your request.`,
+                Let us know what your requirements are, and we will do our best to accommodate your request.`,
                 li: [
 
                 ],
@@ -69,7 +69,7 @@ const SkunkworksArray = [
             },
             {
                 toolName: 'Railcam',
-                description: `The railcam was originally developed to shoot the AKC dog shows. We needed a device that could transport a camera and gimbal up to 20mph at “dog height” for about 120’ the Railcam is designed to run on a speed rail that is linked together with internal links that are spaced about 18” apart. we have since modified the Railcam to track Olympic class runners at various track and field events. and like the Railrunner, the Railcam can be modified to travel an almost any speed with almost any camera payload. Let us know your requirements and we will do our best to accommodate you.`,
+                description: `The Railcam was originally developed to shoot the AKC dog shows. We needed a device that could transport a camera and gimbal up to 20mph at “dog height” for about 120’ the Railcam is designed to run on a speed rail that is linked together with internal links that are spaced about 18” apart. we have since modified the Railcam to track Olympic class runners at various track and field events. and like the Railrunner, the Railcam can be modified to travel an almost any speed with almost any camera payload. Let us know your requirements and we will do our best to accommodate you.`,
                 li: [
 
                 ],
@@ -111,7 +111,7 @@ const PhotoboatArray = [
                     `31' Long`,
                     '65 MPH',
                     `22' Stabilized Robotic Crane`,
-                    'Stablized Remote Head',
+                    'Stabilized Remote Head',
                     `12' Wings`,
                 ],
                 images: [
@@ -215,7 +215,7 @@ const CraneArray = [
             },
             {
                 toolName: `60' Non-Telescopic Crane`,
-                description: `We purchased this crane arm out of necessity. We are continually called by clients and requested to fly our drones in restricted airspace or airspace that requires absorbent amounts of time to Aquire a permit to fly. For this reason, we acquired this incredible piece of gear. The actual arm length of the crane is 59’ from the fulcrum to the head mounting point. Once the head is mounted it adds about 9” hence the 60’ length. The total length of the crane is 68’. Max lens height is approximately 57’. The weight of the crane when fully assembled with the camera and head is approximately 1350lbs respectively. We can provide any of our in-house remote heads including The Movi XL, The DJI Ronin 2, and the non-stabilized head that comes standard with the crane. The max camera and gimbal weight for this crane is 40lbs. The 60’ crane can be transported with our technicians and operator via our production van. It comes in several large cases and must be assembled on site. Assembly usually takes about 2 hours including remote head and camera mounting. Once the crane is fully assembled it can be moved around the set via a large western type dolly. We can also provide a tow vehicle if the crane is required to be move over long distances such as a golf course.`,
+                description: `We purchased this crane arm out of necessity. We are continually called by clients and requested to fly our drones in restricted airspace or airspace that requires absorbent amounts of time to acquire a permit to fly. For this reason, we acquired this incredible piece of gear. The actual arm length of the crane is 59’ from the fulcrum to the head mounting point. Once the head is mounted it adds about 9” hence the 60’ length. The total length of the crane is 68’. Max lens height is approximately 57’. The weight of the crane when fully assembled with the camera and head is approximately 1350lbs respectively. We can provide any of our in-house remote heads including The Movi XL, The DJI Ronin 2, and the non-stabilized head that comes standard with the crane. The max camera and gimbal weight for this crane is 40lbs. The 60’ crane can be transported with our technicians and operator via our production van. It comes in several large cases and must be assembled on site. Assembly usually takes about 2 hours including remote head and camera mounting. Once the crane is fully assembled it can be moved around the set via a large western type dolly. We can also provide a tow vehicle if the crane is required to be move over long distances such as a golf course.`,
                 li: [
                     
                 ],
@@ -297,9 +297,9 @@ const UnderwaterArray = [
         },
         {
             toolName: 'Underwater Drone',
-            description: `The Fafish is a fully remotely controlled underwater drone. It has a 350’ teather and can travel to depths of 300’. The Fafish has a 1” sensor and can shoot 4k video at 24 or 30fps it can also shoot 1080p at 60fps
+            description: `The Fafish is a fully remotely controlled underwater drone. It has a 350’ tether and can travel to depths of 300’. The Fafish has a 1” sensor and can shoot 4k video at 24 or 30fps it can also shoot 1080p at 60fps
 
-            The FaFish is great for location scouting or in situations where a manned camera is just not practicle or safe. The Fafish has a top speed of 8mph and also has internal LED lighting. The FaFish has a battery life of 5 hrs of constant use.
+            The FaFish is great for location scouting or in situations where a manned camera is just not practical or safe. The Fafish has a top speed of 8mph and also has internal LED lighting. The FaFish has a battery life of 5 hrs of constant use.
 
 The FaFish also has an HD video output that can be attached to a monitor at the surface. It can also be used for live broadcast productions.`,
             li: [
