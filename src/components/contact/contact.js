@@ -38,7 +38,7 @@ export default function Contact() {
                             <hr />
                             <h6>Call or email us, or simply fill out the form below and we will be in touch with you as soon as possible.</h6>
                             <HashLink smooth to='#form'>
-                                <Animated animationIn='slideInUp' animationInDuration={1200}>
+                                <Animated animationIn='slideInUp' animationInDelay={1000} animationInDuration={1200}>
                                     <img className='work-scroll-arrow contact-arrow' src={Images.DownArrow} alt='scroll-down arrow' />
                                 </Animated>
                             </HashLink>
