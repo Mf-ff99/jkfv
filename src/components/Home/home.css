@@ -123,7 +123,7 @@ img.xcam-logo {
 .jordy-logo {
     width: 100%;
     height: auto;
-    z-index: -100;
+    z-index: 100;
 }
 
 .xcam-img {
@@ -310,6 +310,12 @@ section.jordys-specialties {
 
 .lower-section .tools-of-the-trade a {
     color: white !important;
+    text-decoration: none;
+}
+
+.home a {
+    text-decoration: none !important;
+    
 }
 
 @media screen and (max-width: 650px) {

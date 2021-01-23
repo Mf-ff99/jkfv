@@ -20,6 +20,7 @@ const StyledLogo = styled.div`
     
     a {
         color: black !important;
+        text-decoration: none;
     }
 
     .logo-text-left a {
@@ -43,13 +44,10 @@ const NavStyled = styled.nav`
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     flex-direction: row;
     list-style: none;
-    /* width: 90%; */
     background-color: whitesmoke;
     z-index: 0;
-    /* margin: 0; */
     border-bottom: 2px solid #f1f1f1;
     font-size: 18px;
 
@@ -69,6 +67,10 @@ const NavStyled = styled.nav`
 
     li {
         padding: 18px 10px;
+    }
+
+    li a {
+        text-decoration: none;
     }
 
     .logo {
