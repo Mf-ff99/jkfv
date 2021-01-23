@@ -1,9 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import PBJ from '../../images/pbj.png'
-import Pontoon from '../../images/pontoon.png'
-import TritonArm from '../../images/triton-arm.png'
-import SixtyFooter from '../../images/sixty-foot-crane.png'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
 import { Animated } from 'react-animated-css'
@@ -14,180 +10,7 @@ import images from '../../images/BarreledImages'
 import MFD from '../../images/RED-MFD-5000.jpg'
 import { HashLink } from 'react-router-hash-link'
 import Images from '../../images/BarreledImages'
-
-
-const PhotoboatArray = [
-    {
-        name: 'Photoboats',
-        tool: [
-            {
-                toolName: 'Shotcalla',
-                description: 'Jordan Klein Film and Video’s 31’ offshore catamaran is unlike any other photoboat in the world. It is truly a modern marvel. Besides being a 65mph super-stable offshore catamaran, it can also be equipped with robotic crane and stabilized head . We can show up to location with this as a complete turn-key package! This boat can also be equipped with wings that allow the camera operator to walk out 13’ and be 12’ above the water to achieve vertical shots of watercraft',
-                li: [
-                    `31' Long`,
-                    '65 MPH',
-                    `22' Stabilized Robotic Crane`,
-                    'Stablized Remote Head',
-                    `12' Wings`,
-                ],
-                images: [
-                    images.ShotcallaWings,
-                    images.ShotcallaFloating,
-                    images.ShotcallaOnBeach,
-
-                ],
-                videos: [
-                    'https://vimeo.com/460494916',
-                    'https://vimeo.com/357656228',
-                ]
-            },
-            {
-                toolName: 'The PBJ (Photoboat Junior)',
-                description: `The PBJ is an 18’ Catamaran that is just like its big sister (“Shotcalla”). Except it is 12’ shorter. The PBJ is great for shooting stills with its 8' tower, and is great for transporting crew back and forth to shore. It is an excellent choice for smaller venues where a larger photoboat is not required. The PBJ has a top speed of 33mph.`,
-                li: [
-                    `Outboard Motor`,
-                    `8' Tower`,
-                    '33 MPH',
-                    `18' Long`,
-                ],
-                images: [
-                    PBJ,
-                ],
-                videos: [
-                    
-                ],
-            },
-            {
-                toolName: 'The Big Baller',
-                description: `Our 30’ Pontoon boat is equipped to carry up to 17 people comfortably. It has 20’ of shaded area so clients stay cool all day, It can also be equipped with long range wireless video so clients can watch in comfort. Additionally, the upholstery can be removed and the boat can be used to carry support equipment such as lighting and grip gear or even a large production generator!`,
-                li: [
-                    `30' Long`,
-                    `17 Person Capacity`,
-                    '24 MPH Top Speed',
-                    'Loading Ramp',
-                    `Space for camera carts, crafty, and clients!`,
-                ],
-                images: [
-                    Pontoon,
-                ],
-                videos: [
-                ],
-            },
-
-        ]
-    },
-]
-const CraneArray = [
-    {
-        name: 'Cranes',
-        tool: [
-            {
-                toolName: `30' Telescopic Crane`,
-                description: 'Our Telescopic crane arm can accommodate any number of stabilized and Unstabilized remote heads (any head that uses a Mitchel type mount). The heads that we can offer “in house” for the telescopic crane are The Movi XL, The DJI Ronin 2, and the non-stabilized head that comes standard with the crane. The arm has a max reach of 30’ and a minimum reach of 15’ the weight when fully assembled with the camera is about 1750lbs respectively. The max camera/gimbal weight that can be accommodated is 70lbs. The crane and all of its accessories are transported in a customized 24’ enclosed trailer. We can provide a complete crew for the operation of this crane including delivery to set. Additionally, we can provide this crane with a turn-key camera and lens package with FIZ, and wireless video transmitter. Just let us know what you need!',
-                li: [
-                    `Reach: 30'`,
-                    'Max Camera/Gimbal weight: 75lbs',
-                    `22' Stabilized Robotic Crane`,
-                    'Weight: 1750lbs',
-                    `Min-Reach: 15'`,
-                    'Mitchel Mount', 
-                    'Complete Onsite crew can be provided',
-                    'Full FIZ control',
-                    'Wireless Video',
-                ],
-                images: [
-                ],
-                videos: [
-                    'https://vimeo.com/495537100',
-                    'https://vimeo.com/495538039',
-                    'https://vimeo.com/371614461',
-                    'https://vimeo.com/495539470',
-
-                ]
-            },
-            {
-                toolName: 'Triton Arm',
-                description: `The Triton arm is a lightweight crane that can be mounted to almost anything. The Triton is fully robotically controlled via a wireless transmitter. It can accommodate our Movi Pro or DJI Ronin 2 stabilized heads. The Triton can be built in 2 lengths, 6’ and 11’. The max camera package that the Triton can accommodate is 25lbs. The total weight of the Triton with a camera and the remote head is approximately 170lbs respectively. The Triton can be mounted to a standard Reese trailer hitch on any vehicle or anything Mitchell mount configuration. Also see our custom electric ATV that holds the Triton arm.`,
-                li: [
-                    `Reach: 11'`,
-                    `Min-Reach: 6'`,
-                    'Weight: 145lbs',
-                    `Weight with Max-Package: 170lbs`,
-                    'Max Camera/Gimbal weight: 25lbs',
-                    'Mitchel Mount', 
-                    'Complete Onsite crew can be provided',
-                    'Full FIZ control',
-                    'Wireless Video',
-                    'Wireless crane control',
-                    'Wireless gimbal control',
-                ],
-                images: [
-                    TritonArm,
-                ],
-                videos: [
-                    'https://vimeo.com/146350055',
-                    'https://vimeo.com/311587255',
-                ],
-            },
-            {
-                toolName: `60' Non-Telescopic Crane`,
-                description: `We purchased this crane arm out of necessity. We are continually called by clients and requested to fly our drones in restricted airspace or airspace that requires absorbent amounts of time to Aquire a permit to fly. For this reason, we acquired this incredible piece of gear. The actual arm length of the crane is 59’ from the fulcrum to the head mounting point. Once the head is mounted it adds about 9” hence the 60’ length. The total length of the crane is 68’. Max lens height is approximately 57’. The weight of the crane when fully assembled with the camera and head is approximately 1350lbs respectively. We can provide any of our in-house remote heads including The Movi XL, The DJI Ronin 2, and the non-stabilized head that comes standard with the crane. The max camera and gimbal weight for this crane is 40lbs. The 60’ crane can be transported with our technicians and operator via our production van. It comes in several large cases and must be assembled on site. Assembly usually takes about 2 hours including remote head and camera mounting. Once the crane is fully assembled it can be moved around the set via a large western type dolly. We can also provide a tow vehicle if the crane is required to be move over long distances such as a golf course.`,
-                li: [
-                    
-                ],
-                images: [
-                    SixtyFooter,
-                ],
-                videos: [
-                ],
-            },
-            {
-                toolName: `22' Robotic Arm`,
-                description: `This arm was a custom build by JKF&V in our Machine shop and fabrication facility. This crane is fully wirelessly controlled in its pan and tilt axis has a max lens reach of 22’ from the fulcrum and has a total length of 27’ the crane has a max weight of 1850lbs with a camera and head attached. This Robotic arm can be provided with either of our 2 in house stabilized heads (The Movi XL  or the Ronin 2 stabilized head). It can also accept any stabilized head that uses a Mitchell mounting system. The crane can be mounted to any vehicle or structure that can accommodate the weight. (see camera car and Photoboat).`,
-                li: [
-                    `Lens-reach: 22'`,
-                    `Length: 27'`,
-                    `Weight: 1850lbs`,
-                    `Max Camera/Gimbal weight: 75lbs`,
-                    `Mitchell Mount`,
-                    `Full FIZ control`,
-                    `Wireless Video`,
-                    `Wireless crane control`,
-                    `Wireless gimbal control`,
-                    `Max speed: 60mph`,
-                    
-                ],
-                images: [
-        
-                ],
-                videos: [
-                    'https://vimeo.com/338239605',
-                    'https://vimeo.com/357656228',
-                    'https://vimeo.com/361503204',
-                    'https://vimeo.com/395772274',
-                ],
-            },
-            {
-                toolName: `CamMate Jib`,
-                description: `The world-famous CamMate Travel Series is a more economical version that consists of four-foot sections packed in durable hard cases for frequent location traveling. In addition to our strong aerospace design, the Travel series features 15 minutes set up times; configuration changes in 10 minutes, and electronic head inversions in less than 30 seconds. All of these design features make your job on location faster and easier.`,
-                li: [
-                    `Lens-height: 25'`,
-                    `Reach: 21'`,
-                    `Length: 15'5"`,
-                    `Ballast: 247lbs`,
-                    `Weight: 126lbs`,
-                ],
-                images: [
-        
-                ],
-                videos: [
-                    'https://vimeo.com/450546354',
-                ],
-            },
-
-        ]
-    },
-]
+import ToolsArrays from './ToolsArrays'
 
 
 
@@ -333,13 +156,13 @@ export default class Tools extends React.Component {
                         <h3 style={{ paddingTop: '40px' }}>Photoboats</h3>
                         <hr style={{ width: "90px" }} />
                         <br />
-                           <ToolItems toolArray={PhotoboatArray}/> 
+                           <ToolItems toolArray={ToolsArrays.PhotoboatArray}/> 
                     </div>
 
                     <div className="photoboats" id="cranes">
                         <h3 className="crane-header">Cranes</h3>
                         <hr style={{ width: "90px" }} />
-                           <ToolItems toolArray={CraneArray}/> 
+                           <ToolItems toolArray={ToolsArrays.CraneArray}/> 
 
                         {/* crane ends here */}
                     </div>
