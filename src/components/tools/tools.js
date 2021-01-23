@@ -13,61 +13,6 @@ import Images from '../../images/BarreledImages'
 import ToolsArrays from './ToolsArrays'
 import ToolItems from './RenderToolItems'
 
-// const ToolItems = (props) => {
-//     const toolItems = props.toolArray.map((item) => {
-//                 const toolItem = item.tool.map(tool => {
-//                     let newItem = tool
-                    
-//                 const videos = tool.videos.map(video => {
-//                     if(video !== undefined) {
-//                         return (
-//                             <ReactPlayer
-//                             className='video-3-player'
-//                             url={video}
-//                             playing={false}
-//                             controls={true}
-//                             width='100%'
-//                             />
-//                             )
-//                         }
-//                         else {
-//                             return;
-//                         }
-//                 })
-//         let images = tool.images.map(image => {
-//             return (
-//                 <div>
-//                     <img src={image} alt={tool.toolName} />
-//                 </div>
-//             )
-//         })
-//         return (
-//             <div className='photoboat'>
-            
-//             <div className='photoboat-header'>
-//                 <h4>{newItem.toolName}</h4>
-//                 <Carousel showArrows={true} infiniteLoop showThumbs={false} className={newItem.videos.length > 0 ? 'tools-carousel' : ''} style={{}}>
-//                     {videos}
-//                     {images}
-//                 </Carousel>
-//                 </div>
-//                 <div className="header-info">
-//                             <p>{newItem.description}</p>
-//                             <ul>
-//                             {newItem.li.length ? newItem.li.map((li, index) => {
-//                                     return <li key={index*2}>{li}</li>
-//                                 }) : ''}
-//                             </ul>
-//                         </div>
-//         </div>
-//         )
-//     })
-//         return toolItem
-//     })
-    
-//     return toolItems
-// }
-
 export default class Tools extends React.Component {
 
     state = {
@@ -370,72 +315,7 @@ export default class Tools extends React.Component {
                         <h3>Underwater</h3>
                         <hr style={{ width: "90px" }} />
 
-                        <div className="photoboat">
-                            <div className='photoboat-header'>
-                                <h4
-                                >Underwater Cinematography</h4>
-                                <Carousel infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
-                                    <ReactPlayer
-                                        className='video-2-player'
-                                        url='https://vimeo.com/39293725'
-                                        playing={false}
-                                        controls={true}
-                                        width='100%'
-
-                                    />
-                                    <ReactPlayer
-                                        className='video-2-player'
-                                        url='https://vimeo.com/136759179'
-                                        playing={false}
-                                        controls={true}
-                                        width='100%'
-
-                                    />
-                                    <div>
-                                        <img src={images.UnderwaterWelding} alt='Jordy filming underwater welding' />
-                                    </div>
-                                </Carousel>
-                            </div>
-                            <div className='header-info'>
-                                <p>Jordan Klein Film and Video and The Klein family have been at the forefront of underwater cinematography technology for over 50 years! Jordan Klein, Sr opened the first dive shop on Miami beach shortly after World War II and developed some of the first underwater cameras. </p><p>Jordan Klein, Sr's son,  Jordy Klein has continued the legacy and is still pushing the boundaries of underwater filmmaking.
-
-                                Vampire Diaries: Behind the Scenes
-
-                                Underwater behind the scenes of Vampire Diaries season 3 finale.
-
-                                
-
-Underwater D/P: Jordan(Jordy) Klein Jr.</p>
-                            </div>
-
-                        </div>
-
-                        <div className="photoboat">
-                            <div className='photoboat-header'>
-                                <h4>Underwater Drone</h4>
-                                {/* <Carousel showThumbs={false} className='tools-carousel' style={{}}> */}
-
-                                <ReactPlayer
-                                    className='video-2-player'
-                                    url='https://vimeo.com/385681880'
-                                    playing={false}
-                                    controls={true}
-                                    width='100%'
-                                // height='100%'
-                                />
-
-
-                                {/* </Carousel> */}
-                            </div>
-                            <div className='header-info'>
-                                <p>The Fafish is a fully remotely controlled underwater drone. It has a 350’ teather and can travel to depths of 300’. The Fafish has a 1” sensor and can shoot 4k video at 24 or 30fps it can also shoot 1080p at 60fps
-
-                                The FaFish is great for location scouting or in situations where a manned camera is just not practicle or safe. The Fafish has a top speed of 8mph and also has internal LED lighting. The FaFish has a battery life of 5 hrs of constant use.
-
-The FaFish also has an HD video output that can be attached to a monitor at the surface. It can also be used for live broadcast productions.</p>
-                            </div>
-
-                        </div>
+                        <ToolItems toolArray={ToolsArrays.UnderwaterArray} />
 
                     </div>
 
