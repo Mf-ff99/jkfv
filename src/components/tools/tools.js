@@ -128,7 +128,7 @@ const ToolArray = [
                 ],
             },
             {
-                toolName: 'The Big Baller',
+                toolName: 'The Big Baller TEST',
                 description: `Our 30’ Pontoon boat is equipped to carry up to 17 people comfortably. It has 20’ of shaded area so clients stay cool all day, It can also be equipped with long range wireless video so clients can watch in comfort. Additionally, the upholstery can be removed and the boat can be used to carry support equipment such as lighting and grip gear or even a large production generator!`,
                 li: [
                     `30' Long`,
@@ -151,9 +151,8 @@ const ToolArray = [
 
 
 const ToolItems = () => {
-
     const Tools = ToolArray.map(ToolHeader => {
-        console.log(ToolHeader.tool)
+        
         let videos
         if(ToolHeader.tool.videos !== undefined) {
 
@@ -185,42 +184,36 @@ const ToolItems = () => {
     )
 })
 }
-console.log(ToolHeader.tool[0].li)
+
         return (
             <>
             <div className='photoboats' id={ToolHeader.name.toLowerCase()}>
-            <h3>{ToolHeader.name.toLowerCase()}</h3>
+            <h3>{ToolHeader.name}</h3>
             <hr style={{ width: "90px" }} />
-            {ToolArray.map((tools) => {   
-                return tools.tool.map(item => {
-                    return (
                         <div className='photoboat'>
                     <div className='photoboat-header'>
-                        <h4>{item.toolName}</h4>
-                        <Carousel showArrows={true} infiniteLoop showThumbs={false} className={item.videos !== undefined ? 'tools-carousel' : ''}>
+                        <h4>{ToolHeader.tool.toolName}</h4>
+                        <Carousel showArrows={true} infiniteLoop showThumbs={false} className={ToolHeader.tool.videos !== undefined ? 'tools-carousel' : ''}>
                             {videos}
                             {images}
                         </Carousel>
                         </div>
                         <div className="header-info">
-                                    <p>{item.description}</p>
+                                    <p>{ToolHeader.tool.description}</p>
                                     <ul>
-                                    {item.li.map((li, index) => {
+                                    {ToolHeader.tool.li.map((li, index) => {
                                         return <li key={index*2}>{li}</li>
                                     })}
                                     </ul>
                                 </div>
                 </div>
-                )
-            })
-            })}
             </div>
             </>
         )
     })
     return (
         <>
-        {/* {Tools} */}
+        {Tools}
     </>
     )
 }
@@ -315,11 +308,11 @@ export default class Tools extends React.Component {
                            {/* <ToolItems toolArrayString={'PhotoboatArray'}/>  */}
                     {/* </div> */}
 
+                    <ToolItems />
                     <div className="photoboats" id="cranes">
                         <h3 className="crane-header">Cranes</h3>
                         <hr style={{ width: "90px" }} />
 
-                        <ToolItems toolArrayString={'CraneArray'} />
                         <div className="photoboat">
                             <div className='photoboat-header'>
                                 <h4>
