@@ -100,20 +100,6 @@ export default function Home() {
                     <h5>352-427-2560</h5>
                 </section>
                 <section className='jordys-aerials'>
-                    {/* <ReactPlayer
-                            className='video-2-player'
-                            url='https://vimeo.com/445579276'
-                            playing={false}
-                            width='100%'
-                            height='100%'
-                            // volume={.1}
-                            playing={true}
-                            muted={true}
-                            // controls={true}
-                            loop={true}
-                            
-                        />  */}
-                        
                 <section className="clients">
                     <h3>Our Clients</h3>
                     <hr style={{width: "90px", backgroundColor: "black"}} />

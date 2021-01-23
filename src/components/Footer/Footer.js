@@ -58,7 +58,7 @@ const Footer = () => {
         <FooterContainer>
             <ul>
                 <li style={{color: '#333'}}>
-                © Jordan Klein 2020
+               Copyright © Jordan Klein 2020
                 </li>
                 <li style={{color: 'gray'}}>
                     Created by <a style={{color: 'black'}}href='https://mf-ff99.github.io/portfolio/' target='_blank' rel='noopener noreferrer'>@markforce</a>
