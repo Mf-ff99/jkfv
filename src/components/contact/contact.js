@@ -13,7 +13,7 @@ export default function Contact() {
                     <div className="about-container">
                         <div className="contact-upper">
 
-                            <h2>Contact Us</h2>
+                            <h2 className='page-header'>Contact Us</h2>
                             <div className='contact-info-container'>
     <div className='contact-info-line-address'>
 
