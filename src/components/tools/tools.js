@@ -17,15 +17,7 @@ export default class Tools extends React.Component {
 
     state = {
         toDisplay: false,
-        toDisplayPhotoboat: false,
-        expandedDrone: false,
-
         isSticky: false,
-    }
-
-
-    renderCrane = () => {
-
     }
 
     componentDidMount() {
@@ -62,7 +54,6 @@ export default class Tools extends React.Component {
     }
 
     render() {
-        
         return (
             <>
                 <section id='tools' className='tools'>
@@ -71,24 +62,15 @@ export default class Tools extends React.Component {
                         <GearBurger />
                     </div>
                 </section>
-
                 <div className="tool-sections" >
-                    {/* <span id="photoboats"></span> */}
                     <Animated animationIn="fadeIn" animationOut="fadeOut">
                         <div className='tool-sections-header'>
-
                             <h2>Our Tools</h2>
-
                             <hr style={{ width: '200px', borderBottom: '1px solid black' }} />
-
-
                             <p className="tool-description animate__animated animate__backInLeft">
                                 In-house we carry a vast array of tools for filmmakers. We take pride in knowing there are few others with the capabilities that our gear provides. You can easily access any one of our equipment categories through the menu on the left-hand side.
                     </p>
-                            {/* <hr style={{ width: '200px', border: '1px solid black' }} /> */}
-                            {/* <hr className="big-hr"></hr> */}
                             <div className='tools-pointer'>
-
                                 <Animated animationIn='fadeIn' animationInDuration={1200}>
                                     <h6>Explore Our Tools Below</h6>
                                     <HashLink smooth to='#photoboats'><img className='work-scroll-arrow' src={Images.DownArrow} alt='scroll-down arrow' /></HashLink>
@@ -110,8 +92,6 @@ export default class Tools extends React.Component {
 
                         {/* crane ends here */}
                     </div>
-                    {/* <span id="aerials"></span> */}
-                    {/* <hr /> */}
                     {/* aerials begin here */}
                     <div className="aerials" id="aerials">
                         <h3>Aerials</h3>
@@ -133,8 +113,6 @@ export default class Tools extends React.Component {
                         <h6>Our Aerials are solely operated by our sister company XCam Aerials. Click the link to visit the <a href="http://xcamaerials.com/" target="_blank" rel="noopener noreferrer">XCam Aerials</a> website.</h6>
 
                     </div>
-                    {/* <hr className="big-hr" id="cameracar" /> */}
-
                     <div className="photoboats" id='cameracar'>
                         <h3>Camera Car and Process Trailer</h3>
                         <hr style={{ width: "90px" }} />
@@ -189,7 +167,6 @@ export default class Tools extends React.Component {
                                 <div className='process-trailer'>
                                     <img src={images.PT5} alt='process trailer' />
                                 </div>
-
                             </Carousel>
 
                             <div className="header-info">
@@ -248,27 +225,11 @@ export default class Tools extends React.Component {
                         </div>
 
                     </div>
-
-                    {/* <hr className="big-hr" /> */}
-
-
                     <div id='lenses' className="photoboats">
                         <h3>Lenses and Cameras</h3>
                         <hr style={{ width: "90px" }} />
                         <div className="photoboat">
-                            {/* <div className="tools-image-container">
-                           
-                            <ReactPlayer
-                                className='video-2-player'
-                                url='https://vimeo.com/338239605'
-                                playing={false}
-                                controls={true}
-                                width='100%'
-                                height='100%'
-                            />                                </div> */}
                             <div className="header-info">
-
-
                                 <p>Jordan Klein Film and Video has always maintained a large inventory of the latest cameras and lenses. That being said, We do not want to give people the wrong impression when it comes to our gear. We are not a rental house. If you require some gear we will send out one of our camera packages with a minimum of a tech or 2nd A/C. we primarily use all of our gear on our own productions. In other words…." We are not a rental house, just a production company that has a lot of gear"</p>
                                 <div className="cameras-lenses">
                                     <div className="cameras__ul">
@@ -307,17 +268,13 @@ export default class Tools extends React.Component {
                                 </div>
                             </div>
                         </div>
-
                         {/* end of lenses */}
                     </div>
                     <div id="underwater" className="photoboats">
                         <h3>Underwater</h3>
                         <hr style={{ width: "90px" }} />
-
                         <ToolItems toolArray={ToolsArrays.UnderwaterArray} />
-
                     </div>
-
                     {/* crew begins here */}
                     <div id='crew' className='photoboats'>
                         <h3>The Crew</h3>
@@ -326,142 +283,18 @@ export default class Tools extends React.Component {
                             <h6>JKF&V, in addition to being a provider of all types of specialty production gear and cameras can also provide the crew needed to operate the specialty equipment. We have staff sound mixers, lighting, grip, and camera department crew available on staff. Let us know what you need!</h6>
                         </div>
                     </div>
-
                     <div id='3D' className="photoboats threeD">
                         <h3>3D & Virtual Reality Cinematography</h3>
                         <hr style={{ width: '90px' }} />
-
                         <ToolItems toolArray={ToolsArrays.ThreeD} />
-                        
                     </div>
-
-                    {/* <span ></span> */}
-                    {/* <hr /> */}
                     {/* skunkworks begins here */}
                     <div id='skunkworks' className='photoboats'>
                         <h3>Skunkworks</h3>
                         <hr style={{ width: '90px' }} />
-                        <div className='photoboat'>
-                            <div className='photoboat-header'>
-                                <h4>Winchcam</h4>
-
-                                {/* <Carousel showThumbs={false}  className='tools-carousel' style={{}}>                     */}
-                                <div>
-                                    <ReactPlayer
-                                        className='video-2-player'
-                                        url='https://vimeo.com/354491636'
-                                        playing={false}
-                                        controls={true}
-                                        width='100%'
-                                    // height='100%'
-                                    />
-                                </div>
-                                {/* </Carousel> */}
-                            </div>
-                            <div className='header-info'>
-
-                                <p>The Winchcam is a portable 4 point system that allows you to fly your choice of gimbals and most cameras in a 3-dimensional space. The Winchcam is designed to attach to 2, 3, or 4 hardpoints that are above the stage. The maximum space between each attach point can be 100’.</p>
-
-                                <p>The total payload the Winchcam is capable of flying is 25lbs (camera and gimbal) the maximum speed is 25mph. The Winchcam system is controlled wirelessly by an operator that is separate from the gimbal operator. The winch cam attachment points must be approximately twice the height that you would like the payload to fly. (IE: If you want the gimbal to reach a max height of 10’  above the ground, then you will need the attachment point to be 20’ above the ground).</p><p>The entire Winchcam system can be checked as excess baggage on a commercial airline. The Winchcam can operate on 4 normal 20 amp outlets. It can also run on 4 x Honda 2000 watt generators. Check out the video.</p>
-                            </div>
-                        </div>
-                        <div className='photoboat'>
-                            <div className='photoboat-header'>
-                                <h4>Railrunner</h4>
-
-                                <Carousel infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
-                                    <div>
-                                        <ReactPlayer
-                                            className='video-2-player'
-                                            url='https://vimeo.com/474164076'
-                                            playing={false}
-                                            controls={true}
-                                            width='100%'
-                                        // height='100%'
-                                        />
-                                    </div>
-                                    <div>
-                                        <ReactPlayer
-                                            className='video-2-player'
-                                            url='https://vimeo.com/421026841'
-                                            playing={false}
-                                            controls={true}
-                                            width='100%'
-                                        // height='100%'
-                                        />
-                                    </div>
-                                </Carousel>
-                            </div>
-                            <div className='header-info'>
-
-                                <p>The RailRunner dolly system was designed to allow the user to quickly attach the device to any tubular pipe that is 1 1/2” thru 2” in outside diameter. (IE: Speedrail or PVC pipe.) We can build the Railrunner in any variation of speed and torque.
-
-We presently have systems that can carry up to 30lbs and travel at speeds of 30mph. We have recently been asked to design a RailRunner to reach speeds of 100mph in 1/4 mile. </p>
-
-                                <p>The RailRunner Can be configured to operate as a 2 person or single person system. (IE: One person can operate the camera gimbal and one person can operate the RailRunner or one person can operate both functions.)
-
-Let us know what your requirements are, and we will do our best to accomidate your request.</p>
-                            </div>
-                        </div>
-                        <div className='photoboat'>
-                            <div className='photoboat-header'>
-                                <h4>Railcam</h4>
-
-                                {/* <Carousel showThumbs={false} className='tools-carousel' style={{}}>                     */}
-                                <div>
-                                    <ReactPlayer
-                                        className='video-2-player'
-                                        url='https://vimeo.com/372484162'
-                                        playing={false}
-                                        controls={true}
-                                        width='100%'
-                                    // height='100%'
-                                    />
-                                </div>
-                                {/* </Carousel> */}
-                            </div>
-                            <div className='header-info'>
-
-                                <p>The railcam was originally developed to shoot the AKC dog shows. We needed a device that could transport a camera and gimbal up to 20mph at “dog height” for about 120’ the Railcam is designed to run on a speed rail that is linked together with internal links that are spaced about 18” apart. we have since modified the Railcam to track Olympic class runners at various track and field events. and like the Railrunner, the Railcam can be modified to travel an almost any speed with almost any camera payload. Let us know your requirements and we will do our best to accommodate you.
-</p>
-                            </div>
-                        </div>
-                        <div className='photoboat'>
-                            <div className='photoboat-header'>
-                                <h3>Underwater Dolly</h3>
-
-                                <Carousel infiniteLoop showThumbs={false} className='tools-carousel' style={{}}>
-                                    <div>
-                                        <ReactPlayer
-                                            className='video-2-player'
-                                            url='https://vimeo.com/385683363'
-                                            playing={false}
-                                            controls={true}
-                                            width='100%'
-                                        // height='100%'
-                                        />
-                                    </div>
-                                    <div>
-                                        <ReactPlayer
-                                            className='video-2-player'
-                                            url='https://vimeo.com/375096250'
-                                            playing={false}
-                                            controls={true}
-                                            width='100%'
-                                        // height='100%'
-                                        />
-                                    </div>
-                                </Carousel>
-                            </div>
-                            <div className='header-info'>
-
-                                <p>Our high speed underwater Dolly was designed to track Olympic class swimmers from an underwater view. We wanted the Underwater dolly to be completely remote controlled from the surface. We also wanted to be able to attach a large cinema camera to the dolly so that it can be used for any application. The Underwater dolly can travel at speeds of 1-10mph.</p>
-                            </div>
-                        </div>
+                        <ToolItems toolArray={ToolsArrays.SkunkworksArray} />
                     </div>
-                    {/* <hr className='big-hr' /> */}
                     <div className='tools-footer'>
-
                         <h3>Need more information?</h3>
                         <h6>Contact <Link to='/contact'>Jordy</Link> for more information regarding his equipement and team.</h6>
                     </div>

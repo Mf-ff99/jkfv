@@ -27,6 +27,78 @@ We also build our own 3D underwater housing systems`,
         ]
     }
 ]
+const SkunkworksArray = [
+    {
+        name: undefined,
+        tool: [
+            {
+                toolName: 'Winchcam',
+                description: `The Winchcam is a portable 4 point system that allows you to fly your choice of gimbals and most cameras in a 3-dimensional space. The Winchcam is designed to attach to 2, 3, or 4 hardpoints that are above the stage. The maximum space between each attach point can be 100’.
+
+                The total payload the Winchcam is capable of flying is 25lbs (camera and gimbal) the maximum speed is 25mph. The Winchcam system is controlled wirelessly by an operator that is separate from the gimbal operator. The winch cam attachment points must be approximately twice the height that you would like the payload to fly. (IE: If you want the gimbal to reach a max height of 10’ above the ground, then you will need the attachment point to be 20’ above the ground).
+                
+                The entire Winchcam system can be checked as excess baggage on a commercial airline. The Winchcam can operate on 4 normal 20 amp outlets. It can also run on 4 x Honda 2000 watt generators. Check out the video.`,
+                li: [
+
+                ],
+                images: [
+
+                ],
+                videos: [
+                    'https://vimeo.com/354491636',
+                ],
+            },
+            {
+                toolName: 'Railrunner',
+                description: `The RailRunner dolly system was designed to allow the user to quickly attach the device to any tubular pipe that is 1 1/2” thru 2” in outside diameter. (IE: Speedrail or PVC pipe.) We can build the Railrunner in any variation of speed and torque.
+
+                We presently have systems that can carry up to 30lbs and travel at speeds of 30mph. We have recently been asked to design a RailRunner to reach speeds of 100mph in 1/4 mile. The RailRunner Can be configured to operate as a 2 person or single person system. (IE: One person can operate the camera gimbal and one person can operate the RailRunner or one person can operate both functions.)
+                
+                Let us know what your requirements are, and we will do our best to accomidate your request.`,
+                li: [
+
+                ],
+                images: [
+
+                ],
+                videos: [
+                    'https://vimeo.com/474164076',
+                    'https://vimeo.com/421026841',
+
+                ],
+            },
+            {
+                toolName: 'Railcam',
+                description: `The railcam was originally developed to shoot the AKC dog shows. We needed a device that could transport a camera and gimbal up to 20mph at “dog height” for about 120’ the Railcam is designed to run on a speed rail that is linked together with internal links that are spaced about 18” apart. we have since modified the Railcam to track Olympic class runners at various track and field events. and like the Railrunner, the Railcam can be modified to travel an almost any speed with almost any camera payload. Let us know your requirements and we will do our best to accommodate you.`,
+                li: [
+
+                ],
+                images: [
+
+                ],
+                videos: [
+                    'https://vimeo.com/372484162',
+                ],
+            },
+            {
+                toolName: 'Underwater Dolly',
+                description: `Our high speed underwater Dolly was designed to track Olympic class swimmers from an underwater view. We wanted the Underwater dolly to be completely remote controlled from the surface. We also wanted to be able to attach a large cinema camera to the dolly so that it can be used for any application. The Underwater dolly can travel at speeds of 1-10mph.`,
+                li: [
+
+                ],
+                images: [
+
+                ],
+                videos: [
+                    'https://vimeo.com/385683363',
+                    'https://vimeo.com/375096250',
+                ],
+            },
+
+
+        ]
+    }
+]
 
 const PhotoboatArray = [
     {
@@ -251,7 +323,7 @@ const ToolsArrays = {
     CraneArray,
     UnderwaterArray,
     ThreeD,
-
+    SkunkworksArray,
 }
 
 export default ToolsArrays

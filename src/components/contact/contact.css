@@ -1,5 +1,4 @@
 .contact-page {
-    /* margin-top: 90px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,9 +7,6 @@
 }
 
 .about-container {
-    /* padding-top: 35px; */
-    /* margin-top: 20px; */
-    /* background-color: #93A8AC; */
     background-color: white;
     color: black;
     width: 100%;
@@ -18,12 +14,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 700px; */
 }
 
 .contact-upper span {
     font-size: 24px;
-    /* border: 1px solid #FCFCFC; */
     border: 1px solid black;
     margin-bottom: 10px;
     padding: 5px 10px 5px 10px;
@@ -37,12 +31,10 @@
 .email:hover {
     color: #6a8491 !important;
     text-decoration: underline;
+    transition-duration: .8s ease-in-out;
 }
 
 .contact-upper h2 {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     text-decoration-style: underline;
     border-bottom: 2px solid black;
     margin-bottom: 20px;
@@ -74,26 +66,24 @@ form {
     max-width: 320px;
     min-width: 300px;
     font-size: 16px;
-    /* background: #b5d5db; */
     color: black;
     background-color: whitesmoke;
     padding: 30px 30px 15px 30px;
-    /* border: 5px solid #53687E; */
+    transition-duration: .5s ease-in-out;
 }
 
 .form-style-4 input[type=submit], .form-style-4 input[type=button], .form-style-4 input[type=text], .form-style-4 input[type=email], .form-style-4 textarea, .form-style-4 label {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 16px;
     color: #222d38;
+    transition: .4s ease-in-out;
 }
 
 .form-style-4 label {
-    /* display:block; */
     margin-bottom: 10px;
 }
 
 .form-style-4 label>span {
-    /* display: inline-block; */
     float: middle;
     width: 150px;
 }
@@ -101,13 +91,13 @@ form {
 .form-style-4 input[type=text], .form-style-4 input[type=email] {
     background: #d9d9d9;
     border: none;
-    /* border-bottom: 1px solid #83A4C5; */
     width: 275px;
     outline: none;
     padding: 0px 5px 0px 10px;
     font-style: italic;
     height: 50px;
     border-radius: 7px;
+    transition: .4s ease-out;
 }
 
 .form-style-4 textarea {
@@ -121,21 +111,22 @@ form {
     height: 150px;
     max-height: 250px;
     color: black !important;
-    /* overflow: hidden; */
-    /* resize:none; */
-    /* height:30px; */
+    transition: .5s ease-in-out;
 }
 
 .form-style-4 textarea:focus {
     background-color: white;
+    transition: .5s ease-in-out;
 }
 
 .form-style-4 input[type=text]:hover, .form-style-4 input[type=email]:hover, .form-style-4 input[type=email] :hover, .form-style-4 textarea:hover {
-    background-color: lightblue;
+    background-color: white;
+    transition: .5s ease-in;
 }
 
 .form-style-4 input[type=text]:focus, .form-style-4 input[type=email]:focus, .form-style-4 input[type=email] :focus {
     background-color: white;
+    transition: .3s ease-in-out;
 }
 
 .form-style-4 input[type=submit], .form-style-4 input[type=button] {
@@ -144,11 +135,12 @@ form {
     padding: 8px 10px 8px 10px;
     border-radius: 3px;
     color: white;
+    transition: .5s ease-in-out;
 }
 
 .form-style-4 input[type=submit]:hover, .form-style-4 input[type=button]:hover {
     background: #394D61;
-    /* color: rgba(102, 102, 136, 0.493); */
+    transition: .5 ease-in-out;
 }
 
 .contact-upper {

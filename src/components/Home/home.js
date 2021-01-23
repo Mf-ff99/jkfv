@@ -28,31 +28,22 @@ export default function Home() {
                             <img className='jordy-logo' src={Logo2} alt="company logo" />
                         </div>
                         </Animated>
-
                         <div className="social-links">
-                            {/* <a href="https://www.linkedin.com/in/jordy-klein-9697775/" target='_blank' rel="noopener noreferrer" > <i className="fab fa-linkedin fa-3x"></i></a> */}
                         <Animated animationInDelay={400} animationIn="bounceInUp" animationInDuration={1500} animationOut="fadeOut">
                             <a href="https://www.facebook.com/JKFandV" target="_blank" rel="noopener noreferrer" ><i className="fab fa-facebook-square fa-2x"></i></a>
                         </Animated>
                             <Animated animationInDelay={400} animationIn='bounceInLeft' animationInDuration={1500} animationOut='fadeOut'>
                             <a href="https://www.instagram.com/jordankleinfilmandvideo/" target="_blank" rel="noopener noreferrer" ><i className="fab fa-instagram-square fa-2x"></i></a>
                             </Animated>
-                            {/*  <img src={Logo} alt="Xcam Aerials Logo" className="xcam-img" /> */}
                         <Animated animationInDelay={400} animationIn="bounceInUp" animationInDuration={1500} animationOut="fadeOut">
                             <a href="https://vimeo.com/user1974921" target="_blank" rel="noopener noreferrer" ><i className="fab fa-vimeo-square fa-2x"></i></a>
                             </Animated>
                         </div>
-                  
                     </div>
             <section className="landing">
                 <div className="landing-page">
                 </div>
-
-                    {/* <div className="background-video"> */}
-               
                 <div className='about-work' id="about-work-view">
-
-                    {/* <span className='about-header-words'> Jordy's team has the tools and industry knowledge to get any shot a director could possibly want </span> */}
                     <div className='about-work-header'>
                        <h3><Link to='/work'>Our Work</Link></h3>
                        <hr style={{width: "90px", backgroundColor: "black"}} /> 
@@ -104,10 +95,6 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                {/* <br />
-                <br /> */}
-
-                {/* <br /> */}
                 <section className='black-div contact-jordy'>
                     <h4><Link to='/contact'>Get a Quote from Jordy</Link></h4>
                     <h5>352-427-2560</h5>
@@ -194,11 +181,9 @@ export default function Home() {
                     <img src={ShotcallRunning} alt="Photoboat running chasing jetski" />
                     </div>
                     <div className='span-holder'>
-
                         <span className="photoboat-tool-text">Drones, camera cars, photoboats, and cranes of various sizes, our equipment is custom-built for smooth shooting and intense gigs. Our teams can be ready to deploy at a moments notice. Contact Jordy for more information.</span>
                         <Link to='/contact'><button type='click'>Request a Quote</button></Link>
                     </div>
-
                     </div>
                 </section>
             </section>
