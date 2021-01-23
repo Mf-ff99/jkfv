@@ -20,7 +20,7 @@ const UL = styled.ul`
     li a {
         color: black !important;
         padding: 18px 10px;
-        
+        text-decoration: none;
     }
 
     li a:hover {

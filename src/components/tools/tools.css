@@ -12,8 +12,8 @@
 
 
 .tools-pointer {
-    padding-top: 40px;
-    margin-top: 40px;
+    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .tools-pointer img {
@@ -183,9 +183,14 @@
     margin-bottom: 30px;
 }
 
+#tools div h5 {
+    font-size: 20px;
+    margin: 0;
+}
+
 .tool-sections-header {
-    height: 450px;
-    min-height: 90vh;
+    height: 700px;
+    min-height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
