@@ -1020,7 +1020,7 @@ Let us know what your requirements are, and we will do our best to accomidate yo
                             </div>
                             <div className='header-info'>
 
-                                <p>Our high speed underwater Dolly was designed to track Olympic class swimmers from an underwater view. We wanted the Underwater dolly to be compleatly remote controlled from the surface. We also wanted to be able to attach a large cinema camera to the dolly so that it can be used for any application. The Underwater dolly can travel at speeds of 1-10mph.</p>
+                                <p>Our high speed underwater Dolly was designed to track Olympic class swimmers from an underwater view. We wanted the Underwater dolly to be completely remote controlled from the surface. We also wanted to be able to attach a large cinema camera to the dolly so that it can be used for any application. The Underwater dolly can travel at speeds of 1-10mph.</p>
                             </div>
                         </div>
                     </div>
