@@ -28,7 +28,7 @@ import ReactPlayer from 'react-player/lazy';
         },
         {
             name: 'TechnoCranes + Camera Cars',
-            description: `Our work in the automotive industry is vast, utilizing our 30' robotic crane with our camera truck. Our camera truck offers a 30' reach and full FIZ control from the passenger seats. Our telescopic crane also has a 30' foot reach and is designed to accommodate any number of stablized and unstabilized remote heads.`,
+            description: `Our work in the automotive industry is vast, utilizing our 30' robotic crane with our camera truck. Our camera truck offers a 30' reach and full FIZ control from the passenger seats. Our telescopic crane also has a 30' foot reach and is designed to accommodate any number of stabilized and unstabilized remote heads.`,
             links: [
                 'https://www.youtube.com/watch?v=0I9B_cJOUmM',
                 'https://vimeo.com/474146943', 
@@ -40,7 +40,7 @@ import ReactPlayer from 'react-player/lazy';
         },
         {
             name: 'Drone + Helicopter Aerials',
-            description: ['Aerial photography is an art, and no one does it better than our sister company XCam Aerials. From flying full-size camera packages to the Mavic Pro 2, we do it all. XCam Aerials is one of the few aerial companies that operate by the Motion Picture aerial manual. We also maintain both the FAA 333 exemption and the newly established Part 107 certifications. This allows all of our pilots to enjoy the same privileges as full-size commercial aircraft operators.You can find out more at the ', <a href="http://xcamaerials.com" target="_blank" rel="noopener noreferrer" >XCam Aerials</a>, ' website.'],
+            description: ['Aerial photography is an art, and no one does it better than our sister company XCam Aerials. From flying full-size camera packages to the Mavic Pro 2, we fly it all. XCam Aerials is one of the few aerial companies that operate by the Motion Picture aerial manual. We also maintain both the FAA 333 exemption and the newly established Part 107 certifications. This allows all of our pilots to enjoy the same privileges as full-size commercial aircraft operators.You can find out more at the ', <a href="http://xcamaerials.com" target="_blank" rel="noopener noreferrer" >XCam Aerials</a>, ' website.'],
             links: [
                 'https://vimeo.com/203179504',
                 'https://vimeo.com/91879445', 
