@@ -101,7 +101,7 @@ export default function Home() {
                 </section>
                 <section className='jordys-aerials'>
                 <section className="clients">
-                    <h3>Our Clients</h3>
+                    <h2>Our Clients</h2>
                     <hr style={{width: "90px", backgroundColor: "black"}} />
                     {/* <img src={Clients} alt="client logos"></img> */}
                     <ul className='client-logos'>
