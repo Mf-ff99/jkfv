@@ -150,6 +150,8 @@ form {
     align-items: center !important;
     text-align: center;
     max-width: 350px;
+    min-height: 120vh;
+    margin-top: 100px;
 }
 
 .contact-arrow {
