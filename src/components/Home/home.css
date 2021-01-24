@@ -298,6 +298,7 @@ section.jordys-specialties {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .lower-section .span-holder {
@@ -326,10 +327,7 @@ section.jordys-specialties {
     section.jordys-specialties {
         padding-top: 0 !important;
         height: 700px !important;
-        flex-direction: column !important;
-    }
-    .lower-section {
-        flex-direction: column !important;
+        
     }
     .margin-divider {
         height: 900px !important;
@@ -560,7 +558,7 @@ ul.client-logos li.client-logo img {
 .info-section {
     margin: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -664,7 +662,15 @@ ul.client-logos li.client-logo img {
     
 }
 
+@media (min-width: 950px) {
+    .jordys-specialties .lower-section {
+        flex-direction: row !important;
+    }
 
+    .info-section {
+        flex-direction: row !important;
+    }
+}
 
 @media (min-width: 600px) {
     .photoboat-tool-text {
