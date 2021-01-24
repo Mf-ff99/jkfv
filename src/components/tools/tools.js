@@ -110,7 +110,7 @@ export default class Tools extends React.Component {
 
                             </Carousel>
                         </a>
-                        <h6>Our Aerials are solely operated by our sister company XCam Aerials. Click the link to visit the <a href="http://xcamaerials.com/" target="_blank" rel="noopener noreferrer">XCam Aerials</a> website.</h6>
+                        <p>Our Aerials are solely operated by our sister company XCam Aerials. You can visit XCam Aerial's website <a href="http://xcamaerials.com/" target="_blank" rel="noopener noreferrer">here</a></p>
 
                     </div>
                     <div className="photoboats" id='cameracar'>

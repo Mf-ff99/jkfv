@@ -1,6 +1,6 @@
-import PBJ from '../../images/pbj.png'
+import PBJ from '../../images/pbj.jpg'
 import Pontoon from '../../images/pontoon.png'
-import TritonArm from '../../images/triton-arm.png'
+import TritonArm from '../../images/triton-arm.jpg'
 import SixtyFooter from '../../images/sixty-foot-crane.png'
 import images from '../../images/BarreledImages'
 
