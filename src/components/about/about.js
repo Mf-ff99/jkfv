@@ -9,26 +9,26 @@ export default function About() {
 
           <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={2000}>
         <section className="about-page">
-            {/* <Animated animationIn='fadeIn'> */}
+      
             <img src={JordyLogo} alt="Jordan Klein Logo" />
-            {/* </Animated> */}
+          
             <div className="about-page-container">
                 <div className='about-page-upper'>
                     <div className="p-2">
-                    <h2><Animated animationIn='slideInRight'>
+                    <h2><Animated animationIn='fadeIn'>
 
                     About The Klein Family
                     </Animated>
                     </h2>
                     
-                    <p><Animated animationIn='slideInLeft'>
-                        The Klein Family has been in the motion picture industry for over 60 years. Jordan Klein Sr. experience in the industry began in the 1950s never looked back. Over the course of his career, he accumulated innumerable credits and cinched two academy awards along the way. Klein sr is now retired and living in Central Florida to be with his family.</Animated></p>
+                    <p>
+                        The Klein Family has been in the motion picture industry for over 60 years. Jordan Klein Sr. experience in the industry began in the 1950s never looked back. Over the course of his career, he accumulated innumerable credits and cinched two academy awards along the way. Klein sr is now retired and living in Central Florida to be with his family.</p>
                     </div>
                     <div className='p-2'>
                     <div className="p-2">
-                    <h2><Animated animationIn='slideInRight'>
-                        About Jordy</Animated></h2>
-                    <p><Animated animationIn='slideInLeft'>Jordan Klein Jr., “Jordy” as he is known throughout the industry, started Jordan Klein Film & Video in the mid 80s. After years of working with his dad, Jordy wanted to continue the family heritage:  providing knowledge and equipment to get the shot, no matter how big or small. “We like to hear creative ideas from directors and D/Ps that require us to figure out the best way to accomplish them”. If you are looking to shoot a basic “talking head” interview, Jordy probably isn't the best place to call. (although he does appreciate a simple job every now and again..)</Animated></p>
+                    <h2>
+                        About Jordy</h2>
+                    <p>Jordan Klein Jr., “Jordy” as he is known throughout the industry, started Jordan Klein Film & Video in the mid 80s. After years of working with his dad, Jordy wanted to continue the family heritage:  providing knowledge and equipment to get the shot, no matter how big or small. “We like to hear creative ideas from directors and D/Ps that require us to figure out the best way to accomplish them”. If you are looking to shoot a basic “talking head” interview, Jordy probably isn't the best place to call. (although he does appreciate a simple job every now and again..)</p>
                     
                     </div>
                     </div>
@@ -36,7 +36,7 @@ export default function About() {
 
                     
                     <div className="p-3 p-2">
-                        <Animated animationIn='slideInUp'>
+                        <Animated animationIn='fadeIn'>
 
                     <h2>A Note to the Clients</h2>
                     <p>     A note to potential clients from JKF&V President, Jordy Klein:

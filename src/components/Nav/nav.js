@@ -94,7 +94,7 @@ const NavStyled = styled.nav`
 
     @media (max-width: 770px) {
         justify-content: space-between;
-        padding: 10px;
+        /* padding: 10px; */
         width: 100vw;
     }
 `;
