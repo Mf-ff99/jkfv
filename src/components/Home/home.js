@@ -23,19 +23,19 @@ export default function Home() {
                     />
             </div>
                     <div className="landing-container">
-                        <Animated animationInDelay={300} animationIn="fadeIn" animationOut="fadeOut" animationInDuration={1100}>
+                        <Animated animationInDelay={400} animationIn="fadeIn" animationOut="fadeOut" animationInDuration={1100}>
                         <div className="logo-container">
                             <img className='jordy-logo' src={Logo2} alt="company logo" />
                         </div>
                         </Animated>
                         <div className="social-links">
-                        <Animated animationInDelay={400} animationIn="bounceInUp" animationInDuration={1500} animationOut="fadeOut">
+                        <Animated animationInDelay={500} animationIn="fadeIn" animationInDuration={1500} animationOut="fadeOut">
                             <a href="https://www.facebook.com/JKFandV" target="_blank" rel="noopener noreferrer" ><i className="fab fa-facebook-square fa-2x"></i></a>
                         </Animated>
-                            <Animated animationInDelay={400} animationIn='bounceInLeft' animationInDuration={1500} animationOut='fadeOut'>
+                            <Animated animationInDelay={500} animationIn='fadeIn' animationInDuration={1500} animationOut='fadeOut'>
                             <a href="https://www.instagram.com/jordankleinfilmandvideo/" target="_blank" rel="noopener noreferrer" ><i className="fab fa-instagram-square fa-2x"></i></a>
                             </Animated>
-                        <Animated animationInDelay={400} animationIn="bounceInUp" animationInDuration={1500} animationOut="fadeOut">
+                        <Animated animationInDelay={500} animationIn="fadeIn" animationInDuration={1500} animationOut="fadeOut">
                             <a href="https://vimeo.com/user1974921" target="_blank" rel="noopener noreferrer" ><i className="fab fa-vimeo-square fa-2x"></i></a>
                             </Animated>
                         </div>
@@ -103,7 +103,6 @@ export default function Home() {
                 <section className="clients">
                     <h2>Our Clients</h2>
                     <hr style={{width: "90px", backgroundColor: "black"}} />
-                    {/* <img src={Clients} alt="client logos"></img> */}
                     <ul className='client-logos'>
                         <li className='client-logo'><img src={logos.NFL} alt="NFL logo" /></li>
                         <li className='client-logo'><img src={logos.Redbull} alt="NFL logo" /></li>
