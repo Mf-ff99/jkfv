@@ -93,7 +93,7 @@ export default class Tools extends React.Component {
                         {/* crane ends here */}
                     </div>
                     {/* aerials begin here */}
-                    <div className="aerials" id="aerials">
+                    <div className="aerials photoboats" id="aerials">
                         <h3>Aerials</h3>
                         <hr style={{ width: "90px" }} />
                         <a href='http://xcamaerials.com/' target='_blank' rel='noopener noreferrer'>
@@ -102,9 +102,7 @@ export default class Tools extends React.Component {
 
 
                                 <div>
-                                    {/* <a href='https://xcamaerials.com' target='_blank' rel='noopener noreferrer'> */}
                                     <img className="mfd-image" src={MFD} alt='MFD 5000 Drone with RED camera and Ronin 2 gimbal' />
-                                    {/* </a> */}
                                 </div>
 
 
@@ -152,6 +150,26 @@ export default class Tools extends React.Component {
 
                                     />
                                 </div>
+                                <div className='d-block w-100'>
+                                    <ReactPlayer
+                                        className='video-3-player'
+                                        url='https://vimeo.com/503840134'
+                                        playing={false}
+                                        controls={true}
+                                        width='100%'
+
+                                    />
+                                </div>
+                                <div className='d-block w-100'>
+                                    <ReactPlayer
+                                        className='video-3-player'
+                                        url='https://vimeo.com/503836634'
+                                        playing={false}
+                                        controls={true}
+                                        width='100%'
+
+                                    />
+                                </div>
                                 <div className='process-trailer'>
                                     <img src={images.ProcessTrailer} alt='process trailer' />
                                 </div>
@@ -172,8 +190,8 @@ export default class Tools extends React.Component {
                             <div className="header-info">
 
                                 <p>Jordan Klein Film and Video is one of a few companies in the Southeast United States that own and operate an insert car and process trailer. The camera car is actually a camera truck. It is based on a Dodge 2500 chassis and has a full air ride suspension. The camera car can also accommodate up to 7 people in the back and 6 people in the front.</p><p>The camera car can also hold our 22’ Robotic-arm as well as our 30’ telescopic crane with a choice of stabilized heads (see the telescopic crane and 22’ robotic crane arm).</p><p>
-                                    Our process trailer can support vehicles as large as a Ford Excursion and has two fold-out platforms that can support lighting or even dolly track.</p><p>Additionally we have a tow dolly that can accommodate most cars and trucks. This is a great option when you are attempting to get high shots shooting straight down on the tow vehicle and do not want to see the process trailer.</p> <p><h5>Process trailer dimensions
-</h5>
+                                    Our process trailer can support vehicles as large as a Ford Excursion and has two fold-out platforms that can support lighting or even dolly track.</p><p>Additionally we have a tow dolly that can accommodate most cars and trucks. This is a great option when you are attempting to get high shots shooting straight down on the tow vehicle and do not want to see the process trailer.</p> <p><h2>Process trailer dimensions
+</h2>
                                     <ul>
                                         <li>overall length: 25’ 8”</li>
                                         <li>overall width: 103”
@@ -186,8 +204,8 @@ export default class Tools extends React.Component {
                                         <li>Trailer is equipped with 1 1/4” speedrail fittings.</li>
                                         <li>Max vehicle weight capacity 5700lbs</li>
                                     </ul>
-                                    <h5>Camera Truck
-</h5>
+                                    <h2>Camera Truck
+</h2>
                                     <ul>
                                         <li>Capable of running with our 22' Robotic Arm</li>
                                         <li>Capable of running with our 30' telescopic crane</li>
@@ -234,8 +252,8 @@ export default class Tools extends React.Component {
                                 <div className="cameras-lenses">
                                     <div className="cameras__ul">
                                         <div>
-                                            <h4>Lenses</h4>
-                                            <p>
+                                            <h2>Lenses</h2>
+                                            
                                                 <ul>
                                                     <li>2x sets of Ziess Superspeed MKIII</li>
                                                     <li>Nikon prime lens set</li>
@@ -246,11 +264,11 @@ export default class Tools extends React.Component {
                                                     <li> Sigma 18-35mm f2.8 </li>
                                                     <li>Sigma 28-70mm f2.8 </li>
                                                 </ul>
-                                            </p>
+                                            
                                         </div>
                                         <div>
-                                            <h4>Cameras</h4>
-                                            <p>
+                                            <h2>Cameras</h2>
+                                            
 
                                                 <ul>
                                                     <li>Red Epic Dragon</li>
@@ -262,7 +280,7 @@ export default class Tools extends React.Component {
                                                     <li>Panasonic GH5</li>
                                                     <li>Black Magic Pocket Cinema Camera</li>
                                                 </ul>
-                                            </p>
+                                            
                                         </div>
                                     </div>
                                 </div>

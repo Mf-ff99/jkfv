@@ -56,6 +56,14 @@
     font-weight: 500 !important;
 }
 
+.photoboats h3 {
+    letter-spacing: 2px;
+}
+
+.photoboats div h3 {
+    letter-spacing: 1px;
+}
+
 .carousel.carousel-slider {
     overflow: inherit;
 }
@@ -68,6 +76,10 @@
     background-color: rgb(179, 179, 179, .5);
     border-radius: 4px;
     transition: .5s ease-in;
+}
+
+.cameras__ul div h3 {
+    font-size: 20px;
 }
 
 .aerials {
