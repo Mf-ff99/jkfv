@@ -125,7 +125,7 @@ export default function Home() {
                     <div className="lower-section">
 
                     <div className='span-holder'>
-                        <span className="tools-of-the-trade">From photoboats to camera cars of various sizes, our vehicles and teams are capable to take on any and every shot. 
+                        <span className="tools-of-the-trade">From photoboats to camera cars, our vehicles and teams are capable of taking on any and every shot.
                         </span>
                         <Link to='/tools'><button type='click'>Our Tools</button></Link>
                     </div>

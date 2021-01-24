@@ -20,7 +20,6 @@ const UL = styled.ul`
     font-weight: 600;
     max-width: 700px;
     padding-right: 80px;
-
     li {
         color: black !important;
         padding: 18px 10px;
@@ -28,38 +27,30 @@ const UL = styled.ul`
             min-width: 102px;
         }
     }
-
-    
-
     img {
         padding: 0;
         height: 90px;
          
     }
-    
     a {
         color: black !important;
     }
-
     .logo-text-left a {
         width: 100px;
         display: flex;
         flex-wrap: wrap;
 
     }
-
     .logo {
         display: flex;
         flex-direction: row;
         align-items: center;
         margin-left: 0;
     }
-
     .right-side-nav {
         right: 0;
         
     }
-
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column !important;

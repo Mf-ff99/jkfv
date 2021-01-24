@@ -242,6 +242,14 @@ div.contact-upper {
         font-weight: 300;
     }
 
+    .contact-info-container .contact-info-line h3 {
+        padding: 5px;
+        min-width: 130px;
+    }
+    .contact-info-container .contact-info-line span {
+        padding: 5px;
+        min-width: 250px;
+    }
     .contact-info-line {
         flex-direction: row;
         justify-content: space-between;
