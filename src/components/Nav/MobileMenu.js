@@ -54,21 +54,23 @@ const UL = styled.ul`
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
+        justify-content: flex-start !important;
+        align-items: flex-end !important;
+        /* padding-top: 50px; */
         background-color: #0D2538;
         position: fixed;
         transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
         top: 0;
         right: 0;
         height: 100vh;
-        width: 75vw !important;
+        width: 65vw !important;
         border-left: 1px solid black;
         border-radius: 3px;
-        padding: 15px 0 0 0;
+        padding: 85px 45px 0 0;
         transition: .3s ease-in-out;
         z-index: 1000;
         font-size: 25px;
+        margin-block-start: 0;
     a {
         color: black !important;
     }
