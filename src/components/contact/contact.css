@@ -252,6 +252,7 @@ div.contact-upper {
     }
     .contact-info-line {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
 }
