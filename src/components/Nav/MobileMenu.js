@@ -11,7 +11,6 @@ const UL = styled.ul`
     align-items: center;
     justify-content: space-between;
     width: 100vh;
-    // min-height: 800px;
     margin-left: 0;
     padding-left: 0;
     z-index: 1000;
@@ -21,12 +20,10 @@ const UL = styled.ul`
     font-weight: 600;
     max-width: 700px;
     padding-right: 80px;
-    padding-top: 10px;
 
     li {
         color: black !important;
         padding: 18px 10px;
-        /* min-width: 110px; */
         &:nth-child(4) {
             min-width: 102px;
         }
@@ -64,8 +61,6 @@ const UL = styled.ul`
     }
 
     @media (max-width: 768px) {
-        /* display: none !important; */
-        /* min-height: 400px; */
         display: flex;
         flex-direction: column !important;
         justify-content: center !important;
@@ -79,13 +74,10 @@ const UL = styled.ul`
         width: 75vw !important;
         border-left: 1px solid black;
         border-radius: 3px;
-
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;
         z-index: 1000;
         font-size: 25px;
-        /* scroll-behavior: unset; */
-
     a {
         color: black !important;
     }
@@ -101,9 +93,7 @@ const UL = styled.ul`
     @media (min-width: 769px) {
         li.mobile a img{
             display: none !important;
-            /* border: 1px solid red; */
         }
-
     }
 `
 
@@ -128,12 +118,9 @@ class MobileNav extends React.Component {
             <UL id='mobile-nav' open={open}>
             <li className="mobile logo">
                 {open ? <a href='/'><img src={Logo} alt="Jordan Klein Film and Video Logo" /></a> : ''}
-
-                {/* {open ? '' : <span className="logo-text-left"><a href='/'>Jordan Klein Film & Video</a></span>} */}
             </li>
             <li className="right-side-nav">
                 <a href="/work">Work</a>
-
             </li>
             <li className="right-side-nav">
                 <a href='/tools'>Tools</a>
@@ -141,11 +128,9 @@ class MobileNav extends React.Component {
             <li className="right-side-nav"><a href='/jordy-klein'>Jordy Klein</a></li>
             <li className="right-side-nav">
                 <a href="/contact">Contact</a>
-
             </li>
             <li className="right-side-nav end">
                 <a href="/about">About</a>
-
             </li>
         </UL>
     )
