@@ -6,10 +6,8 @@ nav {
     height: 100px;
     display: flex;
     justify-content: flex-start;
-    /* align-items: center; */
     flex-direction: row;
     list-style: none;
-    /* width: 90%; */
     background-color: whitesmoke;
     width: auto;
     z-index: 1500;
@@ -22,11 +20,9 @@ header {
 
 li.logo img {
     height: 5em !important;
-    /* background-color: red; */
 }
 
 nav ul {
-    /* margin-bottom: 10px; */
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -49,40 +45,21 @@ nav ul li {
     padding-right: 20px;
     align-items: center;
     vertical-align: middle;
-    /* margin-right: .5em; */
     font-size: 1.4em;
-    /* overflow-y: hidden; */
-    /* border-radius: 20px; */
     height: auto;
     padding: 0 0 1em 0;  
-}
-
-li.logo span {
-    /* vertical-align: top; */
 }
 
 nav ul li.right-side-nav {
     color: black;
     font-size: 24px;
-    /* margin-left: 1em; */
-    /* padding-top: 20px; */
-    /* display: flex; */
     justify-content: flex-end;
-    /* padding: 10px; */
-    /* margin-right: 4em; */
-    /* margin-top: 2em; */
-    /* padding-bottom: 3em !important; */
-}
-
-nav ul li.logo a img {
-    /* height: 70%; */
 }
 
 .right-side-nav {
    float: right;
    margin-right: 0;
    transition: .2s ease-out;
-   /* justify-content: flex-end; */
 }
 
 li.right-side-nav:hover {

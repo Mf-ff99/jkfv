@@ -209,6 +209,10 @@
     justify-content: center;
 }
 
+.tool-sections-header p {
+    max-width: 800px;
+}
+
 section.tools {
     padding-top: 10px;
     display: flex;

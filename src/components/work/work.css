@@ -67,6 +67,10 @@
     padding: 10px;
 }
 
+.project-header p {
+    max-width: 1300px;
+}
+
 .work-page .carousel .control-next.control-arrow { 
     right: 8px;
 }
