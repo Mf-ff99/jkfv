@@ -446,9 +446,17 @@ div.cameras__ul {
 }
 
 .photoboat .header-info ul {
+    text-align: left;
     display: flex;
     list-style: square;
     flex-direction: column;
+    align-items: flex-start;
+    min-width: 300px;
+    max-width: 350px;
+}
+
+.photoboat .header-info ul li {
+    padding: 5px 0 5px 0;
 }
 
 /* Cranes styles */
