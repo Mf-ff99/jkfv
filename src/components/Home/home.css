@@ -499,7 +499,8 @@ header a:hover {
     justify-content: center;
     padding-top: 30px;
     background-color: white;
-    color: var(--black)
+    color: var(--black);
+    padding-bottom: 25px;
 }
 
 .clients img {
