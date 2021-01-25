@@ -11,6 +11,8 @@ import Malibu from './Malibu.png'
 import Sony from './Sony.png'
 import NatGeo from './Nat-Geo.png'
 import ABC from './ABC.png'
+import Travel from './Travel.png'
+import AE from './AE.png'
 
 let logos = {
     Ford,
@@ -26,6 +28,9 @@ let logos = {
     Sony,
     NatGeo,
     ABC,
+    Travel,
+    AE,
+
 } 
 
 export default logos

@@ -114,6 +114,8 @@ export default function Home() {
                         <li className='client-logo'><img src={logos.Publix} alt="NFL logo" /></li>
                         <li className='client-logo'><img src={logos.Nasa} alt="NFL logo" /></li>
                         <li className='client-logo'><img src={logos.Malibu} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.AE} alt="NFL logo" /></li>
+                        <li className='client-logo'><img src={logos.Travel} alt="NFL logo" /></li>
                     </ul>
                 </section>
                
