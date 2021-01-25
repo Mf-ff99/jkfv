@@ -222,8 +222,7 @@ div.contact-upper {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    /* width: 100%;
-    height: 100%; */
+    max-width: 320px;
 }
 
 .contact-upper h6 {
@@ -240,6 +239,10 @@ div.contact-upper {
     .contact-upper h2 {
         font-size: 45px;
         font-weight: 300;
+    }
+
+    .contact-info-container {
+        max-width: 800px;
     }
 
     .contact-info-container .contact-info-line h3 {
