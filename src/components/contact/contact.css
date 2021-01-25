@@ -243,6 +243,7 @@ div.contact-upper {
 
     .contact-info-container {
         max-width: 800px;
+        min-height: 1000px;
     }
 
     .contact-info-container .contact-info-line h3 {
