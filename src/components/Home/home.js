@@ -20,6 +20,7 @@ export default function Home() {
                     width='100%'
                     height='100%'
                     loop={true}
+                    playsinline={true}
                     />
             </div>
                     <div className="landing-container">
