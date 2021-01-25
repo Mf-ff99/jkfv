@@ -6,6 +6,8 @@ A portfolio website built for the legendary Director of Photography Jordan Klein
 
 You can find the fully deployed website at www.jordy.com
 
+www.jordy.com was built with React, react-player, react-responsive-carousel, react-router, JavaScript, HTML, CSS3, and Animate.css
+
 
 ## Credits
 
