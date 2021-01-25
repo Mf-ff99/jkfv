@@ -9,13 +9,13 @@ const JordyKlein = () => {
         <div className='jordy-klein'>
 
             <div className='jordy-klein-header'>
-            <Animated animationInDuration={1200} animationIn='slideInLeft'>
+            <Animated animationInDuration={1200} animationIn='fadeIn'>
 
             <h2>
                 Jordy Klein
             </h2>
             </Animated>
-            <h4><Animated animationIn='slideInRight'>
+            <h4><Animated animationIn='fadeIn'>
             Director of Photography
             </Animated>
             </h4>

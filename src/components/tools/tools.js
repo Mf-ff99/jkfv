@@ -298,7 +298,7 @@ export default class Tools extends React.Component {
                         <h3>The Crew</h3>
                         <hr style={{ width: '90px' }} />
                         <div className='photoboat'>
-                            <h6>JKF&V, in addition to being a provider of all types of specialty production gear and cameras can also provide the crew needed to operate the specialty equipment. We have staff sound mixers, lighting, grip, and camera department crew available on staff. Let us know what you need!</h6>
+                            <p>JKF&V, in addition to being a provider of all types of specialty production gear and cameras can also provide the crew needed to operate the specialty equipment. We have staff sound mixers, lighting, grip, and camera department crew available on staff. Let us know what you need!</p>
                         </div>
                     </div>
                     <div id='3D' className="photoboats threeD">
