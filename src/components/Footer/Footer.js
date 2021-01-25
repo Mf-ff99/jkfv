@@ -61,7 +61,7 @@ const Footer = () => {
                Copyright © Jordan Klein 2020
                 </li>
                 <li style={{color: 'gray'}}>
-                    Created by <a style={{color: 'black'}}href='https://mf-ff99.github.io/portfolio/' target='_blank' rel='noopener noreferrer'>@markforce</a>
+                    Created by <a style={{color: 'black'}} href='https://www.linkedin.com/in/mark-j-force/' target='_blank' rel='noopener noreferrer'>@markforce</a>
                 </li>
             </ul>
         </FooterContainer>
