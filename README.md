@@ -2,9 +2,9 @@
 
 ## Summary
 
-A portfolio website built for the legendary Director of Photography Jordan Klein Jr. 
+A portfolio website built for the legendary Director of Photography Jordan Klein Jr and his company, Jordan Klein Film & Video 
 
-In-development, you can find the live app here: https://jordan-klein-film-and-video.mf-ff99.vercel.app/
+You can find the fully deployed website at www.jordy.com
 
 
 ## Credits
