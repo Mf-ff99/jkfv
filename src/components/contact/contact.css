@@ -223,10 +223,15 @@ div.contact-upper {
     justify-content: center;
     padding: 10px;
     max-width: 320px;
+    /* min-height: 900px; */
 }
 
 .contact-upper h6 {
     max-width: 300px;
+}
+
+.contact-upper {
+    min-height: 1000px;
 }
 
 @media (min-width: 658px) {
@@ -243,7 +248,6 @@ div.contact-upper {
 
     .contact-info-container {
         max-width: 800px;
-        min-height: 1000px;
     }
 
     .contact-info-container .contact-info-line h3 {
