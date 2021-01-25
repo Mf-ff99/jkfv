@@ -81,7 +81,7 @@ img.xcam-logo {
     flex-direction: column;
     align-items: center;
     padding: 0;
-    /* z-index: -; */
+    z-index: 2;
 }
 
 .landing-container .logo-container {
@@ -398,7 +398,7 @@ section.jordys-aerials {
     top: 0px;
     left: 0px;
     /* fixed to left. Replace it by right if you want.*/
-    z-index: -1;
+    z-index: 1;
     /* background-color: white; */
     width: 100vw;
     /* opacity: .8; */
@@ -407,7 +407,7 @@ section.jordys-aerials {
 .background-video-container div video {
     /* min-width: 100% !important;
     min-height: 100% !important; */
-    z-index: -100;
+    z-index: 1;
     opacity: .8;
     /* filter: blur(3px);
   filter: grayscale(1);
