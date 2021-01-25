@@ -35,9 +35,9 @@
 }
 
 .contact-upper h2 {
-    text-decoration-style: underline;
-    border-bottom: 2px solid black;
-    margin-bottom: 20px;
+    /* text-decoration-style: underline; */
+    /* border-bottom: 2px solid black; */
+    margin-bottom: 0;
 }
 
 div.contact-upper hr {
@@ -224,7 +224,7 @@ div.contact-upper {
     justify-content: center;
     padding: 10px;
     max-width: 320px;
-    min-height: 700px;
+    /* min-height: 700px; */
 }
 
 .contact-upper h6 {
@@ -255,6 +255,8 @@ div.contact-upper {
     .contact-info-container .contact-info-line h3 {
         padding: 5px;
         min-width: 130px;
+        margin-block-start: 0;
+        margin-block-end: 0;
     }
     .contact-info-container .contact-info-line span {
         padding: 5px;

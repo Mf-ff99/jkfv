@@ -88,7 +88,7 @@ import ReactPlayer from 'react-player/lazy';
             
         )
     })
-    console.log(workItems)
+    
     return workItems 
     }
 
