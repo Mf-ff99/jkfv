@@ -176,6 +176,7 @@ form {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    width: 100vw;
 }
 
 .about-container {
@@ -232,6 +233,7 @@ div.contact-upper {
 
 .contact-upper {
     min-height: 1000px;
+    margin-top: 50px;
 }
 
 @media (min-width: 658px) {
