@@ -62,7 +62,7 @@ export default function Home() {
                                         controls={true}
                                         width='100%'
                                         height='100%'
-                                        light={true}
+                                        // light={true}
                                     />
                                 </div>
                             </div>
@@ -76,7 +76,7 @@ export default function Home() {
                                         controls={true}
                                         width='100%'
                                         height='100%'
-                                        light={true}
+                                        // light={true}
                                     />
 
                                 </div>
@@ -90,11 +90,8 @@ export default function Home() {
                                         playing={false}
                                         width='100%'
                                         height='100%'
-                                        // volume={.1}
-                                        // playing={true}
-                                        // muted={true}
                                         controls={true}
-                                        light={true}
+                                        // light={true}
 
                                     />
                                 </div>

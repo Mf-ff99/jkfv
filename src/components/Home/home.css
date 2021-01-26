@@ -233,6 +233,7 @@ img.xcam-logo {
     min-height: 450px;
     z-index: 100;
     margin-top: 0;
+    padding-top: 25px;
     border-top: none;
 }
 
