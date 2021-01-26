@@ -314,7 +314,7 @@ export default class Tools extends React.Component {
                     </div>
                     <div className='tools-footer'>
                         <h3>Need more information?</h3>
-                        <h6>Contact <Link to='/contact'>Jordy</Link> for more information regarding his equipment and crew.</h6>
+                        <p>Contact <Link to='/contact'>Jordy</Link> for more information regarding his equipment and crew.</p>
                     </div>
                 </div>
             </>
