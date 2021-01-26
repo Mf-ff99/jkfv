@@ -27,7 +27,7 @@ import ReactPlayer from 'react-player/lazy';
 
         },
         {
-            name: 'TechnoCranes + Camera Cars',
+            name: 'Telescopic + Camera Cars',
             description: `Our work in the automotive industry is vast, utilizing our 30' robotic crane with our camera truck. Our camera truck offers a 30' reach and full FIZ control from the passenger seats. Our telescopic crane also has a 30' foot reach and is designed to accommodate any number of stabilized and unstabilized remote heads.`,
             links: [
                 'https://www.youtube.com/watch?v=0I9B_cJOUmM',
