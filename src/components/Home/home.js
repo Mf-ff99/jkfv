@@ -11,7 +11,7 @@ import { Animated } from 'react-animated-css'
 export default function Home() {
     return (
         <div className="home">
-            <div className="background-video-container">
+            <div className="fullscreen-bg">
                 <ReactPlayer
                     url="https://video.wixstatic.com/video/b52317_a47aed43aa94462db9e7e268c0c41e41/1080p/mp4/file.mp4"
                     playing={true}

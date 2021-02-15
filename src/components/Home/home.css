@@ -9,6 +9,37 @@ body {
     margin: 0;
 }
 
+.fullscreen-bg {
+    /* position: fixed; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    object-fit: fill;
+    min-height: 600px;
+    min-width: 320px;
+    opacity: .88;
+    /* background-color: #333; */
+}
+    .fullscreen-bg video {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .8;
+        min-height: 600px;
+        min-width: 320px;
+    }
+    @media (min-width: 658px) {
+        .fullscreen-bg video {
+            object-fit: fill;
+        }
+    }
+
 .page-view {
     margin: 0;
     top: 0;
@@ -73,7 +104,7 @@ img.xcam-logo {
 .landing-container {
     position: absolute;
     top: 0;
-    margin-top: 90px;
+    margin-top: 200px;
     color: #f1f1f1;
     width: 80vw;
     height: 100%;
@@ -82,6 +113,11 @@ img.xcam-logo {
     align-items: center;
     padding: 0;
     z-index: 2;
+}
+@media (min-width: 658px) {
+    .landing-container {
+        margin-top: 90px;
+    }
 }
 
 .landing-container .logo-container {
@@ -95,7 +131,7 @@ img.xcam-logo {
 
 @media (min-width: 1200px) {
     .landing-container {
-        margin-top: 200px;
+        margin-top: 90px;
         display: flex;
         flex-direction: column;
         align-items: center;
