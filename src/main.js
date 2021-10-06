@@ -8,6 +8,8 @@ import Tools from './components/tools/tools'
 import ScrollToTop  from './components/Utils/ScrollToTop'
 import NotFound from './components/404NotFoundPage/NotFound'
 import JordyKlein from './components/JordyKlein/JordyKlein'
+import Stream from './components/VimeoStream/stream'
+
 export default function Main() {
     return (
         <>
@@ -19,6 +21,7 @@ export default function Main() {
             <Route path='/work' component={Work} />
             <Route path='/jordy-klein' component={JordyKlein} />
             <Route path='/tools' component={Tools} />
+            <Route path='/stream' component={Stream} />
             <Route component={NotFound} />
         </Switch>   
         </>
